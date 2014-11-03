@@ -1,0 +1,140 @@
+<!--***********************
+A Header - mindig látszik	 
+***************************-->
+<!--
+<div id='head' class='header'> 
+    <div class='nav'>
+        <div class='first'><img src='img/mba_uni_freiburg2.jpg' alt=''></div>
+        <div class='complete'><img src='img/completition.jpg'></div>
+    </div>  
+</div>
+-->
+<img src='img/mba_uni_freiburg2.jpg' id='bgrimg'/>
+<div id='random'> </div>
+
+
+<div id='menu'>
+    <table id='menutable'>
+        <tr class='row'>
+            <td class='cell'> <div onclick='pageLoad(1)'>Project</div></td>
+            <td class='cell'><div onclick='pageLoad(2)'>Semantic Web</div></td>
+            <td class='cell'><div onclick='pageLoad(3)'>Ontology</div></td>
+            <td class='cell'><div onclick='pageLoad(4)'>Data</div></td>
+            <td class='lastcell'><div onclick='pageLoad(5)'>Team</div></td>
+        </tr>
+    </table> 
+</div>
+ 
+
+<div id='logged_in'>
+
+      <img src='img/profile.png' id='img1'/>
+      <div id='firstname' class='names'>David</div>
+      <div id='lastname' class='names'>Konkoly</div>
+      
+      <div onclick='logout()' id='logout'>Logout</div>
+       <!--<div id='usid' style='visibility:hidden'>1</div> --> 
+</div>
+
+
+
+<!--
+<div id='logged_in'>
+    <table id='tableid'>
+        <tr>	
+            <td><img src='img/profile.png' id='img1'> 
+                <div id='firstname' class='names'>David</div>
+                <div id='lastname' class='names'>Konkoly</div>
+                
+            </td><br/>
+        </tr>
+        <tr>
+            <td>
+                <div onclick='logout()' id='log'>Logout</div>
+                <div id='usid' style='visibility:hidden'>1</div>
+            </td>
+        </tr>
+    </table>
+</div>
+-->
+
+<div id='back'> 
+    <img src='public/img/back.png'>;
+</div>
+
+<div id='login'>
+    <div onclick='login()' id='log'> Login  </div>
+    <table id='formd'>
+            <tr>
+                    <td><input type='text' value='Username' class='login' id='usr'/></td>
+                    <td><input type='password' value='password' class='loginfield' name='pwd' width='110px' id='psw'/> </td>
+            </tr>
+            <tr>	
+                    <td><div id='reg' onclick='pageLoad(4)'></div></td>
+                    <td><div id='forget'></div></td>
+            </tr>
+    </table>
+</div>
+
+
+	
+
+
+
+<div id='welcome'>
+    Welcome on Page!
+</div>
+
+<script>
+    
+    
+    var logged_in=$logged_in;
+    if(logged_in){
+        document.getElementById('login').style.visibility='hidden';
+        document.getElementById('logged_in').style.visibility='visible';
+        document.getElementById('menu').style.visibility='visible';
+    } else {
+        document.getElementById('logged_in').style.visibility='hidden';
+        document.getElementById('login').style.visibility='visible';
+        document.getElementById('menu').style.visibility='hidden';
+    }
+    
+    /*
+    var firstname='$firstname';
+    document.getElementById('firstname').innerHTML=firstname;
+   
+    var functions2 = new Array();
+    
+    functions2['loadstart'] = function(){
+
+    };
+
+    functions2['progress'] = function(){
+
+    };
+
+    functions2['load'] = function(evt, response){
+
+
+        document.getElementById('middle_content').innerHTML=response;
+
+    };
+
+    functions2['abort'] = function(){
+
+            alert('A műveletet megszakítottad');
+    };
+
+    functions2['error'] = function(){
+
+            alert('Hiba történt!');
+    };
+    param='base=disabled&frame=disabled';
+    XHR_request('main.php', true, param, functions2);
+                    
+    */
+</script>
+
+<div id='middle_content'>$htmlcontent</div> 
+<!--<div onclick='deleteTest()' id='del'>Delete</div>
+-->
