@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Title</title>
+        <script src="svg.min.js" type="text/javascript" ></script>
+        <script src="jquery-1.11.1.min.js" type="text/javascript" ></script>
+        <style>
+            #text{
+                border: 1px solid;
+                //width: 50%;
+                //height: 50%;
+                margin: 0 auto;
+                float: left;
+            }
+
+            #drawing{
+
+                border: 1px solid;
+                //width: 300px;
+                //height: 100px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            
+            #toMove{
+                
+                position: absolute;
+                left: 600px;
+                top: 400px;
+                
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div id='toMove'>Fly</div> 
+        <div id="drawing"></div>
+        <div id="drawing2" onclick="initTimer()">Button</div>
+        <div onclick="newNode('kutya')" >NewNode</div>
+  
+    </body>
+    
+    <script type="text/javascript">
+    
+        var left=600;
+        var width;
+        var height;
+        var draw = SVG('drawing').size(500,500);
+        
+        var group, arrowGroup;
+        var cursorX;
+        var cursorY;
+        var clickFlag=false;
+        
+        var nodes = new Array();
+        var predicateStore = new Array();
+        var elements;
+        
+        var currentMovingNode, currentNodeNr;
+        
+        var moveX, moveY;
+       
+       
+        document.onmousemove = function(e){
+            cursorX = e.pageX;
+            cursorY = e.pageY;
+        }
+        
+        var move=function moveDIV(){
+                
+           currentMovingNode.move(cursorX-moveX,cursorY-moveY); 
+           
+           redraw(predicateStore[currentNodeNr][i]);
+           
+        }
+        
+        function redraw(object){
+            
+           
+        
+        
+        
+        
+            object.remove();
+        }
+        
+        function stop(){
+            
+            window.clearInterval(id);
+        }
+        
+        var id;
+        function initTimer(){
+            
+            id = self.setInterval(move, 100);
+        }
+        
+         function getNodeNr(object){
+             
+            var n=0;
+            while(nodes[n]!==object)
+            {
+                n++;
+            }
+            return n;
+        }
+        
+        
+        function createNode(name, x, y){
+            
+            width=name.length*9+25;
+            height=width*0.4;
+           
+            var ellipse=draw.ellipse(width,height).fill('green');//.stroke({ width: 1 });
+            var text = draw.text(name).center(width/2,height/2);
+            var hoverLayer=draw.ellipse(width,height).fill({color: '#f06', opacity: 0.1});//.stroke({ width: 1 });
+            
+            group = draw.group();
+            ellipse.addTo(group);
+            text.addTo(group);
+            hoverLayer.addTo(group);
+            group.move(x,y);
+           
+           
+            group.click(function(){
+            
+                if(!clickFlag){
+                   
+                    moveX=cursorX-this.x();
+                    moveY=cursorY-this.y();
+                    currentMovingNode=this;
+                    initTimer();
+                    clickFlag=true;
+                    
+                } else {
+                    stop();
+                    this.put(ellipse).fill('green');
+                    clickFlag=false;
+                }
+             });
+             
+             
+             
+             group.dblclick(function(){
+                    
+                currentNodeNr=getNodeNr(this);
+             
+                var x=nodes[currentNodeNr].x();
+                var y=nodes[currentNodeNr].y();
+                alert(y + ' - x test -' + this.y());
+                var ell=nodes[currentNodeNr].put(ellipse);
+                var width=ell.width();
+                var height= ell.height();
+
+                //Ide akkor lépünk be ha már van nyila az adott node-nak
+                
+                if(predicateStore[currentNodeNr]){
+                    
+                    var end ={ X: x+width/2, Y:y+height/2};
+                    var start = {X:200 , Y: 200};
+                    
+                    //Create the arrow Object for the new Node
+                    var newNode=createNode('Bones', 200, 200);
+                    //Increment the predicateStore array for the new Node
+                    predicateStore[nodes.length] = new Array();
+                    
+                    //Create the new Arrow
+                    var newArrow=createArrow(start, end);
+                    
+                    //Place it into the creator node's array for arrows
+                    predicateStore[currentNodeNr][nodes.length]=newArrow;
+                    //Place it into the new node's array for arrows
+                    predicateStore[nodes.length][0]=newArrow;
+                           
+                } else {
+                   
+           
+                    var newNode=createNode('Bones', 200, 50);
+                    //We create the new predicateStore array for the created node, since it has inherently an arrow
+                    
+                    var end ={ X: x+width/2, Y:y+height/2};
+                    var start = {X:200 , Y: 50};
+                    
+                    predicateStore[0] = new Array();
+                    //Increment the predicateStore array for the new Node
+                    predicateStore[nodes.length] = new Array();
+                    
+                    //Create the new Arrow
+                    var newArrow=createArrow(start, end);
+                    
+                    //Place it into the creator node's array for arrows
+                    predicateStore[currentNodeNr][nodes.length]=newArrow;
+                    //Place it into the new node's array for arrows
+                    predicateStore[nodes.length][0]=newArrow;
+                }   
+                
+            });
+             
+             
+             
+             group.put(hoverLayer).mouseover(function(){
+                 
+                 this.parent.put(ellipse).fill('red');
+             });
+             
+             
+             group.put(hoverLayer).mouseout(function(){
+                 
+                 this.parent.put(ellipse).fill('green');
+             });
+             
+             
+             number=nodes.length;
+             nodes[number]=group;
+             return group;
+   
+        }
+        
+        createNode('Bones', 100, 100);
+        
+     
+        function createArrow(start, end){
+       
+          
+            var arrowL1=5;
+            var arrowL2=5;
+
+            var alfa=Math.atan((end.Y-start.Y)/(end.X-start.X));
+
+            //alert(alfa);
+            if(start.X < end.X){
+
+                var startX1=end.X-arrowL1*Math.cos(alfa-0.5);
+                var startX2=end.X-arrowL2*Math.cos(alfa+0.5);
+                var startY1=end.Y-arrowL1*Math.sin(alfa-0.5);
+                var startY2=end.Y-arrowL2*Math.sin(alfa+0.5);
+                
+            } else {
+
+                var startX1=end.X+arrowL1*Math.cos(alfa-0.5);
+                var startX2=end.X+arrowL2*Math.cos(alfa+0.5);
+                var startY1=end.Y+arrowL1*Math.sin(alfa-0.5);
+                var startY2=end.Y+arrowL2*Math.sin(alfa+0.5);
+            }
+
+
+            var lineA1 = draw.line(startX1, startY1, end.X, end.Y).stroke({ width: 1 });
+            var lineA2 = draw.line(startX2, startY2, end.X, end.Y).stroke({ width: 1 });
+            var line = draw.line(start.X, start.Y, end.X, end.Y).stroke({ width: 1 });
+           
+            group=draw.group();
+            lineA1.addTo(group);
+            lineA2.addTo(group);
+            line.addTo(group);
+            
+            return group;
+            
+        }    
+         
+            
+            
+           // drawArrow(start, end);
+       
+        </script>
+</html>

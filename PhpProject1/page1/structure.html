@@ -1,0 +1,33 @@
+<div id='headerContainer'>
+    <div id='dataTitle'>List of Collections</div>
+    <div>
+        <div id='filterBar' class='horizontalMiddle widthCollection'>
+            <div id='filt'>Filters</div>     
+        </div>
+    </div>
+    <div id='header' class='horizontalMiddle widthCollection'>
+        <div  class ='floatLeft verticalMiddle nameFirst name'>
+            <div class='innerName floatLeft' >Name</div>
+            <img src='img/arrowup.png' id='upNameArrow' class='arrow' onclick="orderCollections(1)">
+            <img src='img/arrowdown.png' id='downNameArrow' class='arrow' onclick="orderCollections(4)">
+        </div>
+        <div class='floatLeft uploader verticalMiddle name'>
+            <div  class ='innerName floatLeft'> Uploader </div>
+            <img src='img/arrowup.png' id='upUploaderArrow' class='arrow' onclick="orderCollections(2)">
+            <img src='img/arrowdown.png' id='downUploaderArrow' class='arrow' onclick="orderCollections(5)">
+        </div>
+        <div class='floatRight created verticalMiddle'>
+            <div id='created' class ='innerName floatLeft'> Created </div>
+            <img src='img/arrowup.png' id='upDateArrow' class='arrow' onclick="orderCollections(3)">
+            <img src='img/arrowdown.png' id='downDateArrow' class='arrowlast' onclick="orderCollections(6)">
+        </div>
+    </div>    
+    <div id='collectionContainer'></div>
+    <div id='newCollectionContainer' class='horizontalMiddle widthCollection'>
+        <img src='img/upload.jpeg' id='addImg' class='img' onclick='showInputColl()'/>
+        <div id='add'> Add new collection</div>
+        <div id='newColName'> Name of the Collection</div>
+        <input type='text' id='inp'>
+        <div id='ok' onclick='newCollection()'>Ok</div>
+    </div>
+</div>
