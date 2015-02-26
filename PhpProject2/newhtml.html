@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset=utf-8 />
+    <title>JS Bin</title>
+    <script>
+        function customAlert(msg,duration)
+        {
+        var styler = document.createElement("div");
+        styler.setAttribute("style","position: absolute; top:50%; left: 50%; margin:0 auto; \n\
+                                    border: solid 1px red; width:200px; height:100px; \n\
+                                    transform: translate(-50%, -50%); background-color:#444;color:Silver");
+        styler.innerHTML = msg;
+        setTimeout(function(){
+           styler.parentNode.removeChild(styler);
+         },duration);
+         document.body.appendChild(styler);
+        }
+        
+        function caller()
+        {
+          customAlert("This custom alert box will be closed in 2 seconds","2000");
+        }
+        
+        
+    </script>
+    </head>
+    <body onload="caller()">
+    
+</body>
+</html>

@@ -1,0 +1,1 @@
+alias css1=scp page1/style.css  konkolyd@sylt.informatik.uni-freiburg.de:/var/www/phpSesame/page1

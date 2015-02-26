@@ -1,0 +1,44 @@
+.drawing{
+
+    //border: 1px solid;
+    display: table-cell;
+    //vertical-align: middle;
+    float: left;
+}
+
+.rdfBut{
+    float:left;
+    width: 110px;
+    font-size: 11px;
+}
+
+#newPred,#newNode,#newObject,#saveGraph,#dontSave{
+
+    text-align: center;    
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#cont{
+    float: left;
+    margin: 10px;
+}
+
+.activeButton{
+    border: 2px solid;
+    color: black;
+}
+
+.passiveButton{
+    border: 1px solid;
+    color: gray;
+}
+
+.activeButton:hover{
+    background: #FBFBFB;
+    cursor: pointer;
+}
+
+.passiveButton:hover{
+}

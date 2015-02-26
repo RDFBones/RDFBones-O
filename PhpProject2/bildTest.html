@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+       
+        .container{
+           background: #FBFBFB;
+           height: auto;
+           width: 500px;
+           padding: 5px;
+           border: 1px solid;
+           border-radius: 5px;
+           margin: 24px;
+        }
+        
+        .textEntry{
+            font-size: 13px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+        
+        .textarea{
+        
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            width: 500px;
+            font-size: 13px;
+        }
+        
+        #col1{
+            background:red;
+        }
+        
+        #col2{
+            float:left;
+           // width:40%;
+            background:yellow;
+        }
+        
+        #col3{
+            float:left;
+            //width:30%;
+            background:green;
+        }
+        
+        .pic{
+            float: left;
+            margin: 6px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .pic:hover{
+            border: 1px solid;
+        }
+        
+        #middleAligned{
+            display: table;
+            margin: 0 auto;
+        }
+        
+        .middle{
+            display: table;
+            margin: 0 auto;
+            width: 500px;
+        }
+        
+        .middle1{
+            display : table;
+            margin: 0 auto;
+        }
+        
+        #newText{
+            padding-top: 7px;
+        }
+        
+        .addBut:hover{
+            cursor: pointer;
+        }
+        
+        #skeleton{
+            position: absolute;
+            left:0px;
+            top:0px;
+            width: 200px;
+            height: 200px;
+        }
+        
+        #newBoneButtons{
+            
+            margin-left: 500px;
+            height: 500px;
+            width: 100px;
+        }
+
+        #done{
+            position: relative;
+            top: 337px;
+            text-align: center;    
+            font-size: 14px;
+            padding: 3px;
+            margin: 3px;
+            border-radius: 5px;
+        }
+
+        #addBut{
+            text-align: center; 
+            font-size: 14px;
+            padding: 3px;
+            margin: 3px;
+            border-radius: 5px;
+        }
+        
+        #container{
+            display: table;
+            margin: 0 auto;
+            width: 700px;
+        }
+        
+        #drawing1{
+            position: absolute;
+            top: 0px;
+            width: 500px;
+            border: 1px solid;
+        }
+        
+        </style>
+        <link rel="stylesheet" type="text/css" href="rdfStyle.css">
+        <script src="jquery-1.11.1.min.js" type="text/javascript" ></script>
+        <script src="svg.min.js" type="text/javascript" ></script>
+        <script src="svg.export.js" type="text/javascript"></script>
+        <script src="svg.parser.js" type="text/javascript"></script>
+        <script src="svg.import.js" type="text/javascript"></script>
+        <script src="rdfGraph.js" type="text/javascript" ></script>
+        <script src="craniumForm.js" type="text/javascript" ></script>
+    </head>
+    <body>
+        <!--
+        <div id='container'>
+            <div id="drawing1"></div>
+        </div> 
+        
+        <div id='middleAligned'>
+        </div>    
+        <div class='middle' id='buttons>
+            <div id='addText' class='addBut' style='float: left; width: 200px;'> 
+                 <img src='img/add.png' class="pic"> 
+                 <div id='newText'>Add new text entry</div>
+            </div>
+            <div id='addRDF' class='addBut' style='float: left; width: 200px;'>
+                 <img src='img/add.png' class="pic"> 
+                 <div id='newText'>Add new RDF Graph</div>
+            </div>
+        </div>-->
+        <div id='auxDiv'>
+           
+        </div> 
+    </body>
+    <script>
+            //Need to be initialised
+            var entryNum=0;
+            var topicID; 
+            var shiftArray = new Array();
+            // var array = new Array();
+            var middle = $('#middleAligned');
+            var textRec = $('#textRecord');
+            
+            var rdfID=0;
+            var records = new Array();
+            var rdfEdit, textEdit;
+            
+            // $('#addRDF').click(function(){
+            var rdfCont = $('<div/>').appendTo($('#rdfEdit'));//($('#middleAligned'));
+            var rdfGraph = $('<div/>').attr({id: 'rdf'+rdfID, class:'drawing'}).appendTo(rdfCont);//($('#middleAligned'));
+            // $('#buttons').hide();
+            rdfEdit = $('<div/>').attr({id: 'rdfEdit', style: 'margin-top: 10px;'}).appendTo($('#auxDiv'));
+            var rdfButtons =$('<div/>').attr({class: 'rdfBut'}).appendTo(rdfEdit);//($('#middleAligned'));
+
+            var newNode = $('<div/>').attr({id: 'newNode', class:'activeButton', onclick: "newNodeFunction()"}).text('New Node').appendTo(rdfButtons);
+            var newObject= $('<div/>').attr({id: 'newObject', class:'passiveButton'}).text('New Object').appendTo(rdfButtons);
+            var passive = $('<div/>').attr({id: 'newPred', class:'passiveButton'}).text('New Predicate').appendTo(rdfButtons);
+            var save = $('<div/>').attr({id: 'saveGraph', class:'activeButton'}).click(function(){
+                rdfEdit.remove();
+                $('#buttons').show();
+                createSVGRecord();
+
+            }).text('Save graph').appendTo(rdfButtons);
+            var save = $('<div/>').attr({id: 'dontSave', class:'activeButton'}).click(function(){
+                rdfEdit.remove();
+                $('#buttons').show();
+
+            }).text("Don't save").appendTo(rdfButtons);
+
+            createGraph(rdfID);
+            //})
+            
+            var auxTextarea;
+            $('#addText').click(function(){
+                
+                //var rdfCont = $('<div/>').appendTo($('#rdfEdit'));//($('#middleAligned'));
+                //var rdfGraph = $('<div/>').attr({id: 'rdf'+rdfID, class:'drawing'}).appendTo(rdfCont);//($('#middleAligned'));                $('#buttons').hide();
+                $('#buttons').hide();
+                
+                textEdit = $('<div/>').attr({id: 'rdfEdit', style: 'margin-top: 10px;'}).appendTo($('#auxDiv'));
+                auxTextarea =$('<textarea/>').attr({id: 'area', rows: 4, onkeyup: 'autoGrowTextArea(this)', class: 'textarea'}).appendTo(textEdit);//($('#middleAligned'));
+                var save = $('<div/>').attr({id: 'saveGraph', class:'activeButton'}).click(function(){
+                    
+                    entryArray[entryNum] = createTextRecord(auxTextarea.val(), entryNum);
+                    textEdit.remove();
+                    $('#buttons').show();
+                }).text('Save text').appendTo(textEdit);
+            })
+            
+            var entryArray =[];
+            var msg ="**[TEXT]** Dokumentation entry::[END]::**[TEXT]**Second record::[END]::**[TEXT]**First record::[END]::**[TEXT]**Second record::[END]::";
+            //loadResponse(msg);
+            function loadResponse(response){
+                
+                var text = response.split('::[END]::');
+                $.each(text, function(index, value){
+                    if(value.substring(0,10) === '**[TEXT]**'){
+               
+                        entryArray[index] = createTextRecord(value.substring(10), index);
+                        entryNum=index;//autoGrowTextArea(entryArray[index].textarea);
+                    } else {
+                        //SVG
+                    }
+                });
+            }
+            
+            $('#middleAligned').mouseleave(function(){
+                
+                hidePic(showedPic);
+            });
+            
+            function hidePic(id){
+                
+                entryArray[id].modifyPic.hide();
+                entryArray[id].deletePic.hide();
+            }
+            
+            function showPic(id){
+                
+                entryArray[id].modifyPic.show();
+                entryArray[id].deletePic.show();
+            }
+            
+            var showedPic=0;
+            
+            
+            function createSVGRecord(){
+                
+                a = new Object();
+                a.container = $("<div/>").attr({ class : 'container', id : 'svg'+entryNum}).appendTo($('#middleAligned'));
+                
+                var div =document.createElement('div');
+                a.container.append(div);
+                createSVG(entryNum);    
+                entryNum++;
+            }
+            
+            function createTextRecord(text, id){
+                
+                //var arr = [];
+                a = new Object();
+                a.id=id;
+                a.container = $("<div/>").attr({ class : 'container', id : 'container'+id}).appendTo($('#middleAligned'));
+                a.textEntryContainer = $('<div/>').attr({ id : 'textEntryContainer'+id}).appendTo(a.container).mouseenter(function(){
+                   
+                    if(showedPic!==id)
+                    {
+                        hidePic(showedPic);
+                    }
+                    showedPic=id;
+                    showPic(id);
+                   
+                });
+                
+                //Here comes the text from the database
+                a.textEntry = $('<div/>').attr({class: 'textEntry' , id : 'textEntry'+id }).text(text).appendTo(a.textEntryContainer);
+                
+                a.deletePic = $('<img/>').attr({class: 'pic' , src: 'img/delete.png'  
+                    }).click(function(){
+                    
+                    removeEntry(id);
+                    //deleteEntry(id);
+                    //remove(array[id].container);
+                    //shiftArray.push(array[id].id));
+                }).appendTo(a.textEntryContainer).hide();
+                
+                //The textarea part
+                a.textareaContainer = $("<div/>").appendTo(a.container).hide();
+                /*a.textarea = $("<textarea/>").attr({
+                    class : 'textarea' , onkeyup : 'autoGrowTextArea(this)'
+                }).val(text).appendTo(a.textareaContainer);
+                */
+                a.textarea = document.createElement('textarea');
+                a.textarea.setAttribute('class', 'textarea');
+                a.textarea.setAttribute('onkeyup', 'autoGrowTextArea(this)');
+                a.textarea.value = text;
+                
+                a.textareaContainer.append(a.textarea);
+                
+                a.modifyPic = $('<img/>').attr({class: 'pic' , src: 'img/modify.png'  
+                    }).click(function(){
+                    
+                    resetTextarea(id);
+                    modifyMode(id);
+                     
+                }).appendTo(a.textEntryContainer).hide();
+                
+                a.saveButton = $('<img/>').attr({class : 'pic', src : 'img/save.png'  
+                }).click(function(){
+                    
+                    refreshNode(id);
+                    normalMode(id);
+                    
+                }).appendTo(a.textareaContainer);
+                
+                return a;
+            }
+            
+            function removeEntry(id){
+                if(confirm('Are you sure you want to delete the entry?')){
+                    entryArray[id].container.remove();
+                }
+            }
+            
+            function refreshNode(id){
+                entryArray[id].textEntry.text(entryArray[id].textarea.value);
+            }
+            
+            function resetTextarea(id){
+
+                autoGrowTextArea(entryArray[id].textarea);
+            }
+            
+            function modifyMode(id){
+                
+                entryArray[id].textEntryContainer.hide();
+                entryArray[id].textareaContainer.show();
+            }
+            
+            function normalMode(id){
+                
+                entryArray[id].textareaContainer.hide();
+                entryArray[id].textEntryContainer.show();
+            }
+            
+            
+            function autoGrowTextArea(textField)
+            {
+                console.log(textField.clientHeight + '  ' +textField.scrollHeight);    
+                if (textField.clientHeight < textField.scrollHeight)
+                {
+                    textField.style.height = textField.scrollHeight + "px";
+                    if (textField.clientHeight < textField.scrollHeight)
+                    {
+                      textField.style.height = 
+                        (textField.scrollHeight * 2 - textField.clientHeight) + "px";
+                    }
+                }
+            }
+            
+            
+            /*
+            function createTextRecord(text, id, arr){
+                
+                //var arr = [];
+                arr[id] = new Object();
+                
+                
+                arr[id].id = id;    
+                arr[id].container = $("<div/>").attr({ class : 'container', id : 'container'+id}).appendTo($('#middleAligned'));
+                arr[id].textEntryContainer = $('<div/>').attr({ id : 'textEntryContainer'+id}).appendTo(arr[id].container);
+                
+                //Here comes the text from the database
+                arr[id].textEntry = $('<div/>').attr({class: 'textEntry' , id : 'textEntry'+id }).text(text).appendTo(arr[id].textEntryContainer);
+                
+                arr[id].modifyPic = $('<img/>').attr({class: 'pic' , src: 'img/modify.png'  
+                    }).click(function(){
+                    
+                  //  arr[id].textEntryContainer.remove();
+                    arr[id].container.append(arr[id].textareaContainer);
+                }).appendTo(arr[id].textEntryContainer);
+                
+                arr[id].deletePic = $('<img/>').attr({class: 'pic' , src: 'img/delete.png'  
+                    }).click(function(){
+                    //Remove the whole stuff
+                    //deleteEntry(id);
+                    //remove(array[id].container);
+                    //shiftArray.push(array[id].id));
+                }).appendTo(arr[id].textEntryContainer);
+                
+                //The textarea part
+                arr[id].textareaContainer = $("<div/>");
+                arr[id].textarea = $("<textarea/>").attr({
+                    class : 'textarea', onkeyup : 'autoGrowTextArea(this)'
+                }).val(text).appendTo(arr[id].textareaContainer);
+               
+                arr[id].saveButton = $('<img/>').attr({
+                   class : 'pic', src : 'img/save.png'  
+                }).click(function(){
+                    arr[id].textareaContainer.remove();
+                    arr[id].container.append(arr[id].textEntryContainer);
+                }).appendTo(arr[id].textareaContainer);
+                
+                /*
+                array[id].discardButton = $('<img/>').attr({
+                   class : pic, src : 'img/discard.png',  
+                }).click(function(){
+                    array[id].container.remove(array[id].textDiv)
+                }).appendTo(array[id].textareaContainer);
+                */
+            //}
+            
+            /*
+            function checkShift(id){
+                var a=0;
+                $.each(shiftArray, function(index, value){
+                    
+                    if(id < value){
+                        a--;
+                    }; 
+                };
+            }
+            
+            
+            function saveModification(num){
+                
+                var params ="cmd=saveMod&id="+num+"&text="+array[num].textArea.val()+"&topicID="+topicID;
+                alert(params);  
+                /*
+                var saveModCall = function(functions){
+                    
+                    var address = 'mySQLDataBase.php';
+                    //Get the textarea 
+                    params ="cmd=saveMod&id="+num+"&text="+array[num].textArea.val()+"&topicID="+topicID;
+                    XHR_request('phpSesame/' + address, true, params, functions);
+                } 
+                ajaxCall(saveModeCall, null);
+                */    
+           /* }
+
+                
+
+            function loadDocumentation(){
+                
+                var loadDocCall = function(functions){
+                    
+                    var address ='loadDoc.php';
+                    params='d';
+                    XHR_request('phpSesame/' + address, true, params, functions);
+                }
+                
+                var loadDocResponse = function(response){
+                    
+                    
+                }
+                
+                
+                ajaxCall(loadDocCall, loadDocResponse);
+            }
+            */
+        </script>
+</html>

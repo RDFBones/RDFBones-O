@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<meta charset="utf-8">
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <title>Robotakademie</title>
+        <script src="svg.min.js" type="text/javascript" ></script>
+        <script src="jquery-1.11.1.min.js" type="text/javascript" ></script>
+       
+        <script type="text/javascript" >
+            
+            var map;
+            
+            function loadPage(){
+                
+                var cont=document.getElementById("toMove");
+                $('#page').fadeOut('fast', function(){
+             
+                  $('#secondPage').fadeIn('fast');       
+                });
+                //Load Google Map
+                
+            }
+            
+            var page=1;
+            
+            function idee(){
+                
+                if(page!==1){
+                    document.getElementById('text2').setAttribute('style', 'border:none;');
+                    document.getElementById('text1').setAttribute('style', 'border-bottom:1px solid;');
+                    document.getElementById('text3').setAttribute('style', 'border:none;');
+                    fadeDivs(1);
+                    page=1;
+                }
+                
+                
+            }
+            
+            function kursen(){
+                
+                if(page!==2){
+                    
+                    document.getElementById('text1').setAttribute('style', 'border:none;');
+                    document.getElementById('text2').setAttribute('style', 'border-bottom:1px solid;');
+                    document.getElementById('text3').setAttribute('style', 'border:none;');
+                    fadeDivs(2);
+                    page=2;
+                }
+                
+                
+            }
+           
+            var toFadeIn, toFadeOut;
+           
+            function kontakt(){
+                
+                if(page!==3){
+                    document.getElementById('text1').setAttribute('style', 'border:none;');
+                    document.getElementById('text3').setAttribute('style', 'border-bottom:1px solid;');
+                    document.getElementById('text2').setAttribute('style', 'border:none;');
+                    fadeDivs(3);
+                    page=3;
+                }
+                          
+            }
+          
+            function fadeDivs(num){
+                
+                switch(num){
+
+                    case 1:  toFadeIn='#ideeDiv';break;
+                    case 2:  toFadeIn='#kursenDiv';break;
+                    case 3:  toFadeIn='#kontaktDiv';break;      
+                }   
+                
+                switch(page){
+                    
+                    case 1:  toFadeOut='#ideeDiv';break;
+                    case 2:  toFadeOut='#kursenDiv';break;
+                    case 3:  toFadeOut='#kontaktDiv';break;
+                }
+                
+                $(toFadeOut).fadeOut('fast', function(){
+                    $(toFadeIn).fadeIn('fast');
+                });       
+            }
+          
+        </script>
+        <style>
+            #text{
+                border: 1px solid;
+                //width: 50%;
+                //height: 50%;
+                margin: 0 auto;
+                float: left;
+            }
+            
+            .is-hidden {
+                display: none;
+              }
+            #drawing{
+
+                display: table;
+                margin: 0 auto;
+            }
+            
+            @font-face{
+                font-family: myFirstFont;
+                src: url(MarckScript-Regular.ttf);
+            } 
+           
+            #title{
+                
+                //display: table;
+                margin: 50px auto 0 auto;
+                border: 4px solid white;
+                font-size: 30px;
+                color: white;
+                padding: 20px;
+                letter-spacing: 0.5cm;
+            }
+            
+            .middle{
+                display: table;
+                margin: 0 auto;
+            }
+            
+            #enter{
+                font-size: 20px;
+                margin-top: 20px;
+                color: white;
+                letter-spacing: 0.10cm;
+            }
+            
+            #secondPage{
+                color: white;
+                display: none;
+                width: 100%;
+                height: 300px;
+                //border: 1px solid;  
+                font-family: Luckiest Guy;
+                text-align: center;
+                margin-top: 50px;
+            }
+            
+            .title{
+                
+                float:left;
+                margin: 20px;
+            }
+            
+            #titleCont{
+                
+                display: table;
+                margin: 0 auto;
+            }
+            
+            .big{
+                width: 130px;
+                height: 130px;
+                margin: 7px;
+                border-radius: 65px;
+                //border: 1px solid;
+            }
+            .big:hover{
+                cursor:pointer;
+            }
+            .small{
+               // width: 200px;
+               // height: 80px;
+                margin: 3px;
+                //border: 1px solid;
+                text-align: center;
+                
+                
+            }
+            
+            #text1{
+                
+                font-size: 22px;
+                margin-top: 30px;
+                padding-bottom: 6px;
+                border-bottom: 1px solid;
+            }
+            
+            #text2{
+                padding-bottom: 6px;
+                font-size: 22px;
+                margin-top: 30px;
+            }
+            
+            #text3{
+                padding-bottom: 6px;
+                font-size: 22px;
+                margin-top: 30px;
+            }
+            
+             #enter:hover,#text1:hover, #text2:hover, #text3:hover{
+                
+                 cursor:pointer;
+            }
+            
+            #ideeDiv{
+               font-size:15px; 
+               padding:20px;
+            }
+            
+            #kursenDiv{
+                display:none;
+                font-size:15px;
+                padding:20px;
+            }
+            
+            #kontaktDiv{
+                display:none;
+            }
+           
+            #contentDiv{
+                
+                display: table;
+                margin: 0 auto;
+                width: 550px;
+               // border-left: 1px solid;
+               // border-right: 1px solid;
+            }
+            #header{
+                
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid;
+                color: white;
+            }
+            
+            #map-canvas {
+                width: 300px;
+                height: 200px;
+            }
+            
+            #menu{
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    
+    <body bgcolor="black">
+        <div id='toMove' style="width: 100%;">
+            <div id="page">
+                <div class='middle' id='title'>
+                    ROBOT AKADEMIE
+                </div>
+                <div class='middle' id="drawing"></div>
+                <div class='middle' id='enter' onclick="loadPage()"> 
+                    <div style="margin:3px; float:left;">EINTRITT</div>
+                    <img src="img/arrowWhite.png" style="width: 20px; heigth:16px; margin-top: 5px;"/>
+                </div>
+            </div>
+            <div id='secondPage' class='middle'>
+                <div class='middle' id='title'>
+                    ROBOT AKADEMIE
+                </div>
+                <div id='menu'>
+                    <div class='middle'>
+                        <div class='title'>
+                            <div class='big'  style='background:#FFFF33;' onclick="idee()"><img src='img/lightbulb.png' style='width: 90px; height: 90px; margin-top: 14px;'></div>
+                            <div class='small'>
+                                <div id='text1' onclick="idee()">Idee</div>
+                            </div>
+                        </div>
+                        <div class='title'>
+                            <div class='big' style='background:#00CCFF;' onclick="kursen()"><img src='img/robot.png' style='width: 80px; height: 90px; margin-top: 14px;'></div>
+                            <div class='small'>
+                                <div id='text2' onclick="kursen()">Kurse</div>
+                            </div>
+                            
+                        </div>
+                        <div class='title'>
+                            <div class='big' style='background:red;' onclick="kontakt()"> <img src='img/contact.png' style='width: 90px; height: 100px; margin-top: 14px;'></div>
+                            <div class='small'>
+                                <div id='text3' onclick="kontakt()">Kontakt</div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div id='contentDiv'>
+                    <div id="ideeDiv">
+                        <p align=left>
+                            Den digitalen Wandel verstehen oder hinterherlaufen?
+                        </p>
+                        <p align=justify>
+                            Wir leben in einer zunehmend digitalisierten und technologisierten Welt. Deshalb steigt der Bedarf an Informatikern, Ingenieuren und Technikern von Jahr zu Jahr. In einem kürzlich veröffentlichten Artikel in „Die Welt“ wird der aktuelle Fachkräftemangel aus diesem Bereich auf 123.500 Arbeitskräfte geschätzt. Für das Jahr 2020 soll diese Zahl auf 1,3 Mio. steigen.
+                        </p>
+                        <p align=justify>
+                           Viele Menschen nehmen am technischen Wandel teil, doch nur äußerst wenige verstehen, was alles dahinter steckt. Auch der größte Teil der jüngeren Generation ist nicht in der Lage, hinter die Kulissen zu blicken: „Zu komplex“ und „nur etwas für Freaks“ – Kommentare wie diese sind häufig zu vernehmen und spiegeln die weitläufige Meinung wider. Doch mit einer solchen Einstellung bleibt man lediglich ENDVERBRAUCHER der Technik.</p>
+                        <p align=justify>
+                          Roboter sind ein sehr geeignetes Mittel, um das Interesse der Kinder für Technik und Programmierung zu wecken. Denn Roboter wirken auf Kinder eine nahezu magische Anziehungskraft aus. Daraus ergeben sich optimale Bedingungen, um die Kinder spielerisch in die Grundlagen der Programmierung und der informatischen Denkweise einzuführen. </p>
+                        <p align=justify>
+                           Unser Ziel ist es, das Interesse des Kindes zu wecken und seine Talente in diesem Bereich zu fördern. So kann das Kind die heutige Technik aus einer neuen Perspektive betrachten und bleibt nicht nur ENDVERBRAUCHER DER TECHNIK, sondern kann sie auch SELBST MITENTWICKELN.  
+                        </p>
+                        <p align=justify>
+                           Das Kind empfindet Mathematik und Physik nicht mehr als lästig oder gar sinnlos. Stattdessen kann das Potential dieser Fachbereiche zur praktischen Anwendung erkannt und ausgeschöpft werden. So erhält das Kind die Chance, sich schon früh im technischen Bereich zu bilden und sich so auf den Arbeitsmarkt vorzubereiten, der sich derzeit durch starken Fachkräftemangel auszeichnet.</p>
+                    </div>
+                   
+                    <div id="kursenDiv" >
+                        <p align=left style="margin-top:20px; font-weight: bold;">
+                            Inhalt und Methodik
+                        </p>
+                        <p  align=justify>
+                           In unseren Kursen erlernen die Kinder die Grundlagen der Programmierung mithilfe des Lego Mindstorms Roboters. Der Roboter verfügt über eine graphische Oberfläche, wodurch die ersten Schritte der Programmierung stark vereinfacht sind.   </p>
+                        <p align=left style="margin-top:20px; font-weight: bold;">
+                            Organisation
+                        </p>
+                        <p align=justify>
+                            Wir gestalten abwechslungsreiche Kurse in Kleingruppen mit maximal 6 Kindern. Die Kurse beginnen an jedem Wochentag und bestehen aus jeweils zwei Unterrichtseinheiten pro Tag. Insgesamt besteht ein Kurs aus 8 Unterrichtseinheiten, sodass er nach einem Monat abgeschlossen ist. Der erste Einführungskurs beginnt am Montag, 12. Januar, 16 Uhr bis 17.30 Uhr. </p>
+                        <p align=left style="margin-top:20px; font-weight: bold;">
+                            Kosten
+                        </p>
+                        <p align=justify>
+                            Die gesamten Kurskosten betragen 40 € und setzen sich aus 8 x 5€ pro Unterrichtseinheit zusammen. Sie haben die Möglichkeit, die Kosten von 5 € jeweils pro in Anspruch genommener Unterrichtsstunde zu bezahlen.  </p>
+                        <p align=justify>
+                            Sie haben noch Fragen oder möchten Ihr Kind anmelden? Dann schreiben Sie uns eine Email oder rufen Sie an. Teilen Sie uns bitte das Alter des Kindes und den gewünschten Wochentag mit, damit wir den Kindern optimale Bedingungen in den Kursen ermöglichen können.  
+                        </p>   
+                        <p align=left>
+                            Email: info@robotakademie.de
+                        </p>
+                        <p align=left>
+                            Tel: 0176/233 338 47
+                        </p>
+                        
+                    </div>
+                    <div id="kontaktDiv">
+                        
+                        <div class='middle' style='margin-top:30px;'>
+                            
+                            <div style='float:left; margin: 20px;'>
+                                <div><img src='img/matze2.jpg' style='width: 150px; height: 192px; border: 4px solid white;'/></div>
+                                <div style='margin: 7px;'>Sebastian Scheidel</div>
+                                <div>Diplomvolkswirt</div>
+                            </div>
+                            <div style='float:left; margin:20px;'>
+                                <div><img src='img/david.jpg' style='width: 150px; height: 200px;'></div>  
+                                <div style='margin: 7px;'>David Konkoly</div>
+                                <div>BSc Mechatronik</div>
+                            </div>
+                            <div style='color:white; margin:20px;'> 
+                                <div style="padding:2px;">Telefon : 0176/233 338 47</div>
+                                <div style="padding:2px;">E-mail : info@robotakademie.de </div>
+                                <div style="padding:2px;">Adresse : Runzstraße 66, 79102 Freiburg</div>     
+                            </div> 
+                        </div>
+                        <div style="margin-bottom:30px;">
+                                <img src='img/map.png' style='width: 470px; height: 280px; border: 4px solid white;'/>
+                         </div>
+                    </div 
+                </div>           
+            </div>
+            
+        </div>   
+    </body>
+    
+    <script type="text/javascript">
+    
+   
+      
+    
+        var left=600;
+        var width;
+        var height;
+        var draw = SVG('drawing').size(600,220);
+        draw.rect(800, 500).attr({ fill: 'black' });
+        var text = draw.text('Freiburg').move(225, 100).font({ size: 42, family:   'myFirstFont' }).stroke({ width: 0.5}).attr({stroke: 'white'}).fill({ color: 'black' });
+        var X,Y;
+
+        var gradient = draw.gradient('linear', function(stop) {
+            stop.at({ offset: 0, color: '#000' })
+            stop.at({ offset: 1, color: '#fff' })
+          });
+
+       draw.rect(200, 4).move(0,210).fill({ color: gradient });
+       draw.rect(200, 4).move(400, 210).fill({ color: gradient }).transform({rotation: 180});
+       draw.rect(200, 4).move(200, 210).fill({ color: 'white' });
+       
+        
+        var a1 = new Object();
+        var b1 = new Object();
+        var a2 = new Object();
+        var b2 = new Object();
+
+       var line;
+       
+       
+       var chainDist, wheelDistPix;
+       var wheel = { radius: 25, outRad: 20 , inRad: 5, holeNum:5}; 
+       var position ={ x: 430, y: 140, wheelDist:10};
+       var chain = { ratio: 0.3,  wheelNumber:6, thicknessLow: 2, thicknessHight: 4};
+       var hand ={l1: 70, d1: 12, alfa1: 0.6, l2: 70, d2: 10, alfa2: 2, baseW:100, baseH:10}
+       
+       drawRobot(wheel, position, chain, hand, 'white');
+    
+       var chainDist, wheelDistPix;
+       var wheel = { radius: 25, outRad: 20 , inRad: 5, holeNum:5}; 
+       var position ={ x: 30, y: 140, wheelDist:10};
+       var chain = { ratio: 0.3,  wheelNumber:6, thicknessLow: 2, thicknessHight: 4};
+       var hand ={l1: 70, d1: 12, alfa1: 2.44, l2: 70, d2: 8, alfa2: -2, baseW:100, baseH:10}
+       
+       drawRobot(wheel, position, chain, hand, 'white');
+     
+       function drawRobot(wheel, position, chain, hand, color){
+           
+
+            chainDist=Math.PI*wheel.radius/chain.wheelNumber;
+            wheelDistPix=chainDist*position.wheelDist;
+            drawWheel(position.x, position.y, wheel.radius, wheel.inRad, wheel.outRad, wheel.holeNum, color);
+            drawWheel(position.x+wheelDistPix, position.y, wheel.radius, wheel.inRad, wheel.outRad, wheel.holeNum, color);
+       
+            drawChain(-1, position.x+wheelDistPix, position.y, wheel.radius+chain.thicknessLow, wheel.radius+chain.thicknessHight, chain.wheelNumber, chain.ratio, color);
+            drawChain(1, position.x, position.y, wheel.radius+chain.thicknessLow, wheel.radius+chain.thicknessHight, chain.wheelNumber, chain.ratio, color);
+               
+            drawHorizontalChain1(position.x, position.y-(wheel.radius+chain.thicknessLow), position.wheelDist ,chain.ratio*chainDist,(1-chain.ratio)*chainDist, chain.thicknessHight-chain.thicknessLow, color);
+            drawHorizontalChain2(position.x, position.y+(wheel.radius+chain.thicknessLow), position.wheelDist ,chain.ratio*chainDist,(1-chain.ratio)*chainDist, chain.thicknessHight-chain.thicknessLow, color);
+            
+            draw.line(position.x, position.y-wheel.radius, position.x+wheelDistPix, position.y-wheel.radius).stroke({ width: 1}).attr({stroke: color});
+            draw.line(position.x, position.y+wheel.radius, position.x+wheelDistPix, position.y+wheel.radius).stroke({ width: 1}).attr({stroke: color});
+        
+            //Extending the hand array
+            hand.x=position.x+wheelDistPix/2-hand.baseW/2;
+            hand.y=position.y-wheel.radius-hand.baseH;
+            hand.middle=hand.x+hand.baseW/2;
+            hand.X1=hand.middle+hand.l1*Math.cos(hand.alfa1);
+            hand.Y1=hand.y-hand.l1*Math.sin(hand.alfa1);
+            hand.X2=hand.X1+hand.l2*Math.cos(hand.alfa1+hand.alfa2);
+            hand.Y2=hand.Y1-hand.l2*Math.sin(hand.alfa1+hand.alfa2);
+            hand.W =hand.baseH-chain.thicknessLow;
+            
+            drawArm(hand, color);    
+            drawHand(hand, color);
+        }
+        
+        function drawArm(hand, color){
+            
+            var to= new Object();
+            
+            to.X=hand.X2+0.707*30;
+            to.Y=hand.Y2-0.707*30;
+            draw.line(hand.X2, hand.Y2, to.X, to.Y).stroke({width:1}).attr({stroke: color});
+            draw.line(to.X, to.Y, to.X, to.Y-10).stroke({width:1}).attr({stroke: color});
+            to.X=hand.X2-0.707*30;
+            to.Y=hand.Y2-0.707*30;
+            draw.line(hand.X2, hand.Y2, to.X, to.Y).stroke({width:1}).attr({stroke: color});
+            draw.line(to.X, to.Y, to.X, to.Y-10).stroke({width:1}).attr({stroke: color});    
+        }
+        
+        
+        function drawHand(hand, color){
+            
+            //line=draw.rect(hand.baseW,hand.baseH).fill('none').stroke({width:1}).attr({stroke: color});
+            draw.line(hand.x, hand.y, hand.x+ hand.baseW, hand.y).stroke({width:1}).attr({stroke: color});
+            draw.line(hand.x, hand.y, hand.x, hand.y+hand.W).stroke({width:1}).attr({stroke: color});
+            draw.line(hand.x + hand.baseW, hand.y, hand.x+ hand.baseW, hand.y+hand.W).stroke({width:1}).attr({stroke: color});
+            
+            var d1=hand.d1/Math.sin(hand.alfa1);
+            
+            line=draw.line(hand.middle-d1/2, hand.y, hand.X1-d1/2, hand.Y1).stroke({ width: 1}).attr({stroke: color});
+            line=draw.line(hand.middle+d1/2, hand.y,  hand.X1+d1/2, hand.Y1).stroke({ width: 1}).attr({stroke: color});
+           
+            var d2=hand.d2/Math.abs(Math.sin(hand.alfa1 + hand.alfa2));
+            
+            line=draw.line(hand.X1-d2/2, hand.Y1, hand.X2-d2/2, hand.Y2).stroke({ width: 1}).attr({stroke: color});
+            line=draw.line(hand.X1+d2/2, hand.Y1, hand.X2+d2/2, hand.Y2).stroke({ width: 1}).attr({stroke: color});
+            
+            var radius=d2*0.6;
+            draw.circle(2*radius).move(hand.X2-radius, hand.Y2-radius).fill('black').stroke({width:1}).attr({stroke: color});
+            var radius=d2*0.3;
+            draw.circle(2*radius).move(hand.X2-radius, hand.Y2-radius).fill('black').stroke({width:1}).attr({stroke: color});
+           
+            var radius=d1*0.6;
+            draw.circle(2*radius).move(hand.X1-radius, hand.Y1-radius).fill('black').stroke({width:1}).attr({stroke: color});
+            var radius=d1*0.3;
+            draw.circle(2*radius).move(hand.X1-radius, hand.Y1-radius).fill('black').stroke({width:1}).attr({stroke: color});
+            
+        }
+       
+        function drawHorizontalChain1(x, y, n, high, low, height, color){
+            
+            var string='';
+            var sum=high+low;
+            for(var i=0; i<n ; i++){
+               
+                string+=' '+(i*sum)+','+height;
+                string+=' '+(i*sum)+',0';
+                string+=' '+(i*sum+high)+',0';
+                string+=' '+(i*sum+high)+','+height;
+                string+=' '+(i*sum+sum)+','+height;
+            }
+            
+            var polyline = draw.polyline(string).fill('none').stroke({ width: 1}).attr({stroke: color});
+            
+            polyline.move(x,y-height);
+        }
+        
+        function drawHorizontalChain2(x, y, n, high, low, height, color){
+            
+            var string='';
+            var sum=high+low;
+            for(var i=0; i<n ; i++){
+               
+                string+=' '+(i*sum)+',0';//+height;
+                string+=' '+(i*sum+low)+',0';
+                string+=' '+(i*sum+low)+','+height;
+                string+=' '+(i*sum+sum)+','+height;
+                string+=' '+(i*sum+sum)+',0';
+            }
+            
+            var polyline = draw.polyline(string).fill('none').stroke({ width: 1}).attr({stroke: color});
+            
+            polyline.move(x,y);
+        }
+        
+        function drawWheel(x, y, r, r1, r2, number, color){
+          
+          var a=Math.PI/(number);
+          
+          for(var i=0; i<number; i++){
+              
+            drawArc2(x, y, r1, r2, 2*i*a, a, color);
+          }
+          
+          //Inner Circle 
+          draw.circle(r1).move(x-(r1/2),y-(r1/2)).fill('none').stroke({ width: 1 }).attr({stroke: color});
+          //Outer Circle
+          draw.circle(2*r).move(x-r,y-r).fill('none').stroke({ width: 1 }).attr({stroke: color});
+
+      }  
+       
+        function drawArc2( x, y, r1, r2, alfa1, alfa2, color){
+            
+ 
+        a1.x=x+r1*Math.cos(alfa1);
+        a1.y=y-r1*Math.sin(alfa1); 
+        b1.x=x+r1*Math.cos(alfa1+alfa2);
+        b1.y=y-r1*Math.sin(alfa1+alfa2); 
+     
+        draw.path('M ' + a1.x + ' ' + a1.y + ' A ' +  r1 + ',' + r1 + ' 0 0 0 ' + b1.x + ',' + b1.y ).fill('none').stroke({ width: 1 }).attr({stroke: color});    
+  
+        a2.x=x+r2*Math.cos(alfa1);
+        a2.y=y-r2*Math.sin(alfa1); 
+        b2.x=x+r2*Math.cos(alfa1+alfa2);
+        b2.y=y-r2*Math.sin(alfa1+alfa2); 
+        
+        draw.path('M ' + a2.x + ' ' + a2.y + ' A ' +  r2 + ',' + r2 + ' 0 0 0 ' + b2.x + ',' + b2.y ).fill('none').stroke({ width: 1 }).attr({stroke: color});
+        
+        
+        draw.line( a1.x , a1.y, a2.x, a2.y).stroke({ width: 1 }).attr({stroke: color});
+        draw.line( b1.x , b1.y, b2.x, b2.y).stroke({ width: 1 }).attr({stroke: color});
+        
+     }
+     
+        function drawArc3( x, y, r1, r2, alfa, alfa1, alfa2, color){
+            
+ 
+        a1.x=x+r1*Math.cos(alfa);
+        a1.y=y-r1*Math.sin(alfa); 
+        b1.x=x+r1*Math.cos(alfa+alfa1);
+        b1.y=y-r1*Math.sin(alfa+alfa1); 
+     
+        draw.path('M ' + a1.x + ' ' + a1.y + ' A ' +  r1 + ',' + r1 + ' 0 0 0 ' + b1.x + ',' + b1.y ).fill('none').stroke({ width: 1 }).attr({stroke: color});    
+  
+        a2.x=x+r2*Math.cos(alfa+alfa1);
+        a2.y=y-r2*Math.sin(alfa+alfa1); 
+        b2.x=x+r2*Math.cos(alfa+alfa1+alfa2);
+        b2.y=y-r2*Math.sin(alfa+alfa1+alfa2); 
+        
+        draw.path('M ' + a2.x + ' ' + a2.y + ' A ' +  r2 + ',' + r2 + ' 0 0 0 ' + b2.x + ',' + b2.y ).fill('none').stroke({ width: 1 }).attr({stroke: color});
+        
+       
+        draw.line( b1.x , b1.y, a2.x, a2.y).stroke({ width: 1 }).attr({stroke: color});
+        b1.x=x+r1*Math.cos(alfa+alfa1+alfa2);
+        b1.y=y-r1*Math.sin(alfa+alfa1+alfa2);
+        draw.line( b2.x , b2.y, b1.x, b1.y).stroke({ width: 1 }).attr({stroke: color});
+       
+     }
+    
+    
+    function drawChain(lr, x, y, r1, r2, number, length, color){
+        
+        var a=Math.PI/(number);
+          
+        for(var i=0; i<number; i++){
+
+          drawArc3( x, y, r1, r2, i*a+(lr*Math.PI/2), a*(1-length), a*length, color);
+        }      
+    }
+     
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    function drawArc( x, y, r, alfa1, alfa2){
+            
+        a.x=x+r*Math.cos(alfa1);
+        a.y=y-r*Math.sin(alfa1); 
+        b.x=x+r*Math.cos(alfa1+alfa2);
+        b.y=y-r*Math.sin(alfa1+alfa2); 
+        
+        draw.path('M ' + a.x + ' ' + a.y + ' A ' +  r + ',' + r + ' 0 0 0 ' + b.x + ',' + b.y ).fill('none').stroke({ width: 1 });  
+     }
+        
+          
+     
+    
+    
+    
+    
+    /*
+    function rotateVector90(param , x1, y1, x2, y2){
+            
+        X = x2 - x1;
+        Y = y2 - y1;
+
+        var A = new Object();
+        if(param){
+            A.x = x2 + 0.2*Y;   
+            A.y = y2 - 0*2*X;         
+        } else {
+            A.x = x2 - 0*2*Y ;  
+            A.y = y2 + 0*2*X ;        
+        }
+        return A;
+    }
+    
+       */ 
+    
+    
+        /*
+        function drawPerp(x1, y1, x2, y2){
+            
+            
+           
+           var lineA2 = draw.line(x2, y2, x2+y2-y1, y2+x1-x2).stroke({ width: 1 }); 
+  
+        }
+    
+        drawPerp(100,100, 200, 200);
+        */
+       
+       
+        </script>
+</html>
