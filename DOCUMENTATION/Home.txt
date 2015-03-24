@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2014-11-03T10:54:29+01:00
-
-====== Home ======
-Created Montag 03 November 2014
-
-This is the main page. It links to [[topic 1]].
