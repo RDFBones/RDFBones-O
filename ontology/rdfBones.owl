@@ -17,8 +17,9 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones"
      versionIRI="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones/1.0.0">
-    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="edm" IRI="http://www.europeana.eu/schemas/edm/"/>
     <Prefix name="fma" IRI="http://purl.obolibrary.org/obo/fma/releases/2013-08-27/fma.owl#"/>
+    <Prefix name="obi" IRI="http://purl.obolibrary.org/obo/obi/2015-03-17/obi.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
