@@ -17,15 +17,17 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones"
      versionIRI="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones/1.0.0">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="edm" IRI="http://www.europeana.eu/schemas/edm/"/>
     <Prefix name="fma" IRI="http://purl.obolibrary.org/obo/fma/releases/2013-08-27/fma.owl#"/>
-    <Prefix name="obi" IRI="http://purl.obolibrary.org/obo/obi/2015-03-17/obi.owl#"/>
+    <Prefix name="org" IRI="http://www.w3.org/ns/org#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="galen" IRI="http://www.co-ode.org/ontologies/galen#"/>
     <Prefix name="rdfbones" IRI="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones/1.0.0#"/>
+    <Import>http://www.w3.org/ns/org#</Import>
     <Import>http://www.europeana.eu/schemas/edm/</Import>
     <Import>http://purl.obolibrary.org/obo/obi/2015-03-17/obi.owl</Import>
     <Annotation>
