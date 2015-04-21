@@ -36,6 +36,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This ontology models procedures, data and results from research involving materials from skeletal collections.</Literal>
     </Annotation>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+        <AbbreviatedIRI>vivo:College</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Use this class for academic organisations that are not universities. The exact application might vary among local educational systems. Colleges are typically focussed on certain areas of research and provide a limited range of degrees.</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
