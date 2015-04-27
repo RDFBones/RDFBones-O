@@ -24,6 +24,7 @@
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="prov" IRI="http://www.w3.org/ns/prov-o-20130430#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="vivo" IRI="http://vivoweb.org/ontology/core#"/>
     <Prefix name="galen" IRI="http://www.co-ode.org/ontologies/galen#"/>
@@ -31,6 +32,7 @@
     <Import>http://vivoweb.org/ontology/core</Import>
     <Import>http://www.w3.org/ns/org#</Import>
     <Import>http://www.europeana.eu/schemas/edm/</Import>
+    <Import>http://www.w3.org/ns/prov-o-20130430</Import>
     <Import>http://purl.obolibrary.org/obo/obi/2015-03-17/obi.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
