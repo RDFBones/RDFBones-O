@@ -38,27 +38,10 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This ontology models procedures, data and results from research involving materials from skeletal collections.</Literal>
     </Annotation>
-    <Declaration>
-        <Class IRI="#MaterialCollection"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="#MaterialCollection"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </SubClassOf>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
         <AbbreviatedIRI>vivo:College</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Use this class for academic organisations that are not universities. The exact application might vary among local educational systems. Colleges are typically focussed on certain areas of research and provide a limited range of degrees.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#MaterialCollection</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An assemblage of physical objects sharing a certain aspect of interest, that was compiled with a specific purpose.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#MaterialCollection</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The entity was not named &apos;Collection&apos; in order to distinguish it from the &apos;Collection&apos; item in the Bibliographic Ontology (bibo).</Literal>
     </AnnotationAssertion>
 </Ontology>
 
