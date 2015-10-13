@@ -37,23 +37,38 @@
     <Prefix name="ocresd" IRI="http://purl.org/net/OCRe/study_design.owl#"/>
     <Prefix name="rdfbones" IRI="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones/1.0.0#"/>
     <Prefix name="vitro-public" IRI="http://vitro.mannlib.cornell.edu/ns/vitro/public#"/>
-    <Import>http://purl.org/spar/cito/</Import>
-    <Import>http://aims.fao.org/aos/geopolitical.owl</Import>
-    <Import>http://purl.org/spar/c4o</Import>
-    <Import>http://purl.org/net/OCRe/study_design.owl#</Import>
-    <Import>http://purl.org/net/OCRe/research.owl#</Import>
-    <Import>http://purl.org/NET/c4dm/event.owl</Import>
-    <Import>http://purl.org/ontology/bibo/</Import>
-    <Import>http://purl.org/spar/fabio/</Import>
-    <Import>http://xmlns.com/foaf/0.1/</Import>
+    <Import>http://vivoweb.org/ontology/core</Import>
     <Annotation>
         <AnnotationProperty IRI="&rdfs;comment"/>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This ontology models procedures, data and results from research involving materials from skeletal collections.</Literal>
     </Annotation>
+    <Declaration>
+        <Class IRI="#Transcription"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Transcription"/>
+        <Class abbreviatedIRI="bibo:Document"/>
+    </SubClassOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
         <AbbreviatedIRI>vivo:College</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Use this class for academic organisations that are not universities. The exact application might vary among local educational systems. Colleges are typically focussed on certain areas of research and provide a limited range of degrees.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <IRI>#Transcription</IRI>
+        <Literal datatypeIRI="&xsd;string">&quot;Transcription turns handwritten and typed documents into searchable and machine-readable resources.&quot;
+(https://transcription.si.edu/about; last accessed on 13 October 2015)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Transcription</IRI>
+        <Literal datatypeIRI="&xsd;string">The result of rendering a handwritten or recorded work in digital writing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="&rdfs;label"/>
+        <IRI>#Transcription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Transcription</Literal>
     </AnnotationAssertion>
 </Ontology>
 
