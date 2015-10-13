@@ -11,305 +11,47 @@
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones"
      versionIRI="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones/1.0.0">
-    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="edm" IRI="http://www.europeana.eu/schemas/edm/"/>
-    <Prefix name="fma" IRI="http://purl.obolibrary.org/obo/fma/releases/2013-08-27/fma.owl#"/>
-    <Prefix name="org" IRI="http://www.w3.org/ns/org#"/>
+    <Prefix name="c4o" IRI="http://purl.org/spar/c4o#"/>
+    <Prefix name="geo" IRI="http://aims.fao.org/aos/geopolitical.owl#"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="prov" IRI="http://www.w3.org/ns/prov-o-20130430#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="bibo" IRI="http://purl.org/ontology/bibo/"/>
+    <Prefix name="cito" IRI="http://purl.org/spar/cito/"/>
+    <Prefix name="core" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="vivo" IRI="http://vivoweb.org/ontology/core#"/>
-    <Prefix name="galen" IRI="http://www.co-ode.org/ontologies/galen#"/>
+    <Prefix name="event" IRI="http://purl.org/NET/c4dm/event.owl#"/>
+    <Prefix name="fabio" IRI="http://purl.org/spar/fabio/"/>
+    <Prefix name="ocrer" IRI="http://purl.org/net/OCRe/research.owl#"/>
+    <Prefix name="vcard" IRI="http://www.w3.org/2006/vcard/ns#"/>
+    <Prefix name="ocresd" IRI="http://purl.org/net/OCRe/study_design.owl#"/>
     <Prefix name="rdfbones" IRI="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones/1.0.0#"/>
-    <Import>http://vivoweb.org/ontology/core</Import>
+    <Prefix name="vitro-public" IRI="http://vitro.mannlib.cornell.edu/ns/vitro/public#"/>
+    <Import>http://purl.org/spar/cito/</Import>
+    <Import>http://aims.fao.org/aos/geopolitical.owl</Import>
+    <Import>http://purl.org/spar/c4o</Import>
+    <Import>http://purl.org/net/OCRe/study_design.owl#</Import>
+    <Import>http://purl.org/net/OCRe/research.owl#</Import>
+    <Import>http://purl.org/NET/c4dm/event.owl</Import>
+    <Import>http://purl.org/ontology/bibo/</Import>
+    <Import>http://purl.org/spar/fabio/</Import>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="&rdfs;comment"/>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This ontology models procedures, data and results from research involving materials from skeletal collections.</Literal>
     </Annotation>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001896"/>
-    </Declaration>
-    <EquivalentClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000202"/>
-        <ObjectIntersectionOf>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000053"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000059"/>
-                        <ObjectSomeValuesFrom>
-                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000833"/>
-                            <ObjectSomeValuesFrom>
-                                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-                            </ObjectSomeValuesFrom>
-                        </ObjectSomeValuesFrom>
-                    </ObjectSomeValuesFrom>
-                </ObjectSomeValuesFrom>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001898"/>
-        <ObjectIntersectionOf>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000300"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    <ObjectUnionOf>
-                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000011"/>
-                        <ObjectSomeValuesFrom>
-                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000056"/>
-                            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-                        </ObjectSomeValuesFrom>
-                    </ObjectUnionOf>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000312"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000572"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000338"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000471"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000339"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000202"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000054"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001615"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001622"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001628"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001769"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000052"/>
-            <ObjectIntersectionOf>
-                <ObjectUnionOf>
-                    <Class IRI="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000245"/>
-                </ObjectUnionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000053"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000059"/>
-                        <ObjectIntersectionOf>
-                            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000684"/>
-                            <ObjectSomeValuesFrom>
-                                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000833"/>
-                                <ObjectIntersectionOf>
-                                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000659"/>
-                                    <ObjectSomeValuesFrom>
-                                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
-                                    </ObjectSomeValuesFrom>
-                                </ObjectIntersectionOf>
-                            </ObjectSomeValuesFrom>
-                        </ObjectIntersectionOf>
-                    </ObjectSomeValuesFrom>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001896"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000104"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001896"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001896"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000066</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">investigation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000066</IRI>
-        <Literal datatypeIRI="&xsd;string">Lung cancer investigation using expression profiling, a stem cell transplant investigation, biobanking is not an investigation, though it may be part of an investigation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000066</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000066</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000066</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Bjoern Peters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000066</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">OBI branch derived</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000232"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000066</IRI>
-        <Literal datatypeIRI="&xsd;string">Could add specific objective specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000232"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000066</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Following OBI call November 2012,26th: it was decided there was no need for adding &quot;achieves objective of drawing conclusion&quot; as existing relations were providing equivalent ability. this note closes the issue and validates the class definition to be part of the OBI core
-editor = PRS</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000066</IRI>
-        <IRI>http://purl.obolibrary.org/obo/obi.owl</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/OBI_0001847"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000066</IRI>
-        <Literal datatypeIRI="&xsd;string">study</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000066</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">investigation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001896</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">investigation assay specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001896</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Some examples of Project Method are Sequence, Array, Mass Spectrometry</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001896</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001896</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A plan specification which indicates the assay type used to obtain data.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001896</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">PERSON: Chris Stoeckert, Jie Zheng</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001896</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">NIAID GSCID-BRC metadata working group</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/OBI_0001886"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001896</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Project Method</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001896</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">NIAID GSCID-BRC</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0001896</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">investigation assay specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
         <AbbreviatedIRI>vivo:College</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Use this class for academic organisations that are not universities. The exact application might vary among local educational systems. Colleges are typically focussed on certain areas of research and provide a limited range of degrees.</Literal>
     </AnnotationAssertion>
@@ -317,5 +59,5 @@ editor = PRS</Literal>
 
 
 
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
 
