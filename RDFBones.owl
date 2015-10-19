@@ -17,6 +17,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones"
      versionIRI="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones/1.0.0">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="c4o" IRI="http://purl.org/spar/c4o#"/>
     <Prefix name="geo" IRI="http://aims.fao.org/aos/geopolitical.owl#"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
@@ -45,10 +46,26 @@
     <Declaration>
         <Class IRI="#Transcription"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMentioned"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#Transcription"/>
         <Class abbreviatedIRI="bibo:Document"/>
     </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMentioned"/>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isMentioned"/>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000142"/>
+    </InverseObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:IAO_0000142</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An information artifact IA mentions an entity E exactly when it has a component/part that denotes E.</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
         <AbbreviatedIRI>vivo:College</AbbreviatedIRI>
@@ -69,6 +86,16 @@
         <AnnotationProperty IRI="&rdfs;label"/>
         <IRI>#Transcription</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Transcription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#isMentioned</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An entity E is mentioned by an information artifact IA exactly when IA has a component/part that denotes E.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="&rdfs;label"/>
+        <IRI>#isMentioned</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is mentioned in</Literal>
     </AnnotationAssertion>
 </Ontology>
 
