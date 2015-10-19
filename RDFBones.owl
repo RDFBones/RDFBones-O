@@ -47,6 +47,12 @@
         <Class IRI="#Transcription"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#depicts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDepicted"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isMentioned"/>
     </Declaration>
     <SubClassOf>
@@ -54,12 +60,24 @@
         <Class abbreviatedIRI="bibo:Document"/>
     </SubClassOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#depicts"/>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDepicted"/>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isMentioned"/>
         <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isMentioned"/>
         <ObjectProperty abbreviatedIRI="obo:IAO_0000142"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isDepicted"/>
+        <ObjectProperty IRI="#depicts"/>
     </InverseObjectProperties>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -89,13 +107,53 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#depicts</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An information source depicts something when it renders a representation of it, using words, sounds, images, or other means.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#depicts</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">https://en.wiktionary.org/wiki/depict, viewed on 19 October 2015.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="&rdfs;comment"/>
+        <IRI>#depicts</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The property is mainly applicable to images and audiovisual media, as obo:IAO_0000142 (&apos;mentions&apos;) covers cases were a textual information source denotes an entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="&rdfs;label"/>
+        <IRI>#depicts</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">depicts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#isDepicted</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Something is depicted by an information source when the information source renders a representation of it, using words, sounds, images, or other means.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <IRI>#isDepicted</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">https://en.wiktionary.org/wiki/depict, viewed on 19 October 2015.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="&rdfs;comment"/>
+        <IRI>#isDepicted</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The property is mainly applicable to images and audiovisual media, as rdfBones:isMentioned covers cases were an entity is denoted by a textual information source.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="&rdfs;label"/>
+        <IRI>#isDepicted</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is depicted in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#isMentioned</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">An entity E is mentioned by an information artifact IA exactly when IA has a component/part that denotes E.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An entity E is mentioned by an information artifact IA exactly when IA has a component/part that denotes E.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="&rdfs;label"/>
         <IRI>#isMentioned</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">is mentioned in</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is mentioned in</Literal>
     </AnnotationAssertion>
 </Ontology>
 
