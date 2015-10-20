@@ -44,6 +44,9 @@
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This ontology models procedures, data and results from research involving materials from skeletal collections.</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#ResearchNote"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Transcription"/>
     </Declaration>
     <Declaration>
@@ -56,9 +59,40 @@
         <ObjectProperty IRI="#isMentioned"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#ResearchNote"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="vivo:relates"/>
+            <Class abbreviatedIRI="obo:BFO_0000001"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchNote"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.org/dc/terms/creator"/>
+            <Class abbreviatedIRI="foaf:Person"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchNote"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="vivo:dateIssued"/>
+            <Class abbreviatedIRI="vivo:DateTimeValue"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchNote"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="vcard:note"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Transcription"/>
         <Class abbreviatedIRI="bibo:Document"/>
     </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.org/dc/terms/creator"/>
+        <ObjectProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#depicts"/>
         <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
@@ -79,15 +113,54 @@
         <ObjectProperty IRI="#isDepicted"/>
         <ObjectProperty IRI="#depicts"/>
     </InverseObjectProperties>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:IAO_0000142</AbbreviatedIRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">An information artifact IA mentions an entity E exactly when it has a component/part that denotes E.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>http://purl.org/dc/terms/creator</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Examples of a Creator include a person, an organization, or a service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://purl.org/dc/terms/creator</IRI>
+        <IRI>http://dublincore.org/usage/terms/history/#creatorT-002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="&rdfs;comment"/>
+        <IRI>http://purl.org/dc/terms/creator</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An entity primarily responsible for making the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="&rdfs;isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/creator</IRI>
+        <IRI>http://purl.org/dc/terms/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="&rdfs;label"/>
+        <IRI>http://purl.org/dc/terms/creator</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Creator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
         <AbbreviatedIRI>vivo:College</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Use this class for academic organisations that are not universities. The exact application might vary among local educational systems. Colleges are typically focussed on certain areas of research and provide a limited range of degrees.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#ResearchNote</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A piece of textual user input, containing additional information on one or several resources. It can be used to relate resources with each other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="&rdfs;label"/>
+        <IRI>#ResearchNote</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Research Note</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
