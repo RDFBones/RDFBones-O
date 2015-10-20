@@ -47,6 +47,9 @@
         <Class IRI="#ResearchNote"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ResearchReference"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Transcription"/>
     </Declaration>
     <Declaration>
@@ -84,6 +87,47 @@
         <DataExactCardinality cardinality="1">
             <DataProperty abbreviatedIRI="vcard:note"/>
         </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchReference"/>
+        <Class IRI="#ResearchNote"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchReference"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="vivo:relates"/>
+            <Class abbreviatedIRI="obo:IAO_0000030"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchReference"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="bibo:volume"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchReference"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="bibo:chapter"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchReference"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="bibo:pageEnd"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchReference"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="bibo:pageStart"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchReference"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="bibo:section"/>
+        </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Transcription"/>
@@ -161,6 +205,16 @@
         <AnnotationProperty IRI="&rdfs;label"/>
         <IRI>#ResearchNote</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Research Note</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#ResearchReference</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A piece of textual user input, creating a relationship between one or several entities and an information content entity or part of it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="&rdfs;label"/>
+        <IRI>#ResearchReference</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Research Reference</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
