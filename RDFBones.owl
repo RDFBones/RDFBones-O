@@ -102,12 +102,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ResearchReference"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="bibo:volume"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ResearchReference"/>
         <DataMaxCardinality cardinality="1">
             <DataProperty abbreviatedIRI="bibo:chapter"/>
         </DataMaxCardinality>
@@ -128,6 +122,12 @@
         <Class IRI="#ResearchReference"/>
         <DataMaxCardinality cardinality="1">
             <DataProperty abbreviatedIRI="bibo:section"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchReference"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="bibo:volume"/>
         </DataMaxCardinality>
     </SubClassOf>
     <SubClassOf>
