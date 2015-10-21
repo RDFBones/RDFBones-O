@@ -86,6 +86,7 @@
         <Class IRI="#ResearchNote"/>
         <DataExactCardinality cardinality="1">
             <DataProperty abbreviatedIRI="vcard:note"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
