@@ -158,9 +158,41 @@
         <ObjectProperty IRI="#isDepicted"/>
         <ObjectProperty IRI="#depicts"/>
     </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000142"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#depicts"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDepicted"/>
+        <Class abbreviatedIRI="obo:BFO_0000001"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMentioned"/>
+        <Class abbreviatedIRI="obo:BFO_0000001"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000142"/>
+        <Class abbreviatedIRI="obo:BFO_0000001"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://purl.org/dc/terms/creator"/>
         <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#depicts"/>
+        <Class abbreviatedIRI="obo:BFO_0000001"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDepicted"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMentioned"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
