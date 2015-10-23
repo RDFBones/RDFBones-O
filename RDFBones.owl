@@ -56,10 +56,16 @@
         <ObjectProperty IRI="#depicts"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasTranscription"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isDepicted"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isMentioned"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#transcriptionOf"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#ResearchNote"/>
@@ -143,6 +149,10 @@
         <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTranscription"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isDepicted"/>
         <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
     </SubObjectPropertyOf>
@@ -158,6 +168,10 @@
         <ObjectProperty IRI="#isDepicted"/>
         <ObjectProperty IRI="#depicts"/>
     </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTranscription"/>
+        <ObjectProperty IRI="#transcriptionOf"/>
+    </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="obo:IAO_0000142"/>
         <Class abbreviatedIRI="obo:IAO_0000030"/>
@@ -167,12 +181,20 @@
         <Class abbreviatedIRI="obo:IAO_0000030"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTranscription"/>
+        <Class abbreviatedIRI="bibo:Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isDepicted"/>
         <Class abbreviatedIRI="obo:BFO_0000001"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isMentioned"/>
         <Class abbreviatedIRI="obo:BFO_0000001"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#transcriptionOf"/>
+        <Class IRI="#Transcription"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="obo:IAO_0000142"/>
@@ -187,12 +209,20 @@
         <Class abbreviatedIRI="obo:BFO_0000001"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTranscription"/>
+        <Class IRI="#Transcription"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isDepicted"/>
         <Class abbreviatedIRI="obo:IAO_0000030"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isMentioned"/>
         <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#transcriptionOf"/>
+        <Class abbreviatedIRI="bibo:Document"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -287,6 +317,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#hasTranscription</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relates a document to transcriptions of this document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="&rdfs;label"/>
+        <IRI>#hasTranscription</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has transcription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#isDepicted</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Something is depicted by an information source when the information source renders a representation of it, using words, sounds, images, or other means.</Literal>
     </AnnotationAssertion>
@@ -314,6 +354,16 @@
         <AnnotationProperty IRI="&rdfs;label"/>
         <IRI>#isMentioned</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is mentioned in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#transcriptionOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relates a transcription to the original document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="&rdfs;label"/>
+        <IRI>#transcriptionOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">transcription of</Literal>
     </AnnotationAssertion>
 </Ontology>
 
