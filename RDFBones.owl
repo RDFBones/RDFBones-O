@@ -38,7 +38,6 @@
     <Prefix name="ocresd" IRI="http://purl.org/net/OCRe/study_design.owl#"/>
     <Prefix name="rdfbones" IRI="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones/1.0.0#"/>
     <Prefix name="vitro-public" IRI="http://vitro.mannlib.cornell.edu/ns/vitro/public#"/>
-    <Import>http://vivoweb.org/ontology/core</Import>
     <Annotation>
         <AnnotationProperty IRI="&rdfs;comment"/>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This ontology models procedures, data and results from research involving materials from skeletal collections.</Literal>
@@ -141,6 +140,10 @@
         <Class abbreviatedIRI="bibo:Document"/>
     </SubClassOf>
     <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000142"/>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="http://purl.org/dc/terms/creator"/>
         <ObjectProperty IRI="http://purl.org/dc/terms/contributor"/>
     </SubObjectPropertyOf>
@@ -169,8 +172,8 @@
         <ObjectProperty IRI="#depicts"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasTranscription"/>
         <ObjectProperty IRI="#transcriptionOf"/>
+        <ObjectProperty IRI="#hasTranscription"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="obo:IAO_0000142"/>
