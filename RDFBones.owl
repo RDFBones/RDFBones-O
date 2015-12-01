@@ -360,6 +360,16 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
     
 
 
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#Replica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#Replica">
+        <rdfs:label xml:lang="en">Replica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/cidoc-crm/core#E22_Man-Made_Object"/>
+        <obo:IAO_0000115 xml:lang="en">An exact copy of another material entity. The replica can be made of different materials and at a different scale than the original.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchNote -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchNote">
