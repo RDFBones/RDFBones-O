@@ -158,6 +158,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#hasPhysicalRepresentation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#hasPhysicalRepresentation">
+        <rdfs:label xml:lang="en">has physical representation</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Specifies for a specific material object the existence of an artefact that was specifically manufactured to resemble this material object.</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="&obo;BFO_0000040"/>
+        <rdfs:range rdf:resource="http://purl.org/NET/cidoc-crm/core#E22_Man-Made_Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#physicalRepresentation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#physicalRepresentation">
+        <rdfs:label xml:lang="en">is physical representation of</rdfs:label>
+        <skos:example xml:lang="en">A plaster cast from a Homo erectus mandible is a physical representation of the mandible itself.</skos:example>
+        <obo:IAO_0000115 xml:lang="en">Expresses that an artefact has been specifically manufactured in order to resemble a specific material object.</obo:IAO_0000115>
+        <rdfs:range rdf:resource="&obo;BFO_0000040"/>
+        <rdfs:domain rdf:resource="http://purl.org/NET/cidoc-crm/core#E22_Man-Made_Object"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#hasPhysicalRepresentation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#depicts -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#depicts">
