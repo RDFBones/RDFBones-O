@@ -7,6 +7,7 @@
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
@@ -20,6 +21,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
@@ -69,6 +71,35 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
     <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="&skos;example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:AnnotationProperty rdf:about="&skos;notation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NET/cidoc-crm/core#EntityNotation -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/NET/cidoc-crm/core#EntityNotation"/>
     
 
 
@@ -272,6 +303,58 @@
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Anatomical structure which has as its direct parts portions of two or more types of tissue or two or more types of cardinal organ part which constitute a maximally connected anatomical structure demarcated predominantly by a bona fide anatomical surface. Examples: femur, biceps, liver, heart, skin, tracheobronchial tree, ovary.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:67498</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NET/cidoc-crm/core#E22_Man-Made_Object -->
+
+    <owl:Class rdf:about="http://purl.org/NET/cidoc-crm/core#E22_Man-Made_Object">
+        <rdfs:label xml:lang="en">Man-Made Object</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/cidoc-crm/core#E24_Physical_Man-Made_Thing"/>
+        <skos:notation rdf:datatype="http://purl.org/NET/cidoc-crm/core#EntityNotation">E22</skos:notation>
+        <skos:example xml:lang="en">Mallard (the World’s fastest steam engine)</skos:example>
+        <skos:scopeNote xml:lang="en">This class comprises physical objects purposely created by human activity.
+
+No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, an inscribed piece of rock or a preserved butterfly are bothregarded as instances of E22 Man-Made Object.</skos:scopeNote>
+        <skos:example xml:lang="en">the Coliseum</skos:example>
+        <skos:example xml:lang="en">the Portland Vase</skos:example>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/NET/cidoc-crm/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NET/cidoc-crm/core#E24_Physical_Man-Made_Thing -->
+
+    <owl:Class rdf:about="http://purl.org/NET/cidoc-crm/core#E24_Physical_Man-Made_Thing">
+        <rdfs:label xml:lang="en">Physical Man-Made Thing</rdfs:label>
+        <skos:notation rdf:datatype="http://purl.org/NET/cidoc-crm/core#EntityNotation">E24</skos:notation>
+        <skos:scopeNote xml:lang="en">This class comprises all persistent physical items that are purposely created by human activity.
+
+This class comprises man-made objects, such as a swords, and man-made features, such as rock art. No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, a “cup and ring” carving on bedrock is regarded as instance of E24 Physical Man-Made Thing.</skos:scopeNote>
+        <skos:example xml:lang="en">the Channel Tunnel (E25)</skos:example>
+        <skos:example xml:lang="en">the Forth Railway Bridge (E22)</skos:example>
+        <skos:example xml:lang="en">the Historical Collection of the Museum Benaki in Athens (E78)</skos:example>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/NET/cidoc-crm/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NET/cidoc-crm/core#E78_Collection -->
+
+    <owl:Class rdf:about="http://purl.org/NET/cidoc-crm/core#E78_Collection">
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/cidoc-crm/core#E24_Physical_Man-Made_Thing"/>
+        <skos:notation rdf:datatype="http://purl.org/NET/cidoc-crm/core#EntityNotation">E78</skos:notation>
+        <skos:example xml:lang="en">Michael Foslie’s coralline red algae Herbarium at Museum of Natural History and Archaeology, Trondheim, Norway</skos:example>
+        <skos:scopeNote xml:lang="en">This class comprises aggregations of instances of E18 Physical Thing that are assembled and maintained (“curated” and “preserved,” in museological terminology) by one or more instances of E39 Actor over time for a specific purpose and audience, and according to a particular collection development plan.
+
+Items may be added or removed from an E78 Collection in pursuit of this plan. This class should not be confused with the E39 Actor maintaining the E78 Collection often referred to with the name of the E78 Collection (e.g. “The Wallace Collection decided...”).
+
+Collective objects in the general sense, like a tomb full of gifts, a folder with stamps or a set of chessmen, should be documented as instances of E19 Physical Object, and not as instances of E78 Collection. This is because they form wholes either because they are physically bound together or because they are kept together for their functionality.</skos:scopeNote>
+        <skos:example xml:lang="en">the John Clayton Herbarium</skos:example>
+        <skos:example xml:lang="en">the Wallace Collection</skos:example>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/NET/cidoc-crm/core"/>
     </owl:Class>
     
 
