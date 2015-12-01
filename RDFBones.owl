@@ -328,6 +328,7 @@ No assumptions are made as to the extent of modification required to justify reg
 
     <owl:Class rdf:about="http://purl.org/NET/cidoc-crm/core#E24_Physical_Man-Made_Thing">
         <rdfs:label xml:lang="en">Physical Man-Made Thing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <skos:notation rdf:datatype="http://purl.org/NET/cidoc-crm/core#EntityNotation">E24</skos:notation>
         <skos:scopeNote xml:lang="en">This class comprises all persistent physical items that are purposely created by human activity.
 
@@ -365,15 +366,8 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
         <rdfs:label xml:lang="en">Research Note</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
-                <owl:onClass rdf:resource="&obo;BFO_0000001"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateIssued"/>
-                <owl:onClass rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+                <owl:onProperty rdf:resource="&terms;creator"/>
+                <owl:onClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -386,8 +380,15 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&terms;creator"/>
-                <owl:onClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
+                <owl:onClass rdf:resource="&obo;BFO_0000001"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateIssued"/>
+                <owl:onClass rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -403,7 +404,7 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchNote"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -415,7 +416,7 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
