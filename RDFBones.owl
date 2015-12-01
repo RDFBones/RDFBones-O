@@ -9,22 +9,23 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfbones "http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#" >
 ]>
 
 
-<rdf:RDF xmlns="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#"
-     xml:base="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones"
+<rdf:RDF xmlns="http://ckan.anthropologie.uni-freiburg.de/dataset/3de2490b-6325-4e40-bc7e-21e310f9909c/resource/48344704-14dd-4fa9-8812-3f1a9de17fbf/download/rdfbones.owl#"
+     xml:base="http://ckan.anthropologie.uni-freiburg.de/dataset/3de2490b-6325-4e40-bc7e-21e310f9909c/resource/48344704-14dd-4fa9-8812-3f1a9de17fbf/download/rdfbones.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdfbones="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones">
+    <owl:Ontology rdf:about="http://ckan.anthropologie.uni-freiburg.de/dataset/3de2490b-6325-4e40-bc7e-21e310f9909c/resource/48344704-14dd-4fa9-8812-3f1a9de17fbf/download/rdfbones.owl">
         <rdfs:comment xml:lang="en">This ontology models procedures, data and results from research involving materials from skeletal collections.</rdfs:comment>
         <owl:imports rdf:resource="http://vivoweb.org/ontology/core"/>
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones/0.1"/>
     </owl:Ontology>
     
 
@@ -189,16 +190,16 @@
         <rdfs:label xml:lang="en">Research Note</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateIssued"/>
-                <owl:onClass rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#note"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#note"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateIssued"/>
+                <owl:onClass rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -227,13 +228,25 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchNote"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/section"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -246,19 +259,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
-                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
-                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/section"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
