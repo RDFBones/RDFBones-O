@@ -239,12 +239,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/FMA_61775 -->
-
-    <owl:Class rdf:about="&obo;FMA_61775"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/FMA_67135 -->
 
     <owl:Class rdf:about="&obo;FMA_67135">
@@ -262,7 +256,6 @@
 
     <owl:Class rdf:about="&obo;FMA_67165">
         <rdfs:label rdf:datatype="&xsd;string">Material anatomical entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;FMA_61775"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:67165</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Physical anatomical entity which has mass. Examples: hemoglobin molecule, mitochondrion, hepatocyte, erythrocyte, heart, head, blood, urine.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
