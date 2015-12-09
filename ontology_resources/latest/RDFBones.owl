@@ -1,1 +1,495 @@
-../2015/12/RDFBones.owl
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#"
+     xml:base="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones">
+        <rdfs:comment xml:lang="en">This ontology models procedures, data and results from research involving materials from skeletal collections.</rdfs:comment>
+        <owl:imports rdf:resource="http://vivoweb.org/ontology/core"/>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones/0.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="&terms;hasVersion"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="&skos;example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:AnnotationProperty rdf:about="&skos;notation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NET/cidoc-crm/core#EntityNotation -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/NET/cidoc-crm/core#EntityNotation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000142 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000142"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:ObjectProperty rdf:about="&terms;contributor">
+        <rdfs:label>contributor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="&terms;creator">
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+        <terms:description xml:lang="en">Examples of a Creator include a person, an organization, or a service.</terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#creatorT-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&terms;contributor"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/performer -->
+
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/performer">
+        <rdfs:subPropertyOf rdf:resource="&terms;contributor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/translator -->
+
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/translator">
+        <rdfs:subPropertyOf rdf:resource="&terms;contributor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#hasPhysicalRepresentation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#hasPhysicalRepresentation">
+        <rdfs:label xml:lang="en">has physical representation</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Specifies for a specific material object the existence of an artefact that was specifically manufactured to resemble this material object.</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="&obo;BFO_0000040"/>
+        <rdfs:range rdf:resource="http://purl.org/NET/cidoc-crm/core#E22_Man-Made_Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#physicalRepresentation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#physicalRepresentation">
+        <rdfs:label xml:lang="en">is physical representation of</rdfs:label>
+        <skos:example xml:lang="en">A plaster cast from a Homo erectus mandible is a physical representation of the mandible itself.</skos:example>
+        <obo:IAO_0000115 xml:lang="en">Expresses that an artefact has been specifically manufactured in order to resemble a specific material object.</obo:IAO_0000115>
+        <rdfs:range rdf:resource="&obo;BFO_0000040"/>
+        <rdfs:domain rdf:resource="http://purl.org/NET/cidoc-crm/core#E22_Man-Made_Object"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#hasPhysicalRepresentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#depicts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#depicts">
+        <rdfs:label xml:lang="en">depicts</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An information source depicts something when it renders a representation of it, using words, sounds, images, or other means.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">The property is mainly applicable to images and audiovisual media, as obo:IAO_0000142 (&apos;mentions&apos;) covers cases were a textual information source denotes an entity.</rdfs:comment>
+        <obo:IAO_0000119 xml:lang="en">https://en.wiktionary.org/wiki/depict, viewed on 19 October 2015.</obo:IAO_0000119>
+        <rdfs:range rdf:resource="&obo;BFO_0000001"/>
+        <rdfs:domain rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#hasTranscription -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#hasTranscription">
+        <rdfs:label xml:lang="en">has transcription</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Relates a document to transcriptions of this document.</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#Transcription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#isDepicted -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#isDepicted">
+        <rdfs:label xml:lang="en">is depicted in</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Something is depicted by an information source when the information source renders a representation of it, using words, sounds, images, or other means.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">The property is mainly applicable to images and audiovisual media, as rdfBones:isMentioned covers cases were an entity is denoted by a textual information source.</rdfs:comment>
+        <obo:IAO_0000119 xml:lang="en">https://en.wiktionary.org/wiki/depict, viewed on 19 October 2015.</obo:IAO_0000119>
+        <rdfs:domain rdf:resource="&obo;BFO_0000001"/>
+        <rdfs:range rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#depicts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#isMentioned -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#isMentioned">
+        <rdfs:label xml:lang="en">is mentioned in</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An entity E is mentioned by an information artifact IA exactly when IA has a component/part that denotes E.</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="&obo;BFO_0000001"/>
+        <rdfs:range rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
+        <owl:inverseOf rdf:resource="&obo;IAO_0000142"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#transcriptionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#transcriptionOf">
+        <rdfs:label xml:lang="en">transcription of</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Relates a transcription to the original document.</obo:IAO_0000115>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#Transcription"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#hasTranscription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_5018 -->
+
+    <owl:Class rdf:about="&obo;FMA_5018">
+        <rdfs:label rdf:datatype="&xsd;string">Bone organ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_55673"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:5018</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Organ with cavitated organ parts, which primarily consists of compact (cortical) and cancellous bone, which surround bone marrow cavities; together with other bones, cartilages and joints, it constitutes the skeletal system.  Examples: femur, sternum, maxilla, vertebra, talus.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55671 -->
+
+    <owl:Class rdf:about="&obo;FMA_55671">
+        <rdfs:label rdf:datatype="&xsd;string">Cavitated organ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:55671</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Organ the unshared parts of which surround one or more macroscopic anatomical spaces. Examples: neuraxis, tooth, esophagus, heart, long bone, corpus spongiosum of penis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55673 -->
+
+    <owl:Class rdf:about="&obo;FMA_55673">
+        <rdfs:label rdf:datatype="&xsd;string">Organ with cavitated organ parts</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_55671"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Cavitated organ in which its unshared parts surround two or more macroscopic anatomical spaces. Examples: heart, long bone, corpus spongiosum of penis, bulb of vestibule.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:55673</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_67135 -->
+
+    <owl:Class rdf:about="&obo;FMA_67135">
+        <rdfs:label rdf:datatype="&xsd;string">Anatomical structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_67165"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Biological structure</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:67135</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Material anatomical entity which is generated by coordinated expression of the organism&apos;s own genes that guide its morphogenesis; has inherent 3D shape; its parts are connected and spatially related to one another in patterns determined by coordinated gene expression. Examples: heart, right ventricle, mitral valve, myocardium, endothelium, lymphocyte, fibroblast, thorax, cardiovascular system, hemoglobin, T cell receptor.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_67165 -->
+
+    <owl:Class rdf:about="&obo;FMA_67165">
+        <rdfs:label rdf:datatype="&xsd;string">Material anatomical entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:67165</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Physical anatomical entity which has mass. Examples: hemoglobin molecule, mitochondrion, hepatocyte, erythrocyte, heart, head, blood, urine.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_67498 -->
+
+    <owl:Class rdf:about="&obo;FMA_67498">
+        <rdfs:label rdf:datatype="&xsd;string">Organ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_67135"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Anatomical structure which has as its direct parts portions of two or more types of tissue or two or more types of cardinal organ part which constitute a maximally connected anatomical structure demarcated predominantly by a bona fide anatomical surface. Examples: femur, biceps, liver, heart, skin, tracheobronchial tree, ovary.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:67498</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NET/cidoc-crm/core#E22_Man-Made_Object -->
+
+    <owl:Class rdf:about="http://purl.org/NET/cidoc-crm/core#E22_Man-Made_Object">
+        <rdfs:label xml:lang="en">Man-Made Object</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/cidoc-crm/core#E24_Physical_Man-Made_Thing"/>
+        <skos:notation rdf:datatype="http://purl.org/NET/cidoc-crm/core#EntityNotation">E22</skos:notation>
+        <skos:example xml:lang="en">Mallard (the World’s fastest steam engine)</skos:example>
+        <skos:scopeNote xml:lang="en">This class comprises physical objects purposely created by human activity.
+
+No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, an inscribed piece of rock or a preserved butterfly are bothregarded as instances of E22 Man-Made Object.</skos:scopeNote>
+        <skos:example xml:lang="en">the Coliseum</skos:example>
+        <skos:example xml:lang="en">the Portland Vase</skos:example>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/NET/cidoc-crm/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NET/cidoc-crm/core#E24_Physical_Man-Made_Thing -->
+
+    <owl:Class rdf:about="http://purl.org/NET/cidoc-crm/core#E24_Physical_Man-Made_Thing">
+        <rdfs:label xml:lang="en">Physical Man-Made Thing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <skos:notation rdf:datatype="http://purl.org/NET/cidoc-crm/core#EntityNotation">E24</skos:notation>
+        <skos:scopeNote xml:lang="en">This class comprises all persistent physical items that are purposely created by human activity.
+
+This class comprises man-made objects, such as a swords, and man-made features, such as rock art. No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, a “cup and ring” carving on bedrock is regarded as instance of E24 Physical Man-Made Thing.</skos:scopeNote>
+        <skos:example xml:lang="en">the Channel Tunnel (E25)</skos:example>
+        <skos:example xml:lang="en">the Forth Railway Bridge (E22)</skos:example>
+        <skos:example xml:lang="en">the Historical Collection of the Museum Benaki in Athens (E78)</skos:example>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/NET/cidoc-crm/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NET/cidoc-crm/core#E78_Collection -->
+
+    <owl:Class rdf:about="http://purl.org/NET/cidoc-crm/core#E78_Collection">
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/cidoc-crm/core#E24_Physical_Man-Made_Thing"/>
+        <skos:notation rdf:datatype="http://purl.org/NET/cidoc-crm/core#EntityNotation">E78</skos:notation>
+        <skos:example xml:lang="en">Michael Foslie’s coralline red algae Herbarium at Museum of Natural History and Archaeology, Trondheim, Norway</skos:example>
+        <skos:scopeNote xml:lang="en">This class comprises aggregations of instances of E18 Physical Thing that are assembled and maintained (“curated” and “preserved,” in museological terminology) by one or more instances of E39 Actor over time for a specific purpose and audience, and according to a particular collection development plan.
+
+Items may be added or removed from an E78 Collection in pursuit of this plan. This class should not be confused with the E39 Actor maintaining the E78 Collection often referred to with the name of the E78 Collection (e.g. “The Wallace Collection decided...”).
+
+Collective objects in the general sense, like a tomb full of gifts, a folder with stamps or a set of chessmen, should be documented as instances of E19 Physical Object, and not as instances of E78 Collection. This is because they form wholes either because they are physically bound together or because they are kept together for their functionality.</skos:scopeNote>
+        <skos:example xml:lang="en">the John Clayton Herbarium</skos:example>
+        <skos:example xml:lang="en">the Wallace Collection</skos:example>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/NET/cidoc-crm/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#Replica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#Replica">
+        <rdfs:label xml:lang="en">Replica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/cidoc-crm/core#E22_Man-Made_Object"/>
+        <obo:IAO_0000115 xml:lang="en">An exact copy of another material entity. The replica can be made of different materials and at a different scale than the original.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchNote -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchNote">
+        <rdfs:label xml:lang="en">Research Note</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&terms;creator"/>
+                <owl:onClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#note"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
+                <owl:onClass rdf:resource="&obo;BFO_0000001"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateIssued"/>
+                <owl:onClass rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A piece of textual user input, containing additional information on one or several resources. It can be used to relate resources with each other.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchReference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchReference">
+        <rdfs:label xml:lang="en">Research Reference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchNote"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/section"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
+                <owl:onClass rdf:resource="&obo;IAO_0000030"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A piece of textual user input, creating a relationship between one or several entities and an information content entity or part of it.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#Transcription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#Transcription">
+        <rdfs:label>Transcription</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">&quot;Transcription turns handwritten and typed documents into searchable and machine-readable resources.&quot;
+(https://transcription.si.edu/about; last accessed on 13 October 2015)</obo:IAO_0000112>
+        <dc:description rdf:datatype="&xsd;string">The result of rendering a handwritten or recorded work in digital writing.</dc:description>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
