@@ -297,6 +297,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_62955 -->
+
+    <rdf:Description rdf:about="&obo;FMA_62955">
+        <owl:equivalentClass rdf:resource="http://w3id.org/rdfbones/ontology_resources/latest/RDFBones#AnatomicalEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_67115 -->
+
+    <rdf:Description rdf:about="&obo;FMA_67115">
+        <owl:equivalentClass rdf:resource="http://w3id.org/rdfbones/ontology_resources/latest/RDFBones#NonPhysicalAnatomicalEntity"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="&obo;IAO_0000030"/>
@@ -352,6 +368,22 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
         <skos:example xml:lang="en">the John Clayton Herbarium</skos:example>
         <skos:example xml:lang="en">the Wallace Collection</skos:example>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/NET/cidoc-crm/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ontology_resources/latest/RDFBones#AnatomicalEntity -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ontology_resources/latest/RDFBones#AnatomicalEntity">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ontology_resources/latest/RDFBones#NonPhysicalAnatomicalEntity -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ontology_resources/latest/RDFBones#NonPhysicalAnatomicalEntity">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000141"/>
     </owl:Class>
     
 
