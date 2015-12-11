@@ -284,30 +284,6 @@
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error1 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error2 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error3 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error3"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error4 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error4"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="&obo;BFO_0000001"/>
@@ -466,9 +442,6 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
 
     <owl:Class rdf:about="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchNote">
         <rdfs:label xml:lang="en">Research Note</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error3"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&terms;creator"/>
@@ -485,8 +458,13 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
 
     <owl:Class rdf:about="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchReference">
         <rdfs:label xml:lang="en">Research Reference</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error4"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchNote"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/section"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
@@ -496,12 +474,6 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
-                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/section"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
