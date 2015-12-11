@@ -14,8 +14,8 @@
 ]>
 
 
-<rdf:RDF xmlns="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones#"
-     xml:base="http://www.semanticweb.org/engel/ontologies/2015/10/rdfBones"
+<rdf:RDF xmlns="http://w3id.org/rdfbones/ontology_resources/latest/RDFBones#"
+     xml:base="http://w3id.org/rdfbones/ontology_resources/latest/RDFBones"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -26,7 +26,9 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://w3id.org/rdfbones/ontology_resources/latest/RDFBones">
-        <rdfs:comment xml:lang="en">This ontology models procedures, data and results from research involving materials from skeletal collections.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Find detailed information at http://w3id.org/rdfbones/.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This ontology is based on version 1.6 of the VIVO ISF ontology.</rdfs:comment>
+        <terms:description xml:lang="en">This ontology models procedures, data and results from research involving materials from skeletal collections.</terms:description>
         <owl:imports rdf:resource="http://vivoweb.org/ontology/core"/>
     </owl:Ontology>
     
@@ -487,13 +489,13 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchNote"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -505,13 +507,13 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -545,9 +547,7 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
 
     <!-- http://purl.org/dc/terms/creator -->
 
-    <owl:NamedIndividual rdf:about="&terms;creator">
-        <terms:description xml:lang="en">Examples of a Creator include a person, an organization, or a service.</terms:description>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="&terms;creator"/>
     
 
 
@@ -562,6 +562,7 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
     <rdf:Description rdf:about="&terms;creator">
         <rdfs:label xml:lang="en">Creator</rdfs:label>
         <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+        <terms:description xml:lang="en">Examples of a Creator include a person, an organization, or a service.</terms:description>
         <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#creatorT-002"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
