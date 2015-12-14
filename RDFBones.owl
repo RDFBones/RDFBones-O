@@ -30,6 +30,7 @@
         <rdfs:comment xml:lang="en">This ontology is based on version 1.6 of the VIVO ISF ontology.</rdfs:comment>
         <terms:description xml:lang="en">This ontology models procedures, data and results from research involving materials from skeletal collections.</terms:description>
         <owl:imports rdf:resource="&obo;fma/releases/2013-08-27/fma.owl"/>
+        <owl:imports rdf:resource="http://purl.org/NET/cidoc-crm/core_5.0.1"/>
         <owl:imports rdf:resource="http://vivoweb.org/ontology/core"/>
     </owl:Ontology>
     
@@ -325,6 +326,14 @@
     
 
 
+    <!-- http://purl.org/NET/cidoc-crm/core#E24_Physical_Man-Made_Thing -->
+
+    <rdf:Description rdf:about="http://purl.org/NET/cidoc-crm/core#E24_Physical_Man-Made_Thing">
+        <owl:equivalentClass rdf:resource="http://w3id.org/rdfbones/ontology_resources/latest/RDFBones#PhysicalManMadeThing"/>
+    </rdf:Description>
+    
+
+
     <!-- http://w3id.org/rdfbones/ontology_resources/latest/RDFBones#AnatomicalEntity -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/ontology_resources/latest/RDFBones#AnatomicalEntity">
@@ -348,6 +357,15 @@
     <owl:Class rdf:about="http://w3id.org/rdfbones/ontology_resources/latest/RDFBones#PhysicalAnatomicalEntity">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <rdfs:comment xml:lang="en">The class was introduced to integrate concepts from the Foundational Model of Anatomy (FMA) into the RDFBones ontology (cf the &apos;Equivalent To&apos; axiom).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ontology_resources/latest/RDFBones#PhysicalManMadeThing -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ontology_resources/latest/RDFBones#PhysicalManMadeThing">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <rdfs:comment xml:lang="en">The class was introduced to integrate concepts from the CIDOC CRM into the RDFBones ontology (cf the &apos;Equivalent To&apos; axiom).</rdfs:comment>
     </owl:Class>
     
 
