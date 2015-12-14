@@ -30,6 +30,7 @@
         <rdfs:comment xml:lang="en">This ontology is based on version 1.6 of the VIVO ISF ontology.</rdfs:comment>
         <terms:description xml:lang="en">This ontology models procedures, data and results from research involving materials from skeletal collections.</terms:description>
         <owl:imports rdf:resource="&obo;fma/releases/2013-08-27/fma.owl"/>
+        <owl:imports rdf:resource="&obo;obi/2015-10-20/obi.owl"/>
         <owl:imports rdf:resource="http://purl.org/NET/cidoc-crm/core_5.0.1"/>
         <owl:imports rdf:resource="http://vivoweb.org/ontology/core"/>
     </owl:Ontology>
@@ -402,13 +403,13 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/engel/ontologies/2015/3/rdfBones#ResearchNote"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -426,7 +427,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
