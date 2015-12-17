@@ -344,13 +344,93 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core#ArtefactIdentifier -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#ArtefactIdentifier">
+        <rdfs:label xml:lang="en">Artefact Identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NET/cidoc-crm/core#E22_Man-Made_Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A CRID symbol for identifying man-made objects.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">A set of flint arrows recovered from a mesolithic site that are stored under the same signature (artefact identifier) in a museum collection.</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#DocumentIdentifier -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#DocumentIdentifier">
+        <rdfs:label xml:lang="en">Document identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/bibo/Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A CRID symbol for identifying documents.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">The written correspondence of a 19th century collector is stored under the same signature (document identifier) in a university archive.</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#HumanRemainsIdentifier -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#HumanRemainsIdentifier">
-        <rdfs:label xml:lang="en">Human skeletal remains identifier</rdfs:label>
+        <rdfs:label xml:lang="en">Human remains identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67165"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A CRID symbol that identifies a batch of human remains.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">Skeletal remains from a Neolithic grave that are stored under the same signature (CRID symbol) in a museum collection.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">A South-american mummy that is kept under a specific signature (Human remains identifier) in a university collection.</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#HumanSkeletalMaterialIdentifier -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#HumanSkeletalMaterialIdentifier">
+        <rdfs:label xml:lang="en">Human skeletal material identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#HumanRemainsIdentifier"/>
+        <obo:IAO_0000115 xml:lang="en">A CRID symbol for identifying batches of human skeletal material.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Bones from a Neolithic grave that are stored under the same signature (Human skeletal remains identifier) in a museum collection.</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#HumanSkeletalReplicaIdentifier -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#HumanSkeletalReplicaIdentifier">
+        <rdfs:label xml:lang="en">Human skeletal replica identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ArtefactIdentifier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Replica"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A CRID symbol for identifying replica of specific human sekeltal elements.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Casts of the bones that constitute the skeleton AL 288-1 (aka Lucy) that are stored under the same signature (human skeletal replica identifier) in a university study collection.</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#HumanSkeletonIdentifier -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#HumanSkeletonIdentifier">
+        <rdfs:label xml:lang="en">Human skeleton identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001141"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#HumanSkeletalMaterialIdentifier"/>
+        <obo:IAO_0000115 xml:lang="en">A CRID symbol for identifying individual human skeletons.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Human bones that are found to belong to the same skeleton listed under a sequence number (Human skeleton identifier) for an anthropological study.</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -382,10 +462,42 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core#PrimaryRegistry -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#PrimaryRegistry">
+        <rdfs:label xml:lang="en">Primary registry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
+                <owl:onClass rdf:resource="http://purl.org/NET/cidoc-crm/core#E78_Collection"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
+                <owl:onClass rdf:resource="&obo;IAO_0000579"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A dual relationship between a collection and a centrally registered identifier (CRID) registry that - for a defined period of time - serves as the primary collection catalogue/inventory. All other CRID registries have to reference a primary registry in order to avoid duplicate instances representing the same object.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">The inventory of the Freiburg University Archive is the primary registry of the Alexander Ecker Collection.</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#Replica -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Replica">
         <rdfs:label xml:lang="en">Replica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/cidoc-crm/core#E22_Man-Made_Object"/>
         <obo:IAO_0000115 xml:lang="en">An exact copy of another material entity. The replica can be made of different materials and at a different scale than the original.</obo:IAO_0000115>
     </owl:Class>
     
@@ -420,7 +532,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/section"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -432,13 +550,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/section"/>
-                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
