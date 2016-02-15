@@ -82,19 +82,45 @@
 
     <!-- http://purl.obolibrary.org/obo/fma#constitutional_part_of -->
 
-    <owl:ObjectProperty rdf:about="&obo;fma#constitutional_part_of"/>
+    <owl:ObjectProperty rdf:about="&obo;fma#constitutional_part_of">
+        <rdfs:label rdf:datatype="&xsd;string">constitutional_part_of</rdfs:label>
+        <oboInOwl:id rdf:datatype="&xsd;string">constitutional_part_of</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <rdfs:subPropertyOf rdf:resource="&obo;fma#part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fma#part_of -->
+
+    <owl:ObjectProperty rdf:about="&obo;fma#part_of">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">part_of</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">part_of</oboInOwl:id>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/fma#regional_part_of -->
 
-    <owl:ObjectProperty rdf:about="&obo;fma#regional_part_of"/>
+    <owl:ObjectProperty rdf:about="&obo;fma#regional_part_of">
+        <rdfs:label rdf:datatype="&xsd;string">regional_part_of</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">regional_part_of</oboInOwl:id>
+        <rdfs:subPropertyOf rdf:resource="&obo;fma#part_of"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/fma#systemic_part_of -->
 
-    <owl:ObjectProperty rdf:about="&obo;fma#systemic_part_of"/>
+    <owl:ObjectProperty rdf:about="&obo;fma#systemic_part_of">
+        <rdfs:label rdf:datatype="&xsd;string">systemic_part_of</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">systemic_part_of</oboInOwl:id>
+        <rdfs:subPropertyOf rdf:resource="&obo;fma#part_of"/>
+    </owl:ObjectProperty>
     
 
 
@@ -116,13 +142,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -141,13 +167,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -166,13 +192,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -191,19 +217,30 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:10081</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">T12 vertebra</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Twelfth dorsal vertebra</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_10483 -->
+
+    <owl:Class rdf:about="&obo;FMA_10483">
+        <rdfs:label rdf:datatype="&xsd;string">Zone of bone organ</rdfs:label>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Bone organ zone</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:10483</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -242,13 +279,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9915"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -268,13 +305,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9915"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -292,13 +329,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9915"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -316,13 +353,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9915"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -340,13 +377,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9915"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -464,13 +501,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9921"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -488,13 +525,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9921"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -512,13 +549,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9921"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -636,13 +673,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_7474"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24142"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24142"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -684,13 +721,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_13321"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24163"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24163"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -707,13 +744,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_13321"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24164"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24164"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -843,18 +880,6 @@
     <owl:Class rdf:about="&obo;FMA_16203">
         <rdfs:label rdf:datatype="&xsd;string">Lumbar vertebral column</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_16201"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_13478"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_13478"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:16203</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -893,6 +918,174 @@
         <rdfs:label rdf:datatype="&xsd;string">Left hip bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_16585"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:16587</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_16588 -->
+
+    <owl:Class rdf:about="&obo;FMA_16588">
+        <rdfs:label rdf:datatype="&xsd;string">Zone of hip bone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_10483"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:16588</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Hip bone zone</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Zone of innominate bone</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_16589 -->
+
+    <owl:Class rdf:about="&obo;FMA_16589">
+        <rdfs:label rdf:datatype="&xsd;string">Ilium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_16588"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_16585"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:16589</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Os iliacum</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Os ilii</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_16590 -->
+
+    <owl:Class rdf:about="&obo;FMA_16590">
+        <rdfs:label rdf:datatype="&xsd;string">Right ilium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_16589"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_16586"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:16590</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_16591 -->
+
+    <owl:Class rdf:about="&obo;FMA_16591">
+        <rdfs:label rdf:datatype="&xsd;string">Left ilium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_16589"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_16587"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:16591</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_16592 -->
+
+    <owl:Class rdf:about="&obo;FMA_16592">
+        <rdfs:label rdf:datatype="&xsd;string">Ischium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_16588"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_16585"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:16592</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_16593 -->
+
+    <owl:Class rdf:about="&obo;FMA_16593">
+        <rdfs:label rdf:datatype="&xsd;string">Right ischium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_16592"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_16586"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:16593</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_16594 -->
+
+    <owl:Class rdf:about="&obo;FMA_16594">
+        <rdfs:label rdf:datatype="&xsd;string">Left ischium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_16592"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_16587"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:16594</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_16595 -->
+
+    <owl:Class rdf:about="&obo;FMA_16595">
+        <rdfs:label rdf:datatype="&xsd;string">Pubis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_16588"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_16585"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:16595</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_16596 -->
+
+    <owl:Class rdf:about="&obo;FMA_16596">
+        <rdfs:label rdf:datatype="&xsd;string">Right pubis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_16595"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_16586"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:16596</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_16597 -->
+
+    <owl:Class rdf:about="&obo;FMA_16597">
+        <rdfs:label rdf:datatype="&xsd;string">Left pubis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_16595"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_16587"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:16597</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -986,13 +1179,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_13303"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24166"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24166"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1660,18 +1853,6 @@
     <owl:Class rdf:about="&obo;FMA_24138">
         <rdfs:label rdf:datatype="&xsd;string">Cervical vertebral column</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_16201"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_13478"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_13478"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Cervical spinal column</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Cervical spine</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24138</oboInOwl:id>
@@ -1699,6 +1880,18 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_24162"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24142</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Free upper limb skeleton</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_24144 -->
+
+    <owl:Class rdf:about="&obo;FMA_24144">
+        <rdfs:label rdf:datatype="&xsd;string">Skeleton of free lower limb</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_24171"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:24144</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Free lower limb skeleton</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -1796,6 +1989,79 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_24159"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24168</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Left hand skeleton</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_24171 -->
+
+    <owl:Class rdf:about="&obo;FMA_24171">
+        <rdfs:label rdf:datatype="&xsd;string">Subdivision of skeleton of lower limb</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_23880"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:24171</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Segment of skeleton of lower limb</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_24174 -->
+
+    <owl:Class rdf:about="&obo;FMA_24174">
+        <rdfs:label rdf:datatype="&xsd;string">Skeleton of right free lower limb</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_24144"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:24174</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Right free lower limb skeleton</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_24175 -->
+
+    <owl:Class rdf:about="&obo;FMA_24175">
+        <rdfs:label rdf:datatype="&xsd;string">Skeleton of left free lower limb</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_24144"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:24175</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Left free lower limb skeleton</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_24222 -->
+
+    <owl:Class rdf:about="&obo;FMA_24222">
+        <rdfs:label rdf:datatype="&xsd;string">Skeleton of foot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_24171"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:24222</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Foot skeleton</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Set of bones of foot</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_24224 -->
+
+    <owl:Class rdf:about="&obo;FMA_24224">
+        <rdfs:label rdf:datatype="&xsd;string">Skeleton of right foot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_24222"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:24224</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Right foot skeleton</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_24225 -->
+
+    <owl:Class rdf:about="&obo;FMA_24225">
+        <rdfs:label rdf:datatype="&xsd;string">Skeleton of left foot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_24222"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:24225</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Left foot skeleton</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -2290,6 +2556,12 @@
     <owl:Class rdf:about="&obo;FMA_24474">
         <rdfs:label rdf:datatype="&xsd;string">Right femur</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_9611"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24174"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24474</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2301,6 +2573,12 @@
     <owl:Class rdf:about="&obo;FMA_24475">
         <rdfs:label rdf:datatype="&xsd;string">Left femur</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_9611"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24175"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24475</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2312,6 +2590,12 @@
     <owl:Class rdf:about="&obo;FMA_24476">
         <rdfs:label rdf:datatype="&xsd;string">Tibia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_7474"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24144"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24476</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2323,6 +2607,12 @@
     <owl:Class rdf:about="&obo;FMA_24477">
         <rdfs:label rdf:datatype="&xsd;string">Right tibia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_24476"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24174"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24477</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2334,6 +2624,12 @@
     <owl:Class rdf:about="&obo;FMA_24478">
         <rdfs:label rdf:datatype="&xsd;string">Left tibia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_24476"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24175"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24478</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2345,6 +2641,12 @@
     <owl:Class rdf:about="&obo;FMA_24479">
         <rdfs:label rdf:datatype="&xsd;string">Fibula</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_7474"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24144"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24479</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2356,6 +2658,12 @@
     <owl:Class rdf:about="&obo;FMA_24480">
         <rdfs:label rdf:datatype="&xsd;string">Right fibula</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_24479"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24174"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24480</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2367,6 +2675,12 @@
     <owl:Class rdf:about="&obo;FMA_24481">
         <rdfs:label rdf:datatype="&xsd;string">Left fibula</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_24479"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24175"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24481</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2400,6 +2714,12 @@
     <owl:Class rdf:about="&obo;FMA_24485">
         <rdfs:label rdf:datatype="&xsd;string">Patella</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_32672"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24144"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24485</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Knee bone</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
@@ -2412,6 +2732,12 @@
     <owl:Class rdf:about="&obo;FMA_24486">
         <rdfs:label rdf:datatype="&xsd;string">Right patella</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_24485"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24174"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24486</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2423,6 +2749,12 @@
     <owl:Class rdf:about="&obo;FMA_24487">
         <rdfs:label rdf:datatype="&xsd;string">Left patella</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_24485"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24175"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24487</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2448,6 +2780,18 @@
     <owl:Class rdf:about="&obo;FMA_24492">
         <rdfs:label rdf:datatype="&xsd;string">Metatarsal bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_7474"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24144"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24222"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24492</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2459,6 +2803,18 @@
     <owl:Class rdf:about="&obo;FMA_24493">
         <rdfs:label rdf:datatype="&xsd;string">Phalanx of toe</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_7474"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24144"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24222"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Bone of toe</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24493</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Foot phalanx</oboInOwl:hasExactSynonym>
@@ -2543,6 +2899,12 @@
     <owl:Class rdf:about="&obo;FMA_24502">
         <rdfs:label rdf:datatype="&xsd;string">First metatarsal bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_24492"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24222"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24502</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2554,6 +2916,12 @@
     <owl:Class rdf:about="&obo;FMA_24503">
         <rdfs:label rdf:datatype="&xsd;string">Second metatarsal bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_24492"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24222"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24503</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2565,6 +2933,12 @@
     <owl:Class rdf:about="&obo;FMA_24504">
         <rdfs:label rdf:datatype="&xsd;string">Third metatarsal bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_24492"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24222"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24504</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2576,6 +2950,12 @@
     <owl:Class rdf:about="&obo;FMA_24505">
         <rdfs:label rdf:datatype="&xsd;string">Fourth metatarsal bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_24492"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24222"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24505</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -2587,6 +2967,12 @@
     <owl:Class rdf:about="&obo;FMA_24506">
         <rdfs:label rdf:datatype="&xsd;string">Fifth metatarsal bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_24492"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24222"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24506</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -3658,6 +4044,12 @@
     <owl:Class rdf:about="&obo;FMA_45096">
         <rdfs:label rdf:datatype="&xsd;string">Sesamoid bone of foot</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_32672"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24222"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:45096</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -3704,19 +4096,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_7476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3724,6 +4110,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:52734</oboInOwl:id>
@@ -3746,18 +4138,18 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3781,12 +4173,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3794,6 +4180,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:52736</oboInOwl:id>
@@ -3822,7 +4214,7 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_52737"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3834,14 +4226,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:52738</oboInOwl:id>
@@ -3857,14 +4249,14 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_52737"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3876,7 +4268,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:52739</oboInOwl:id>
@@ -3893,36 +4285,36 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_52801"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_52801"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3986,25 +4378,25 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_7477"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4024,12 +4416,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4037,6 +4423,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:52749</oboInOwl:id>
@@ -4097,13 +4489,7 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9613"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4115,8 +4501,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:52788</oboInOwl:id>
@@ -4133,7 +4525,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4151,7 +4543,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:52789</oboInOwl:id>
@@ -4165,18 +4557,6 @@
     <owl:Class rdf:about="&obo;FMA_52800">
         <rdfs:label rdf:datatype="&xsd;string">Calvaria</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_54964"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Calva</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:52800</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
@@ -4189,18 +4569,6 @@
     <owl:Class rdf:about="&obo;FMA_52801">
         <rdfs:label rdf:datatype="&xsd;string">Basicranium</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_54964"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53672"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Base of skull</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Cranial base</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:52801</oboInOwl:id>
@@ -4216,20 +4584,20 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_52747"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4253,14 +4621,14 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_52747"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4291,25 +4659,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:53645</oboInOwl:id>
@@ -4326,12 +4694,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4339,12 +4701,18 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:53646</oboInOwl:id>
@@ -4367,18 +4735,18 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4396,12 +4764,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4409,12 +4771,18 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:53648</oboInOwl:id>
@@ -4430,12 +4798,6 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9711"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
@@ -4450,6 +4812,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:53649</oboInOwl:id>
@@ -4502,12 +4870,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4515,12 +4877,18 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:53655</oboInOwl:id>
@@ -4633,13 +5001,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_54736"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5284,13 +5652,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_7638"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5330,13 +5698,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_7597"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5353,13 +5721,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_7620"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5376,13 +5744,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_7638"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5422,13 +5790,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_7776"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5502,13 +5870,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_8147"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5525,13 +5893,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_8147"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5571,13 +5939,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_7830"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5594,13 +5962,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_8120"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5720,13 +6088,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_8418"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5743,13 +6111,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_8418"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5800,13 +6168,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_8499"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5823,13 +6191,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_8499"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5846,13 +6214,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_8515"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5869,13 +6237,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_8515"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5920,18 +6288,6 @@
     <owl:Class rdf:about="&obo;FMA_9140">
         <rdfs:label rdf:datatype="&xsd;string">Thoracic vertebral column</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_16201"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_13478"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_13478"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Columna vertebralis thoracicus</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:9140</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Thoracic spine</oboInOwl:hasExactSynonym>
@@ -5947,13 +6303,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5972,13 +6328,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5997,13 +6353,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6045,6 +6401,12 @@
     <owl:Class rdf:about="&obo;FMA_9611">
         <rdfs:label rdf:datatype="&xsd;string">Femur</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_7474"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_24144"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:9611</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Thigh bone</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
@@ -6228,13 +6590,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
