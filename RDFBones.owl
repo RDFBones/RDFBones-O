@@ -416,6 +416,12 @@
                 <allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
             </Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
+                <cardinality rdf:datatype="&xsd;nonNegativeInteger">2</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
         <vitro:displayRankAnnot rdf:datatype="&xsd;int">-1</vitro:displayRankAnnot>
         <vitro:displayLimitAnnot rdf:datatype="&xsd;int">-1</vitro:displayLimitAnnot>
         <vitro:descriptionAnnot rdf:datatype="&xsd;string">A dual relationship between a collection and a centrally registered identifier (CRID) registry that - for a defined period of time - serves as the primary collection catalogue/inventory. All other CRID registries have to reference a primary registry in order to avoid duplicate instances representing the same object.</vitro:descriptionAnnot>
@@ -436,13 +442,14 @@
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#note"/>
-                <allValuesFrom rdf:resource="&xsd;string"/>
+                <maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</maxQualifiedCardinality>
+                <onDataRange rdf:resource="&xsd;string"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.org/dc/terms/creator"/>
-                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+                <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
+                <someValuesFrom rdf:resource="&obo;BFO_0000001"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -454,7 +461,25 @@
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
-                <allValuesFrom rdf:resource="&obo;BFO_0000001"/>
+                <minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/dc/terms/creator"/>
+                <maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</maxCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#note"/>
+                <allValuesFrom rdf:resource="&xsd;string"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/dc/terms/creator"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
             </Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A note added by researchers working with this database.</obo:IAO_0000115>
@@ -474,14 +499,20 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ResearchNote"/>
         <rdfs:subClassOf>
             <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
+                <allValuesFrom rdf:resource="&rdfs;Literal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
                 <onProperty rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
                 <allValuesFrom rdf:resource="&rdfs;Literal"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
-                <allValuesFrom rdf:resource="&rdfs;Literal"/>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
+                <maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</maxCardinality>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -492,14 +523,38 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
+                <allValuesFrom rdf:resource="&rdfs;Literal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
+                <maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</maxCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
+                <maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</maxCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
+                <maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</maxCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
                 <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
                 <someValuesFrom rdf:resource="&obo;IAO_0000030"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
-                <allValuesFrom rdf:resource="&rdfs;Literal"/>
+                <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
+                <minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minCardinality>
             </Restriction>
         </rdfs:subClassOf>
         <vitro:displayRankAnnot rdf:datatype="&xsd;int">-1</vitro:displayRankAnnot>
@@ -519,6 +574,18 @@
     <Class rdf:about="http://w3id.org/rdfbones/core#Transcript">
         <rdfs:label xml:lang="en-us">Transcript</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/transcriptOf"/>
+                <cardinality rdf:datatype="&xsd;nonNegativeInteger">1</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/transcriptOf"/>
+                <allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Document"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="&xsd;string">A typed version of a hand-written research note left by a late scholar is a transcript.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The result of rendering a handwritten or recorded work in writing.</obo:IAO_0000115>
         <vitro:descriptionAnnot rdf:datatype="&xsd;string">Transcription turns a text from one form into another, most commonly to make a hand-written or printed document digitally accessible, but also to other ends, e.g. for updating outdated handwriting scripts or typefaces. It also describes the process of putting oral speech from a recording into writing. Example of usage: &quot;Transcription turns handwritten and typed documents into searchable and machine-readable resources.&quot; (https://transcription.si.edu/about; last accessed on 13 October 2015).</vitro:descriptionAnnot>
