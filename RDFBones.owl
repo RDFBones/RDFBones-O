@@ -1,27 +1,26 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY vitro "http://vitro.mannlib.cornell.edu/ns/vitro/0.7#" >
-]>
-
-
 <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.w3.org/2002/07/owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ns2="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:geopolitical="http://aims.fao.org/aos/geopolitical.owl#"
+     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+     xmlns:core="http://vivoweb.org/ontology/core#"
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">
+     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#">
     <Ontology rdf:about="http://w3id.org/rdfbones/core">
         <rdfs:label xml:lang="en-us">RDF Bones</rdfs:label>
-        <vitro:ontologyPrefixAnnot rdf:datatype="&rdfs;Literal">rdfbones</vitro:ontologyPrefixAnnot>
+        <vitro:ontologyPrefixAnnot rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">rdfbones</vitro:ontologyPrefixAnnot>
     </Ontology>
     
 
@@ -39,73 +38,73 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
-    <AnnotationProperty rdf:about="&obo;IAO_0000112"/>
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
     <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot -->
 
-    <AnnotationProperty rdf:about="&vitro;descriptionAnnot"/>
+    <AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
     
 
 
     <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#displayLimitAnnot -->
 
-    <AnnotationProperty rdf:about="&vitro;displayLimitAnnot"/>
+    <AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#displayLimitAnnot"/>
     
 
 
     <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#displayRankAnnot -->
 
-    <AnnotationProperty rdf:about="&vitro;displayRankAnnot"/>
+    <AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#displayRankAnnot"/>
     
 
 
     <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#hiddenFromDisplayBelowRoleLevelAnnot -->
 
-    <AnnotationProperty rdf:about="&vitro;hiddenFromDisplayBelowRoleLevelAnnot"/>
+    <AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#hiddenFromDisplayBelowRoleLevelAnnot"/>
     
 
 
     <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#hiddenFromPublishBelowRoleLevelAnnot -->
 
-    <AnnotationProperty rdf:about="&vitro;hiddenFromPublishBelowRoleLevelAnnot"/>
+    <AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#hiddenFromPublishBelowRoleLevelAnnot"/>
     
 
 
     <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#offerCreateNewOptionAnnot -->
 
-    <AnnotationProperty rdf:about="&vitro;offerCreateNewOptionAnnot"/>
+    <AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#offerCreateNewOptionAnnot"/>
     
 
 
     <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot -->
 
-    <AnnotationProperty rdf:about="&vitro;ontologyPrefixAnnot"/>
+    <AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot"/>
     
 
 
     <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#prohibitedFromUpdateBelowRoleLevelAnnot -->
 
-    <AnnotationProperty rdf:about="&vitro;prohibitedFromUpdateBelowRoleLevelAnnot"/>
+    <AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#prohibitedFromUpdateBelowRoleLevelAnnot"/>
     
 
 
     <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#publicDescriptionAnnot -->
 
-    <AnnotationProperty rdf:about="&vitro;publicDescriptionAnnot"/>
+    <AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#publicDescriptionAnnot"/>
     
 
 
     <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#selectFromExistingAnnot -->
 
-    <AnnotationProperty rdf:about="&vitro;selectFromExistingAnnot"/>
+    <AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#selectFromExistingAnnot"/>
     
 
 
@@ -120,22 +119,42 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
-    <ObjectProperty rdf:about="&obo;IAO_0000136"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000142 -->
 
-    <ObjectProperty rdf:about="&obo;IAO_0000142">
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">An entity E is mentioned by an information artifact IA exactly when IA has a component/part that denotes E. </vitro:descriptionAnnot>
-        <vitro:publicDescriptionAnnot rdf:datatype="&xsd;string">Entities this document is about.</vitro:publicDescriptionAnnot>
-        <obo:IAO_0000112 rdf:datatype="&xsd;string">If a particular femur bone is referenced in a scientific article, this article mentions the bone.</obo:IAO_0000112>
-        <rdfs:range rdf:resource="&obo;BFO_0000001"/>
-        <rdfs:domain rdf:resource="&obo;IAO_0000030"/>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000142">
         <inverseOf rdf:resource="http://w3id.org/rdfbones/core#isMentioned"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If a particular femur bone is referenced in a scientific article, this article mentions the bone.</obo:IAO_0000112>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An entity E is mentioned by an information artifact IA exactly when IA has a component/part that denotes E. </vitro:descriptionAnnot>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Entities this document is about.</vitro:publicDescriptionAnnot>
     </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000999 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000999">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fma#regional_part_of -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
     
 
 
@@ -148,11 +167,12 @@
     <!-- http://purl.org/ontology/bibo/transcriptOf -->
 
     <ObjectProperty rdf:about="http://purl.org/ontology/bibo/transcriptOf">
-        <obo:IAO_0000112 rdf:datatype="&xsd;string">A typed version of a hand-written research note left by a late scholar is a transcript.</obo:IAO_0000112>
-        <vitro:publicDescriptionAnnot rdf:datatype="&xsd;string">The document that this document is a transcript of.</vitro:publicDescriptionAnnot>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">Transcription turns a text from one form into another, most commonly to make a hand-written or printed document digitally accessible, but also to other ends, e.g. for updating outdated handwriting scripts or typefaces. It also describes the process of putting oral speech from a recording into writing. Example of usage: &quot;Transcription turns handwritten and typed documents into searchable and machine-readable resources.&quot; (https://transcription.si.edu/about; last accessed on 13 October 2015).</vitro:descriptionAnnot>
-        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <inverseOf rdf:resource="http://w3id.org/rdfbones/core#hasTranscript"/>
         <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#Transcript"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A typed version of a hand-written research note left by a late scholar is a transcript.</obo:IAO_0000112>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transcription turns a text from one form into another, most commonly to make a hand-written or printed document digitally accessible, but also to other ends, e.g. for updating outdated handwriting scripts or typefaces. It also describes the process of putting oral speech from a recording into writing. Example of usage: &quot;Transcription turns handwritten and typed documents into searchable and machine-readable resources.&quot; (https://transcription.si.edu/about; last accessed on 13 October 2015).</vitro:descriptionAnnot>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The document that this document is a transcript of.</vitro:publicDescriptionAnnot>
     </ObjectProperty>
     
 
@@ -178,18 +198,18 @@
     <!-- http://w3id.org/rdfbones/core#depicts -->
 
     <ObjectProperty rdf:about="http://w3id.org/rdfbones/core#depicts">
-        <vitro:displayLimitAnnot rdf:datatype="&xsd;int">-1</vitro:displayLimitAnnot>
-        <obo:IAO_0000112 rdf:datatype="&xsd;string">A photograph of a human mandible depicts this particular mandible.</obo:IAO_0000112>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">An information source depicts something when it renders a representation of it, using words, sounds, images, or other means (https://en.wiktionary.org/wiki/depict, viewed on 19 October 2015). The property is mainly applicable to images and audiovisual media, as obo:IAO_0000142 (&apos;mentions&apos;) covers cases were a textual information source denotes an entity. </vitro:descriptionAnnot>
-        <vitro:publicDescriptionAnnot rdf:datatype="&xsd;string">Objects that are represented in this document.</vitro:publicDescriptionAnnot>
-        <vitro:selectFromExistingAnnot rdf:datatype="&xsd;boolean">true</vitro:selectFromExistingAnnot>
-        <rdfs:range rdf:resource="&obo;BFO_0000001"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <inverseOf rdf:resource="http://w3id.org/rdfbones/core#isDepicted"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
-        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A photograph of a human mandible depicts this particular mandible.</obo:IAO_0000112>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information source depicts something when it renders a representation of it, using words, sounds, images, or other means (https://en.wiktionary.org/wiki/depict, viewed on 19 October 2015). The property is mainly applicable to images and audiovisual media, as obo:IAO_0000142 (&apos;mentions&apos;) covers cases were a textual information source denotes an entity. </vitro:descriptionAnnot>
+        <vitro:displayLimitAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayLimitAnnot>
         <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <inverseOf rdf:resource="http://w3id.org/rdfbones/core#isDepicted"/>
+        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Objects that are represented in this document.</vitro:publicDescriptionAnnot>
+        <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
     </ObjectProperty>
     
 
@@ -197,17 +217,18 @@
     <!-- http://w3id.org/rdfbones/core#hasPhysicalRepresentation -->
 
     <ObjectProperty rdf:about="http://w3id.org/rdfbones/core#hasPhysicalRepresentation">
-        <rdfs:label xml:lang="en-us">has physical representation</rdfs:label>
-        <obo:IAO_0000112 rdf:datatype="&xsd;string">A plaster cast from a Homo erectus mandible is a physical representation of the mandible itself.</obo:IAO_0000112>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">An artefact that has been specifically manufactured in order to resemble a specific material object is a physical representation of this particular object.</vitro:descriptionAnnot>
-        <vitro:publicDescriptionAnnot rdf:datatype="&xsd;string">Artefacts that are made to resemble this object.</vitro:publicDescriptionAnnot>
-        <vitro:selectFromExistingAnnot rdf:datatype="&xsd;boolean">true</vitro:selectFromExistingAnnot>
-        <vitro:offerCreateNewOptionAnnot rdf:datatype="&xsd;boolean">true</vitro:offerCreateNewOptionAnnot>
-        <rdfs:range rdf:resource="&obo;BFO_0000040"/>
-        <rdfs:domain rdf:resource="&obo;BFO_0000040"/>
+        <inverseOf rdf:resource="http://w3id.org/rdfbones/core#physicalRepresentation"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plaster cast from a Homo erectus mandible is a physical representation of the mandible itself.</obo:IAO_0000112>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An artefact that has been specifically manufactured in order to resemble a specific material object is a physical representation of this particular object.</vitro:descriptionAnnot>
         <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:offerCreateNewOptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:offerCreateNewOptionAnnot>
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artefacts that are made to resemble this object.</vitro:publicDescriptionAnnot>
+        <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
+        <rdfs:label xml:lang="en-us">has physical representation</rdfs:label>
     </ObjectProperty>
     
 
@@ -215,18 +236,17 @@
     <!-- http://w3id.org/rdfbones/core#hasTranscript -->
 
     <ObjectProperty rdf:about="http://w3id.org/rdfbones/core#hasTranscript">
-        <rdfs:label xml:lang="en-us">has transcript</rdfs:label>
-        <obo:IAO_0000112 rdf:datatype="&xsd;string">A typed version of a hand-written research note left by a late scholar is a transcript.</obo:IAO_0000112>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">Transcription turns a text from one form into another, most commonly to make a hand-written or printed document digitally accessible, but also to other ends, e.g. for updating outdated handwriting scripts or typefaces. It also describes the process of putting oral speech from a recording into writing. Example of usage: &quot;Transcription turns handwritten and typed documents into searchable and machine-readable resources.&quot; (https://transcription.si.edu/about; last accessed on 13 October 2015).</vitro:descriptionAnnot>
-        <vitro:publicDescriptionAnnot rdf:datatype="&xsd;string">Transcripts of this document.</vitro:publicDescriptionAnnot>
-        <vitro:selectFromExistingAnnot rdf:datatype="&xsd;boolean">true</vitro:selectFromExistingAnnot>
-        <vitro:offerCreateNewOptionAnnot rdf:datatype="&xsd;boolean">true</vitro:offerCreateNewOptionAnnot>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
-        <inverseOf rdf:resource="http://purl.org/ontology/bibo/transcriptOf"/>
+        <rdfs:range rdf:resource="http://w3id.org/rdfbones/core#Transcript"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A typed version of a hand-written research note left by a late scholar is a transcript.</obo:IAO_0000112>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transcription turns a text from one form into another, most commonly to make a hand-written or printed document digitally accessible, but also to other ends, e.g. for updating outdated handwriting scripts or typefaces. It also describes the process of putting oral speech from a recording into writing. Example of usage: &quot;Transcription turns handwritten and typed documents into searchable and machine-readable resources.&quot; (https://transcription.si.edu/about; last accessed on 13 October 2015).</vitro:descriptionAnnot>
         <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:offerCreateNewOptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:offerCreateNewOptionAnnot>
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <rdfs:range rdf:resource="http://w3id.org/rdfbones/core#Transcript"/>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transcripts of this document.</vitro:publicDescriptionAnnot>
+        <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
+        <rdfs:label xml:lang="en-us">has transcript</rdfs:label>
     </ObjectProperty>
     
 
@@ -234,17 +254,17 @@
     <!-- http://w3id.org/rdfbones/core#isDepiceted -->
 
     <ObjectProperty rdf:about="http://w3id.org/rdfbones/core#isDepiceted">
-        <vitro:displayLimitAnnot rdf:datatype="&xsd;int">-1</vitro:displayLimitAnnot>
-        <obo:IAO_0000112 rdf:datatype="&xsd;string">A photograph of a human mandible depicts this particular mandible.</obo:IAO_0000112>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">An information source depicts something when it renders a representation of it, using words, sounds, images, or other means (https://en.wiktionary.org/wiki/depict, viewed on 19 October 2015). The property is mainly applicable to images and audiovisual media, as obo:IAO_0000142 (&apos;mentions&apos;) covers cases were a textual information source denotes an entity. </vitro:descriptionAnnot>
-        <vitro:publicDescriptionAnnot rdf:datatype="&xsd;string">Documents representing this object.</vitro:publicDescriptionAnnot>
-        <vitro:selectFromExistingAnnot rdf:datatype="&xsd;boolean">true</vitro:selectFromExistingAnnot>
-        <rdfs:domain rdf:resource="&obo;BFO_0000001"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A photograph of a human mandible depicts this particular mandible.</obo:IAO_0000112>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information source depicts something when it renders a representation of it, using words, sounds, images, or other means (https://en.wiktionary.org/wiki/depict, viewed on 19 October 2015). The property is mainly applicable to images and audiovisual media, as obo:IAO_0000142 (&apos;mentions&apos;) covers cases were a textual information source denotes an entity. </vitro:descriptionAnnot>
+        <vitro:displayLimitAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayLimitAnnot>
+        <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Documents representing this object.</vitro:publicDescriptionAnnot>
+        <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
     </ObjectProperty>
     
 
@@ -258,17 +278,17 @@
     <!-- http://w3id.org/rdfbones/core#isMentioned -->
 
     <ObjectProperty rdf:about="http://w3id.org/rdfbones/core#isMentioned">
-        <rdfs:label xml:lang="en-us">is mentioned in</rdfs:label>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">An entity E is mentioned by an information artifact IA exactly when IA has a component/part that denotes E. </vitro:descriptionAnnot>
-        <obo:IAO_0000112 rdf:datatype="&xsd;string">If a particular femur bone is referenced in a scientific article, this article mentions the bone.</obo:IAO_0000112>
-        <vitro:publicDescriptionAnnot rdf:datatype="&xsd;string">Information sources in which this entity appears.</vitro:publicDescriptionAnnot>
-        <vitro:offerCreateNewOptionAnnot rdf:datatype="&xsd;boolean">true</vitro:offerCreateNewOptionAnnot>
-        <vitro:selectFromExistingAnnot rdf:datatype="&xsd;boolean">true</vitro:selectFromExistingAnnot>
-        <rdfs:domain rdf:resource="&obo;BFO_0000001"/>
-        <rdfs:range rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If a particular femur bone is referenced in a scientific article, this article mentions the bone.</obo:IAO_0000112>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An entity E is mentioned by an information artifact IA exactly when IA has a component/part that denotes E. </vitro:descriptionAnnot>
         <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:offerCreateNewOptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:offerCreateNewOptionAnnot>
+        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information sources in which this entity appears.</vitro:publicDescriptionAnnot>
+        <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
+        <rdfs:label xml:lang="en-us">is mentioned in</rdfs:label>
     </ObjectProperty>
     
 
@@ -276,19 +296,18 @@
     <!-- http://w3id.org/rdfbones/core#physicalRepresentation -->
 
     <ObjectProperty rdf:about="http://w3id.org/rdfbones/core#physicalRepresentation">
-        <rdfs:label xml:lang="en-us">is physical representation of</rdfs:label>
-        <vitro:displayLimitAnnot rdf:datatype="&xsd;int">-1</vitro:displayLimitAnnot>
-        <obo:IAO_0000112 rdf:datatype="&xsd;string">A plaster cast from a Homo erectus mandible is a physical representation of the mandible itself.</obo:IAO_0000112>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">An artefact that has been specifically manufactured in order to resemble a specific material object is a physical representation of this particular object.</vitro:descriptionAnnot>
-        <vitro:publicDescriptionAnnot rdf:datatype="&xsd;string">An object that this artefact is made to resemble.</vitro:publicDescriptionAnnot>
-        <vitro:offerCreateNewOptionAnnot rdf:datatype="&xsd;boolean">true</vitro:offerCreateNewOptionAnnot>
-        <vitro:selectFromExistingAnnot rdf:datatype="&xsd;boolean">true</vitro:selectFromExistingAnnot>
-        <rdfs:range rdf:resource="&obo;BFO_0000040"/>
-        <rdfs:domain rdf:resource="&obo;BFO_0000040"/>
-        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plaster cast from a Homo erectus mandible is a physical representation of the mandible itself.</obo:IAO_0000112>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An artefact that has been specifically manufactured in order to resemble a specific material object is a physical representation of this particular object.</vitro:descriptionAnnot>
+        <vitro:displayLimitAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayLimitAnnot>
         <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <inverseOf rdf:resource="http://w3id.org/rdfbones/core#hasPhysicalRepresentation"/>
+        <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:offerCreateNewOptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:offerCreateNewOptionAnnot>
+        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An object that this artefact is made to resemble.</vitro:publicDescriptionAnnot>
+        <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
+        <rdfs:label xml:lang="en-us">is physical representation of</rdfs:label>
     </ObjectProperty>
     
 
@@ -328,6 +347,20 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core#bonePortion -->
+
+    <DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#bonePortion">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#BoneSegment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <obo:IAO_0000112 xml:lang="en">The portion of the left parietal bone that a bone segment, defined as &apos;frontal part of the left parietal bone&apos;, represents.</obo:IAO_0000112>
+        <vitro:descriptionAnnot xml:lang="en">Renders the portion (0 &lt; bone portion &lt;= 1) of a bone organ that a certain entity occupies.</vitro:descriptionAnnot>
+        <vitro:publicDescriptionAnnot xml:lang="en">Portion of the represented bone.</vitro:publicDescriptionAnnot>
+        <rdfs:label xml:lang="en">bone portion</rdfs:label>
+    </DatatypeProperty>
+    
+
+
     <!-- http://www.w3.org/2006/vcard/ns#note -->
 
     <DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#note"/>
@@ -347,25 +380,74 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
-    <Class rdf:about="&obo;BFO_0000001"/>
+    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
-    <Class rdf:about="&obo;BFO_0000040"/>
+    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_5018 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_5018"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
-    <Class rdf:about="&obo;IAO_0000030"/>
+    <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000579 -->
 
-    <Class rdf:about="&obo;IAO_0000579"/>
+    <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000579"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000938 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000938">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000963 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000963"/>
     
 
 
@@ -393,21 +475,115 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core#BoneSegment -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#BoneSegment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_5018"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The central portion of the diaphysis of the left femur.
+The frontal part of the right parietal bone.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Section of a bone, specifically defined for analytical purposes. Bone segments can be used to code the completeness or preservation of skeletal material in greater detail than for entire bones or to code the location of skeletal traits or traces.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Bone segment</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2State -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2State">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#CompletenessDatum"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, expressing the completeness of skeletal elements as either &apos;complete&apos; or &apos;partly present&apos;. It is not designed to express the absence of skeletal elements (e.g. with inventories of skeletons).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Completeness in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StateLabel -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StateLabel">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
+        <obo:IAO_0000115 xml:lang="en">Labels that can be used for the categorical measurement datum &apos;completeness in two states&apos;.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Label for completeness in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#CompletenessDatum -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#CompletenessDatum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#BoneSegment"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">A categorical measurement datum, specifying if a previously defined bone segment is completely present, partly present or missing. 
+A scalar measurement datum, specifying the portion of a bone that is present for analysis.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum, specifying the portion of a skeletal element that is present and available for analysis.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Completeness datum</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#BoneSegment"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://w3id.org/rdfbones/core#bonePortion"/>
+                <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasValue>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#PrimaryRegistry -->
 
     <Class rdf:about="http://w3id.org/rdfbones/core#PrimaryRegistry">
-        <rdfs:label xml:lang="en-us">Primary registry</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
-                <someValuesFrom rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E78_Collection"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000579"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
-                <someValuesFrom rdf:resource="&obo;IAO_0000579"/>
+                <someValuesFrom rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E78_Collection"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -419,17 +595,29 @@
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
-                <cardinality rdf:datatype="&xsd;nonNegativeInteger">2</cardinality>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</cardinality>
             </Restriction>
         </rdfs:subClassOf>
-        <vitro:displayRankAnnot rdf:datatype="&xsd;int">-1</vitro:displayRankAnnot>
-        <vitro:displayLimitAnnot rdf:datatype="&xsd;int">-1</vitro:displayLimitAnnot>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">A dual relationship between a collection and a centrally registered identifier (CRID) registry that - for a defined period of time - serves as the primary collection catalogue/inventory. All other CRID registries have to reference a primary registry in order to avoid duplicate instances representing the same object.</vitro:descriptionAnnot>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Specifies a centrally registered identifier (CRID) registry for registering material from a collection.</obo:IAO_0000115>
-        <obo:IAO_0000112 rdf:datatype="&xsd;string">The inventory of the Freiburg University Archive is the primary registry of the Alexander Ecker Collection.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The inventory of the Freiburg University Archive is the primary registry of the Alexander Ecker Collection.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specifies a centrally registered identifier (CRID) registry for registering material from a collection.</obo:IAO_0000115>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dual relationship between a collection and a centrally registered identifier (CRID) registry that - for a defined period of time - serves as the primary collection catalogue/inventory. All other CRID registries have to reference a primary registry in order to avoid duplicate instances representing the same object.</vitro:descriptionAnnot>
+        <vitro:displayLimitAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayLimitAnnot>
+        <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayRankAnnot>
         <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <rdfs:label xml:lang="en-us">Primary registry</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#PrimarySkeletalInventory -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#PrimarySkeletalInventory">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventory"/>
+        <obo:IAO_0000112 xml:lang="en">The skeletal inventory representing the skeletal material listed in the collection catalogue of the Alexander Ecker Collection. The catalogue serves as the collection&apos;s primary registry.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A type of skeletal inventory that is used for entering data into the system. It is referenced by a primary registry.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Primary skeletal inventory</rdfs:label>
     </Class>
     
 
@@ -437,19 +625,17 @@
     <!-- http://w3id.org/rdfbones/core#ResearchNote -->
 
     <Class rdf:about="http://w3id.org/rdfbones/core#ResearchNote">
-        <rdfs:label xml:lang="en-us">Research Note</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#note"/>
-                <maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</maxQualifiedCardinality>
-                <onDataRange rdf:resource="&xsd;string"/>
+                <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
-                <someValuesFrom rdf:resource="&obo;BFO_0000001"/>
+                <onProperty rdf:resource="http://purl.org/dc/terms/creator"/>
+                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -461,33 +647,35 @@
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
-                <minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minCardinality>
+                <minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</minCardinality>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://purl.org/dc/terms/creator"/>
-                <maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</maxCardinality>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</cardinality>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#note"/>
-                <allValuesFrom rdf:resource="&xsd;string"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.org/dc/terms/creator"/>
-                <allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+                <onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#note"/>
+                <maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</maxQualifiedCardinality>
+                <onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A note added by researchers working with this database.</obo:IAO_0000115>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">A piece of textual user input, containing additional information on one or several resources. It can be used to relate resources with each other.</vitro:descriptionAnnot>
-        <obo:IAO_0000112 rdf:datatype="&xsd;string">Comments on technichal complications with taking a particular measurement.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comments on technichal complications with taking a particular measurement.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A note added by researchers working with this database.</obo:IAO_0000115>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A piece of textual user input, containing additional information on one or several resources. It can be used to relate resources with each other.</vitro:descriptionAnnot>
         <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <rdfs:label xml:lang="en-us">Research Note</rdfs:label>
     </Class>
     
 
@@ -495,76 +683,123 @@
     <!-- http://w3id.org/rdfbones/core#ResearchReference -->
 
     <Class rdf:about="http://w3id.org/rdfbones/core#ResearchReference">
-        <rdfs:label xml:lang="en-us">Research Reference</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ResearchNote"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
-                <allValuesFrom rdf:resource="&rdfs;Literal"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
-                <allValuesFrom rdf:resource="&rdfs;Literal"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
-                <maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</maxCardinality>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
-                <allValuesFrom rdf:resource="&rdfs;Literal"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
-                <allValuesFrom rdf:resource="&rdfs;Literal"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
-                <maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</maxCardinality>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
-                <maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</maxCardinality>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
-                <maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</maxCardinality>
+                <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
-                <someValuesFrom rdf:resource="&obo;IAO_0000030"/>
+                <minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</minCardinality>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
-                <minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minCardinality>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </Restriction>
         </rdfs:subClassOf>
-        <vitro:displayRankAnnot rdf:datatype="&xsd;int">-1</vitro:displayRankAnnot>
-        <vitro:displayLimitAnnot rdf:datatype="&xsd;int">-1</vitro:displayLimitAnnot>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A note added by researchers working with this database, linking entities of all kinds with documents.</obo:IAO_0000115>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">A piece of textual user input, creating a relationship between one or several entities and an information content entity or part of it.</vitro:descriptionAnnot>
-        <obo:IAO_0000112 rdf:datatype="&xsd;string">The observation by a researcher that a particular skeletal element is referenced in a historic letter.</obo:IAO_0000112>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
+                <allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/chapter"/>
+                <maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</maxCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
+                <maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</maxCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
+                <maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</maxCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
+                <maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</maxCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The observation by a researcher that a particular skeletal element is referenced in a historic letter.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A note added by researchers working with this database, linking entities of all kinds with documents.</obo:IAO_0000115>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A piece of textual user input, creating a relationship between one or several entities and an information content entity or part of it.</vitro:descriptionAnnot>
+        <vitro:displayLimitAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayLimitAnnot>
+        <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayRankAnnot>
         <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <rdfs:label xml:lang="en-us">Research Reference</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#SkeletalInventory -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#SkeletalInventory">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CompletenessDatum"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#TaphonomicStateDatum"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">A list of bones recovered from a medieval burial, detailing which previously defined bone segments are present and giving coded information on surface preservation of these segments.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A skeletal inventory is a data set, listing the skeletal elements that are available in a batch of material, e.g. the skeletal material recovered from a stratigraphic unit or the skeletal material featured in a court trial. It may contain information on completeness and preservation of bones or bone segments.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Skeletal inventory</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#TaphonomicStateDatum -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#TaphonomicStateDatum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#BoneSegment"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">A categorical measurement datum, classifying the surface of a bone segment as &apos;intact&apos;, &apos;partly damaged&apos; or &apos;damaged&apos;.
+A scalar measurement datum, giving the portion of the surface of a bone on which observation of traces is possible.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum about taphonomic traces on skeletal material. It codes the presence or absence of a specific damage and its severity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Taphonomic state datum</rdfs:label>
     </Class>
     
 
@@ -572,26 +807,26 @@
     <!-- http://w3id.org/rdfbones/core#Transcript -->
 
     <Class rdf:about="http://w3id.org/rdfbones/core#Transcript">
-        <rdfs:label xml:lang="en-us">Transcript</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.org/ontology/bibo/transcriptOf"/>
-                <cardinality rdf:datatype="&xsd;nonNegativeInteger">1</cardinality>
-            </Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://purl.org/ontology/bibo/transcriptOf"/>
                 <allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Document"/>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000112 rdf:datatype="&xsd;string">A typed version of a hand-written research note left by a late scholar is a transcript.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">The result of rendering a handwritten or recorded work in writing.</obo:IAO_0000115>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">Transcription turns a text from one form into another, most commonly to make a hand-written or printed document digitally accessible, but also to other ends, e.g. for updating outdated handwriting scripts or typefaces. It also describes the process of putting oral speech from a recording into writing. Example of usage: &quot;Transcription turns handwritten and typed documents into searchable and machine-readable resources.&quot; (https://transcription.si.edu/about; last accessed on 13 October 2015).</vitro:descriptionAnnot>
-        <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/ontology/bibo/transcriptOf"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A typed version of a hand-written research note left by a late scholar is a transcript.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The result of rendering a handwritten or recorded work in writing.</obo:IAO_0000115>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transcription turns a text from one form into another, most commonly to make a hand-written or printed document digitally accessible, but also to other ends, e.g. for updating outdated handwriting scripts or typefaces. It also describes the process of putting oral speech from a recording into writing. Example of usage: &quot;Transcription turns handwritten and typed documents into searchable and machine-readable resources.&quot; (https://transcription.si.edu/about; last accessed on 13 October 2015).</vitro:descriptionAnnot>
         <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <rdfs:label xml:lang="en-us">Transcript</rdfs:label>
     </Class>
     
 
@@ -605,9 +840,40 @@
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
     <Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#complete -->
+
+    <NamedIndividual rdf:about="http://w3id.org/rdfbones/core#complete">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
+        <obo:IAO_0000115 xml:lang="en">Indicates that a skeletal element is entirely preserved and available for analysis.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">complete</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#partlyPresent -->
+
+    <NamedIndividual rdf:about="http://w3id.org/rdfbones/core#partlyPresent">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
+        <obo:IAO_0000115 xml:lang="en">Indicates that only parts of a skeletal element are preserved and available for analysis.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">partly present</rdfs:label>
+    </NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
 
