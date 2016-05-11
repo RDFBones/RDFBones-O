@@ -1,25 +1,15 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY vitro "http://vitro.mannlib.cornell.edu/ns/vitro/0.7#" >
-]>
-
-
 <rdf:RDF xmlns="http://www.cidoc-crm.org/cidoc-crm/"
      xml:base="http://www.cidoc-crm.org/cidoc-crm/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">
     <owl:Ontology rdf:about="http://www.cidoc-crm.org/cidoc-crm/">
         <rdfs:label xml:lang="en-us">CIDOC Conceptual Reference Model</rdfs:label>
-        <vitro:ontologyPrefixAnnot rdf:datatype="&rdfs;Literal">cidoc-crm</vitro:ontologyPrefixAnnot>
+        <vitro:ontologyPrefixAnnot rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">cidoc-crm</vitro:ontologyPrefixAnnot>
     </owl:Ontology>
     
 
@@ -37,13 +27,13 @@
 
     <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot -->
 
-    <owl:AnnotationProperty rdf:about="&vitro;descriptionAnnot"/>
+    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
     
 
 
     <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot -->
 
-    <owl:AnnotationProperty rdf:about="&vitro;ontologyPrefixAnnot"/>
+    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot"/>
     
 
 
@@ -61,16 +51,11 @@
     <!-- http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object">
-        <rdfs:label xml:lang="de">Künstlicher Gegenstand</rdfs:label>
-        <rdfs:label xml:lang="el">Ανθρωπογενές Αντικείμενο</rdfs:label>
-        <rdfs:label xml:lang="en">Man-Made Object</rdfs:label>
-        <rdfs:label xml:lang="fr">Objet fabriqué</rdfs:label>
-        <rdfs:label xml:lang="pt">Objeto Fabricado</rdfs:label>
-        <rdfs:label xml:lang="ru">Рукотворный Объект</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing"/>
         <vitro:descriptionAnnot xml:lang="en">This class comprises physical objects purposely created by human activity.
 No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, an inscribed piece of rock or a preserved butterfly are both regarded as instances of E22 Man-Made Object.
 </vitro:descriptionAnnot>
+        <rdfs:label xml:lang="en">Man-Made Object</rdfs:label>
     </owl:Class>
     
 
@@ -78,16 +63,11 @@ No assumptions are made as to the extent of modification required to justify reg
     <!-- http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing">
-        <rdfs:label xml:lang="de">Hergestelltes</rdfs:label>
-        <rdfs:label xml:lang="el">Ανθρωπογενές Υλικό Πράγμα</rdfs:label>
-        <rdfs:label xml:lang="en">Physical Man-Made Thing</rdfs:label>
-        <rdfs:label xml:lang="fr">Chose matérielle fabriquée</rdfs:label>
-        <rdfs:label xml:lang="pt">Coisa Material Fabricada</rdfs:label>
-        <rdfs:label xml:lang="ru">Физическая Рукотворная Вещь</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E71_Man-Made_Thing"/>
         <vitro:descriptionAnnot xml:lang="en">This class comprises all persistent physical items that are purposely created by human activity.
 This class comprises man-made objects, such as a swords, and man-made features, such as rock art. No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, a “cup and ring” carving on bedrock is regarded as instance of E24 Physical Man-Made Thing. 
 </vitro:descriptionAnnot>
+        <rdfs:label xml:lang="en">Physical Man-Made Thing</rdfs:label>
     </owl:Class>
     
 
@@ -95,15 +75,10 @@ This class comprises man-made objects, such as a swords, and man-made features, 
     <!-- http://www.cidoc-crm.org/cidoc-crm/E71_Man-Made_Thing -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E71_Man-Made_Thing">
-        <rdfs:label xml:lang="de">Künstliches</rdfs:label>
-        <rdfs:label xml:lang="el">Ανθρώπινο Δημιούργημα</rdfs:label>
-        <rdfs:label xml:lang="en">Man-Made Thing</rdfs:label>
-        <rdfs:label xml:lang="fr">Chose fabriquée</rdfs:label>
-        <rdfs:label xml:lang="pt">Coisa Fabricada</rdfs:label>
-        <rdfs:label xml:lang="ru">Рукотворная Вещь</rdfs:label>
         <vitro:descriptionAnnot xml:lang="en">This class comprises discrete, identifiable man-made items that are documented as single units. 
 These items are either intellectual products or man-made physical things, and are characterized by relative stability. They may for instance have a solid physical form, an electronic encoding, or they may be logical concepts or structures.
 </vitro:descriptionAnnot>
+        <rdfs:label xml:lang="en">Man-Made Thing</rdfs:label>
     </owl:Class>
     
 
@@ -111,17 +86,12 @@ These items are either intellectual products or man-made physical things, and ar
     <!-- http://www.cidoc-crm.org/cidoc-crm/E78_Collection -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E78_Collection">
-        <rdfs:label xml:lang="de">Sammlung</rdfs:label>
-        <rdfs:label xml:lang="el">Συλλογή</rdfs:label>
-        <rdfs:label xml:lang="en">Collection</rdfs:label>
-        <rdfs:label xml:lang="fr">Collection</rdfs:label>
-        <rdfs:label xml:lang="pt">Coleção</rdfs:label>
-        <rdfs:label xml:lang="ru">Коллекция</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing"/>
         <vitro:descriptionAnnot xml:lang="en">This class comprises aggregations of instances of E18 Physical Thing that are assembled and maintained (“curated” and “preserved,” in museological terminology) by one or more instances of E39 Actor over time for a specific purpose and audience, and according to a particular collection development plan.  
 Items may be added or removed from an E78 Collection in pursuit of this plan. This class should not be confused with the E39 Actor maintaining the E78 Collection often referred to with the name of the E78 Collection (e.g. “The Wallace Collection decided…”).
 Collective objects in the general sense, like a tomb full of gifts, a folder with stamps or a set of chessmen, should be documented as instances of E19 Physical Object, and not as instances of E78 Collection. This is because they form wholes either because they are physically bound together or because they are kept together for their functionality.
 </vitro:descriptionAnnot>
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
     </owl:Class>
     
 
@@ -129,15 +99,10 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
     <!-- http://www.cidoc-crm.org/cidoc-crm/E7_Activity -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">
-        <rdfs:label xml:lang="de">Handlung</rdfs:label>
-        <rdfs:label xml:lang="el">Δράση</rdfs:label>
-        <rdfs:label xml:lang="en">Activity</rdfs:label>
-        <rdfs:label xml:lang="fr">Activité</rdfs:label>
-        <rdfs:label xml:lang="pt">Atividade</rdfs:label>
-        <rdfs:label xml:lang="ru">Деятельность</rdfs:label>
         <vitro:descriptionAnnot xml:lang="en">This class comprises actions intentionally carried out by instances of E39 Actor that result in changes of state in the cultural, social, or physical systems documented. 
 This notion includes complex, composite and long-lasting actions such as the building of a settlement or a war, as well as simple, short-lived actions such as the opening of a door.
 </vitro:descriptionAnnot>
+        <rdfs:label xml:lang="en">Activity</rdfs:label>
     </owl:Class>
     
 
@@ -145,17 +110,16 @@ This notion includes complex, composite and long-lasting actions such as the bui
     <!-- http://www.cidoc-crm.org/cidoc-crm/E87_Curation_Activity -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E87_Curation_Activity">
-        <rdfs:label xml:lang="de">Kuratorische Tätigkeit</rdfs:label>
-        <rdfs:label xml:lang="en">Curation Activity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
         <vitro:descriptionAnnot xml:lang="en">This class comprises the activities that result in the continuity of management and the preservation and evolution of instances of E78 Collection, following an implicit or explicit curation plan. 
 It specializes the notion of activity into the curation of a collection and allows the history of curation to be recorded.
 Items are accumulated and organized following criteria like subject, chronological period, material type, style of art etc. and can be added or removed from an E78 Collection for a specific purpose and/or audience. The initial aggregation of items of a collection is regarded as an instance of E12 Production Event while the activity of evolving, preserving and promoting a collection is regarded as an instance of E87 Curation Activity.
 </vitro:descriptionAnnot>
+        <rdfs:label xml:lang="en">Curation Activity</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
 
