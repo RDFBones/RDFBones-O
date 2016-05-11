@@ -152,6 +152,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/regional_part_of -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/regional_part_of"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/fma#regional_part_of -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -402,6 +408,120 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_52734 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52734"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52735 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52735"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52736 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52736"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52738 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52738"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52739 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52739"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52740 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52740"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52748 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52748"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52788 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52788"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52789 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52789"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52892 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52892"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52893 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52893"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_53645 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_53645"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_53646 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_53646"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_53647 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_53647"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_53648 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_53648"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_53649 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_53649"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_53650 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_53650"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_53655 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_53655"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_53656 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_53656"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -566,6 +686,289 @@ A scalar measurement datum, specifying the portion of a bone that is present for
                 <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasValue>
             </Restriction>
         </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireEthmoid -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireEthmoid">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52740"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire ethmoid</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireFrontalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireFrontalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52734"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire frontal bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLacrimalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLacrimalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53646"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lacrimal bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftMaxilla -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftMaxilla">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53650"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left maxilla</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftNasalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftNasalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53648"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftPalatineBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftPalatineBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53656"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left palatine bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftParietalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftParietalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52789"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left parietal bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftTemporalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftTemporalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52739"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left temporal bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftZygomaticBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftZygomaticBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52893"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left zygomatic bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireMandible -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireMandible">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52748"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire mandible</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireOccipitalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireOccipitalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52735"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire occipital bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLacrimalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLacrimalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53645"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lacrimal bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightMaxilla -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireRightMaxilla">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53649"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right maxilla</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightNasalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireRightNasalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53647"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightPalatineBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireRightPalatineBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53655"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right palatine bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightParietalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireRightParietalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52788"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right parietal bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightTemporalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireRightTemporalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52738"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right temporal bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightZygomaticBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireRightZygomaticBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52892"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right zygomatic bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSphenoidBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#EntireSphenoidBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52736"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire sphenoid bone</rdfs:label>
     </Class>
     
 
