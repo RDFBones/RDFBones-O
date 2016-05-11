@@ -619,23 +619,26 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     
 
 
+    <!-- http://w3id.org/rdfbones/core#Completeness2StaesEntireLeftParietalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StaesEntireLeftParietalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftParietalBone"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire left parietal bone in two states</rdfs:label>
+    </Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#Completeness2State -->
 
     <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2State">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#CompletenessDatum"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</cardinality>
-            </Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, expressing the completeness of skeletal elements as either &apos;complete&apos; or &apos;partly present&apos;. It is not designed to express the absence of skeletal elements (e.g. with inventories of skeletons).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Completeness in two states</rdfs:label>
     </Class>
@@ -648,6 +651,201 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
         <obo:IAO_0000115 xml:lang="en">Labels that can be used for the categorical measurement datum &apos;completeness in two states&apos;.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Label for completeness in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireFrontalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireFrontalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireFrontalBone"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire frontal bone in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftMaxilla -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftMaxilla">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftMaxilla"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire left maxilla in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftNasalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftNasalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftNasalBone"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire left nasal bone in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftTemporalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftTemporalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftTemporalBone"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire left temporal bone in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireMandible -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireMandible">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireMandible"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire mandible in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireOccipitalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireOccipitalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireOccipitalBone"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire occipital bone in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightMaxilla -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightMaxilla">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightMaxilla"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire right maxilla in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightParietalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightParietalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightParietalBone"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire right parietal bone in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesLeftZygomaticBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesLeftZygomaticBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftZygomaticBone"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire left zygomatic bone in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesRightNasalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesRightNasalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightNasalBone"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire right nasal bone in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesRightTemporalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesRightTemporalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightTemporalBone"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire right temporal bone in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesRightZygomaticBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesRightZygomaticBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightZygomaticBone"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire right zygomatic bone in two states</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesSphenoidBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesSphenoidBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2State"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireSphenoidBone"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of the entire sphenoid bone in two states</rdfs:label>
     </Class>
     
 
@@ -760,6 +958,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53648"/>
             </Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left nasal bone</rdfs:label>
     </Class>
     
 
@@ -894,6 +1093,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53647"/>
             </Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right nasal bone</rdfs:label>
     </Class>
     
 
