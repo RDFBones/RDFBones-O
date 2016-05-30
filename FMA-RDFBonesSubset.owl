@@ -68,50 +68,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/constitutional_part_of -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/constitutional_part_of">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/part_of"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constitutional_part_of</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constitutional_part_of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/part_of -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/part_of">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/regional_part_of -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/regional_part_of">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/part_of"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regional_part_of</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regional_part_of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/systemic_part_of -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/systemic_part_of">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/part_of"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">systemic_part_of</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">systemic_part_of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/fma#bounds -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#bounds"/>
@@ -120,13 +76,45 @@
 
     <!-- http://purl.obolibrary.org/obo/fma#constitutional_part_of -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#constitutional_part_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/fma#part_of"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constitutional_part_of</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constitutional_part_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fma#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/fma#regional_part_of -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#regional_part_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/fma#part_of"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regional_part_of</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regional_part_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fma#systemic_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#systemic_part_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/fma#part_of"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">systemic_part_of</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">systemic_part_of</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -147,13 +135,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -172,13 +160,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -197,13 +185,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -222,13 +210,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -269,13 +257,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9915"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -295,13 +283,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9915"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -321,13 +309,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9915"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -345,13 +333,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9915"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -369,13 +357,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9915"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -393,13 +381,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9915"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -417,13 +405,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9915"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -469,13 +457,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9921"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -493,13 +481,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9921"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -517,13 +505,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9921"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -541,13 +529,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9921"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -565,13 +553,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9921"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -589,7 +577,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_12526"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16202"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -609,7 +597,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_12526"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16202"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -629,7 +617,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_12526"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16202"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -649,7 +637,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_12526"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16202"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -669,7 +657,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_12526"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16202"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -689,13 +677,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7474"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24142"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24142"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -713,13 +701,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7474"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24141"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24141"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -737,13 +725,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_13321"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24163"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24163"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -760,13 +748,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_13321"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24164"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24164"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -783,7 +771,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24141"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -801,13 +789,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_13394"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24163"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24163"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -824,13 +812,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_13394"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24164"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24164"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -873,13 +861,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7477"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13478"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13478"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -959,7 +947,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_16588"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16585"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -978,7 +966,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_16589"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16586"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -995,7 +983,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_16589"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16587"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1012,7 +1000,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_16588"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16585"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1029,7 +1017,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_16592"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16586"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1046,7 +1034,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_16592"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16587"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1063,7 +1051,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_16588"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16585"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1080,7 +1068,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_16595"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16586"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1097,7 +1085,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_16595"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16587"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1114,13 +1102,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7477"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13478"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13478"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2345,13 +2333,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_13303"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24165"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24165"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2368,13 +2356,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_13303"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24166"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24166"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3299,7 +3287,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7474"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24142"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4377,7 +4365,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9611"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24174"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4394,7 +4382,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9611"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24175"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4411,7 +4399,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7474"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24144"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4428,7 +4416,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_24476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24174"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4445,7 +4433,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_24476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24175"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4462,7 +4450,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7474"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24144"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4479,7 +4467,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_24479"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24174"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4496,7 +4484,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_24479"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24175"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4535,7 +4523,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_32672"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24144"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4553,7 +4541,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_24485"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24174"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4570,7 +4558,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_24485"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24175"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4601,13 +4589,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7474"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24222"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24144"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4624,13 +4612,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7474"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24222"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24144"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4720,7 +4708,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_24492"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24222"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4737,7 +4725,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_24492"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24222"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4754,7 +4742,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_24492"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24222"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4771,7 +4759,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_24492"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24222"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4788,7 +4776,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_24492"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24222"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8863,7 +8851,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_12527"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_20229"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8881,7 +8869,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_12527"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_20229"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8899,7 +8887,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_12527"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_20229"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8917,7 +8905,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_12527"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_20229"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -13063,7 +13051,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_32672"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24222"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -13492,25 +13480,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53672"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53672"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -13527,25 +13515,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53672"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53672"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -13562,25 +13550,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7478"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -13610,25 +13598,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52737"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -13645,25 +13633,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52737"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -13680,37 +13668,37 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7478"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52801"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52801"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -13774,25 +13762,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7477"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -13811,19 +13799,19 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7477"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -13885,25 +13873,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9613"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53672"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53672"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -13920,25 +13908,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9613"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53672"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53672"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -14016,25 +14004,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52747"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -14053,25 +14041,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52747"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -14090,25 +14078,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52741"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -14125,25 +14113,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52741"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -14160,25 +14148,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52745"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -14195,25 +14183,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52745"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -14230,25 +14218,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9711"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -14265,25 +14253,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9711"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -14301,25 +14289,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52746"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -14336,25 +14324,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52746"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -14408,13 +14396,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_54736"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -14433,13 +14421,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_54736"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15425,7 +15413,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52751"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15442,7 +15430,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52751"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15459,7 +15447,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52752"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15476,7 +15464,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52752"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15493,7 +15481,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52753"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15510,7 +15498,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_52753"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15596,13 +15584,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15619,7 +15607,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7474"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15793,7 +15781,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7596"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15823,7 +15811,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7596"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15853,7 +15841,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7593"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15892,7 +15880,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7593"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15931,7 +15919,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7593"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15992,7 +15980,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7593"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16031,13 +16019,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7597"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16077,13 +16065,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7620"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16111,13 +16099,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7638"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16156,13 +16144,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7749"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16201,13 +16189,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7597"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16235,13 +16223,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7620"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16269,13 +16257,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7638"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16314,13 +16302,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7776"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16359,13 +16347,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7776"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16404,7 +16392,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7594"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16443,7 +16431,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7593"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16460,13 +16448,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7749"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16505,13 +16493,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_8147"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16550,13 +16538,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_8147"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16595,13 +16583,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7830"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16640,13 +16628,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7830"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16685,13 +16673,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_8120"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16730,13 +16718,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_8120"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17078,7 +17066,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7594"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17117,13 +17105,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_8337"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17162,13 +17150,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_8337"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17207,7 +17195,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7594"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17246,13 +17234,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_8418"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17291,13 +17279,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_8418"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17336,7 +17324,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7595"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17375,7 +17363,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7595"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17414,13 +17402,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_8499"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17437,13 +17425,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_8499"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17460,13 +17448,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_8515"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17483,13 +17471,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_8515"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17605,7 +17593,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9914"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13478"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17637,13 +17625,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17662,13 +17650,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17687,13 +17675,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17712,13 +17700,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17737,7 +17725,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7474"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24144"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17789,19 +17777,19 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7477"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71223"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17853,7 +17841,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_7477"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13478"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17871,7 +17859,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9914"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13478"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17899,13 +17887,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17924,13 +17912,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17949,13 +17937,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -17974,13 +17962,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/constitutional_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/systemic_part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
