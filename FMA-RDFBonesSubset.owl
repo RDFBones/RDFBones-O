@@ -70,7 +70,11 @@
 
     <!-- http://purl.obolibrary.org/obo/fma#bounds -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#bounds"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#bounds">
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bounds</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bounds</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
