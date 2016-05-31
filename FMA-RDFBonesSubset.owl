@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/RDFBones-fma.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/">
         <vitro:ontologyPrefixAnnot rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">obo</vitro:ontologyPrefixAnnot>
         <rdfs:label xml:lang="en-us">Foundational Model of Anatomy</rdfs:label>
     </owl:Ontology>
