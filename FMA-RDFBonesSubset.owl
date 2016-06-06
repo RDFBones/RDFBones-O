@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fma.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fma">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fma/releases/2016-02-09/fma.owl"/>
         <rdfs:comment xml:lang="en">This is a subset of the ALPHA version of the FMA2.0 in obo that was compiled for use with the RDFBones ontology. Conversion based on http://www.bioontology.org/wiki/index.php/FMAInOwl.</rdfs:comment>
         <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">24:07:2008 15:29</oboInOwl:date>
