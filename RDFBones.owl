@@ -346,7 +346,7 @@
     <DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#bonePortion">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#BoneSegment"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <obo:IAO_0000112 xml:lang="en">The portion of the left parietal bone that a bone segment, defined as &apos;frontal part of the left parietal bone&apos;, represents.</obo:IAO_0000112>
         <vitro:descriptionAnnot xml:lang="en">Renders the portion (0 &lt; bone portion &lt;= 1) of a bone organ that a certain entity occupies.</vitro:descriptionAnnot>
         <vitro:publicDescriptionAnnot xml:lang="en">Portion of the represented bone.</vitro:publicDescriptionAnnot>
