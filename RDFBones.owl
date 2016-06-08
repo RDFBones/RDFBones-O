@@ -152,12 +152,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/regional_part_of -->
-
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/regional_part_of"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/fma#regional_part_of -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -2668,7 +2662,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12519"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2683,7 +2677,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7596"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2698,7 +2692,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12520"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2727,7 +2721,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24496"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2742,7 +2736,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23727"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2757,7 +2751,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23889"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2772,7 +2766,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9913"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2787,7 +2781,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9915"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2802,7 +2796,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13321"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2817,7 +2811,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12527"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2832,7 +2826,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_20229"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2847,7 +2841,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24527"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2862,7 +2856,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24517"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2877,7 +2871,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_33303"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2892,7 +2886,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32627"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2907,7 +2901,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_75818"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2922,7 +2916,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32630"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2937,7 +2931,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23946"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2952,7 +2946,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32651"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2967,7 +2961,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32657"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2982,7 +2976,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23953"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -2997,7 +2991,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23959"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3012,7 +3006,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32659"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3027,7 +3021,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23955"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3042,7 +3036,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23957"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3057,7 +3051,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32653"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3072,7 +3066,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32655"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3087,7 +3081,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23951"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3102,7 +3096,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23949"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3117,7 +3111,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32631"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3132,7 +3126,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23947"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3147,7 +3141,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32650"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3162,7 +3156,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32656"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3177,7 +3171,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24460"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3192,7 +3186,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24463"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3207,7 +3201,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32658"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3222,7 +3216,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24461"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3237,7 +3231,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24462"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3252,7 +3246,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32652"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3267,7 +3261,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32654"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3282,7 +3276,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24459"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3297,7 +3291,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23948"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3312,7 +3306,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32628"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3327,7 +3321,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32629"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3342,7 +3336,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23945"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3357,7 +3351,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_75830"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3372,7 +3366,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8120"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3387,7 +3381,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9991"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3402,7 +3396,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8499"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3417,7 +3411,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_10059"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3432,7 +3426,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7594"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3447,7 +3441,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9611"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3462,7 +3456,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24479"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3477,7 +3471,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12523"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3492,7 +3486,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13076"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3507,7 +3501,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23903"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3522,7 +3516,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24506"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3537,7 +3531,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7776"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3552,7 +3546,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13081"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3567,7 +3561,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9922"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3582,7 +3576,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_35495"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3597,7 +3591,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13072"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3612,7 +3606,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23899"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3627,7 +3621,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24502"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3642,7 +3636,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7597"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3657,7 +3651,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13077"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3672,7 +3666,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9165"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3687,7 +3681,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7595"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3702,7 +3696,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12522"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3717,7 +3711,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_35498"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3732,7 +3726,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13075"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3747,7 +3741,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23902"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3762,7 +3756,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24505"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3777,7 +3771,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7749"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3792,7 +3786,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13080"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3807,7 +3801,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9248"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3822,7 +3816,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23730"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3837,7 +3831,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16585"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3852,7 +3846,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13303"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3867,7 +3861,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52749"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3882,7 +3876,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_54736"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3897,7 +3891,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24519"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3912,7 +3906,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_75748"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3927,7 +3921,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52741"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3942,7 +3936,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24520"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3957,7 +3951,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24498"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3972,7 +3966,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24447"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -3987,7 +3981,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13323"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4002,7 +3996,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24529"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4017,7 +4011,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8310"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4032,7 +4026,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8532"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4047,7 +4041,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24475"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4062,7 +4056,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24481"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4077,7 +4071,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24473"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4092,7 +4086,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24516"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4107,7 +4101,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8093"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4122,7 +4116,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24465"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4137,7 +4131,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24508"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4152,7 +4146,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7987"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4167,7 +4161,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24471"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4182,7 +4176,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24514"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4197,7 +4191,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8148"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4212,7 +4206,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24449"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4227,7 +4221,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16587"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4242,7 +4236,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23131"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4257,7 +4251,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_54738"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4272,7 +4266,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24524"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4287,7 +4281,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24526"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4302,7 +4296,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24438"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4317,7 +4311,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24522"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4332,7 +4326,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8391"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4347,7 +4341,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24487"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4362,7 +4356,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24442"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4377,7 +4371,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23465"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4392,7 +4386,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24436"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4407,7 +4401,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13396"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4422,7 +4416,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24467"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4437,7 +4431,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24510"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4452,7 +4446,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8012"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4467,7 +4461,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8256"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4482,7 +4476,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8202"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4497,7 +4491,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24483"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4512,7 +4506,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8472"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4527,7 +4521,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24469"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4542,7 +4536,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24512"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4557,7 +4551,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8039"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4572,7 +4566,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24478"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4587,7 +4581,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24444"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4602,7 +4596,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24445"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4617,7 +4611,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24440"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4632,7 +4626,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8534"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4647,7 +4641,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23468"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4662,7 +4656,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_65469"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4677,7 +4671,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9921"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4692,7 +4686,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23712"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4707,7 +4701,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9711"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4722,7 +4716,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24518"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4737,7 +4731,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9612"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4752,7 +4746,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24492"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4767,7 +4761,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_75817"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4782,7 +4776,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32625"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4797,7 +4791,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23933"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4812,7 +4806,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32647"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4827,7 +4821,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23938"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4842,7 +4836,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23944"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4857,7 +4851,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_230988"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4872,7 +4866,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23940"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4887,7 +4881,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23942"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4902,7 +4896,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32643"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4917,7 +4911,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32645"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4932,7 +4926,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23936"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4947,7 +4941,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_230984"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4962,7 +4956,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23934"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4977,7 +4971,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32646"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -4992,7 +4986,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24455"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5007,7 +5001,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24458"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5022,7 +5016,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_230986"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5037,7 +5031,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24456"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5052,7 +5046,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24457"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5067,7 +5061,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32642"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5082,7 +5076,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32644"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5097,7 +5091,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23935"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5112,7 +5106,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32623"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5127,7 +5121,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32624"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5142,7 +5136,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_75829"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5157,7 +5151,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52745"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5172,7 +5166,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24499"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5187,7 +5181,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24501"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5202,7 +5196,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24500"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5217,7 +5211,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8337"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5232,7 +5226,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_10014"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5247,7 +5241,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52746"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5262,7 +5256,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9613"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5277,7 +5271,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24485"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5292,7 +5286,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32884"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5307,7 +5301,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23914"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5322,7 +5316,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32901"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5337,7 +5331,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_35480"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5352,7 +5346,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_35489"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5367,7 +5361,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32902"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5382,7 +5376,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_35483"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5397,7 +5391,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_35486"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5412,7 +5406,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32899"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5427,7 +5421,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32900"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5442,7 +5436,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_35477"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5457,7 +5451,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24493"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5472,7 +5466,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23718"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5487,7 +5481,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_33302"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5502,7 +5496,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_43252"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5517,7 +5511,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_75816"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5532,7 +5526,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32620"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5547,7 +5541,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23919"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5562,7 +5556,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_43254"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5577,7 +5571,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32639"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5592,7 +5586,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71915"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5607,7 +5601,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_66791"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5622,7 +5616,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32641"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5637,7 +5631,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71908"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5652,7 +5646,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_71916"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5667,7 +5661,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32635"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5682,7 +5676,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32637"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5697,7 +5691,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_65470"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5712,7 +5706,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23922"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5727,7 +5721,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32621"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5742,7 +5736,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23920"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5757,7 +5751,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_43253"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5772,7 +5766,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32638"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5787,7 +5781,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24451"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5802,7 +5796,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24454"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5817,7 +5811,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32640"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5832,7 +5826,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24452"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5847,7 +5841,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24453"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5862,7 +5856,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32634"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5877,7 +5871,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32636"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5892,7 +5886,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24450"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5907,7 +5901,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23921"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5922,7 +5916,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32618"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5937,7 +5931,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_32619"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5952,7 +5946,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23918"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5967,7 +5961,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_75828"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5982,7 +5976,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23463"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -5997,7 +5991,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7574"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6012,7 +6006,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24497"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6027,7 +6021,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24446"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6042,7 +6036,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13322"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6057,7 +6051,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24528"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6072,7 +6066,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8283"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6087,7 +6081,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8531"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6102,7 +6096,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24474"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6117,7 +6111,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24480"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6132,7 +6126,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24472"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6147,7 +6141,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24515"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6162,7 +6156,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8066"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6177,7 +6171,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24464"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6192,7 +6186,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24507"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6207,7 +6201,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7857"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6222,7 +6216,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24470"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6237,7 +6231,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24513"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6252,7 +6246,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7957"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6267,7 +6261,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24448"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6282,7 +6276,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16586"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6297,7 +6291,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23130"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6312,7 +6306,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_54737"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6327,7 +6321,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24523"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6342,7 +6336,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24525"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6357,7 +6351,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24437"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6372,7 +6366,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24521"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6387,7 +6381,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8364"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6402,7 +6396,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24486"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6417,7 +6411,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24441"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6432,7 +6426,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23464"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6447,7 +6441,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24435"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6462,7 +6456,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13395"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6477,7 +6471,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24466"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6492,7 +6486,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24509"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6507,7 +6501,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7882"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6522,7 +6516,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8229"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6537,7 +6531,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8175"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6552,7 +6546,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24482"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6567,7 +6561,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8445"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6582,7 +6576,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24468"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6597,7 +6591,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24511"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6612,7 +6606,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7909"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6627,7 +6621,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24477"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6642,7 +6636,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24443"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6657,7 +6651,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23725"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6672,7 +6666,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24439"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6687,7 +6681,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8533"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6702,7 +6696,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23467"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6717,7 +6711,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12526"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6732,7 +6726,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_16202"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6747,7 +6741,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23709"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6762,7 +6756,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13394"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6777,7 +6771,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_35496"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6792,7 +6786,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13073"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6807,7 +6801,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23900"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6822,7 +6816,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24503"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6837,7 +6831,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7620"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6852,7 +6846,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13078"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6867,7 +6861,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9187"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6882,7 +6876,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12525"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6897,7 +6891,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7830"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6912,7 +6906,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9968"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6927,7 +6921,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12524"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6942,7 +6936,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8147"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6957,7 +6951,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9945"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6972,7 +6966,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7485"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -6987,7 +6981,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9708"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7002,7 +6996,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24491"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7017,7 +7011,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52737"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7032,7 +7026,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8418"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7047,7 +7041,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_10037"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7062,7 +7056,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12521"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7077,7 +7071,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_35497"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7092,7 +7086,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13074"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7107,7 +7101,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23901"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7122,7 +7116,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24504"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7137,7 +7131,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7638"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7152,7 +7146,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13079"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7167,7 +7161,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9209"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7182,7 +7176,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7197,7 +7191,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24476"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7212,7 +7206,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23721"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7227,7 +7221,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23724"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7242,7 +7236,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23715"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7257,7 +7251,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7592"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7272,7 +7266,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8515"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7287,7 +7281,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_10081"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7302,7 +7296,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7593"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7317,7 +7311,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23466"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7332,7 +7326,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9914"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7347,7 +7341,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9710"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -7362,7 +7356,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBone"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/regional_part_of"/>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52747"/>
             </Restriction>
         </rdfs:subClassOf>
