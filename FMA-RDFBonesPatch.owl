@@ -1,779 +1,838 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://w3id.org/rdfbones/patches/obo-fma-patch"
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://w3id.org/rdfbones/patches/obo-fma-patch">
-    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Annotation>
-        <AnnotationProperty IRI="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot"/>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">obo-fma-patch</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Patch for OBO version of the Foundational Model of Anatomy</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This ontology was created to patch obvious ommissions in the Foundational Model of Anatomy for use with the RDFBones ontology. As RDFBones references the FMA in obo (http://purl.obolibrary.org/obo/fma), this ontology is designed to complete this version.</Literal>
-    </Annotation>
-    <Declaration>
-        <Class IRI="#BonyPartOfProximalPhalanxOfFinger"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfProximalCarpalBone"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_35497"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfTypicalRib"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_83129"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33303"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_7595"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_24517"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_13079"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_64087"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_42324"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_29738"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfDistalCarpalBone"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfFifthSacralVertebra"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_24491"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_75828"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_75816"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfTemporalBone"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_29750"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_35496"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_9139"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_7592"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_13078"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfFirstCoccygealVertebra"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_7596"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfProximalPhalanxOfToe"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_13081"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfSecondCoccygealVertebra"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_52739"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfRightTemporalBone"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_12527"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_75817"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_75829"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfFirstSacralVertebra"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfFourthSacralVertebra"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_35495"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_7593"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_75830"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_13077"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfThirdCoccygealVertebra"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfSacralVertebra"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfMiddlePhalanxOfFinger"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_52738"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfDistalPhalanxOfFinger"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_232178"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_13080"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_9915"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfFloatingRib"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_29748"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfLeftTemporalBone"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_40369"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_75818"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_12526"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_51750"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfSecondSacralVertebra"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfCoccygealVertebra"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_7594"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_35498"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfFalseRib"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_9921"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33302"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfFourthCoccygealVertebra"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfMiddlePhalanxOfToe"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_52737"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfThirdSacralVertebra"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfDistalPhalanxOfToe"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_225549"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfAtypicalRib"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_29749"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BonyPartOfTrueRib"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_23889"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33348"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33341"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33314"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33355"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33327"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33362"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33320"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33334"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_232178"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_24491"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_29748"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_9915"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_29749"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_9139"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_29750"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_9921"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33314"/>
-        <Class IRI="#BonyPartOfProximalCarpalBone"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33320"/>
-        <Class IRI="#BonyPartOfProximalCarpalBone"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33327"/>
-        <Class IRI="#BonyPartOfProximalCarpalBone"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33334"/>
-        <Class IRI="#BonyPartOfProximalCarpalBone"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33341"/>
-        <Class IRI="#BonyPartOfDistalCarpalBone"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33348"/>
-        <Class IRI="#BonyPartOfDistalCarpalBone"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33355"/>
-        <Class IRI="#BonyPartOfDistalCarpalBone"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_33362"/>
-        <Class IRI="#BonyPartOfDistalCarpalBone"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_42324"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_23889"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_51750"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_24517"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfAtypicalRib"/>
-        <Class IRI="#BonyPartOfTrueRib"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfAtypicalRib"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_7596"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfCoccygealVertebra"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_29738"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfCoccygealVertebra"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_12527"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfDistalCarpalBone"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_42324"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfDistalCarpalBone"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_33303"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfDistalPhalanxOfFinger"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_40369"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfDistalPhalanxOfFinger"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_75818"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfDistalPhalanxOfToe"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_64087"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfDistalPhalanxOfToe"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_75830"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFalseRib"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_225549"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFalseRib"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_7594"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFifthSacralVertebra"/>
-        <Class IRI="#BonyPartOfSacralVertebra"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFifthSacralVertebra"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_13081"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFirstCoccygealVertebra"/>
-        <Class IRI="#BonyPartOfCoccygealVertebra"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFirstCoccygealVertebra"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_35495"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFirstSacralVertebra"/>
-        <Class IRI="#BonyPartOfSacralVertebra"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFirstSacralVertebra"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_13077"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFloatingRib"/>
-        <Class IRI="#BonyPartOfFalseRib"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFloatingRib"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_7595"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFourthCoccygealVertebra"/>
-        <Class IRI="#BonyPartOfCoccygealVertebra"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFourthCoccygealVertebra"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_35498"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFourthSacralVertebra"/>
-        <Class IRI="#BonyPartOfSacralVertebra"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfFourthSacralVertebra"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_13080"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfLeftTemporalBone"/>
-        <Class IRI="#BonyPartOfTemporalBone"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfLeftTemporalBone"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_52739"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfMiddlePhalanxOfFinger"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_40369"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfMiddlePhalanxOfFinger"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_75817"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfMiddlePhalanxOfToe"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_64087"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfMiddlePhalanxOfToe"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_75829"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfProximalCarpalBone"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_42324"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfProximalCarpalBone"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_33302"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfProximalPhalanxOfFinger"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_40369"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfProximalPhalanxOfFinger"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_75816"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfProximalPhalanxOfToe"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_64087"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfProximalPhalanxOfToe"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_75828"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfRightTemporalBone"/>
-        <Class IRI="#BonyPartOfTemporalBone"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfRightTemporalBone"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_52738"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfSacralVertebra"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_29738"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfSacralVertebra"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_12526"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfSecondCoccygealVertebra"/>
-        <Class IRI="#BonyPartOfCoccygealVertebra"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfSecondCoccygealVertebra"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_35496"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfSecondSacralVertebra"/>
-        <Class IRI="#BonyPartOfSacralVertebra"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfSecondSacralVertebra"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_13078"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfTemporalBone"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_83129"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfTemporalBone"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_52737"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfThirdCoccygealVertebra"/>
-        <Class IRI="#BonyPartOfCoccygealVertebra"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfThirdCoccygealVertebra"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_35497"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfThirdSacralVertebra"/>
-        <Class IRI="#BonyPartOfSacralVertebra"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfThirdSacralVertebra"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_13079"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfTrueRib"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FMA_225549"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfTrueRib"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_7592"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfTypicalRib"/>
-        <Class IRI="#BonyPartOfTrueRib"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BonyPartOfTypicalRib"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-            <Class IRI="http://purl.obolibrary.org/obo/FMA_7593"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfAtypicalRib</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of atypical rib</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfCoccygealVertebra</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of coccygeal vertebra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfDistalCarpalBone</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of distal carpal bone</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfDistalPhalanxOfFinger</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of distal phalanx of finger</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfDistalPhalanxOfToe</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of distal phalanx of toe</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfFalseRib</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of false rib</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfFifthSacralVertebra</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of fifth sacral vertebra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfFirstCoccygealVertebra</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of first coccygeal vertebra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfFirstSacralVertebra</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of first sacral vertebra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfFloatingRib</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of floating rib</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfFourthCoccygealVertebra</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of fourth coccygeal vertebra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfFourthSacralVertebra</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of fourth sacral vertebra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfLeftTemporalBone</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of left temporal bone</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfMiddlePhalanxOfFinger</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of middle phalanx of finger</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfMiddlePhalanxOfToe</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of middle phalanx of toe</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfProximalCarpalBone</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of proximal carpal bone</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfProximalPhalanxOfFinger</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of proximal phalanx of finger</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfProximalPhalanxOfToe</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of proximal phalanx of toe</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfRightTemporalBone</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of right temporal bone</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfSacralVertebra</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of sacral vertebra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfSecondCoccygealVertebra</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of second coccygeal vertebra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfSecondSacralVertebra</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of second sacral vertebra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfTemporalBone</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of temporal bone</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfThirdCoccygealVertebra</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of third coccygeal vertebra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfThirdSacralVertebra</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of third sacral vertebra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfTrueRib</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of true rib</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#BonyPartOfTypicalRib</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bony part of typical rib</Literal>
-    </AnnotationAssertion>
-</Ontology>
+     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">
+    <Ontology rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch">
+        <vitro:ontologyPrefixAnnot rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">obo-fma-patch</vitro:ontologyPrefixAnnot>
+        <rdfs:label xml:lang="en">Patch for OBO version of the Foundational Model of Anatomy</rdfs:label>
+        <rdfs:comment xml:lang="en">This ontology was created to patch obvious ommissions in the Foundational Model of Anatomy for use with the RDFBones ontology. As RDFBones references the FMA in obo (http://purl.obolibrary.org/obo/fma), this ontology is designed to complete this version.</rdfs:comment>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot -->
+
+    <AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fma#constitutional_part_of -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_12526 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_12526"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_12527 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_12527"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_13077 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_13077"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_13078 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_13078"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_13079 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_13079"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_13080 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_13080"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_13081 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_13081"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_225549 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_225549"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_232178 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_232178">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24491"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_23889 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_23889"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_24491 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_24491"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_24517 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_24517"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_29738 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_29738"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_29748 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_29748">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9915"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_29749 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_29749">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9139"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_29750 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_29750">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9921"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_33302 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_33302"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_33303 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_33303"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_33314 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_33314">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfProximalCarpalBone"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_33320 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_33320">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfProximalCarpalBone"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_33327 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_33327">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfProximalCarpalBone"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_33334 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_33334">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfProximalCarpalBone"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_33341 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_33341">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfDistalCarpalBone"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_33348 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_33348">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfDistalCarpalBone"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_33355 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_33355">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfDistalCarpalBone"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_33362 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_33362">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfDistalCarpalBone"/>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_35495 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_35495"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_35496 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_35496"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_35497 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_35497"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_35498 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_35498"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_40369 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_40369"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_42324 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_42324">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_23889"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_51750 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_51750">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_24517"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52737 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52737"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52738 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52738"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52739 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_52739"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_64087 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_64087"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_75816 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_75816"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_75817 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_75817"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_75818 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_75818"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_75828 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_75828"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_75829 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_75829"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_75830 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_75830"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_7592 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_7592"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_7593 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_7593"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_7594 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_7594"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_7595 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_7595"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_7596 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_7596"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_83129 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_83129"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9139 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_9139"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9915 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_9915"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9921 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_9921"/>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfAtypicalRib -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfAtypicalRib">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfTrueRib"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7596"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of atypical rib</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfCoccygealVertebra -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfCoccygealVertebra">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_29738"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12527"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of coccygeal vertebra</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfDistalCarpalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfDistalCarpalBone">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_42324"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_33303"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of distal carpal bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfDistalPhalanxOfFinger -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfDistalPhalanxOfFinger">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_40369"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_75818"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of distal phalanx of finger</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfDistalPhalanxOfToe -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfDistalPhalanxOfToe">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_64087"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_75830"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of distal phalanx of toe</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFalseRib -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFalseRib">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_225549"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7594"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of false rib</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFifthSacralVertebra -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFifthSacralVertebra">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfSacralVertebra"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13081"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of fifth sacral vertebra</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFirstCoccygealVertebra -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFirstCoccygealVertebra">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfCoccygealVertebra"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_35495"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of first coccygeal vertebra</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFirstSacralVertebra -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFirstSacralVertebra">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfSacralVertebra"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13077"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of first sacral vertebra</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFloatingRib -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFloatingRib">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFalseRib"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7595"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of floating rib</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFourthCoccygealVertebra -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFourthCoccygealVertebra">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfCoccygealVertebra"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_35498"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of fourth coccygeal vertebra</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFourthSacralVertebra -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfFourthSacralVertebra">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfSacralVertebra"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13080"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of fourth sacral vertebra</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfLeftTemporalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfLeftTemporalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfTemporalBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52739"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of left temporal bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfMiddlePhalanxOfFinger -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfMiddlePhalanxOfFinger">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_40369"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_75817"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of middle phalanx of finger</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfMiddlePhalanxOfToe -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfMiddlePhalanxOfToe">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_64087"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_75829"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of middle phalanx of toe</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfProximalCarpalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfProximalCarpalBone">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_42324"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_33302"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of proximal carpal bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfProximalPhalanxOfFinger -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfProximalPhalanxOfFinger">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_40369"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_75816"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of proximal phalanx of finger</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfProximalPhalanxOfToe -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfProximalPhalanxOfToe">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_64087"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_75828"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of proximal phalanx of toe</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfRightTemporalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfRightTemporalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfTemporalBone"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52738"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of right temporal bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfSacralVertebra -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfSacralVertebra">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_29738"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12526"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of sacral vertebra</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfSecondCoccygealVertebra -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfSecondCoccygealVertebra">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfCoccygealVertebra"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_35496"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of second coccygeal vertebra</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfSecondSacralVertebra -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfSecondSacralVertebra">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfSacralVertebra"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13078"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of second sacral vertebra</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfTemporalBone -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfTemporalBone">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_83129"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52737"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of temporal bone</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfThirdCoccygealVertebra -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfThirdCoccygealVertebra">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfCoccygealVertebra"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_35497"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of third coccygeal vertebra</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfThirdSacralVertebra -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfThirdSacralVertebra">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfSacralVertebra"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_13079"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of third sacral vertebra</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfTrueRib -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfTrueRib">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_225549"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7592"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of true rib</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfTypicalRib -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfTypicalRib">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/patches/obo-fma-patch#BonyPartOfTrueRib"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_7593"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bony part of typical rib</rdfs:label>
+    </Class>
+</rdf:RDF>
 
 
 
