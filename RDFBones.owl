@@ -363,7 +363,7 @@
 
     <DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#bonyPartOfBonePortion">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/rdfbones/core#skeletalElementPortion"/>
-        <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#SegmentOfBonyPartOfBoneOrgan"/>
+        <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#SegmentOfBonyPartOfBone"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <obo:IAO_0000112 xml:lang="en">The portion of the of the bony part of the left parietal bone that a segment, defined as &apos;frontal part of the bony part of the left parietal bone&apos;, represents.</obo:IAO_0000112>
         <vitro:descriptionAnnot xml:lang="en">Renders the portion (0 &lt; bony part of bone portion &lt;= 1) of the bony part of a bone organ that a certain entity occupies.</vitro:descriptionAnnot>
@@ -2507,9 +2507,9 @@
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">The central portion of the diaphysis of the left femur.
 The frontal part of the right parietal bone.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">Section of a bone organ, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of skeletal material in greater detail than for entire bones or to code the location of skeletal traits or traces.</obo:IAO_0000115>
-        <vitro:descriptionAnnot xml:lang="en">Use subclasses of this class to describe skeletal material that still contains its organic component (e.g. forensic material).</vitro:descriptionAnnot>
-        <rdfs:label xml:lang="en">Segment of bone organ</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Section of a skeletal element, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of skeletal material in varying degees of detail or to code the location of skeletal traits or traces.</obo:IAO_0000115>
+        <vitro:descriptionAnnot xml:lang="en">Use subclasses of this class to describe fresj skeletal material that still contains all its components, including bone marrow (e.g. forensic material).</vitro:descriptionAnnot>
+        <rdfs:label xml:lang="en">Segment of bone</rdfs:label>
     </Class>
     
 
@@ -7604,7 +7604,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfBoneOrgan -->
 
     <Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfBoneOrgan">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfBonyPartOfBoneOrgan"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfBonyPartOfBone"/>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://w3id.org/rdfbones/core#bonyPartOfBonePortion"/>
@@ -14743,9 +14743,9 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     
 
 
-    <!-- http://w3id.org/rdfbones/core#SegmentOfBonyPartOfBoneOrgan -->
+    <!-- http://w3id.org/rdfbones/core#SegmentOfBonyPartOfBone -->
 
-    <Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfBonyPartOfBoneOrgan">
+    <Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfBonyPartOfBone">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
         <rdfs:subClassOf>
             <Restriction>
@@ -14759,9 +14759,9 @@ A scalar measurement datum, specifying the portion of a bone that is present for
                 <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</cardinality>
             </Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Section of the bony part of a bone, specifically defined for analytical purposes. Bone segments can be used to code the completeness or preservation of skeletal material in greater detail than for the entire bony part of bones or to code the location of skeletal traits or traces.</obo:IAO_0000115>
-        <vitro:descriptionAnnot xml:lang="en">Use subclasses of this class to describe skeletal material that is depleted of its organic component (e.g. historical/archaeological material).</vitro:descriptionAnnot>
-        <rdfs:label xml:lang="en">Segment of bony part of bone organ</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Section of the bony part of a skeletal element, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of skeletal material in greater detail than for the entire bony part of bones or to code the location of skeletal traits or traces.</obo:IAO_0000115>
+        <vitro:descriptionAnnot xml:lang="en">Use subclasses of this class to describe skeletal material that only contains cortical, compact and spongy bone, but no other components like bone marrow (e.g. historical/archaeological material, mascerated material in anatomical collections).</vitro:descriptionAnnot>
+        <rdfs:label xml:lang="en">Segment of bony part of bone</rdfs:label>
     </Class>
     
 
