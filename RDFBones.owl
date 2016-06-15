@@ -9331,7 +9331,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#BoneSegment"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
