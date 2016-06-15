@@ -15,6 +15,7 @@
         <rdfs:comment xml:lang="en">This is a subset of the ALPHA version of the FMA2.0 in obo that was compiled for use with the RDFBones ontology. Conversion based on http://www.bioontology.org/wiki/index.php/FMAInOwl.</rdfs:comment>
         <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">24:07:2008 15:29</oboInOwl:date>
         <vitro:ontologyPrefixAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo-fma</vitro:ontologyPrefixAnnot>
+        <rdfs:comment xml:lang="en">A restriction axiom was removed from class obo:FMA_225585 (&apos;Bony part of left third rib&apos;) on 15 June 2016 while preparing the RDFBones subset. This was done because it erroneously associated the class with class obo:FMA_8093 (&apos;Left fifth rib&apos;) in the original OBO version of the FMA.</rdfs:comment>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
     </owl:Ontology>
@@ -1375,12 +1376,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_8093"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
