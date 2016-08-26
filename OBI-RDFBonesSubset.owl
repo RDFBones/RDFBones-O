@@ -7,7 +7,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">
+     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/">
         <vitro:ontologyPrefixAnnot rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">obo</vitro:ontologyPrefixAnnot>
         <rdfs:label xml:lang="en-us">Ontology for Biomedical Investigations</rdfs:label>
@@ -92,6 +93,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0001886 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001886"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
     <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot -->
 
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot"/>
@@ -171,6 +184,12 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
     
 
 
@@ -279,6 +298,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
@@ -311,6 +336,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033"/>
     
 
 
@@ -601,6 +632,104 @@ editor = PRS</IAO_0000232>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000684 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000684">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specimen collection objective</IAO_0000111>
+        <IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The objective to collect bits of excrement in the rainforest. The objective to obtain a blood sample from a patient.</IAO_0000112>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A objective specification to obtain a material entity for potential use as an input during an investigation.</IAO_0000115>
+        <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bjoern Peters</IAO_0000117>
+        <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bjoern Peters</IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specimen collection objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000750 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000750">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000111 xml:lang="en">study design independent variable</IAO_0000111>
+        <IAO_0000112>In a study in which gene expression is measured in patients between 8 month to 4 years old that have mild or severe malaria and in which the hypothesis is that gene expression in that age group is a function of disease status, disease status is the independent variable.</IAO_0000112>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <IAO_0000115 xml:lang="en">a directive information entity that is part of a study design. Independent variables are entities whose values are selected to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled</IAO_0000115>
+        <IAO_0000116 xml:lang="en">2/2/2009 Original definition - In the design of experiments, independent variables are those whose values are controlled or selected by the person experimenting (experimenter) to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled.</IAO_0000116>
+        <IAO_0000116>In the Philly 2013 workshop the label was chosen to distinguish it from &quot;dependent variable&quot; as used in statistical modelling. See: http://en.wikipedia.org/wiki/Statistical_modeling</IAO_0000116>
+        <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Alan Ruttenberg</IAO_0000117>
+        <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Bjoern Peters</IAO_0000117>
+        <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chris Stoeckert</IAO_0000117>
+        <IAO_0000118>experimental factor</IAO_0000118>
+        <IAO_0000118>independent variable</IAO_0000118>
+        <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</IAO_0000119>
+        <IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify thisdefinition please notify OBI.</IAO_0000232>
+        <OBI_0001847 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study factor</OBI_0001847>
+        <rdfs:label xml:lang="en">study design independent variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000751 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000751">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000111 xml:lang="en">study design dependent variable</IAO_0000111>
+        <IAO_0000112>In a study in which gene expression is measured in patients between 8 month to 4 years old that have mild or severe malaria and in which the hypothesis is that gene expression in that age group is a function of disease status, the gene expression is the dependent variable. </IAO_0000112>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <IAO_0000115 xml:lang="en">dependent variable specification is part of a study design. The dependent variable is the event studied and expected to change when the independent variable varies.</IAO_0000115>
+        <IAO_0000116 xml:lang="en">2/2/2009 In the design of experiments, independent variables are those whose values are controlled or selected by the person experimenting (experimenter) to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled.</IAO_0000116>
+        <IAO_0000116>In the Philly 2013 workshop the label was chosen to distinguish it from &quot;dependent variable&quot; as used in statistical modelling. See: http://en.wikipedia.org/wiki/Statistical_modeling</IAO_0000116>
+        <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Alan Ruttenberg</IAO_0000117>
+        <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Bjoern Peters</IAO_0000117>
+        <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chris Stoeckert</IAO_0000117>
+        <IAO_0000118>dependent variable</IAO_0000118>
+        <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</IAO_0000119>
+        <IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify thisdefinition please notify OBI.</IAO_0000232>
+        <rdfs:label xml:lang="en">study design dependent variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000785 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000785">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000111 xml:lang="en">study design controlled variable</IAO_0000111>
+        <IAO_0000112>In a study in which gene expression is measured in patients between 8 month to 4 years old that have mild or severe malaria and in which the hypothesis is that gene expression in that age group is a function of disease status, age is a controlled variable.</IAO_0000112>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <IAO_0000115 xml:lang="en">Controlled variable specification  is a part of a study design. They are the entities that could vary, but are kept constant to prevent their influence on the effect of the independent variable on the dependent.</IAO_0000115>
+        <IAO_0000116 xml:lang="en">2/2/2009 Original definition: Controlled variables are also important to identify in experiments. They are the variables that are kept constant to prevent their influence on the effect of the independent variable on the dependent. Every experiment has a controlling variable, and it is necessary to not change it, or the results of the experiment won&apos;t be valid</IAO_0000116>
+        <IAO_0000116>In the Philly 2013 workshop the label was chosen to distinguish it from &quot;controlled variable&quot; as used in statistical modelling</IAO_0000116>
+        <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Alan Ruttenberg</IAO_0000117>
+        <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Bjoern Peters</IAO_0000117>
+        <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chris Stoeckert</IAO_0000117>
+        <IAO_0000118>controlled variable</IAO_0000118>
+        <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://en.wikipedia.org/wiki/Control_variable</IAO_0000119>
+        <IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify thisdefinition please notify OBI.</IAO_0000232>
+        <rdfs:label xml:lang="en">study design controlled variable</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000938 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000938">
@@ -670,6 +799,81 @@ editor = PRS</IAO_0000232>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0001892 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001892">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000111 xml:lang="en">specification of data to be generated in an investigation</IAO_0000111>
+        <IAO_0000112>Some examples of Project Objectives are Raw sequence reads, Sequence, Analysis, Assembly, Annotation, Variation, Epigenetic markers, expression, maps, phenotype</IAO_0000112>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <IAO_0000115>An objective specification which indicates the type of data that will be generated and submitted to a database.</IAO_0000115>
+        <IAO_0000117>PERSON: Chris Stoeckert, Jie Zheng</IAO_0000117>
+        <IAO_0000119>NIAID GSCID-BRC metadata working group</IAO_0000119>
+        <OBI_0001886>Project Objectives</OBI_0001886>
+        <dc:source>NIAID GSCID-BRC</dc:source>
+        <rdfs:label xml:lang="en">specification of data to be generated in an investigation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001896 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001896">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000111 xml:lang="en">investigation assay specification</IAO_0000111>
+        <IAO_0000112>Some examples of Project Method are Sequence, Array, Mass Spectrometry</IAO_0000112>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <IAO_0000115>A plan specification which indicates the assay type used to obtain data.</IAO_0000115>
+        <IAO_0000117>PERSON: Chris Stoeckert, Jie Zheng</IAO_0000117>
+        <IAO_0000119>NIAID GSCID-BRC metadata working group</IAO_0000119>
+        <OBI_0001886>Project Method</OBI_0001886>
+        <dc:source>NIAID GSCID-BRC</dc:source>
+        <rdfs:label xml:lang="en">investigation assay specification</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001908 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001908">
@@ -707,6 +911,28 @@ editor = PRS</IAO_0000232>
         <IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen.</IAO_0000112>
         <IAO_0000115 xml:lang="en">A material entity that has the specimen role.</IAO_0000115>
         <rdfs:label xml:lang="en">specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200166">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <IAO_0000111 xml:lang="en">data transformation objective</IAO_0000111>
+        <IAO_0000112 xml:lang="en">normalize objective</IAO_0000112>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <IAO_0000115 xml:lang="en">An objective specification to transformation input data into output data</IAO_0000115>
+        <IAO_0000116>Modified definition in 2013 Philly OBI workshop</IAO_0000116>
+        <IAO_0000117 xml:lang="en">James Malone</IAO_0000117>
+        <IAO_0000119 xml:lang="en">PERSON: James Malone</IAO_0000119>
+        <rdfs:label xml:lang="en">data transformation objective</rdfs:label>
     </owl:Class>
     
 
