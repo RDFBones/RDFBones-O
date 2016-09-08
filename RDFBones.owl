@@ -17,7 +17,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#">
+     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <Ontology rdf:about="http://w3id.org/rdfbones/core">
         <rdfs:label xml:lang="en-us">RDF Bones</rdfs:label>
         <vitro:ontologyPrefixAnnot rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">rdfbones</vitro:ontologyPrefixAnnot>
@@ -119,6 +120,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -144,11 +151,35 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000999 -->
 
     <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000999">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001938 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001938"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053"/>
     
 
 
@@ -4237,6 +4268,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
@@ -4246,6 +4283,73 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000579 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000579"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000067 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000067"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000067"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                                            <Restriction>
+                                                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000067"/>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000260 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000260"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000659 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000659"/>
     
 
 
@@ -4271,6 +4375,18 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000963 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000963"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001896 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001896"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001933 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001933"/>
     
 
 
@@ -28423,6 +28539,92 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <obo:IAO_0000112 xml:lang="en">A list of bones recovered from a medieval burial, detailing which previously defined bone segments are present and giving coded information on surface preservation of these segments.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A skeletal inventory is a data set, listing the skeletal elements that are available in a batch of material, e.g. the skeletal material recovered from a stratigraphic unit or the skeletal material featured in a court trial. It may contain information on completeness and preservation of bones or bone segments.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Skeletal inventory</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#SkeletalMaterialRequirement -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                        <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                        <onClass rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                        <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                        <onClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <obo:IAO_0000115 xml:lang="en">A plan specification that defines what skeletal material is essentially needed to perform a specific assay.</obo:IAO_0000115>
+        <vitro:descriptionAnnot xml:lang="en">A skeletal material requirement specification typically is part of an investigation assay specification. It refers both to a defined segment of some skeletal element and to a value specification for a specific measurement datum that describes this segment in a skeletal inventory. Only instances of the specified segment that meet the value specification are admitted for execution of the assay. In a particular investigation, the skeletal material requirement specification is matched against the skeletal material specifications from the investigation&apos;s plan that accommodates an investigation type and its study design to a specific investigation.</vitro:descriptionAnnot>
+        <rdfs:label xml:lang="en">Skeletal material requirement</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#SkeletalMaterialSpecification -->
+
+    <Class rdf:about="http://w3id.org/rdfbones/core#SkeletalMaterialSpecification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventory"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</minQualifiedCardinality>
+                <onClass rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventory"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A plan specification that defines what skeletal material is used in a specific investigation.</obo:IAO_0000115>
+        <vitro:descriptionAnnot xml:lang="en">A skeletal material specification is typically part of a plan that accommodates an investigation type and its study design to a specific investigation. It refers both to a number of skeletal inventories and to a specific type of specimen collection process. The specimen collection process matches the skeletal material specification with the corresponding skeletal material requirement specification to identify skeletal elements that are suited for a certain type of assay.</vitro:descriptionAnnot>
+        <rdfs:label xml:lang="en">Skeletal material specification</rdfs:label>
     </Class>
     
 
