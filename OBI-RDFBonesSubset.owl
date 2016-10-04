@@ -346,9 +346,31 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000004 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000004">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <IAO_0000111 xml:lang="en">has measurement value</IAO_0000111>
+        <rdfs:label xml:lang="en">has measurement value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001937 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001937"/>
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001937">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <IAO_0000111>has specified value</IAO_0000111>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <IAO_0000115>A relation between a value specification and a number that quantifies it.</IAO_0000115>
+        <IAO_0000116>A range of &apos;real&apos; might be better than &apos;float&apos;. For now we follow &apos;has measurement value&apos; until we can consider technical issues with SPARQL queries and reasoning.</IAO_0000116>
+        <IAO_0000117>PERSON: James A. Overton</IAO_0000117>
+        <IAO_0000119>OBI</IAO_0000119>
+        <rdfs:label>has specified value</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -443,6 +465,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032"/>
     
 
 
