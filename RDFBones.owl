@@ -232,8 +232,6 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
         <inverseOf rdf:resource="http://w3id.org/rdfbones/core#isDepicted"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
-	<!-- range on thing is too unspecific and leads to unusability of depicts -->
-        <!-- <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/> -->
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A photograph of a human mandible depicts this particular mandible.</obo:IAO_0000112>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information source depicts something when it renders a representation of it, using words, sounds, images, or other means (https://en.wiktionary.org/wiki/depict, viewed on 19 October 2015). The property is mainly applicable to images and audiovisual media, as obo:IAO_0000142 (&apos;mentions&apos;) covers cases were a textual information source denotes an entity. </vitro:descriptionAnnot>
         <vitro:displayLimitAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayLimitAnnot>
@@ -4356,20 +4354,7 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000938 -->
 
-    <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000938">
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
-                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
-                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</cardinality>
-            </Restriction>
-        </rdfs:subClassOf>
-    </Class>
+    <Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000938"/>
     
 
 
@@ -4455,6 +4440,30 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <Class rdf:about="http://w3id.org/rdfbones/core#Completeness2States">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#CompletenessDatum"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, expressing the completeness of skeletal elements as either &apos;complete&apos; or &apos;partly present&apos;. It is not designed to express the absence of skeletal elements (e.g. with inventories of skeletons).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Completeness in two states</rdfs:label>
     </Class>
@@ -14365,18 +14374,6 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
 
     <Class rdf:about="http://w3id.org/rdfbones/core#CompletenessDatum">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
-            </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</cardinality>
-            </Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">A categorical measurement datum, specifying if a previously defined bone segment is completely present, partly present or missing. 
 A scalar measurement datum, specifying the portion of a bone that is present for analysis.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A measurement datum, specifying the portion of a skeletal element that is present and available for analysis.</obo:IAO_0000115>
