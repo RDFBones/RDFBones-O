@@ -158,9 +158,7 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000999 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000999">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    </ObjectProperty>
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000999"/>
     
 
 
