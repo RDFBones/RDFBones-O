@@ -188,14 +188,7 @@
 
     <!-- http://purl.org/ontology/bibo/transcriptOf -->
 
-    <ObjectProperty rdf:about="http://purl.org/ontology/bibo/transcriptOf">
-        <inverseOf rdf:resource="http://w3id.org/rdfbones/core#hasTranscript"/>
-        <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#Transcript"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A typed version of a hand-written research note left by a late scholar is a transcript.</obo:IAO_0000112>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transcription turns a text from one form into another, most commonly to make a hand-written or printed document digitally accessible, but also to other ends, e.g. for updating outdated handwriting scripts or typefaces. It also describes the process of putting oral speech from a recording into writing. Example of usage: &quot;Transcription turns handwritten and typed documents into searchable and machine-readable resources.&quot; (https://transcription.si.edu/about; last accessed on 13 October 2015).</vitro:descriptionAnnot>
-        <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The document that this document is a transcript of.</vitro:publicDescriptionAnnot>
-    </ObjectProperty>
+    <ObjectProperty rdf:about="http://purl.org/ontology/bibo/transcriptOf"/>
     
 
 
