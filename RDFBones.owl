@@ -28522,43 +28522,41 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#SkeletalMaterialRequirement -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#SkeletalMaterialRequirement">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <obo:IAO_0000115 xml:lang="en">A plan specification that defines what skeletal material is essentially needed to perform a specific assay.</obo:IAO_0000115>
-        <vitro:descriptionAnnot xml:lang="en">A skeletal material requirement specification typically is part of an investigation assay specification. It refers both to a defined segment of some skeletal element and to a value specification for a specific measurement datum that describes this segment in a skeletal inventory. Only instances of the specified segment that meet the value specification are admitted for execution of the assay. In a particular investigation, the skeletal material requirement specification is matched against the skeletal material specifications from the investigation&apos;s plan that accommodates an investigation type and its study design to a specific investigation.</vitro:descriptionAnnot>
-        <rdfs:label xml:lang="en">Skeletal material requirement</rdfs:label>
-    </owl:Class>
+	    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+	    <rdfs:subClassOf>
+	      <owl:Restriction>
+		<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001896"/>
+	      </owl:Restriction>
+	    </rdfs:subClassOf>
+	    <rdfs:subClassOf>
+              <owl:Restriction>
+                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000659"/>
+              </owl:Restriction>
+	    </rdfs:subClassOf>
+	    <rdfs:subClassOf>
+              <owl:Restriction>
+		<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+		<owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+              </owl:Restriction>
+	    </rdfs:subClassOf>
+	    <rdfs:subClassOf>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+		<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+              </owl:Restriction>
+	    </rdfs:subClassOf>
+	    <rdfs:subClassOf>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+		<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+              </owl:Restriction>
+	    </rdfs:subClassOf>
+	    <obo:IAO_0000115 xml:lang="en">A plan specification that defines what skeletal material is essentially needed to perform a specific assay.</obo:IAO_0000115>
+	    <vitro:descriptionAnnot xml:lang="en">A skeletal material requirement specification typically is part of an investigation assay specification. It refers both to a defined segment of some skeletal element and to a value specification for a specific measurement datum that describes this segment in a skeletal inventory. Only instances of the specified segment that meet the value specification are admitted for execution of the assay. In a particular investigation, the skeletal material requirement specification is matched against the skeletal material specifications from the investigation&apos;s plan that accommodates an investigation type and its study design to a specific investigation.</vitro:descriptionAnnot>
+	    <rdfs:label xml:lang="en">Skeletal material requirement</rdfs:label>
+	  </owl:Class>
     
 
 
@@ -28585,17 +28583,11 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+          <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+	    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+	  </owl:Restriction>
+	</rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A plan specification that defines what skeletal material is used in a specific investigation.</obo:IAO_0000115>
         <vitro:descriptionAnnot xml:lang="en">A skeletal material specification is typically part of a plan that accommodates an investigation type and its study design to a specific investigation. It refers both to a number of skeletal inventories and to a specific type of specimen collection process. The specimen collection process matches the skeletal material specification with the corresponding skeletal material requirement specification to identify skeletal elements that are suited for a certain type of assay.</vitro:descriptionAnnot>
         <rdfs:label xml:lang="en">Skeletal material specification</rdfs:label>
