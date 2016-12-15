@@ -28583,11 +28583,11 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+          <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+	    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+	  </owl:Restriction>
+	</rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A plan specification that defines what skeletal material is used in a specific investigation.</obo:IAO_0000115>
         <vitro:descriptionAnnot xml:lang="en">A skeletal material specification is typically part of a plan that accommodates an investigation type and its study design to a specific investigation. It refers both to a number of skeletal inventories and to a specific type of specimen collection process. The specimen collection process matches the skeletal material specification with the corresponding skeletal material requirement specification to identify skeletal elements that are suited for a certain type of assay.</vitro:descriptionAnnot>
         <rdfs:label xml:lang="en">Skeletal material specification</rdfs:label>
