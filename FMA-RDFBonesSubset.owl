@@ -12590,6 +12590,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_5897 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_5897">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_67112"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immaterial anatomical entity which has three spatial dimensions. Examples: celom, thoracic cavity, lesser sac of peritoneum, cavity of right atrium, lumen of aorta, mediastinal space, space of anterior compartment of forearm, intervertebral foramen space.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:5897</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical space</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_59415 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_59415">
@@ -12773,6 +12785,19 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:66791</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proximal phalanx of left little finger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_67112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_67112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_61775"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical anatomical entity which is a three-dimensional space, surface, line or point associated with a material anatomical entity. Examples: body space, surface of heart, costal margin, apex of right lung, anterior compartment of right arm.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immaterial physical anatomical entity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67112</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immaterial anatomical entity</rdfs:label>
     </owl:Class>
     
 
@@ -15036,6 +15061,19 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:8472</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Left tenth rib</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84926 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84926">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_5897"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical space which contains two or more anatomical structures demarcated by bona fide boundaries and is bounded by the surface of two or more anatomical structures. Examples: orbital cavity, suprasternal space, thoracic cavity, fascial space, hepatic lacuna.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Space of anatomical compartment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:84926</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical compartment space</rdfs:label>
     </owl:Class>
     
 
