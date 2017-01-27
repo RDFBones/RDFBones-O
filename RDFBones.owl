@@ -4404,6 +4404,56 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     
 
 
+    <!-- http://w3id.org/rdfbones/core#Closure2StateLabel -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StateLabel">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
+        <obo:IAO_0000115 xml:lang="en">Labels that can be used for the categorical measurement datum &apos;closure in two states&apos;.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Label for closure in two states</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2States -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2States">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ClosureDatum"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Closure2StateLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, expressing closure as either 'open' or 'closed'.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Closure in two states</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#ClosureDatum -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#ClosureDatum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000112 xml:lang="en">A measurement datum, specifying the degree to which something is closed or still open.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum, specifying whether a tooth socket is absorbed (i.e. closed) or still open.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Closure datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#Completeness2StateLabel -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StateLabel">
@@ -28839,12 +28889,32 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
     
 
 
+    <!-- http://w3id.org/rdfbones/core#closed -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#closed">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Closure2StateLabel"/>
+        <obo:IAO_0000115 xml:lang="en">Indicates that something (e.g. a skeletal feature) is closed.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">closed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#complete -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#complete">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
         <obo:IAO_0000115 xml:lang="en">Indicates that a skeletal element is entirely preserved and available for analysis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">complete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#open -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#open">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Closure2StateLabel"/>
+        <obo:IAO_0000115 xml:lang="en">Indicates that something (e.g. a skeletal feature) is open.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">open</rdfs:label>
     </owl:NamedIndividual>
     
 
