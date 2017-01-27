@@ -24345,6 +24345,56 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     
 
 
+    <!-- http://w3id.org/rdfbones/core#Expression2StateLabel -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StateLabel">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
+        <obo:IAO_0000115 xml:lang="en">Labels that can be used for the categorical measurement datum &apos;expression in two states&apos;.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Label for expression in two states</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2States -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2States">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ExpressionDatum"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Expression2StateLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, describing expression as either "expressed" or "not expressed".</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Expression in two states</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#ExpressionDatum -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#ExpressionDatum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000112 xml:lang="en">A measurement datum, specifying the kind of expression or the degree to which a biological feature is expressed.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum, specifying whether a genetically encoded trait is expressed or not.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Expression datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#PrimaryRegistry -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#PrimaryRegistry">
@@ -28905,6 +28955,26 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
         <obo:IAO_0000115 xml:lang="en">Indicates that a skeletal element is entirely preserved and available for analysis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">complete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#expressed -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#expressed">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Expression2StateLabel"/>
+        <obo:IAO_0000115 xml:lang="en">Indicates that something is expressed.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">expressed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#notExpressed -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#notExpressed">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Expression2StateLabel"/>
+        <obo:IAO_0000115 xml:lang="en">Indicates that something is not expressed.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">not expressed</rdfs:label>
     </owl:NamedIndividual>
     
 
