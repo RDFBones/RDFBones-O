@@ -451,6 +451,18 @@
     <!-- http://purl.obolibrary.org/obo/FMA_12519 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_12519"/>
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_12516 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_12516">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -3667,6 +3679,422 @@
     <!-- http://purl.obolibrary.org/obo/FMA_54738 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_54738"/>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55680 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55680">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55681 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55681">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55682 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55682">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55683 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55683">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55686 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55686">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55687 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55687">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55688 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55688">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperSecondPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55689 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55689">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperFirstPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55690 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55690">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperFirstPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55691 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55691">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperSecondPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55692 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55692">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerSecondPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55693 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55693">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerFirstPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55694 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55694">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerFirstPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55695 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55695">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerSecondPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55696 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55696">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperThirdMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55697 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55697">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55698 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55698">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55699 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55699">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55700 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55700">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55701 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55701">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperThirdMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55702 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55702">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerThirdMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55703 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55703">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55704">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55705 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55705">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55706 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55706">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55707 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55707">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerThirdMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55798 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55798">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55799 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55799">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_57140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_57140">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_57141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_57141">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_57142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_57142">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_57143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_57143">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -4069,6 +4497,266 @@
     <!-- http://purl.obolibrary.org/obo/FMA_8418 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_8418"/>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84220 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84220">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84221 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84221">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84222">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84223 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84223">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84224">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84225">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84226">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84227">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84230">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84231">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84232">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84233">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84238">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84239">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84240">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84241">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84242">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84243 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84243">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84244 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84244">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84245">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
