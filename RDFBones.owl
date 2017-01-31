@@ -4081,6 +4081,12 @@
     <!-- http://purl.obolibrary.org/obo/FMA_8472 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_8472"/>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84926 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84926"/>
     
 
 
@@ -24392,6 +24398,150 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <obo:IAO_0000115 xml:lang="en">A measurement datum, specifying whether a genetically encoded trait is expressed or not.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Expression datum</rdfs:label>
     </owl:Class>
+
+    
+
+    <!-- http://w3id.org/rdfbones/core#LeftLowerCaninePosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftLowerCaninePosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left lower canine position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftLowerCentralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftLowerCentralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left lower central incisor position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftLowerFirstMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftLowerFirstMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left lower first molar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftLowerFirstPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftLowerFirstPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left lower first premolar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftLowerLateralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftLowerLateralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left lower lateral incisor position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftLowerSecondMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftLowerSecondMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left lower second molar position</rdfs:label>
+   </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftLowerSecondPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftLowerSecondPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left lower second premolar position</rdfs:label>
+   </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftLowerThirdMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftLowerThirdMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left lower third molar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftUpperCaninePosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftUpperCaninePosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left upper canine position</rdfs:label>
+   </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftUpperCentralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftUpperCentralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left upper central incisor position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftUpperFirstMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftUpperFirstMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left upper first molar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftUpperFirstPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftUpperFirstPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left upper first premolar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftUpperLateralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftUpperLateralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left upper lateral incisor position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftUpperSecondMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftUpperSecondMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left upper second molar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftUpperSecondPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftUpperSecondPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left upper second premolar position</rdfs:label>
+   </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftUpperThirdMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftUpperThirdMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Left upper third molar position</rdfs:label>
+    </owl:Class>
     
 
 
@@ -28561,6 +28711,150 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <rdfs:label xml:lang="en-us">Research Reference</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightLowerCaninePosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightLowerCaninePosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right lower canine position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightLowerCentralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightLowerCentralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right lower central incisor position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightLowerFirstMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightLowerFirstMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right lower first molar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightLowerFirstPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightLowerFirstPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right lower first premolar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightLowerLateralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightLowerLateralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right lower lateral incisor position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightLowerSecondMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightLowerSecondMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right lower second molar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightLowerSecondPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightLowerSecondPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right lower second premolar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightLowerThirdMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightLowerThirdMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right lower third molar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightUpperCaninePosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightUpperCaninePosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right upper canine position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightUpperCentralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightUpperCentralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right upper central incisor position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightUpperFirstMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightUpperFirstMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right upper first molar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightUpperFirstPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightUpperFirstPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right upper first premolar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightUpperLateralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightUpperLateralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right upper lateral incisor position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightUpperSecondMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightUpperSecondMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right upper second molar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightUpperSecondPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightUpperSecondPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right upper second premolar position</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#RightUpperThirdMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightUpperThirdMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+       <rdfs:label xml:lang="en">Right upper third molar position</rdfs:label>
+    </owl:Class>
     
 
 
@@ -28724,6 +29018,15 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <obo:IAO_0000115 xml:lang="en">A measurement datum about taphonomic traces on skeletal material. It codes the presence or absence of a specific damage and its severity.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Taphonomic state datum</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#ToothPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#ToothPosition">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_84926"/>
+       <rdfs:label xml:lang="en">Tooth position</rdfs:label>
+    </owl:Class>
     
 
 
@@ -28751,6 +29054,15 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <rdfs:label xml:lang="en-us">Transcript</rdfs:label>
     </owl:Class>
+
+
+
+<!-- http://w3id.org/rdfbones/core#ToothPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#ToothPosition">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_84926"/>
+       <rdfs:label xml:lang="en">Tooth position</rdfs:label>
+   </owl:Class>
     
 
 
