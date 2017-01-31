@@ -20967,6 +20967,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire calcaneus</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57985"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire canine socket</rdfs:label>
+    </owl:Class>
     
 
 
@@ -22137,6 +22152,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire hyoid bone</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57984"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire incisor socket</rdfs:label>
+    </owl:Class>
     
 
 
@@ -22571,6 +22601,126 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire left lateral cuneiform bone</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCanineSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower canine socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerCentralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerCentralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCentralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower central incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerFirstMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerFirstMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower first molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerFirstPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerFirstPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower first premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerLateralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerLateralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerLateralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower lateral incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerSecondMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerSecondMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58044"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower second molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerSecondPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerSecondPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower second premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerThirdMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerThirdMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerThirdMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower third molar socket</rdfs:label>
     </owl:Class>
     
 
@@ -23007,6 +23157,126 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire left ulna</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCanineSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper canine socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperCentralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperCentralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCentralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57995"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper central incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperFirstMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperFirstMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58055"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper first molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperFirstPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperFirstPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper first premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperLateralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperLateralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperLateralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57997"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper lateral incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperSecondMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperSecondMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper second molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperSecondPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperSecondPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper second premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperThirdMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperThirdMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperThirdMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper third molar socket</rdfs:label>
+    </owl:Class>
     
 
 
@@ -23021,6 +23291,171 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire left zygomatic bone</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireCanineSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower canine socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerCentralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerCentralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57998"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower central incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerFirstMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerFirstMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower first molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerFirstPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerFirstPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower first premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57990"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerLateralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerLateralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57999"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower lateral incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntirePremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerSecondMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerSecondMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower second molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerSecondPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerSecondPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower second premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerThirdMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerThirdMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower third molar socket</rdfs:label>
     </owl:Class>
     
 
@@ -23532,6 +23967,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire middle phalanx of toe</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57988"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire molar socket</rdfs:label>
+    </owl:Class>
     
 
 
@@ -23876,6 +24326,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire pisiform</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntirePremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntirePremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57986"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire premolar socket</rdfs:label>
     </owl:Class>
     
 
@@ -24762,6 +25227,126 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire right lateral cuneiform bone</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCanineSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower canine socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerCentralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerCentralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCentralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower central incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerFirstMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerFirstMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58045"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower first molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerFirstPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerFirstPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower first premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerLateralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerLateralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerLateralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower lateral incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerSecondMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerSecondMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58043"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower second molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerSecondPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerSecondPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower second premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerThirdMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerThirdMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerThirdMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower third molar socket</rdfs:label>
+    </owl:Class>
     
 
 
@@ -25196,6 +25781,126 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire right ulna</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCanineSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper canine socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperCentralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperCentralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCentralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57994"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper central incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperFirstMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperFirstMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58054"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper first molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperFirstPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperFirstPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper first premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperLateralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperLateralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperLateralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57996"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper lateral incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperSecondMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperSecondMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper second molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperSecondPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperSecondPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper second premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperThirdMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperThirdMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperThirdMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58050"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper third molar socket</rdfs:label>
     </owl:Class>
     
 
@@ -25722,6 +26427,81 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire tibia</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireToothSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireToothSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57490"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire tooth socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireToothSocketOfLeftMaxilla -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireToothSocketOfLeftMaxilla">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocketOfMaxilla"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_59065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire tooth socket of left maxilla</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireToothSocketOfMandible -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireToothSocketOfMandible">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire tooth socket of mandible</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireToothSocketOfMaxilla -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireToothSocketOfMaxilla">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58056"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire tooth socket of maxilla</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireToothSocketOfRightMaxilla -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireToothSocketOfRightMaxilla">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocketOfMaxilla"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_59063"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire tooth socket of right maxilla</rdfs:label>
+    </owl:Class>
     
 
 
@@ -25841,6 +26621,171 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire ulna</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireCanineSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper canine socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperCentralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperCentralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57992"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper central incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperFirstMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperFirstMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper first molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperFirstPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperFirstPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper first premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57989"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperLateralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperLateralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57993"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper lateral incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntirePremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperSecondMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperSecondMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper second molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperSecondPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperSecondPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper second premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperThirdMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperThirdMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper third molar socket</rdfs:label>
     </owl:Class>
     
 
