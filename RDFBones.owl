@@ -18,7 +18,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:sio="http://semanticscience.org/resource">
     <owl:Ontology rdf:about="http://w3id.org/rdfbones/core">
         <rdfs:label xml:lang="en-us">RDF Bones</rdfs:label>
         <vitro:ontologyPrefixAnnot rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">rdfbones</vitro:ontologyPrefixAnnot>
@@ -46,6 +47,18 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+
+
+
+    <!-- http://semanticscience.org/resource/SIO_000128 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000128"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000202 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000202"/>
     
 
 
@@ -462,6 +475,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57490"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -511,6 +530,19 @@
     <!-- http://purl.obolibrary.org/obo/FMA_12527 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_12527"/>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_12823 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_12823">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57984"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -3682,6 +3714,45 @@
 
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_55636 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55636">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57985"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55637 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55637">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57986"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55638 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55638">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57988"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_55680 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55680">
@@ -3689,6 +3760,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57996"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3704,6 +3781,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperCentralIncisorPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57994"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -3715,6 +3798,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57995"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3730,6 +3819,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperLateralIncisorPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57997"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -3741,6 +3836,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3756,6 +3857,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerCaninePosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -3767,6 +3874,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperSecondPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3782,6 +3895,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperFirstPremolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -3793,6 +3912,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperFirstPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3808,6 +3933,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperSecondPremolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -3819,6 +3950,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerSecondPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3834,6 +3971,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerFirstPremolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -3845,6 +3988,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerFirstPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3860,6 +4009,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerSecondPremolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -3871,6 +4026,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperThirdMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58050"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3886,6 +4047,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperSecondMolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -3897,6 +4064,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3912,6 +4085,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperFirstMolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58055"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -3923,6 +4102,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3938,6 +4123,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperThirdMolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -3949,6 +4140,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerThirdMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3964,6 +4161,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerSecondMolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58044"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -3975,6 +4178,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3990,6 +4199,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerFirstMolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58045"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4001,6 +4216,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4016,6 +4237,168 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerThirdMolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55712 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55712">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57989"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55713 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55713">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57990"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55714 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55714">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55715 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55715">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55716 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55716">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55717 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55717">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55720 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55720">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55721 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55721">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55722 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55722">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57992"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55723 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55723">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57998"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55724 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55724">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57993"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55725 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55725">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57999"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4027,6 +4410,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4042,6 +4431,142 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperCaninePosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55801 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55801">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55802 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55802">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55803 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55803">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55804 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55804">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55811 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55811">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55812 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55812">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55813 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55813">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55814 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55814">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55815 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55815">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55817 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55817">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4053,6 +4578,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4068,6 +4599,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerLateralIncisorPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4081,6 +4618,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerCentralIncisorPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4092,6 +4635,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4500,6 +5049,136 @@
 
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_84210 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84210">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84211 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84211">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84212 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84212">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84213 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84213">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84214">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57989"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84215 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84215">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57990"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84216 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84216">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57992"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84217 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84217">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57993"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84218 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84218">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57998"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84219">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57999"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_84220 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84220">
@@ -4507,6 +5186,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57994"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4522,6 +5207,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperCentralIncisorPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57995"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4533,6 +5224,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57996"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4548,6 +5245,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperLateralIncisorPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57997"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4559,6 +5262,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4574,6 +5283,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerCentralIncisorPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4585,6 +5300,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4600,6 +5321,38 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerLateralIncisorPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84228">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84229 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84229">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4611,6 +5364,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4626,6 +5385,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperCaninePosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4637,6 +5402,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4652,6 +5423,38 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerCaninePosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84236">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84237">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4663,6 +5466,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4678,6 +5487,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperFirstMolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58055"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4689,6 +5504,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58052"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4704,6 +5525,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperSecondMolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4715,6 +5542,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58045"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4730,6 +5563,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerFirstMolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4743,6 +5582,12 @@
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerSecondMolarPosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58043"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
 
@@ -4754,6 +5599,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
