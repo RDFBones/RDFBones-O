@@ -29294,18 +29294,513 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, describing expression as either "expressed" or "not expressed".</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Expression in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftLowerCaninePosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftLowerCaninePosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left lower canine position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftLowerCentralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftLowerCentralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left lower central incisor position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftLowerFirstMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftLowerFirstMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left lower first molar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftLowerFirstPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftLowerFirstPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerFirstPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left lower first premolar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftLowerLateralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftLowerLateralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left lower lateral incisor position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftLowerSecondMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftLowerSecondMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left lower second molar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftLowerSecondPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftLowerSecondPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerSecondPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left lower second premolar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftLowerThirdMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftLowerThirdMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftLowerThirdMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left lower third molar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftUpperCaninePosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftUpperCaninePosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left upper canine position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftUpperCentralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftUpperCentralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left upper central incisor position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftUpperFirstMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftUpperFirstMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left upper first molar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftUpperFirstPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftUpperFirstPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperFirstPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left upper first premolar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftUpperLateralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftUpperLateralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left upper lateral incisor position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftUpperSecondMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftUpperSecondMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left upper second molar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftUpperSecondPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftUpperSecondPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperSecondPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left upper second premolar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesLeftUpperThirdMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesLeftUpperThirdMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftUpperThirdMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of left upper third molar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightLowerCaninePosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightLowerCaninePosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right lower canine position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightLowerCentralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightLowerCentralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right lower central incisor position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightLowerFirstMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightLowerFirstMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right lower first molar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightLowerFirstPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightLowerFirstPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerFirstPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right lower first premolar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightLowerLateralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightLowerLateralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right lower lateral incisor position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightLowerSecondMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightLowerSecondMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right lower second molar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightLowerSecondPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightLowerSecondPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerSecondPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right lower second premolar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightLowerThirdMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightLowerThirdMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightLowerThirdMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right lower third molar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightUpperCaninePosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightUpperCaninePosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperCaninePosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right upper canine position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightUpperCentralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightUpperCentralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperCentralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right upper central incisor position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightUpperFirstMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightUpperFirstMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperFirstMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right upper first molar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightUpperFirstPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightUpperFirstPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperFirstPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right upper first premolar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightUpperLateralIncisorPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightUpperLateralIncisorPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperLateralIncisorPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right upper lateral incisor position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightUpperSecondMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightUpperSecondMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperSecondMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right upper second molar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightUpperSecondPremolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightUpperSecondPremolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperSecondPremolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right upper second premolar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesRightUpperThirdMolarPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesRightUpperThirdMolarPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2StatesToothPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightUpperThirdMolarPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of right upper third molar position in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Expression2StatesToothPosition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Expression2StatesToothPosition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Expression2States"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#ToothPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Expression of tooth position in two states</rdfs:label>
     </owl:Class>
     
 
