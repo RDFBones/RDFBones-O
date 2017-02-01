@@ -5973,6 +5973,12 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5985,8 +5991,954 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, expressing closure as either 'open' or 'closed'.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Closure in two states</rdfs:label>
     </owl:Class>
+
     
 
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire canine socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerCanineSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left lower canine socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerCentralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerCentralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerCentralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerCentralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left lower central incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerFirstMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerFirstMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerFirstMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerFirstMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left lower first molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerFirstPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerFirstPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerFirstPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerFirstPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left lower first premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerLateralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerLateralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerLateralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerLateralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left lower lateral incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerSecondMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerSecondMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerSecondMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerSecondMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left lower second molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerSecondPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerSecondPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerSecondPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerSecondPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left lower second premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerThirdMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftLowerThirdMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerThirdMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerThirdMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left lower third molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperCanineSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left upper canine socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperCentralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperCentralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperCentralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperCentralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left upper central incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperFirstMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperFirstMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperFirstMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperFirstMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left upper first molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperFirstPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperFirstPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperFirstPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperFirstPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left upper first premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperLateralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperLateralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperLateralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperLateralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left upper lateral incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperSecondMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperSecondMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperSecondMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperSecondMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left upper second molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperSecondPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperSecondPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperSecondPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperSecondPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left upper second premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperThirdMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLeftUpperThirdMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperThirdMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperThirdMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire left upper third molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLowerCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireCanineSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire lower canine socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLowerCentralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerCentralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCentralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire lower central incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLowerFirstMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerFirstMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire lower first molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLowerFirstPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerFirstPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire lower first premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLowerIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire lower incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLowerLateralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerLateralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerLateralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire lower lateral incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLowerMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire lower molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLowerPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntirePremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire lower premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLowerSecondMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerSecondMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire lower second molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLowerSecondPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerSecondPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire lower second premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireLowerThirdMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerThirdMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerThirdMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire lower third molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntirePremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntirePremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntirePremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerCanineSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right lower canine socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerCentralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerCentralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerCentralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerCentralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right lower central incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerFirstMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerFirstMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerFirstMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerFirstMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right lower first molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerFirstPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerFirstPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerFirstPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerFirstPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right lower first premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerLateralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerLateralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerLateralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerLateralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right lower lateral incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerSecondMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerSecondMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerSecondMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerSecondMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right lower second molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerSecondPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerSecondPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerSecondPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerSecondPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right lower second premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerThirdMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightLowerThirdMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireLowerThirdMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerThirdMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right lower third molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperCanineSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right upper canine socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperCentralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperCentralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperCentralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperCentralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right upper central incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperFirstMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperFirstMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperFirstMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperFirstMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right upper first molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperFirstPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperFirstPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperFirstPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperFirstPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right upper first premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperLateralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperLateralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperLateralIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperLateralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right upper lateral incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperSecondMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperSecondMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperSecondMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperSecondMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right upper second molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperSecondPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperSecondPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperSecondPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperSecondPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right upper second premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperThirdMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireRightUpperThirdMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperThirdMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperThirdMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire right upper third molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2States"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire tooth socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocketOfLeftMaxilla -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocketOfLeftMaxilla">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocketOfMaxilla"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocketOfLeftMaxilla"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire tooth socket of left maxilla in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocketOfMandible -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocketOfMandible">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocketOfMandible"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire tooth socket of mandible in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocketOfMaxilla -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocketOfMaxilla">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocketOfMaxilla"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire tooth socket of maxilla in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocketOfRightMaxilla -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocketOfRightMaxilla">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireToothSocketOfMaxilla"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocketOfRightMaxilla"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire tooth socket of right maxilla in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireUpperCanineSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperCanineSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireCanineSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire upper canine socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireUpperCentralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperCentralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCentralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire upper central incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireUpperFirstMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperFirstMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire upper first molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireUpperFirstPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperFirstPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire upper first premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireUpperIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire upper incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireUpperLateralIncisorSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperLateralIncisorSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperIncisorSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperLateralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire upper lateral incisor socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireUpperMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire upper molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireUpperPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntirePremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire upper premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireUpperSecondMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperSecondMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire upper second molar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireUpperSecondPremolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperSecondPremolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperPremolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire upper second premolar socket in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Closure2StatesEntireUpperThirdMolarSocket -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperThirdMolarSocket">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Closure2StatesEntireUpperMolarSocket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperThirdMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Closure of entire upper third molar socket in two states</rdfs:label>
+    </owl:Class>
+
+    
 
     <!-- http://w3id.org/rdfbones/core#ClosureDatum -->
 
