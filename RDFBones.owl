@@ -3713,6 +3713,32 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_54738"/>
 
 
+    
+    <!-- http://purl.obolibrary.org/obo/FMA_55634 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55634">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#bounds"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9711"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+    
+    <!-- http://purl.obolibrary.org/obo/FMA_55635 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55635">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#bounds"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_52748"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
 
     <!-- http://purl.obolibrary.org/obo/FMA_55636 -->
 
