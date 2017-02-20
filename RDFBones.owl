@@ -14638,6 +14638,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfBigToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfBigToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfBigToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -14668,6 +14669,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfFourthToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfFourthToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfFourthToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -14683,6 +14685,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfIndexFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfIndexFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfIndexFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -14848,6 +14851,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfLittleFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfLittleFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfLittleFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -14863,6 +14867,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfLittleToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfLittleToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfLittleToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -14878,6 +14883,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfMiddleFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfMiddleFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfMiddleFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -15043,6 +15049,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfRingFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfRingFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfRingFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -15058,6 +15065,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfSecondToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfSecondToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfSecondToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -15073,6 +15081,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfThirdToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfThirdToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfThirdToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -15088,6 +15097,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfThumb -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfThumb">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfDistalPhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfThumb"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16648,6 +16658,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfFourthToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfFourthToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfFourthToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16663,6 +16674,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfIndexFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfIndexFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfIndexFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16798,6 +16810,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfLittleFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfLittleFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfLittleFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16813,6 +16826,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfLittleToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfLittleToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfLittleToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16828,6 +16842,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfMiddleFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfMiddleFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfMiddleFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16963,6 +16978,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfRingFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfRingFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfRingFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16978,6 +16994,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfSecondToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfSecondToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfSecondToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16993,6 +17010,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfThirdToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfThirdToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfMiddlePhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfThirdToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -17384,6 +17402,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfBigToe">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfBigToe"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -17414,6 +17433,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfFourthToe">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfFourthToe"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -17429,6 +17449,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfIndexFinger">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfIndexFinger"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -17594,6 +17615,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfLittleFinger">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfLittleFinger"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -17609,6 +17631,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfLittleToe">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfLittleToe"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -17624,6 +17647,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfMiddleFinger">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfMiddleFinger"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -17789,6 +17813,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfRingFinger">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfRingFinger"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -17804,6 +17829,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfSecondToe">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfSecondToe"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -17819,6 +17845,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfThirdToe">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfThirdToe"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -17834,6 +17861,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfThumb">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfPhalanxOfThumb"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireBonyPartOfProximalPhalanxOfFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
