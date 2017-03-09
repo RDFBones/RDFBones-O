@@ -4707,6 +4707,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfBigToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfBigToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfBigToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4737,6 +4738,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfFourthToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfFourthToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfFourthToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4752,6 +4754,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfIndexFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfIndexFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfIndexFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4917,6 +4920,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfLittleFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfLittleFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfLittleFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4932,6 +4936,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfLittleToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfLittleToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfLittleToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4947,6 +4952,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfMiddleFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfMiddleFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfMiddleFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5112,6 +5118,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfRingFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfRingFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfRingFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5127,6 +5134,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfSecondToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfSecondToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfSecondToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5142,6 +5150,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfThirdToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfThirdToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfThirdToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5157,6 +5166,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfThumb -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfThumb">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfDistalPhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfThumb"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6717,6 +6727,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfFourthToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfFourthToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfFourthToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6732,6 +6743,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfIndexFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfIndexFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfIndexFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6867,6 +6879,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfLittleFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfLittleFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfLittleFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6882,6 +6895,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfLittleToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfLittleToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfLittleToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6897,6 +6911,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfMiddleFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfMiddleFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfMiddleFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -7032,6 +7047,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfRingFinger -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfRingFinger">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfFinger"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfRingFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -7047,6 +7063,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfSecondToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfSecondToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfSecondToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -7062,6 +7079,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfThirdToe -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfThirdToe">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfMiddlePhalanxOfToe"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfThirdToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -7453,6 +7471,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfBigToe">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfBigToe"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -7483,6 +7502,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfFourthToe">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfFourthToe"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -7498,6 +7518,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfIndexFinger">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfIndexFinger"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -7663,6 +7684,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfLittleFinger">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfLittleFinger"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -7678,6 +7700,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfLittleToe">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfLittleToe"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -7693,6 +7716,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfMiddleFinger">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfMiddleFinger"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -7858,6 +7882,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfRingFinger">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfRingFinger"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -7873,6 +7898,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfSecondToe">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfSecondToe"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -7888,6 +7914,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfThirdToe">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfThirdToe"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfToe"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -7903,6 +7930,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfThumb">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfPhalanxOfThumb"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireBonyPartOfProximalPhalanxOfFinger"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
