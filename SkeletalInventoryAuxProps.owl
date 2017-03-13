@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ns2="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:geopolitical="http://aims.fao.org/aos/geopolitical.owl#"
+     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+     xmlns:core="http://vivoweb.org/ontology/core#"
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <Ontology rdf:about="http://w3id.org/rdfbones/core">
+        <rdfs:label xml:lang="en-us">RDF Bones</rdfs:label>
+        <vitro:ontologyPrefixAnnot rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">rdfbones</vitro:ontologyPrefixAnnot>
+    </Ontology>
+
+  
+   <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000142">
+         <inverseOf rdf:resource="http://w3id.org/rdfbones/core#isMentioned"/>
+         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If a particular femur bone is referenced in a scientific article, this article mentions the bone.</obo:IAO_0000112>
+         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An entity E is mentioned by an information artifact IA exactly when IA has a component/part that denotes E. </vitro:descriptionAnnot>
+         <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Entities this document is about.</vitro:publicDescriptionAnnot>
+     </ObjectProperty>
+     
+     <ObjectProperty rdf:about="http://w3id.org/rdfbones/core#hasCoherentSkeletalRegion">
+ 	<rdfs:label xml:lang="en-US">hasCoherentSkeletalRegion</rdfs:label>
+         <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#PrimarySkeletalInventoryDryBone"/>
+         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Connects skeletal inventories with coherent skeletal regions </vitro:descriptionAnnot>
+         <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Connects skeletal inventories with coherent skeletal regions</vitro:publicDescriptionAnnot>
+     </ObjectProperty>
+     
+     <ObjectProperty rdf:about="http://w3id.org/rdfbones/core#hasSkeletalRegion">
+         <rdfs:label xml:lang="en-US">hasSkeletalRegion</rdfs:label>
+         <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#PrimarySkeletalInventoryDryBone"/>
+         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Connects skeletal inventories with skeletal regions </vitro:descriptionAnnot>
+         <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Connects skeletal inventories with skeletal regions</vitro:publicDescriptionAnnot>
+     </ObjectProperty>
+ 
+     <ObjectProperty rdf:about="http://w3id.org/rdfbones/core#hasBoneOrgan">
+         <rdfs:label xml:lang="en-US">hasBoneOrgan</rdfs:label>
+         <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#PrimarySkeletalInventoryDryBone"/>
+         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Connects skeletal inventories with bone organs</vitro:descriptionAnnot>
+         <vitro:publicDescriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Connects skeletal inventories with bone organs</vitro:publicDescriptionAnnot>
+     </ObjectProperty>
+
+</rdf:RDF>
