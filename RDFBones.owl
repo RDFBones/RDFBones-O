@@ -208,6 +208,13 @@
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
     
+    <!-- http://w3id.org/rdfbones/core#dataTransformation -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rdfbones/core#dataTransformation">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000471"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </owl:ObjectProperty>
 
 
     <!-- http://w3id.org/rdfbones/core#depicts -->
