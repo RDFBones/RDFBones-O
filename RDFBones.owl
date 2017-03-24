@@ -208,6 +208,8 @@
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
 
+
+
     <!-- http://w3id.org/rdfbones/core#depicts -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/rdfbones/core#depicts">
