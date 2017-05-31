@@ -27991,6 +27991,62 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     
 
 
+    <!-- http://w3id.org/rdfbones/core#Obliteration2StateLabel -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Obliteration2StateLabel">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/> <!-- ('Categorical label') -->
+        <obo:IAO_0000115 xml:lang="en">Labels that can be used for the categorical measurement datum &apos;obliteration in two states&apos;.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Label for obliteration in two states</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Obliteration2States -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Obliteration2States">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/> <!-- ('Categorical measurement datum') -->
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ObliterationDatum"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/> <!-- ('has category label') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StateLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/> <!-- ('has category label') -->
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, expressing the obliteration of skeletal features as either &apos;obliterated&apos; or &apos;not obliterated&apos;.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Obliteration in two states</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#ObliterationDatum -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#ObliterationDatum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/> <!-- ('Measurement datum') -->
+        <obo:IAO_0000112 xml:lang="en">A categorical measurement datum, specifying if a skeletal feature is not obliterated, being obliterated or completely obliterated by an ontogenetic process or bone remodelling.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum, specifying the degree to which a skeletal feature is removed or superimposed by ontogenetic processes or bone remodelling.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Obliteration datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#PrimaryRegistry -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#PrimaryRegistry">
@@ -32556,6 +32612,26 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
         <obo:IAO_0000115 xml:lang="en">Indicates that a skeletal element is entirely preserved and available for analysis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">complete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#notObliterated -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#notObliterated">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StateLabel"/>
+        <obo:IAO_0000115 xml:lang="en">Indicates that a skeletal feature is not removed or superimposed by ontogenetic processes or bone remodelling.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">obliterated</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#obliterated -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#obliterated">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StateLabel"/>
+        <obo:IAO_0000115 xml:lang="en">Indicates that a skeletal feature is removed or superimposed by ontogenetic processes or bone remodelling.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">obliterated</rdfs:label>
     </owl:NamedIndividual>
     
 
