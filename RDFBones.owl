@@ -18,7 +18,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:sio="http://semanticscience.org/resource/">
     <owl:Ontology rdf:about="http://w3id.org/rdfbones/core">
         <rdfs:label xml:lang="en-us">RDF Bones</rdfs:label>
         <vitro:ontologyPrefixAnnot rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">rdfbones</vitro:ontologyPrefixAnnot>
@@ -448,6 +449,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_12516 ('Tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_12516">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57490"/> <!-- ('Tooth socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_12519 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_12519"/>
@@ -499,6 +513,19 @@
     <!-- http://purl.obolibrary.org/obo/FMA_12527 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_12527"/>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_12823 ('Incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_12823">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57984"/> <!-- ('Incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -3667,6 +3694,747 @@
     <!-- http://purl.obolibrary.org/obo/FMA_54738 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_54738"/>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55636 ('Canine tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55636">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57985"/> <!-- ('Canine socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55637 ('Premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55637">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57986"/> <!-- ('Premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55638 ('Molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55638">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57988"/> <!-- ('Molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55680 ('Right upper lateral secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55680">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57996"/> <!-- ('Right upper lateral incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55681 ('Right upper central secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55681">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57994"/> <!-- ('Right upper central incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55682 ('Left upper central secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55682">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57995"/> <!-- ('Left upper central incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55683 ('Left upper lateral secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55683">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57997"/> <!-- ('Left upper lateral incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55686 ('Right lower secondary canine tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55686">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58009"/> <!-- ('Right lower canine socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55687 ('Left lower secondary canine tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55687">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58010"/> <!-- ('Left lower canine socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55688 ('Right upper second secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55688">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58023"/> <!-- ('Right upper second premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55689 ('Right upper first secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55689">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58026"/> <!-- ('Right upper first premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55690 ('Left upper first secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55690">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58027"/> <!-- ('Left upper first premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55691 ('Left upper second secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55691">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58024"/> <!-- ('Left upper second premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55692 ('Left lower second secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55692">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58020"/> <!-- ('Left lower second premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55693 ('Left lower first secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55693">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58022"/> <!-- ('Left lower first premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55694 ('Right lower first secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55694">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58021"/> <!-- ('Right lower first premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55695 ('Right lower second secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55695">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58019"/> <!-- ('Right lower second premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55696 ('Right upper third secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55696">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58050"/> <!-- ('Right upper third molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55697 ('Right upper second secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55697">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58052"/> <!-- ('Right upper second molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55698 ('Right upper first secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55698">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58054"/> <!-- ('Right upper first molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55699 ('Left upper first secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55699">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58055"/> <!-- ('Left upper first molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55700 ('Left upper second secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55700">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58053"/> <!-- ('Left upper second molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55701 ('Left upper third secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55701">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58051"/> <!-- ('Left upper third molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55702 ('Left lower third secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55702">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58042"/> <!-- ('Left lower third molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55703 ('Left lower second secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55703">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58044"/> <!-- ('Left lower second molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55704 ('Left lower first secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55704">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58046"/> <!-- ('Left lower first molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55705 ('Right lower first secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55705">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58045"/> <!-- ('Right lower first molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55706 ('Right lower second secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55706">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58043"/> <!-- ('Right lower second molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55707 ('Right lower third secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55707">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58041"/> <!-- ('Right lower third molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55712 ('Upper secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55712">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57989"/> <!-- ('Upper incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55713 ('Lower secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55713">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57990"/> <!-- ('Lower incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55714 ('Upper secondary canine tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55714">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58007"/> <!-- ('Upper canine socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55715 ('Lower secondary canine tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55715">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58008"/> <!-- ('Lower canine socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55716 ('Upper secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55716">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58013"/> <!-- ('Upper premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55717 ('Lower secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55717">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58014"/> <!-- ('Lower premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55720 ('Upper secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55720">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58029"/> <!-- ('Upper molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55721 ('Lower secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55721">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58035"/> <!-- ('Lower molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55722 ('Upper central secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55722">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57992"/> <!-- ('Upper central incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55723 ('Lower central secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55723">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57998"/> <!-- ('Lower central incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55724 ('Upper lateral secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55724">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57993"/> <!-- ('Upper lateral incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55725 ('Lower lateral secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55725">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57999"/> <!-- ('Lower lateral incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55798 ('Right upper secondary canine tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55798">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58011"/> <!-- ('Right upper canine socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55799 ('Left upper secondary canine tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55799">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58012"/> <!-- ('Left upper canine socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55801 ('Upper first secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55801">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58015"/> <!-- ('Upper first premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55802 ('Upper second secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55802">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58016"/> <!-- ('Upper second premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55803 ('Lower first secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55803">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58017"/> <!-- ('Lower first premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55804 ('Lower second secondary premolar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55804">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58018"/> <!-- ('Lower second premolar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55811 ('Upper first secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55811">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58047"/> <!-- ('Upper first molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55812 ('Upper second secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55812">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58048"/> <!-- ('Upper second molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55813 ('Upper third secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55813">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58049"/> <!-- ('Upper third molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55814 ('Lower first secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55814">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58037"/> <!-- ('Lower first molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55815 ('Lower second secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55815">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58038"/> <!-- ('Lower second molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55817 ('Lower third secondary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55817">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58039"/> <!-- ('Lower third molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_57140 ('Right lower lateral secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_57140">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58001"/> <!-- ('Right lower lateral incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_57141 ('Left lower lateral secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_57141">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58002"/> <!-- ('Left lower lateral incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_57142 ('Right lower central secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_57142">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58003"/> <!-- ('Right lower central incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_57143 ('Left lower central secondary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_57143">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58004"/> <!-- ('Left lower central incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -4069,6 +4837,448 @@
     <!-- http://purl.obolibrary.org/obo/FMA_8418 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_8418"/>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84210 ('Upper primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84210">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58029"/> <!-- ('Upper molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84211 ('Upper first primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84211">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58047"/> <!-- ('Upper first molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84212 ('Lower first primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84212">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58037"/> <!-- ('Lower first molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84213 ('Lower primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84213">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58035"/> <!-- ('Lower molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84214 ('Upper primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84214">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57989"/> <!-- ('Upper incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84215 ('Lower primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84215">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57990"/> <!-- ('Lower incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84216 ('Upper central primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84216">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57992"/> <!-- ('Upper central incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84217 ('Upper lateral primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84217">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57993"/> <!-- ('Upper lateral incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84218 ('Lower central primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84218">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57998"/> <!-- ('Lower central incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84219 ('Lower lateral primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84219">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57999"/> <!-- ('Lower lateral incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84220 ('Right upper central primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84220">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57994"/> <!-- ('Right upper central incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84221 ('Left upper central primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84221">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57995"/> <!-- ('Left upper central incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84222 ('Right upper lateral primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84222">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57996"/> <!-- ('Right upper lateral incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84223 ('Left upper lateral primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84223">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57997"/> <!-- ('Left upper lateral incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84224 ('Right lower central primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84224">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58003"/> <!-- ('Right lower central incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84225 ('Left lower central primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84225">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58004"/> <!-- ('Left lower central incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84226 ('Right lower lateral primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84226">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58001"/> <!-- ('Right lower lateral incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84227 ('Left lower lateral primary incisor tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84227">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58002"/> <!-- ('Left lower lateral incisor socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84228 ('Upper primary canine tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84228">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58007"/> <!-- ('Upper canine socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84229 ('Lower primary canine tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84229">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58008"/> <!-- ('Lower canine socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84230 ('Right upper primary canine tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84230">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58011"/> <!-- ('Right upper canine socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84231 ('Left upper primary canine tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84231">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58012"/> <!-- ('Left upper canine socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84232 ('Right lower primary canine tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84232">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58009"/> <!-- ('Right lower canine socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84233 ('Left lower primary canine tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84233">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58010"/> <!-- ('Left lower canine socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84236 ('Upper second primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84236">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58048"/> <!-- ('Upper second molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84237 ('Lower second primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84237">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58038"/> <!-- ('Lower second molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84238 ('Right upper first primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84238">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58054"/> <!-- ('Right upper first molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84239 ('Left upper first primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84239">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58055"/> <!-- ('Left upper first molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84240 ('Right upper second primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84240">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58052"/> <!-- ('Right upper second molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84241 ('Left upper second primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84241">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58053"/> <!-- ('Left upper second molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84242 ('Right lower first primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84242">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58045"/> <!-- ('Right lower first molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84243 ('Left lower first primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84243">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58046"/> <!-- ('Left lower first molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84244 ('Right lower second primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84244">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58043"/> <!-- ('Right lower second molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_84245 ('Left lower second primary molar tooth') -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_84245">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000128"/> <!-- ('is contained in') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_58044"/> <!-- ('Left lower second molar socket') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
