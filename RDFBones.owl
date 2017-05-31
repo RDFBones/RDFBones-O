@@ -20698,6 +20698,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire canine socket</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55636"/> <!-- ('Canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire canine tooth</rdfs:label>
+    </owl:Class>
     
 
 
@@ -21883,6 +21898,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire incisor socket</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12823"/> <!-- ('Incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire incisor tooth</rdfs:label>
+    </owl:Class>
     
 
 
@@ -22351,6 +22381,36 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerCentralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerCentralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCentralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84225"/> <!-- ('Left lower central primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower central primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerCentralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerCentralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCentralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57143"/> <!-- ('Left lower central secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower central secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireLeftLowerFirstMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerFirstMolarSocket">
@@ -22381,6 +22441,51 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerFirstPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerFirstPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84243"/> <!-- ('Left lower first primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower first primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerFirstSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerFirstSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55704"/> <!-- ('Left lower first secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower first secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerFirstSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerFirstSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55693"/> <!-- ('Left lower first secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower first secondary premolar tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireLeftLowerLateralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerLateralIncisorSocket">
@@ -22392,6 +22497,66 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire left lower lateral incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerLateralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerLateralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerLateralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84227"/> <!-- ('Left lower lateral primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower lateral primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerLateralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerLateralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerLateralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57141"/> <!-- ('Left lower lateral secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower lateral secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerPrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerPrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPrimaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84233"/> <!-- ('Left lower primary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower primary canine tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55687"/> <!-- ('Left lower secondary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower secondary canine tooth</rdfs:label>
     </owl:Class>
 
 
@@ -22426,6 +22591,51 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerSecondPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerSecondPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84245"/> <!-- ('Left lower second primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower second primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerSecondSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerSecondSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55703"/> <!-- ('Left lower second secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower second secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerSecondSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerSecondSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55692"/> <!-- ('Left lower second secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower second secondary premolar tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireLeftLowerThirdMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerThirdMolarSocket">
@@ -22437,6 +22647,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire left lower third molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftLowerThirdSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerThirdSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerThirdSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55702"/> <!-- ('Left lower third secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left lower third secondary molar tooth</rdfs:label>
     </owl:Class>
     
 
@@ -22906,6 +23131,36 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperCentralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperCentralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCentralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84221"/> <!-- ('Left upper central primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper central primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperCentralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperCentralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCentralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55682"/> <!-- ('Left upper central secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper central secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireLeftUpperFirstMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperFirstMolarSocket">
@@ -22936,6 +23191,51 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperFirstPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperFirstPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84239"/> <!-- ('Left upper first primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper first primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperFirstSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperFirstSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55699"/> <!-- ('Left upper first secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper first secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperFirstSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperFirstSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55690"/> <!-- ('Left upper first secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper first secondary premolar tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireLeftUpperLateralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperLateralIncisorSocket">
@@ -22947,6 +23247,66 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire left upper lateral incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperLateralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperLateralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperLateralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84223"/> <!-- ('Left upper lateral primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper lateral primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperLateralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperLateralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperLateralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55683"/> <!-- ('Left upper lateral secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper lateral secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperPrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperPrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPrimaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84231"/> <!-- ('Left upper primary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper primary canine tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55799"/> <!-- ('Left upper secondary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper secondary canine tooth</rdfs:label>
     </owl:Class>
 
 
@@ -22981,6 +23341,51 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperSecondPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperSecondPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84241"/> <!-- ('Left upper second primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper second primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperSecondSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperSecondSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55700"/> <!-- ('Left upper second secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper second secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperSecondSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperSecondSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55691"/> <!-- ('Left upper second secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper second secondary premolar tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireLeftUpperThirdMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperThirdMolarSocket">
@@ -22992,6 +23397,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire left upper third molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLeftUpperThirdSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperThirdSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperThirdSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55701"/> <!-- ('Left upper third secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire left upper third secondary molar tooth</rdfs:label>
     </owl:Class>
     
 
@@ -23041,6 +23461,36 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireLowerCentralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerCentralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84218"/> <!-- ('Lower central primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower central primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerCentralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerCentralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55723"/> <!-- ('Lower central secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower central secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireLowerFirstMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerFirstMolarSocket">
@@ -23067,6 +23517,51 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire lower first premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerFirstPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerFirstPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84212"/> <!-- ('Lower first primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower first primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerFirstSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerFirstSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55814"/> <!-- ('Lower first secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower first secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerFirstSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerFirstSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55803"/> <!-- ('Lower first secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower first secondary premolar tooth</rdfs:label>
     </owl:Class>
 
 
@@ -23101,6 +23596,36 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireLowerLateralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerLateralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84219"/> <!-- ('Lower lateral primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower lateral primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerLateralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerLateralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55725"/> <!-- ('Lower lateral secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower lateral secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireLowerMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerMolarSocket">
@@ -23127,6 +23652,111 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire lower premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerPrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerPrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntirePrimaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84229"/> <!-- ('Lower primary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower primary canine tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntirePrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84215"/> <!-- ('Lower primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntirePrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84213"/> <!-- ('Lower primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSecondaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55715"/> <!-- ('Lower secondary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower secondary canine tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55713"/> <!-- ('Lower secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55721"/> <!-- ('Lower secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntirePremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55717"/> <!-- ('Lower secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower secondary premolar tooth</rdfs:label>
     </owl:Class>
 
 
@@ -23161,6 +23791,51 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireLowerSecondPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerSecondPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84237"/> <!-- ('Lower second primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower second primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerSecondSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerSecondSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55815"/> <!-- ('Lower second secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower second secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerSecondSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerSecondSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55804"/> <!-- ('Lower second secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower second secondary premolar tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireLowerThirdMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerThirdMolarSocket">
@@ -23172,6 +23847,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire lower third molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireLowerThirdSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerThirdSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55817"/> <!-- ('Lower third secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire lower third secondary molar tooth</rdfs:label>
     </owl:Class>
     
 
@@ -23698,6 +24388,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire molar socket</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55638"/> <!-- ('Molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire molar tooth</rdfs:label>
+    </owl:Class>
     
 
 
@@ -24057,6 +24762,66 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntirePremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntirePremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55637"/> <!-- ('Premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire premolar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntirePrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntirePrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84202"/> <!-- ('Primary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire primary canine tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntirePrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntirePrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84200"/> <!-- ('Primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntirePrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntirePrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84206"/> <!-- ('Primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire primary molar tooth</rdfs:label>
     </owl:Class>
     
 
@@ -24976,6 +25741,36 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerCentralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerCentralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCentralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84224"/> <!-- ('Right lower central primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower central primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerCentralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerCentralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCentralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57142"/> <!-- ('Right lower central secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower central secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireRightLowerFirstMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerFirstMolarSocket">
@@ -25021,6 +25816,66 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerLateralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerLateralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerLateralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84226"/> <!-- ('Right lower lateral primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower lateral primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerLateralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerLateralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerLateralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57140"/> <!-- ('Right lower lateral secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower lateral secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerPrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerPrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPrimaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84232"/> <!-- ('Right lower primary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower primary canine tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55686"/> <!-- ('Right lower secondary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower secondary canine tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireRightLowerSecondMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerSecondMolarSocket">
@@ -25051,6 +25906,51 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerSecondPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerSecondPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84244"/> <!-- ('Right lower second primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower second primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerSecondSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerSecondSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55706"/> <!-- ('Right lower second secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower second secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerSecondSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerSecondSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55695"/> <!-- ('Right lower second secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower second secondary premolar tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireRightLowerThirdMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerThirdMolarSocket">
@@ -25062,6 +25962,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire right lower third molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerThirdSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerThirdSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerThirdSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55707"/> <!-- ('Right lower third secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower third secondary molar tooth</rdfs:label>
     </owl:Class>
     
 
@@ -25531,6 +26446,36 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperCentralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperCentralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCentralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84220"/> <!-- ('Right upper central primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper central primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperCentralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperCentralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCentralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55681"/> <!-- ('Right upper central secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper central secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireRightUpperFirstMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperFirstMolarSocket">
@@ -25561,6 +26506,51 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperFirstPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperFirstPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84238"/> <!-- ('Right upper first primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper first primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperFirstSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperFirstSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55698"/> <!-- ('Right upper first secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper first secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperFirstSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperFirstSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55689"/> <!-- ('Right upper first secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper first secondary premolar tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireRightUpperLateralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperLateralIncisorSocket">
@@ -25572,6 +26562,66 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire right upper lateral incisor socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperLateralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperLateralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperLateralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84222"/> <!-- ('Right upper lateral primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper lateral primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperLateralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperLateralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperLateralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55680"/> <!-- ('Right upper lateral secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper lateral secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperPrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperPrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPrimaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84230"/> <!-- ('Right upper primary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper primary canine tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55798"/> <!-- ('Right upper secondary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper secondary canine tooth</rdfs:label>
     </owl:Class>
 
 
@@ -25606,6 +26656,51 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperSecondPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperSecondPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84240"/> <!-- ('Right upper second primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper second primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperSecondSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperSecondSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55697"/> <!-- ('Right upper second secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper second secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperSecondSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperSecondSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55688"/> <!-- ('Right upper second secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper second secondary premolar tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireRightUpperThirdMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperThirdMolarSocket">
@@ -25617,6 +26712,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire right upper third molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightUpperThirdSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperThirdSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperThirdSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55696"/> <!-- ('Right upper third secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right upper third secondary molar tooth</rdfs:label>
     </owl:Class>
     
 
@@ -25692,6 +26802,51 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire scapula</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84203"/> <!-- ('Secondary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire secondary canine tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84201"/> <!-- ('Secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84207"/> <!-- ('Secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire secondary molar tooth</rdfs:label>
     </owl:Class>
     
 
@@ -26146,6 +27301,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ToothSegment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12516"/> <!-- ('Tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireToothSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireToothSocket">
@@ -26371,6 +27541,36 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireUpperCentralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperCentralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84216"/> <!-- ('Upper central primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper central primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperCentralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperCentralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55722"/> <!-- ('Upper central secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper central secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireUpperFirstMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperFirstMolarSocket">
@@ -26397,6 +27597,51 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire upper first premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperFirstPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperFirstPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84211"/> <!-- ('Upper first primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper first primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperFirstSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperFirstSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55811"/> <!-- ('Upper first secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper first secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperFirstSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperFirstSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55801"/> <!-- ('Upper first secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper first secondary premolar tooth</rdfs:label>
     </owl:Class>
 
 
@@ -26431,6 +27676,36 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireUpperLateralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperLateralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84217"/> <!-- ('Upper lateral primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper lateral primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperLateralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperLateralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55724"/> <!-- ('Upper lateral secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper lateral secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireUpperMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperMolarSocket">
@@ -26457,6 +27732,111 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire upper premolar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperPrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperPrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntirePrimaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84228"/> <!-- ('Upper primary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper primary canine tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntirePrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84214"/> <!-- ('Upper primary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper primary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntirePrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84210"/> <!-- ('Upper primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSecondaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55714"/> <!-- ('Upper secondary canine tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper secondary canine tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55712"/> <!-- ('Upper secondary incisor tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper secondary incisor tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55720"/> <!-- ('Upper secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntirePremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55716"/> <!-- ('Upper secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper secondary premolar tooth</rdfs:label>
     </owl:Class>
 
 
@@ -26491,6 +27871,51 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireUpperSecondPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperSecondPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84236"/> <!-- ('Upper second primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper second primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperSecondSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperSecondSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55812"/> <!-- ('Upper second secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper second secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperSecondSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperSecondSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55802"/> <!-- ('Upper second secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper second secondary premolar tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireUpperThirdMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperThirdMolarSocket">
@@ -26502,6 +27927,21 @@ A scalar measurement datum, specifying the portion of a bone that is present for
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire upper third molar socket</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireUpperThirdSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperThirdSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55813"/> <!-- ('Upper third secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire upper third secondary molar tooth</rdfs:label>
     </owl:Class>
     
 
@@ -30871,6 +32311,29 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 A scalar measurement datum, giving the portion of the surface of a bone on which observation of traces is possible.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A measurement datum about taphonomic traces on skeletal material. It codes the presence or absence of a specific damage and its severity.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Taphonomic state datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#ToothSegment -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#ToothSegment">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12516"/> <!-- ('Tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">Buccal side of the crown of a tooth.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Section of a tooth, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of skeletal material in varying degees of detail or to code the location of skeletal traits or traces.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Segment of tooth</rdfs:label>
     </owl:Class>
     
 
