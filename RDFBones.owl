@@ -10694,6 +10694,21 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Completeness of entire calcaneus in two states</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire canine tooth in two states</rdfs:label>
+    </owl:Class>
     
 
 
@@ -11864,6 +11879,21 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Completeness of entire hyoid bone in two states</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire incisor tooth in two states</rdfs:label>
+    </owl:Class>
     
 
 
@@ -12298,6 +12328,201 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Completeness of entire left lateral cuneiform bone in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerCentralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerCentralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerCentralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerCentralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left lower central primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerCentralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerCentralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerCentralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerCentralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left lower central secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerFirstPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerFirstPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerFirstPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left lower first primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerFirstSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerFirstSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerFirstSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left lower first secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerFirstSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerFirstSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerFirstSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left lower first secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerLateralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerLateralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerLateralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerLateralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left lower lateral primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerLateralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerLateralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerLateralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerLateralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left lower lateral secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerPrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerPrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerPrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left lower primary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left lower secondary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerSecondPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerSecondPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerSecondPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left lower second primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerSecondSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerSecondSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerSecondSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left lower second secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerSecondSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerSecondSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerSecondSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left lower second secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerThirdSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerThirdSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerThirdSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftLowerThirdSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left lower third secondary molar tooth in two states</rdfs:label>
     </owl:Class>
     
 
@@ -12734,6 +12959,201 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Completeness of entire left ulna in two states</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperCentralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperCentralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperCentralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperCentralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left upper central primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperCentralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperCentralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperCentralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperCentralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left upper central secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperFirstPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperFirstPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperFirstPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left upper first primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperFirstSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperFirstSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperFirstSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left upper first secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperFirstSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperFirstSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperFirstSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left upper first secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperLateralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperLateralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperLateralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperLateralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left upper lateral primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperLateralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperLateralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperLateralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperLateralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left upper lateral secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperPrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperPrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperPrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left upper primary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left upper secondary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperSecondPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperSecondPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperSecondPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left upper second primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperSecondSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperSecondSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperSecondSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left upper second secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperSecondSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperSecondSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperSecondSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left upper second secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperThirdSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperThirdSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperThirdSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLeftUpperThirdSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire left upper third secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
     
 
 
@@ -12748,6 +13168,276 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Completeness of entire left zygomatic bone in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerCentralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerCentralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCentralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower central primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerCentralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerCentralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCentralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower central secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower first primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower first secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower first secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerLateralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerLateralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerLateralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower lateral primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerLateralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerLateralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerLateralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower lateral secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower primary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower secondary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntirePremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower second primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower second secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower second secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerThirdSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerThirdSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireLowerThirdSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire lower third secondary molar tooth in two states</rdfs:label>
     </owl:Class>
     
 
@@ -13259,6 +13949,21 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Completeness of entire middle phalanx of toe in two states</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire molar tooth in two states</rdfs:label>
+    </owl:Class>
     
 
 
@@ -13603,6 +14308,66 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Completeness of entire pisiform in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntirePremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntirePremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntirePremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntirePrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire primary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntirePrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntirePrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire primary molar tooth in two states</rdfs:label>
     </owl:Class>
     
 
@@ -14489,6 +15254,201 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Completeness of entire right lateral cuneiform bone in two states</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerCentralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerCentralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerCentralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerCentralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right lower central primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerCentralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerCentralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerCentralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerCentralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right lower central secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerFirstPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerFirstPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerFirstPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right lower first primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerFirstSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerFirstSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerFirstSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right lower first secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerFirstSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerFirstSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerFirstSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right lower first secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerLateralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerLateralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerLateralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerLateralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right lower lateral primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerLateralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerLateralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerLateralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerLateralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right lower lateral secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerPrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerPrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerPrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right lower primary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right lower secondary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerSecondPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerSecondPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerSecondPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right lower second primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerSecondSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerSecondSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerSecondSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right lower second secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerSecondSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerSecondSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerSecondSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right lower second secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerThirdSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerThirdSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerThirdSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightLowerThirdSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right lower third secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
     
 
 
@@ -14924,6 +15884,201 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Completeness of entire right ulna in two states</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperCentralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperCentralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperCentralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperCentralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right upper central primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperCentralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperCentralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperCentralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperCentralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right upper central secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperFirstPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperFirstPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperFirstPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right upper first primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperFirstSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperFirstSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperFirstSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right upper first secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperFirstSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperFirstSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperFirstSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right upper first secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperLateralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperLateralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperLateralPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperLateralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right upper lateral primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperLateralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperLateralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperLateralSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperLateralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right upper lateral secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperPrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperPrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperPrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right upper primary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right upper secondary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperSecondPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperSecondPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperSecondPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right upper second primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperSecondSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperSecondSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperSecondSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right upper second secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperSecondSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperSecondSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperSecondSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right upper second secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperThirdSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperThirdSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperThirdSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireRightUpperThirdSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire right upper third secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
     
 
 
@@ -14998,6 +16153,51 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Completeness of entire scapula in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire secondary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire secondary molar tooth in two states</rdfs:label>
     </owl:Class>
     
 
@@ -15449,6 +16649,21 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Completeness of entire tibia in two states</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2States"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire tooth in two states</rdfs:label>
+    </owl:Class>
     
 
 
@@ -15568,6 +16783,276 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Completeness of entire ulna in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperCentralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperCentralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCentralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper central primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperCentralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperCentralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCentralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper central secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper first primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper first secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper first secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperLateralPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperLateralPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperLateralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper lateral primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperLateralSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperLateralSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperLateralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper lateral secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper primary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper primary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryCanineTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryCanineTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryCanineTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper secondary canine tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryIncisorTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryIncisorTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryIncisorTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper secondary incisor tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntirePremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper second primary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper second secondary molar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper second secondary premolar tooth in two states</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperThirdSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperThirdSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireUpperThirdSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Completeness of entire upper third secondary molar tooth in two states</rdfs:label>
     </owl:Class>
     
 
