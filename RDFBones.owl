@@ -30477,6 +30477,990 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     
 
 
+    <!-- http://w3id.org/rdfbones/core#PrimaryDentalInventory -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#PrimarySkeletalInventoryDryBone">
+      <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#PrimarySkeletalInventory"/>
+              <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerCentralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerCentralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerFirstPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerFirstSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerFirstSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerLateralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerLateralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerPrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerSecondPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerSecondSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerSecondSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftLowerThirdSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperCentralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperCentralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperFirstPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperFirstSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperFirstSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperLateralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperLateralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperPrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperSecondPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperSecondSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperSecondSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLeftUpperThirdSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerCentralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerCentralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerFirstSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerLateralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerLateralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerSecondSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireLowerThirdSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntirePremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntirePrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerCentralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerCentralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerFirstPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerFirstSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerFirstSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerLateralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerLateralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerPrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerSecondPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerSecondSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerSecondSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightLowerThirdSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperCentralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperCentralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperFirstPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperFirstSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperFirstSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperLateralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperLateralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperPrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperSecondPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperSecondSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperSecondSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireRightUpperThirdSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperCentralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperCentralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperFirstSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperLateralPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperLateralSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryCanineTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryIncisorTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondPrimaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperSecondSecondaryPremolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesEntireUpperThirdSecondaryMolarTooth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftLowerCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftLowerCentralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftLowerFirstMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftLowerFirstPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftLowerLateralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftLowerSecondMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftLowerSecondPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftLowerThirdMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftUpperCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftUpperCentralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftUpperFirstMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftUpperFirstPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftUpperLateralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftUpperSecondMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftUpperSecondPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLeftUpperThirdMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLowerCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLowerCentralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLowerFirstMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLowerFirstPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLowerIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLowerLateralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLowerMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLowerPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLowerSecondMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLowerSecondPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireLowerThirdMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntirePremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightLowerCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightLowerCentralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightLowerFirstMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightLowerFirstPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightLowerLateralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightLowerSecondMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightLowerSecondPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightLowerThirdMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightUpperCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightUpperCentralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightUpperFirstMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightUpperFirstPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightUpperLateralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightUpperSecondMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightUpperSecondPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireRightUpperThirdMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireToothSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireToothSocketOfLeftMaxilla"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireToothSocketOfMandible"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireToothSocketOfMaxilla"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireToothSocketOfRightMaxilla"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireUpperCanineSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireUpperCentralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireUpperFirstMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireUpperFirstPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireUpperIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireUpperLateralIncisorSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireUpperMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireUpperPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireUpperSecondMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireUpperSecondPremolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- ('has part) -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesEntireUpperThirdMolarSocket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">An inventory of teeth that introduces skeletal material from an archaeological excavation to the database.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A primary skeletal inventory recording the completeness of teethand whether they are preserved in their respective tooth sockets. It also records whether tooth sockets are still open or obliterated in order to acertain if the existence of loose teeth from a certain position is to be expected or not.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Primary dental inventory</rdfs:label>
+    </owl:Class>
+      
+    
+
+
     <!-- http://w3id.org/rdfbones/core#PrimaryRegistry -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#PrimaryRegistry">
