@@ -23839,7 +23839,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftLowerCanineSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerCanineSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower canine socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCanineSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -23854,7 +23854,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftLowerCentralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerCentralIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower central incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCentralIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -23899,7 +23899,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftLowerFirstMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerFirstMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower first molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -23914,7 +23914,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftLowerFirstPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerFirstPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower first premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstPremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -23974,7 +23974,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftLowerLateralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerLateralIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower lateral incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerLateralIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24049,7 +24049,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftLowerSecondMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerSecondMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower second molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24064,7 +24064,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftLowerSecondPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerSecondPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower second premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondPremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24124,7 +24124,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftLowerThirdMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftLowerThirdMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower third molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerThirdMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24589,7 +24589,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftUpperCanineSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperCanineSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper canine socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCanineSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24604,7 +24604,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftUpperCentralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperCentralIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper central incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCentralIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24649,7 +24649,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftUpperFirstMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperFirstMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper first molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24664,7 +24664,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftUpperFirstPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperFirstPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper first premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstPremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24724,7 +24724,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftUpperLateralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperLateralIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper lateral incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperLateralIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24799,7 +24799,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftUpperSecondMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperSecondMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper second molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24814,7 +24814,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftUpperSecondPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperSecondPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper second premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondPremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24874,7 +24874,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLeftUpperThirdMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLeftUpperThirdMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper third molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperThirdMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24919,7 +24919,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLowerCanineSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerCanineSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire canine socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireCanineSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24934,7 +24934,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLowerCentralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerCentralIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24979,7 +24979,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLowerFirstMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerFirstMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -24994,7 +24994,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLowerFirstPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerFirstPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -25054,7 +25054,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLowerIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -25069,7 +25069,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLowerLateralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerLateralIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -25114,7 +25114,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLowerMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -25129,7 +25129,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLowerPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntirePremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -25249,7 +25249,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLowerSecondMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerSecondMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -25264,7 +25264,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLowerSecondPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerSecondPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerPremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -25324,7 +25324,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireLowerThirdMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireLowerThirdMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -27199,7 +27199,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightLowerCanineSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerCanineSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower canine socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCanineSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -27214,7 +27214,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightLowerCentralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerCentralIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower central incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerCentralIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -27259,7 +27259,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightLowerFirstMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerFirstMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower first molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -27274,7 +27274,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightLowerFirstPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerFirstPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower first premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstPremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -27286,10 +27286,55 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerFirstPrimaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerFirstPrimaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstPrimaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_84243"/> <!-- ('Left lower first primary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower first primary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerFirstSecondaryMolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerFirstSecondaryMolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstSecondaryMolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55704"/> <!-- ('Left lower first secondary molar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower first secondary molar tooth</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireRightLowerFirstSecondaryPremolarTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerFirstSecondaryPremolarTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerFirstSecondaryPremolarTooth"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_55693"/> <!-- ('Left lower first secondary premolar tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Entire right lower first secondary premolar tooth</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://w3id.org/rdfbones/core#EntireRightLowerLateralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerLateralIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower lateral incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerLateralIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -27364,7 +27409,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightLowerSecondMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerSecondMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower second molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -27379,7 +27424,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightLowerSecondPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerSecondPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower second premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerSecondPremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -27439,7 +27484,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightLowerThirdMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightLowerThirdMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire lower third molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireLowerThirdMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -27904,7 +27949,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightUpperCanineSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperCanineSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper canine socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCanineSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -27919,7 +27964,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightUpperCentralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperCentralIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper central incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperCentralIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -27964,7 +28009,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightUpperFirstMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperFirstMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper first molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -27979,7 +28024,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightUpperFirstPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperFirstPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper first premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperFirstPremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -28039,7 +28084,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightUpperLateralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperLateralIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper lateral incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperLateralIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -28114,7 +28159,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightUpperSecondMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperSecondMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper second molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -28129,7 +28174,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightUpperSecondPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperSecondPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper second premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperSecondPremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -28189,7 +28234,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireRightUpperThirdMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireRightUpperThirdMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper third molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperThirdMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -28819,7 +28864,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireToothSocketOfLeftMaxilla -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireToothSocketOfLeftMaxilla">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire tooth socket of maxilla"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocketOfMaxilla"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -28864,7 +28909,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireToothSocketOfRightMaxilla -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireToothSocketOfRightMaxilla">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire tooth socket of maxilla"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireToothSocketOfMaxilla"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -28999,7 +29044,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireUpperCanineSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperCanineSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire canine socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireCanineSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -29014,7 +29059,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireUpperCentralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperCentralIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -29059,7 +29104,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireUpperFirstMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperFirstMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -29074,7 +29119,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireUpperFirstPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperFirstPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -29134,7 +29179,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireUpperIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -29149,7 +29194,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireUpperLateralIncisorSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperLateralIncisorSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper incisor socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperIncisorSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -29194,7 +29239,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireUpperMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -29209,7 +29254,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireUpperPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntirePremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -29329,7 +29374,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireUpperSecondMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperSecondMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -29344,7 +29389,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireUpperSecondPremolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperSecondPremolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper premolar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperPremolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -29404,7 +29449,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireUpperThirdMolarSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireUpperThirdMolarSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#Entire upper molar socket"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireUpperMolarSocket"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
@@ -30479,7 +30524,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
     <!-- http://w3id.org/rdfbones/core#PrimaryDentalInventory -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#PrimarySkeletalInventoryDryBone">
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#PrimaryDentallInventory">
       <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#PrimarySkeletalInventory"/>
               <rdfs:subClassOf>
             <owl:Restriction>
