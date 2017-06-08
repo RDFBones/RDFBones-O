@@ -5589,6 +5589,29 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core#AnatomicalCavitySegment -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#AnatomicalCavitySegment">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_67552"/> <!-- ('Anatomical cavity') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The distal part of a femur's bone marrow cavity.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Section of an anatomical cavity, specifically defined for analytical purposes. Segments can be used to code the shape and other qualities of anaotomical cavities or whether they have been obliterated by ontogenetic or other remodelling processes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Segment of anatomical cavity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#BoneSegment -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#BoneSegment">
@@ -5596,7 +5619,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_5018"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_5018"/> <!-- ('Bone organ') -->
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -28849,11 +28872,11 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#EntireToothSocket -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireToothSocket">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#BoneSegment"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#AnatomicalCavitySegment"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57490"/> <!-- ('Tooth socket') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57490"/> <!-- ('Tooth socket') -->
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Entire tooth socket</rdfs:label>
@@ -35682,7 +35705,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_83129"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_83129"/> <!-- ('Bony part of bone') -->
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -35837,7 +35860,7 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12516"/> <!-- ('Tooth') -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12516"/> <!-- ('Tooth') -->
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
