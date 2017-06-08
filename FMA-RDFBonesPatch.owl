@@ -49,6 +49,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/fma#regional_part_of -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fma#systemic_part_of -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -334,9 +346,41 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_53673 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_53673"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_57490 ('Tooth socket') -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_57490">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_57771"/> <!-- 'Alveolar arch' -->
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_64087 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/FMA_64087"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_64850 ('Alveolar arch of mandible') -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_64850">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_54398"/> <!-- 'Lower jaw' -->
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
     
 
 
@@ -415,6 +459,31 @@
     <!-- http://purl.obolibrary.org/obo/FMA_9139 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/FMA_9139"/>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9711 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/FMA_9711">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_53673"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_54397"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </Class>
     
 
 
