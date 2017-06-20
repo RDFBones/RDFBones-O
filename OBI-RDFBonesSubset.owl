@@ -174,6 +174,35 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000144"><!-- conclusion textual entity -->
+        <rdfs:label xml:lang="en">conclusion textual entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/><!-- textual entity -->
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/><!-- conclusion based on data -->
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/><!-- is_specified_output_of -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000338"/><!-- drawing a conclusion based on data -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000124"/><!-- is_supported_by_data -->
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/><!-- data item -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009/10/23 Alan Ruttenberg: We need to work on the definition still</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A textual entity that expresses the results of reasoning about a problem, for instance as typically found towards the end of scientific papers.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">conclusion textual entity</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">that fucoidan has a small statistically significant effect on AT3 level but no useful clinical effect as in-vivo anticoagulant, a paraphrase of part of the last paragraph of the discussion section of the paper 'Pilot clinical study to evaluate the anticoagulant activity of fucoidan', by Lowenthal et. al.PMID:19696660</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/><!-- metadata complete -->
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
