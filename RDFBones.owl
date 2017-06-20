@@ -407,6 +407,18 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core#text -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#text">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>	
+        <vitro:descriptionAnnot xml:lang="en">Renders the text of a textual entity.</vitro:descriptionAnnot>
+        <vitro:publicDescriptionAnnot xml:lang="en">Free text.</vitro:publicDescriptionAnnot>
+        <rdfs:label xml:lang="en">text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#toothPortion -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#toothPortion">
