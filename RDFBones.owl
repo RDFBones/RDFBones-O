@@ -5504,6 +5504,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300"> <!-- ('Textual entity') -->
+      <rdfs:SubClassOf>
+	<owl:Restriction>
+	  <owl:onProperty rdf:resource="http://w3id.org/rdfbones/core#text"/>
+          <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+	</owl:Restriction>
+      </rdfs:SubClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000579 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000579"/>
