@@ -1,27 +1,26 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
-     xml:base="http://purl.obolibrary.org/obo/"
-     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:ns2="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:geopolitical="http://aims.fao.org/aos/geopolitical.owl#"
-     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
-     xmlns:core="http://vivoweb.org/ontology/core#"
-     xmlns:skos1="http://www.w3.org/2008/05/skos#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obi.owl#"
+     xml:base="http://purl.obolibrary.org/obo/obi.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/">
-        <vitro:ontologyPrefixAnnot rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">obo</vitro:ontologyPrefixAnnot>
-        <rdfs:label xml:lang="en-us">Ontology for Biomedical Investigations</rdfs:label>
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obi.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/obi/2020-04-23/obi.owl"/>
+        <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
+        <obo:IAO_0000589 xml:lang="en">Ontology for Biomedical Investigations</obo:IAO_0000589>
+        <dc:format xml:lang="en">OWL-DL</dc:format>
+        <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:title>Ontology for Biomedical Investigations</terms:title>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Please cite the OBI consortium http://purl.obolibrary.org/obo/obi where traditional citation is called for. However it is adequate that individual terms be attributed simply by use of the identifying PURL for the term, in projects that refer to them.</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-04-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -118,12 +117,6 @@
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
-    
-
-
-    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot -->
-
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot"/>
     
 
 
