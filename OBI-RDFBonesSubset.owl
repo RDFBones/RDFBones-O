@@ -2055,8 +2055,8 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
         <owl:annotatedTarget>(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
     </owl:Axiom>
-
     
+
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
@@ -11015,12 +11015,57 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#Definition -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#Definition">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
 
     <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obsolete Class</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#Subset -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#Subset">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000224"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#Synonym -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#Synonym">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymType -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymType">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
     
 
 
