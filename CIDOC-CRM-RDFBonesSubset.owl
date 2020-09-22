@@ -56,86 +56,242 @@ P81 has its time interval redefined by P81a and P81b. Similarly, we redefine P82
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P11_had_participant -->
+    
+<rdf:Property rdf:about="P11_had_participant">
+	<rdfs:label xml:lang="fr">a eu pour participant</rdfs:label>
+	<rdfs:label xml:lang="ru">имел участника</rdfs:label>
+	<rdfs:label xml:lang="de">hatte Teilnehmer</rdfs:label>
+	<rdfs:label xml:lang="en">had participant</rdfs:label>
+    <rdfs:label xml:lang="el">είχε συμμέτοχο</rdfs:label>
+	<rdfs:label xml:lang="pt">tem participante</rdfs:label>
+	<rdfs:label xml:lang="zh">有参与者</rdfs:label>
+	<rdfs:comment>This property describes the active or passive participation of instances of E39 Actors in an E5 Event. 
+It connects the life-line of the related E39 Actor with the E53 Place and E50 Date of the event. The property implies that the Actor was involved in the event but does not imply any causal relationship. The subject of a portrait can be said to have participated in the creation of the portrait.
+</rdfs:comment>
+	<rdfs:domain rdf:resource="E5_Event"/>
+	<rdfs:range rdf:resource="E39_Actor"/>
+	<rdfs:subPropertyOf rdf:resource="P12_occurred_in_the_presence_of"/>
+</rdf:Property>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of -->
+    
+<rdf:Property rdf:about="P46_is_composed_of">
+	<rdfs:label xml:lang="en">is composed of</rdfs:label>
+    <rdfs:label xml:lang="fr">est composée de</rdfs:label>
+    <rdfs:label xml:lang="el">αποτελείται από</rdfs:label>
+    <rdfs:label xml:lang="de">ist zusammengesetzt aus</rdfs:label>
+	<rdfs:label xml:lang="ru">составлен из</rdfs:label>
+	<rdfs:label xml:lang="pt">é composto de</rdfs:label>
+	<rdfs:label xml:lang="zh">有组件</rdfs:label>
+   <rdfs:comment>This property allows instances of E18 Physical Thing to be analysed into component elements.
+
+Component elements, since they are themselves instances of E18 Physical Thing, may be further analysed into sub-components, thereby creating a hierarchy of part decomposition. An instance of E18 Physical Thing may be shared between multiple wholes, for example two buildings may share a common wall. This property does not specify when and for how long a component element resided in the respective whole. If  a component is not part of a whole from the beginning of existence or until the end of existence of the whole, the classes E79 Part Addition and E90 Part Removal can be used to document when a component became part of a particular whole and/or when it stopped being a part of it. For the time-span of being part of the respective whole, the component is completely contained in the place the whole occupies.
+
+This property is intended to describe specific components that are individually documented, rather than general aspects. Overall descriptions of the structure of an instance of E18 Physical Thing are captured by the P3 has note property.
+
+The instances of E57 Material of which an item of E18 Physical Thing is composed should be documented using P45 consists of (is incorporated in).
+</rdfs:comment>
+	<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+	<rdfs:range rdf:resource="E18_Physical_Thing"/>
+</rdf:Property>
+
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator -->
+
+<rdf:Property rdf:about="P109_has_current_or_former_curator">
+	<rdfs:label xml:lang="fr">a pour conservateur actuel ou ancien</rdfs:label>
+    <rdfs:label xml:lang="de">hat derzeitigen oder früheren Kurator</rdfs:label>
+    <rdfs:label xml:lang="en">has current or former curator</rdfs:label>
+    <rdfs:label xml:lang="el">έχει ή είχε επιμελητή</rdfs:label>
+	<rdfs:label xml:lang="ru">имеет действующего или бывшего хранителя</rdfs:label>
+	<rdfs:label xml:lang="pt">tem ou teve curador</rdfs:label>
+	<rdfs:label xml:lang="zh">有现任或前任典藏管理员</rdfs:label>
+
+	<rdfs:comment>This property identifies the E39 Actor or Actors who assume or have assumed overall curatorial responsibility for an E78 Collection.
+
+It does not allow a history of curation to be recorded. This would require use of an Event  initiating a curator being responsible for  a Collection.
+</rdfs:comment>
+	<rdfs:domain rdf:resource="E78_Collection"/>
+	<rdfs:range rdf:resource="E39_Actor"/>
+	<rdfs:subPropertyOf rdf:resource="P49_has_former_or_current_keeper"/>
+</rdf:Property>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P147_curated -->
+
+<rdf:Property rdf:about="P147_curated">
+	<rdfs:label xml:lang="en">curated</rdfs:label>
+	<rdfs:label xml:lang="de">betreute kuratorisch</rdfs:label>
+	<rdfs:label xml:lang="zh">典藏管理了</rdfs:label>
+	<rdfs:comment>This property associates an instance of E87 Curation Activity with the instance of E78 Collection that is subject of that  curation activity.
+</rdfs:comment>
+	<rdfs:domain rdf:resource="E87_Curation_Activity"/>
+	<rdfs:range rdf:resource="E78_Collection"/>
+</rdf:Property>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
     
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object -->
+    
+<rdfs:Class rdf:about="E20_Biological_Object">
+	<rdfs:label xml:lang="ru">Биологический Объект</rdfs:label>
+	<rdfs:label xml:lang="en">Biological Object</rdfs:label>
+	<rdfs:label xml:lang="el">Βιολογικό Ακτικείμενο</rdfs:label>
+	<rdfs:label xml:lang="fr">Objet biologique</rdfs:label>
+	<rdfs:label xml:lang="de">Biologischer Gegenstand</rdfs:label>
+	<rdfs:label xml:lang="pt">Objeto Biológico</rdfs:label>
+	<rdfs:label xml:lang="zh">生物体</rdfs:label>
+	<rdfs:comment>This class comprises individual items of a material nature, which live, have lived or are natural products of or from living organisms. 
+Artificial objects that incorporate biological elements, such as Victorian butterfly frames, can be documented as both instances of E20 Biological Object and E22 Man-Made Object. 
+</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="E19_Physical_Object"/>
+</rdfs:Class>
+
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E21_Person -->
+
+<rdfs:Class rdf:about="E21_Person">
+	<rdfs:label xml:lang="de">Person</rdfs:label>
+	<rdfs:label xml:lang="fr">Personne</rdfs:label>
+	<rdfs:label xml:lang="en">Person</rdfs:label>
+	<rdfs:label xml:lang="ru">Личность</rdfs:label>
+	<rdfs:label xml:lang="el">Πρόσωπο</rdfs:label>
+	<rdfs:label xml:lang="pt">Pessoa</rdfs:label>
+	<rdfs:label xml:lang="zh">人物</rdfs:label>
+	<rdfs:comment>This class comprises real persons who live or are assumed to have lived. 
+Legendary figures that may have existed, such as Ulysses and King Arthur, fall into this class if the documentation refers to them as historical figures. In cases where doubt exists as to whether several persons are in fact identical, multiple instances can be created and linked to indicate their relationship. The CRM does not propose a specific form to support reasoning about possible identity.
+</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="E20_Biological_Object"/>
+	<rdfs:subClassOf rdf:resource="E39_Actor"/>
+</rdfs:Class>
+
 
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object -->
 
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing"/>
-        <vitro:descriptionAnnot xml:lang="en">This class comprises physical objects purposely created by human activity.
+<rdfs:Class rdf:about="E22_Man-Made_Object">
+	<rdfs:label xml:lang="fr">Objet fabriqué</rdfs:label>
+	<rdfs:label xml:lang="el">Ανθρωπογενές Αντικείμενο</rdfs:label>
+	<rdfs:label xml:lang="de">Künstlicher Gegenstand</rdfs:label>
+	<rdfs:label xml:lang="ru">Рукотворный Объект</rdfs:label>
+	<rdfs:label xml:lang="en">Man-Made Object</rdfs:label>
+	<rdfs:label xml:lang="pt">Objeto Fabricado</rdfs:label>
+	<rdfs:label xml:lang="zh">人造物件</rdfs:label>
+	<rdfs:comment>This class comprises physical objects purposely created by human activity.
 No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, an inscribed piece of rock or a preserved butterfly are both regarded as instances of E22 Man-Made Object.
-</vitro:descriptionAnnot>
-        <rdfs:label xml:lang="en">Man-Made Object</rdfs:label>
-    </owl:Class>
-    
+</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="E19_Physical_Object"/>
+	<rdfs:subClassOf rdf:resource="E24_Physical_Man-Made_Thing"/>
+</rdfs:Class>
 
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing -->
-
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E71_Man-Made_Thing"/>
-        <vitro:descriptionAnnot xml:lang="en">This class comprises all persistent physical items that are purposely created by human activity.
+<rdfs:Class rdf:about="E24_Physical_Man-Made_Thing">
+	<rdfs:label xml:lang="ru">Физическая Рукотворная Вещь</rdfs:label>
+    <rdfs:label xml:lang="en">Physical Man-Made Thing</rdfs:label>
+    <rdfs:label xml:lang="el">Ανθρωπογενές Υλικό Πράγμα</rdfs:label>
+    <rdfs:label xml:lang="de">Hergestelltes</rdfs:label>
+    <rdfs:label xml:lang="fr">Chose matérielle fabriquée</rdfs:label>
+	<rdfs:label xml:lang="pt">Coisa Material Fabricada</rdfs:label>
+	<rdfs:label xml:lang="zh">人造实体物</rdfs:label>
+	<rdfs:comment>This class comprises all persistent physical items that are purposely created by human activity.
 This class comprises man-made objects, such as a swords, and man-made features, such as rock art. No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, a “cup and ring” carving on bedrock is regarded as instance of E24 Physical Man-Made Thing. 
-</vitro:descriptionAnnot>
-        <rdfs:label xml:lang="en">Physical Man-Made Thing</rdfs:label>
-    </owl:Class>
+</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="E18_Physical_Thing"/>
+	<rdfs:subClassOf rdf:resource="E71_Man-Made_Thing"/>
+</rdfs:Class>
     
 
 
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E71_Man-Made_Thing -->
-
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E71_Man-Made_Thing">
-        <vitro:descriptionAnnot xml:lang="en">This class comprises discrete, identifiable man-made items that are documented as single units. 
-These items are either intellectual products or man-made physical things, and are characterized by relative stability. They may for instance have a solid physical form, an electronic encoding, or they may be logical concepts or structures.
-</vitro:descriptionAnnot>
-        <rdfs:label xml:lang="en">Man-Made Thing</rdfs:label>
-    </owl:Class>
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E39_Actor -->
     
+<rdfs:Class rdf:about="E39_Actor">
+<rdfs:label xml:lang="de">Akteur</rdfs:label>
+<rdfs:label xml:lang="ru">Агент</rdfs:label>
+    <rdfs:label xml:lang="fr">Agent</rdfs:label>
+    <rdfs:label xml:lang="el">Δράστης</rdfs:label>
+    <rdfs:label xml:lang="en">Actor</rdfs:label>
+	<rdfs:label xml:lang="pt">Agente</rdfs:label>
+	<rdfs:label xml:lang="zh">角色</rdfs:label>
+	<rdfs:comment>This class comprises people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible.
+The CRM does not attempt to model the inadvertent actions of such actors. Individual people should be documented as instances of E21 Person, whereas groups should be documented as instances of either E74 Group or its subclass E40 Legal Body.
+</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="E77_Persistent_Item"/>
+</rdfs:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E74_Group -->
+
+<rdfs:Class rdf:about="E74_Group">
+<rdfs:label xml:lang="ru">Группа</rdfs:label>
+    <rdfs:label xml:lang="en">Group</rdfs:label>
+    <rdfs:label xml:lang="el">Ομάδα</rdfs:label>
+    <rdfs:label xml:lang="de">Menschliche Gruppe</rdfs:label>
+   <rdfs:label xml:lang="fr">Groupe</rdfs:label>
+   <rdfs:label xml:lang="pt">Grupo</rdfs:label>
+	<rdfs:label xml:lang="zh">群组</rdfs:label>
+	<rdfs:comment>This class comprises any gatherings or organizations of E39 Actors that act collectively or in a similar way due to any form of unifying relationship. In the wider sense this class also comprises official positions which used to be regarded in certain contexts as one actor, independent of the current holder of the office, such as the president of a country. In such cases, it may happen that the Group never had more than one member. A joint pseudonym (i.e., a name that seems indicative of an individual but that is actually used as a persona by two or more people) is a particular case of E74 Group.
+A gathering of people becomes an E74 Group when it exhibits organizational characteristics usually typified by a set of ideas or beliefs held in common, or actions performed together. These might be communication, creating some common artifact, a common purpose such as study, worship, business, sports, etc. Nationality can be modeled as membership in an E74 Group (cf. HumanML markup). Married couples and other concepts of family are regarded as particular examples of E74 Group.
+</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="E39_Actor"/>
+</rdfs:Class>
+
 
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/E78_Collection -->
 
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E78_Collection">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing"/>
-        <vitro:descriptionAnnot xml:lang="en">This class comprises aggregations of instances of E18 Physical Thing that are assembled and maintained (“curated” and “preserved,” in museological terminology) by one or more instances of E39 Actor over time for a specific purpose and audience, and according to a particular collection development plan.  
+<rdfs:Class rdf:about="E78_Collection">
+	<rdfs:label xml:lang="ru">Коллекция</rdfs:label>
+    <rdfs:label xml:lang="el">Συλλογή</rdfs:label>
+    <rdfs:label xml:lang="fr">Collection</rdfs:label>
+    <rdfs:label xml:lang="en">Collection</rdfs:label>
+    <rdfs:label xml:lang="de">Sammlung</rdfs:label>
+	<rdfs:label xml:lang="pt">Coleção</rdfs:label>
+	<rdfs:label xml:lang="zh">收藏</rdfs:label>
+	<rdfs:comment>This class comprises aggregations of instances of E18 Physical Thing that are assembled and maintained ("curated" and "preserved", in museological terminology) by one or more instances of E39 Actor over time for a specific purpose and audience, and according to a particular collection development plan.  
 Items may be added or removed from an E78 Collection in pursuit of this plan. This class should not be confused with the E39 Actor maintaining the E78 Collection often referred to with the name of the E78 Collection (e.g. “The Wallace Collection decided…”).
 Collective objects in the general sense, like a tomb full of gifts, a folder with stamps or a set of chessmen, should be documented as instances of E19 Physical Object, and not as instances of E78 Collection. This is because they form wholes either because they are physically bound together or because they are kept together for their functionality.
-</vitro:descriptionAnnot>
-        <rdfs:label xml:lang="en">Collection</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E7_Activity -->
-
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">
-        <vitro:descriptionAnnot xml:lang="en">This class comprises actions intentionally carried out by instances of E39 Actor that result in changes of state in the cultural, social, or physical systems documented. 
-This notion includes complex, composite and long-lasting actions such as the building of a settlement or a war, as well as simple, short-lived actions such as the opening of a door.
-</vitro:descriptionAnnot>
-        <rdfs:label xml:lang="en">Activity</rdfs:label>
-    </owl:Class>
+</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="E24_Physical_Man-Made_Thing"/>
+</rdfs:Class>
     
 
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/E87_Curation_Activity -->
 
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E87_Curation_Activity">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
-        <vitro:descriptionAnnot xml:lang="en">This class comprises the activities that result in the continuity of management and the preservation and evolution of instances of E78 Collection, following an implicit or explicit curation plan. 
+<rdfs:Class rdf:about="E87_Curation_Activity">
+	<rdfs:label xml:lang="de">Kuratorische Tätigkeit</rdfs:label>
+	<rdfs:label xml:lang="en">Curation Activity</rdfs:label>
+	<rdfs:label xml:lang="zh">典藏管理</rdfs:label>
+	<rdfs:comment>This class comprises the activities that result in the continuity of management and the preservation and evolution of instances of E78 Collection, following an implicit or explicit curation plan. 
 It specializes the notion of activity into the curation of a collection and allows the history of curation to be recorded.
 Items are accumulated and organized following criteria like subject, chronological period, material type, style of art etc. and can be added or removed from an E78 Collection for a specific purpose and/or audience. The initial aggregation of items of a collection is regarded as an instance of E12 Production Event while the activity of evolving, preserving and promoting a collection is regarded as an instance of E87 Curation Activity.
-</vitro:descriptionAnnot>
-        <rdfs:label xml:lang="en">Curation Activity</rdfs:label>
-    </owl:Class>
+</rdfs:comment>
+	<rdfs:subClassOf rdf:resource="E7_Activity"/>
+</rdfs:Class>
+
+
 </rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
 
