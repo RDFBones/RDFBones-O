@@ -70,9 +70,7 @@ P81 has its time interval redefined by P81a and P81b. Similarly, we redefine P82
 	<rdfs:comment>This property describes the active or passive participation of instances of E39 Actors in an E5 Event. 
 It connects the life-line of the related E39 Actor with the E53 Place and E50 Date of the event. The property implies that the Actor was involved in the event but does not imply any causal relationship. The subject of a portrait can be said to have participated in the creation of the portrait.
 </rdfs:comment>
-	<rdfs:domain rdf:resource="E5_Event"/>
 	<rdfs:range rdf:resource="E39_Actor"/>
-	<rdfs:subPropertyOf rdf:resource="P12_occurred_in_the_presence_of"/>
 </rdf:Property>
     
 
@@ -90,8 +88,6 @@ This property is intended to describe specific components that are individually 
 
 The instances of E57 Material of which an item of E18 Physical Thing is composed should be documented using P45 consists of (is incorporated in).
 </rdfs:comment>
-	<rdfs:domain rdf:resource="E18_Physical_Thing"/>
-	<rdfs:range rdf:resource="E18_Physical_Thing"/>
 </rdf:Property>
 
 
@@ -107,7 +103,6 @@ It does not allow a history of curation to be recorded. This would require use o
 </rdfs:comment>
 	<rdfs:domain rdf:resource="E78_Collection"/>
 	<rdfs:range rdf:resource="E39_Actor"/>
-	<rdfs:subPropertyOf rdf:resource="P49_has_former_or_current_keeper"/>
 </rdf:Property>
     
 
@@ -141,7 +136,6 @@ It does not allow a history of curation to be recorded. This would require use o
 	<rdfs:comment>This class comprises individual items of a material nature, which live, have lived or are natural products of or from living organisms. 
 Artificial objects that incorporate biological elements, such as Victorian butterfly frames, can be documented as both instances of E20 Biological Object and E22 Man-Made Object. 
 </rdfs:comment>
-	<rdfs:subClassOf rdf:resource="E19_Physical_Object"/>
 </rdfs:Class>
 
 
@@ -153,7 +147,6 @@ Artificial objects that incorporate biological elements, such as Victorian butte
 	<rdfs:comment>This class comprises real persons who live or are assumed to have lived. 
 Legendary figures that may have existed, such as Ulysses and King Arthur, fall into this class if the documentation refers to them as historical figures. In cases where doubt exists as to whether several persons are in fact identical, multiple instances can be created and linked to indicate their relationship. The CRM does not propose a specific form to support reasoning about possible identity.
 </rdfs:comment>
-	<rdfs:subClassOf rdf:resource="E20_Biological_Object"/>
 	<rdfs:subClassOf rdf:resource="E39_Actor"/>
 </rdfs:Class>
 
@@ -179,7 +172,6 @@ No assumptions are made as to the extent of modification required to justify reg
 	<rdfs:comment>This class comprises people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible.
 The CRM does not attempt to model the inadvertent actions of such actors. Individual people should be documented as instances of E21 Person, whereas groups should be documented as instances of either E74 Group or its subclass E40 Legal Body.
 </rdfs:comment>
-	<rdfs:subClassOf rdf:resource="E77_Persistent_Item"/>
 </rdfs:Class>
     
 
@@ -204,7 +196,6 @@ A gathering of people becomes an E74 Group when it exhibits organizational chara
 Items may be added or removed from an E78 Collection in pursuit of this plan. This class should not be confused with the E39 Actor maintaining the E78 Collection often referred to with the name of the E78 Collection (e.g. “The Wallace Collection decided…”).
 Collective objects in the general sense, like a tomb full of gifts, a folder with stamps or a set of chessmen, should be documented as instances of E19 Physical Object, and not as instances of E78 Collection. This is because they form wholes either because they are physically bound together or because they are kept together for their functionality.
 </rdfs:comment>
-	<rdfs:subClassOf rdf:resource="E24_Physical_Man-Made_Thing"/>
 </rdfs:Class>
     
 
@@ -217,7 +208,6 @@ Collective objects in the general sense, like a tomb full of gifts, a folder wit
 It specializes the notion of activity into the curation of a collection and allows the history of curation to be recorded.
 Items are accumulated and organized following criteria like subject, chronological period, material type, style of art etc. and can be added or removed from an E78 Collection for a specific purpose and/or audience. The initial aggregation of items of a collection is regarded as an instance of E12 Production Event while the activity of evolving, preserving and promoting a collection is regarded as an instance of E87 Curation Activity.
 </rdfs:comment>
-	<rdfs:subClassOf rdf:resource="E7_Activity"/>
 </rdfs:Class>
 
 
