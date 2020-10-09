@@ -49,7 +49,8 @@ Property P82 is for modeling the minimum outer bounds of events i.e. at_some_tim
 P81 has its time interval redefined by P81a and P81b. Similarly, we redefine P82 by P82a and P82b.
 
 -->
-<rdf:RDF xml:lang="en" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:base="http://www.cidoc-crm.org/cidoc-crm/">
+<rdf:RDF xml:lang="en" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:base="http://www.cidoc-crm.org/cidoc-crm/" xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <owl:Ontology rdf:about="http://www.cidoc-crm.org/cidoc-crm/">
     
 
 
