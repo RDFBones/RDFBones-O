@@ -167,8 +167,6 @@ Legendary figures that may have existed, such as Ulysses and King Arthur, fall i
 	<rdfs:comment>This class comprises physical objects purposely created by human activity.
 No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, an inscribed piece of rock or a preserved butterfly are both regarded as instances of E22 Man-Made Object.
 </rdfs:comment>
-	<rdfs:subClassOf rdf:resource="E19_Physical_Object"/>
-	<rdfs:subClassOf rdf:resource="E24_Physical_Man-Made_Thing"/>
 </rdfs:Class>
     
 
