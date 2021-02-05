@@ -23,6 +23,7 @@
      xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#">
     <owl:Ontology rdf:about="http://w3id.org/rdfbones/core">
         <rdfs:label xml:lang="en-us">RDFBones</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -617,6 +618,7 @@
         <obo:IAO_0000112 xml:lang="en">The distal part of a femur's bone marrow cavity.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Section of an anatomical cavity, specifically defined for analytical purposes. Segments can be used to code the shape and other qualities of anaotomical cavities or whether they have been obliterated by ontogenetic or other remodelling processes.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Segment of anatomical cavity</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -640,8 +642,8 @@
         <obo:IAO_0000112 xml:lang="en">The central portion of the diaphysis of the left femur.
 The frontal part of the right parietal bone.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Section of a skeletal element, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of skeletal material in varying degees of detail or to code the location of skeletal traits or traces.</obo:IAO_0000115>
-        <vitro:descriptionAnnot xml:lang="en">Use subclasses of this class to describe fresj skeletal material that still contains all its components, including bone marrow (e.g. forensic material).</vitro:descriptionAnnot>
         <rdfs:label xml:lang="en">Segment of bone</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>	
     </owl:Class>
     
 
@@ -652,6 +654,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
         <obo:IAO_0000115 xml:lang="en">Labels that can be used for the categorical measurement datum &apos;completeness in two states&apos;.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Label for completeness in two states</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -687,6 +690,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, expressing the completeness of skeletal elements as either &apos;complete&apos; or &apos;partly present&apos;. It is not designed to express the absence of skeletal elements (e.g. with inventories of skeletons).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Completeness in two states</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -699,6 +703,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
 A scalar measurement datum, specifying the portion of a bone that is present for analysis.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A measurement datum, specifying the portion of a skeletal element that is present and available for analysis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Completeness datum</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -723,6 +728,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/> <!-- ('Categorical label') -->
         <obo:IAO_0000115 xml:lang="en">Labels that can be used for the categorical measurement datum &apos;obliteration in two states&apos;.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Label for obliteration in two states</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -758,6 +764,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, expressing the obliteration of skeletal features as either &apos;obliterated&apos; or &apos;not obliterated&apos;.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Obliteration in two states</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
 
     
@@ -769,6 +776,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <obo:IAO_0000112 xml:lang="en">A categorical measurement datum, specifying if a skeletal feature is not obliterated, being obliterated or completely obliterated by an ontogenetic process or bone remodelling.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A measurement datum, specifying the degree to which a skeletal feature is removed or superimposed by ontogenetic processes or bone remodelling.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Obliteration datum</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
       
     
