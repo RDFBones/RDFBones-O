@@ -51,66 +51,6 @@
     
 
 
-    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot -->
-
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
-    
-
-
-    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#displayLimitAnnot -->
-
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#displayLimitAnnot"/>
-    
-
-
-    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#displayRankAnnot -->
-
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#displayRankAnnot"/>
-    
-
-
-    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#hiddenFromDisplayBelowRoleLevelAnnot -->
-
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#hiddenFromDisplayBelowRoleLevelAnnot"/>
-    
-
-
-    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#hiddenFromPublishBelowRoleLevelAnnot -->
-
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#hiddenFromPublishBelowRoleLevelAnnot"/>
-    
-
-
-    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#offerCreateNewOptionAnnot -->
-
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#offerCreateNewOptionAnnot"/>
-    
-
-
-    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot -->
-
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#ontologyPrefixAnnot"/>
-    
-
-
-    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#prohibitedFromUpdateBelowRoleLevelAnnot -->
-
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#prohibitedFromUpdateBelowRoleLevelAnnot"/>
-    
-
-
-    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#publicDescriptionAnnot -->
-
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#publicDescriptionAnnot"/>
-    
-
-
-    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/0.7#selectFromExistingAnnot -->
-
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#selectFromExistingAnnot"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
