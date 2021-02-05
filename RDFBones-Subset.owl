@@ -141,12 +141,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/fma#regional_part_of -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-    
-
-
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator"/>
