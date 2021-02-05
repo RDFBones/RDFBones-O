@@ -830,11 +830,9 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comments on technichal complications with taking a particular measurement.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A note added by researchers working with this database.</obo:IAO_0000115>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A piece of textual user input, containing additional information on one or several resources. It can be used to relate resources with each other.</vitro:descriptionAnnot>
-        <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <obo:IAO_0000116 xml:lang="en">A piece of textual user input, containing additional information on one or several resources. It can be used to relate resources with each other.</obo:IAO_0000116>
         <rdfs:label xml:lang="en-us">Research Note</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -905,13 +903,9 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The observation by a researcher that a particular skeletal element is referenced in a historic letter.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A note added by researchers working with this database, linking entities of all kinds with documents.</obo:IAO_0000115>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A piece of textual user input, creating a relationship between one or several entities and an information content entity or part of it.</vitro:descriptionAnnot>
-        <vitro:displayLimitAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayLimitAnnot>
-        <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayRankAnnot>
-        <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <obo:IAO_0000116 xml:lang="en"> A piece of textual user input, creating a relationship between one or several entities and an information content entity or part of it.</obo:IAO_0000116>
         <rdfs:label xml:lang="en-us">Research Reference</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -921,6 +915,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement">
         <obo:IAO_0000115 xml:lang="en">Section of a skeletal element, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of skeletal material in varying detail or to code the location of skeletal traits or traces.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Segment of skeletal element</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -944,6 +939,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <obo:IAO_0000112 xml:lang="en">A list of bones recovered from a medieval burial, detailing which previously defined bone segments are present and giving coded information on surface preservation of these segments.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A skeletal inventory is a data set, listing the skeletal elements that are available in a batch of material, e.g. the skeletal material recovered from a stratigraphic unit or the skeletal material featured in a court trial. It may contain information on completeness and preservation of bones or bone segments.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Skeletal inventory</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -983,8 +979,9 @@ A scalar measurement datum, specifying the portion of a bone that is present for
               </owl:Restriction>
 	    </rdfs:subClassOf>
 	    <obo:IAO_0000115 xml:lang="en">A plan specification that defines what skeletal material is essentially needed to perform a specific assay.</obo:IAO_0000115>
-	    <vitro:descriptionAnnot xml:lang="en">A skeletal material requirement specification typically is part of an investigation assay specification. It refers both to a defined segment of some skeletal element and to a value specification for a specific measurement datum that describes this segment in a skeletal inventory. Only instances of the specified segment that meet the value specification are admitted for execution of the assay. In a particular investigation, the skeletal material requirement specification is matched against the skeletal material specifications from the investigation&apos;s plan that accommodates an investigation type and its study design to a specific investigation.</vitro:descriptionAnnot>
+	    <obo:IAO_0000116 xml:lang="en">A skeletal material requirement specification typically is part of an investigation assay specification. It refers both to a defined segment of some skeletal element and to a value specification for a specific measurement datum that describes this segment in a skeletal inventory. Only instances of the specified segment that meet the value specification are admitted for execution of the assay. In a particular investigation, the skeletal material requirement specification is matched against the skeletal material specifications from the investigation&apos;s plan that accommodates an investigation type and its study design to a specific investigation.</obo:IAO_0000116>
 	    <rdfs:label xml:lang="en">Skeletal material requirement</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
 	  </owl:Class>
     
 
@@ -1018,8 +1015,9 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 	  </owl:Restriction>
 	</rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A plan specification that defines what skeletal material is used in a specific investigation.</obo:IAO_0000115>
-        <vitro:descriptionAnnot xml:lang="en">A skeletal material specification is typically part of a plan that accommodates an investigation type and its study design to a specific investigation. It refers both to a number of skeletal inventories and to a specific type of specimen collection process. The specimen collection process matches the skeletal material specification with the corresponding skeletal material requirement specification to identify skeletal elements that are suited for a certain type of assay.</vitro:descriptionAnnot>
+        <obo:IAO_0000116 xml:lang="en">A skeletal material specification is typically part of a plan that accommodates an investigation type and its study design to a specific investigation. It refers both to a number of skeletal inventories and to a specific type of specimen collection process. The specimen collection process matches the skeletal material specification with the corresponding skeletal material requirement specification to identify skeletal elements that are suited for a certain type of assay.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">Skeletal material specification</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1044,6 +1042,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 A scalar measurement datum, giving the portion of the surface of a bone on which observation of traces is possible.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A measurement datum about taphonomic traces on skeletal material. It codes the presence or absence of a specific damage and its severity.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Taphonomic state datum</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1067,33 +1066,7 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <obo:IAO_0000112 xml:lang="en">Buccal side of the crown of a tooth.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Section of a tooth, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of skeletal material in varying degees of detail or to code the location of skeletal traits or traces.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Segment of tooth</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/rdfbones/core#Transcript -->
-
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Transcript">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/transcriptOf"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Document"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/transcriptOf"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A typed version of a hand-written research note left by a late scholar is a transcript.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The result of rendering a handwritten or recorded work in writing.</obo:IAO_0000115>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transcription turns a text from one form into another, most commonly to make a hand-written or printed document digitally accessible, but also to other ends, e.g. for updating outdated handwriting scripts or typefaces. It also describes the process of putting oral speech from a recording into writing. Example of usage: &quot;Transcription turns handwritten and typed documents into searchable and machine-readable resources.&quot; (https://transcription.si.edu/about; last accessed on 13 October 2015).</vitro:descriptionAnnot>
-        <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-        <rdfs:label xml:lang="en-us">Transcript</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1127,6 +1100,7 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
         <obo:IAO_0000115 xml:lang="en">Indicates that a skeletal element is entirely preserved and available for analysis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">complete</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:NamedIndividual>
     
 
@@ -1137,6 +1111,7 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StateLabel"/>
         <obo:IAO_0000115 xml:lang="en">Indicates that a skeletal feature is not removed or superimposed by ontogenetic processes or bone remodelling.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">obliterated</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:NamedIndividual>
     
 
@@ -1147,6 +1122,7 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StateLabel"/>
         <obo:IAO_0000115 xml:lang="en">Indicates that a skeletal feature is removed or superimposed by ontogenetic processes or bone remodelling.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">obliterated</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:NamedIndividual>
     
 
@@ -1157,10 +1133,7 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
         <obo:IAO_0000115 xml:lang="en">Indicates that only parts of a skeletal element are preserved and available for analysis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">partly present</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:NamedIndividual>
 </rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
