@@ -1054,29 +1054,6 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     
 
 
-    <!-- http://w3id.org/rdfbones/core#SegmentOfBonyPartOfBone -->
-
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfBonyPartOfBone">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_83129"/> <!-- ('Bony part of bone') -->
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Section of the bony part of a skeletal element, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of skeletal material in greater detail than for the entire bony part of bones or to code the location of skeletal traits or traces.</obo:IAO_0000115>
-        <vitro:descriptionAnnot xml:lang="en">Use subclasses of this class to describe skeletal material that only contains cortical, compact and spongy bone, but no other components like bone marrow (e.g. historical/archaeological material, mascerated material in anatomical collections).</vitro:descriptionAnnot>
-        <rdfs:label xml:lang="en">Segment of bony part of bone</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/rdfbones/core#SegmentOfSkeletalElement -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement">
