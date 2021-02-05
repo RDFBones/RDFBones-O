@@ -837,12 +837,6 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/Agent -->
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
