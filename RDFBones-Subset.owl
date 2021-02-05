@@ -23,7 +23,6 @@
      xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#">
     <owl:Ontology rdf:about="http://w3id.org/rdfbones/core">
         <rdfs:label xml:lang="en-us">RDFBones</rdfs:label>
-        <vitro:ontologyPrefixAnnot rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">rdfbones</vitro:ontologyPrefixAnnot>
     </owl:Ontology>
     
 
