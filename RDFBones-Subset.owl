@@ -599,30 +599,6 @@
     
 
 
-    <!-- http://purl.org/ontology/bibo/Document -->
-
-    <owl:Class rdf:about="http://purl.org/ontology/bibo/Document"/>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#DateTimeInterval -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval"/>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#DateTimeValue -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValue"/>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#Relationship -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship"/>
-    
-
-
     <!-- http://w3id.org/rdfbones/core#AnatomicalCavitySegment -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#AnatomicalCavitySegment">
