@@ -107,6 +107,151 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001938 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001938"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/bounds -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sig/ont/fma/bounds">
+      <rdfs:domain>
+	<owl:Class>
+	  <owl:unionOf rdf:parseType="Collection">
+	    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma50705"/>
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma5897"/>
+	  </owl:unionOf>
+	</owl:Class>
+      </rdfs:domain>
+      <rdfs:range>
+	<owl:Class>
+	  <owl:unionOf rdf:parseType="Collection">
+	    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma50705"/>
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma5897"/>
+	  </owl:unionOf>
+	</owl:Class>
+      </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/constitutional_part -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sig/ont/fma/constitutional_part">
+      <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+      <rdfs:range>
+	<owl:Class>
+	  <owl:unionOf rdf:parseType="Collection">
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma5897"/>
+	    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+	  </owl:unionOf>
+	</owl:Class>
+      </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/constitutional_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sig/ont/fma/constitutional_part_of">
+      <rdfs:domain>
+	<owl:Class>
+	  <owl:unionOf rdf:parseType="Collection">
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma5897"/>
+	    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+	  </owl:unionOf>
+	</owl:Class>
+      </rdfs:domain>
+      <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/contains -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sig/ont/fma/contains">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/is_boundary_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sig/ont/fma/is_boundary_of">
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma5897"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/regional_part -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sig/ont/fma/regional_part">
+      <rdfs:domain>
+	<owl:Class>
+	  <owl:unionOf rdf:parseType="Collection">
+	    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma50705"/>
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma5897"/>
+	  </owl:unionOf>
+	</owl:Class>
+      </rdfs:domain>
+      <rdfs:range>
+	<owl:Class>
+	  <owl:unionOf rdf:parseType="Collection">
+	    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma50705"/>
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma5897"/>
+	  </owl:unionOf>
+	</owl:Class>
+      </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/regional_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sig/ont/fma/regional_part_of">
+      <rdfs:domain>
+	<owl:Class>
+	  <owl:unionOf rdf:parseType="Collection">
+	    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma50705"/>
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma5897"/>
+	  </owl:unionOf>
+	</owl:Class>
+      </rdfs:domain>
+      <rdfs:range>
+	<owl:Class>
+	  <owl:unionOf rdf:parseType="Collection">
+	    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma50705"/>
+	    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma5897"/>
+	  </owl:unionOf>
+	</owl:Class>
+      </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/related_part -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sig/ont/fma/related_part">
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma5897"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
 
 
 
@@ -488,20 +633,46 @@
     
 
 
+    <!-- http://purl.org/sig/ont/fma/fma305751 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma305751">
+      <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma50705 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma50705">
+      <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma55652 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma55652">
+      <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma5897 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma5897">
+      <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#AnatomicalCavitySegment -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#AnatomicalCavitySegment">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_67552"/> <!-- ('Anatomical cavity') -->
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma67552"/> <!-- ('Anatomical cavity') -->
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">The distal part of a femur's bone marrow cavity.</obo:IAO_0000112>
@@ -518,14 +689,8 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_5018"/> <!-- ('Bone organ') -->
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma5018"/> <!-- ('Bone organ') -->
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">The central portion of the diaphysis of the left femur.
@@ -556,25 +721,13 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
                 <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, expressing the completeness of skeletal elements as either &apos;complete&apos; or &apos;partly present&apos;. It is not designed to express the absence of skeletal elements (e.g. with inventories of skeletons).</obo:IAO_0000115>
@@ -630,25 +783,13 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/> <!-- ('has category label') -->
                 <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StateLabel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/> <!-- ('has category label') -->
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality> 
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, expressing the obliteration of skeletal features as either &apos;obliterated&apos; or &apos;not obliterated&apos;.</obo:IAO_0000115>
@@ -732,12 +873,6 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 		<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
               </owl:Restriction>
 	    </rdfs:subClassOf>
-	    <rdfs:subClassOf>
-              <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
-		<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-              </owl:Restriction>
-	    </rdfs:subClassOf>
 	    <obo:IAO_0000115 xml:lang="en">A plan specification that defines what skeletal material is essentially needed to perform a specific assay.</obo:IAO_0000115>
 	    <obo:IAO_0000116 xml:lang="en">A skeletal material requirement specification typically is part of an investigation assay specification. It refers both to a defined segment of some skeletal element and to a value specification for a specific measurement datum that describes this segment in a skeletal inventory. Only instances of the specified segment that meet the value specification are admitted for execution of the assay. In a particular investigation, the skeletal material requirement specification is matched against the skeletal material specifications from the investigation&apos;s plan that accommodates an investigation type and its study design to a specific investigation.</obo:IAO_0000116>
 	    <rdfs:label xml:lang="en">Skeletal material requirement</rdfs:label>
@@ -765,15 +900,9 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-          <owl:Restriction>
-	    <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-	    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-	  </owl:Restriction>
-	</rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A plan specification that defines what skeletal material is used in a specific investigation.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A skeletal material specification is typically part of a plan that accommodates an investigation type and its study design to a specific investigation. It refers both to a number of skeletal inventories and to a specific type of specimen collection process. The specimen collection process matches the skeletal material specification with the corresponding skeletal material requirement specification to identify skeletal elements that are suited for a certain type of assay.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">Skeletal material specification</rdfs:label>
@@ -789,13 +918,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#BoneSegment"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#BoneSegment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">A categorical measurement datum, classifying the surface of a bone segment as &apos;intact&apos;, &apos;partly damaged&apos; or &apos;damaged&apos;.
@@ -813,14 +936,8 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_12516"/> <!-- ('Tooth') -->
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma12516"/> <!-- ('Tooth') -->
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">Buccal side of the crown of a tooth.</obo:IAO_0000112>
