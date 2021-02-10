@@ -1,26 +1,15 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://w3id.org/rdfbones/core#"
      xml:base="http://w3id.org/rdfbones/core"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:cidoc-crm="http://www.cidoc-crm.org/cidoc-crm/"
-     xmlns:core="http://vivoweb.org/ontology/core#"
-     xmlns:geopolitical="http://aims.fao.org/aos/geopolitical.owl#"
-     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
-     xmlns:ns2="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:sio="http://semanticscience.org/resource/"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:skos1="http://www.w3.org/2008/05/skos#"
-     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#">
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
     <owl:Ontology rdf:about="http://w3id.org/rdfbones/core">
         <rdfs:label xml:lang="en-us">RDFBones</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2</owl:versionInfo>
@@ -298,24 +287,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#dateTimeInterval -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#dateTimeValue -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeValue"/>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#relates -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relates"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -356,7 +327,7 @@
     <owl:DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#anatomicalCavityPortion">
         <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#AnatomicalCavitySegment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <vitro:descriptionAnnot xml:lang="en">Renders the portion (0 &lt; skeletal cavity portion &lt;= 1) of an anatomical cavity in a skeleton that a certain entity occupies.</vitro:descriptionAnnot>
+        <obo:IAO_0000115>Renders the portion (0 &lt; skeletal cavity portion &lt;= 1) of an anatomical cavity in a skeleton that a certain entity occupies.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">anatomical cavity portion</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -369,8 +340,7 @@
         <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#BoneSegment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <obo:IAO_0000112 xml:lang="en">The portion of the left parietal bone that a bone organ segment, defined as &apos;frontal part of the left parietal bone&apos;, represents.</obo:IAO_0000112>
-        <vitro:descriptionAnnot xml:lang="en">Renders the portion (0 &lt; bone portion &lt;= 1) of a bone organ that a certain entity occupies.</vitro:descriptionAnnot>
-        <vitro:publicDescriptionAnnot xml:lang="en">Portion of the represented bone.</vitro:publicDescriptionAnnot>
+        <obo:IAO_0000115 xml:lang="en">Renders the portion (0 &lt; bone portion &lt;= 1) of a bone organ that a certain entity occupies.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">bone portion</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -380,21 +350,8 @@
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#skeletalElementPortion">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>	
-        <vitro:descriptionAnnot xml:lang="en">Renders the portion (0 &lt; skeletal element portion &lt;= 1) of a skeletal element that a certain entity occupies. This property and its subproperties are needed to weigh contributions from different segments of sekeltal elements in calculations summarising measurements from multiple segments.</vitro:descriptionAnnot>
-        <vitro:publicDescriptionAnnot xml:lang="en">Portion of a skeletal element.</vitro:publicDescriptionAnnot>
+        <obo:IAO_0000115 xml:lang="en">Renders the portion (0 &lt; skeletal element portion &lt;= 1) of a skeletal element that a certain entity occupies. This property and its subproperties are needed to weigh contributions from different segments of sekeltal elements in calculations summarising measurements from multiple segments.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">skeletal element portion</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://w3id.org/rdfbones/core#text -->
-
-    <owl:DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#text">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>	
-        <vitro:descriptionAnnot xml:lang="en">Renders the text of a textual entity.</vitro:descriptionAnnot>
-        <vitro:publicDescriptionAnnot xml:lang="en">Free text.</vitro:publicDescriptionAnnot>
-        <rdfs:label xml:lang="en">text</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -406,15 +363,9 @@
         <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#ToothSegment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <obo:IAO_0000112 xml:lang="en">The portion of a tooth segment called 'Entire crown of left lower second premolar tooth' that is preserved in a skeleton recovered during an archaeological excavation..</obo:IAO_0000112>
-        <vitro:descriptionAnnot xml:lang="en">Renders the portion (0 &lt; tooth portion &lt;= 1) that a certain entity occupies in a tooth.</vitro:descriptionAnnot>
+        <obo:IAO_0000115 xml:lang="en">Renders the portion (0 &lt; tooth portion &lt;= 1) that a certain entity occupies in a tooth.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">tooth portion</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.w3.org/2006/vcard/ns#note -->
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#note"/>
     
 
 
@@ -525,14 +476,7 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300"> <!-- ('Textual entity') -->
-      <rdfs:SubClassOf>
-	<owl:Restriction>
-	  <owl:onProperty rdf:resource="http://w3id.org/rdfbones/core#text"/>
-          <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
-	</owl:Restriction>
-      </rdfs:SubClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300"/>
     
 
 
