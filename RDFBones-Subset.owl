@@ -692,12 +692,6 @@
 	<obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
 	<obo:IAO_0000116 xml:lang="en">See more specific subclasses for examples of usage.</obo:IAO_0000116>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#AnatomicalRegionOfInterest"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A part of skeletal material that has a specific methodological significance. It is arbitrarily defined by a fiat boundary.</owl:annotatedTarget>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
-    </owl:Axiom>
     
 
 
@@ -832,6 +826,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     <!-- http://w3id.org/rdfbones/core#SegmentOfSkeletalElement -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#AnatomicalRegionOfInterest"/>
         <obo:IAO_0000115 xml:lang="en">Section of a skeletal element, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of skeletal material in varying detail or to code the location of skeletal traits or traces.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Segment of skeletal element</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
