@@ -7,7 +7,7 @@
      xmlns:geopolitical="http://aims.fao.org/aos/geopolitical.owl#"
      xmlns:ns="http://www.w3.org/2006/vcard/ns#"
      xmlns:ns2="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:obo="http://obolibrary.org/obo/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
