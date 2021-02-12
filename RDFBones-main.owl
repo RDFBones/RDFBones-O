@@ -723,9 +723,9 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     
 
 
-    <!-- http://w3id.org/rdfbones/core#Completeness2StateLabel -->
+    <!-- http://w3id.org/rdfbones/core#Completeness2StatesLabel -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StateLabel">
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StatesLabel">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
         <obo:IAO_0000115 xml:lang="en">Labels that can be used for the categorical measurement datum &apos;completeness in two states&apos;.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Label for completeness in two states</rdfs:label>
@@ -737,8 +737,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#Completeness2States -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2States">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#CompletenessDatum"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#CategoricalRepresentationDatum"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -748,7 +747,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesLabel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, expressing the completeness of skeletal elements as either &apos;complete&apos; or &apos;partly present&apos;. It is not designed to express the absence of skeletal elements (e.g. with inventories of skeletons).</obo:IAO_0000115>
@@ -758,14 +757,13 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     
 
 
-    <!-- http://w3id.org/rdfbones/core#CompletenessDatum -->
+    <!-- http://w3id.org/rdfbones/core#CategoricalRepresentationDatum -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#CompletenessDatum">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <obo:IAO_0000112 xml:lang="en">A categorical measurement datum, specifying if a previously defined bone segment is completely present, partly present or missing. 
-A scalar measurement datum, specifying the portion of a bone that is present for analysis.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A measurement datum, specifying the portion of a skeletal element that is present and available for analysis.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Completeness datum</rdfs:label>
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#CategoricalRepresentationDatum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/> <!-- categorical measurement datum -->
+        <obo:IAO_0000112 xml:lang="en">A categorical measurement datum, specifying if a previously defined bone segment is completely present, partly present or missing.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A categorical measurement datum, specifying to which extent a something is present and ready for inspection.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Categorical representation datum</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
@@ -785,9 +783,9 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
 
     
-    <!-- http://w3id.org/rdfbones/core#Obliteration2StateLabel -->
+    <!-- http://w3id.org/rdfbones/core#Obliteration2StatesLabel -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Obliteration2StateLabel">
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Obliteration2StatesLabel">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/> <!-- ('Categorical label') -->
         <obo:IAO_0000115 xml:lang="en">Labels that can be used for the categorical measurement datum &apos;obliteration in two states&apos;.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Label for obliteration in two states</rdfs:label>
@@ -800,7 +798,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Obliteration2States">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/> <!-- ('Categorical measurement datum') -->
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ObliterationDatum"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#CategoricalObliterationDatum"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- ('is about') -->
@@ -810,7 +808,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/> <!-- ('has category label') -->
-                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StateLabel"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesLabel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Categorical measurement datum, expressing the obliteration of skeletal features as either &apos;obliterated&apos; or &apos;not obliterated&apos;.</obo:IAO_0000115>
@@ -820,13 +818,13 @@ A scalar measurement datum, specifying the portion of a bone that is present for
 
     
 
-    <!-- http://w3id.org/rdfbones/core#ObliterationDatum -->
+    <!-- http://w3id.org/rdfbones/core#CategoricalObliterationDatum -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#ObliterationDatum">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/> <!-- ('Measurement datum') -->
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#CategoricalObliterationDatum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/> <!-- ('categorical measurement datum') -->
         <obo:IAO_0000112 xml:lang="en">A categorical measurement datum, specifying if a skeletal feature is not obliterated, being obliterated or completely obliterated by an ontogenetic process or bone remodelling.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A measurement datum, specifying the degree to which a skeletal feature is removed or superimposed by ontogenetic processes or bone remodelling.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Obliteration datum</rdfs:label>
+        <rdfs:label xml:lang="en">Categorical obliteration datum</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
@@ -850,13 +848,13 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CompletenessDatum"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CategoricalRepresentationDatum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#TaphonomicStateDatum"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CategoricalPreservationDatum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">A list of bones recovered from a medieval burial, detailing which previously defined bone segments are present and giving coded information on surface preservation of these segments.</obo:IAO_0000112>
@@ -933,10 +931,10 @@ A scalar measurement datum, specifying the portion of a bone that is present for
     
 
 
-    <!-- http://w3id.org/rdfbones/core#TaphonomicStateDatum -->
+    <!-- http://w3id.org/rdfbones/core#CategoricalPreservationDatum -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#TaphonomicStateDatum">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#CategoricalPreservationDatum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -946,7 +944,7 @@ A scalar measurement datum, specifying the portion of a bone that is present for
         <obo:IAO_0000112 xml:lang="en">A categorical measurement datum, classifying the surface of a bone segment as &apos;intact&apos;, &apos;partly damaged&apos; or &apos;damaged&apos;.
 A scalar measurement datum, giving the portion of the surface of a bone on which observation of traces is possible.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A measurement datum about taphonomic traces on skeletal material. It codes the presence or absence of a specific damage and its severity.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Taphonomic state datum</rdfs:label>
+        <rdfs:label xml:lang="en">Categorical preservation datum</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
@@ -990,7 +988,7 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
     <!-- http://w3id.org/rdfbones/core#complete -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#complete">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesLabel"/>
         <obo:IAO_0000115 xml:lang="en">Indicates that a skeletal element is entirely preserved and available for analysis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">complete</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
@@ -1001,7 +999,7 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
     <!-- http://w3id.org/rdfbones/core#notObliterated -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#notObliterated">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StateLabel"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesLabel"/>
         <obo:IAO_0000115 xml:lang="en">Indicates that a skeletal feature is not removed or superimposed by ontogenetic processes or bone remodelling.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">obliterated</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
@@ -1012,7 +1010,7 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
     <!-- http://w3id.org/rdfbones/core#obliterated -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#obliterated">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StateLabel"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Obliteration2StatesLabel"/>
         <obo:IAO_0000115 xml:lang="en">Indicates that a skeletal feature is removed or superimposed by ontogenetic processes or bone remodelling.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">obliterated</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
@@ -1023,7 +1021,7 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
     <!-- http://w3id.org/rdfbones/core#partlyPresent -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/core#partlyPresent">
-        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Completeness2StateLabel"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/core#Completeness2StatesLabel"/>
         <obo:IAO_0000115 xml:lang="en">Indicates that only parts of a skeletal element are preserved and available for analysis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">partly present</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
