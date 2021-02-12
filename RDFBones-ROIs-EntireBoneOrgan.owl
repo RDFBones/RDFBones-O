@@ -2287,16 +2287,16 @@
     
 
 
-    <!-- http://w3id.org/rdfbones/core#BoneSegment -->
+    <!-- http://w3id.org/rdfbones/core#SegmentOfBoneOrgan -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#BoneSegment"/>
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfBoneOrgan"/>
     
 
 
     <!-- http://w3id.org/rdfbones/core#EntireBoneOrgan -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireBoneOrgan">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#BoneSegment"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfBoneOrgan"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/rdfbones/core#bonePortion"/>
