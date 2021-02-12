@@ -704,6 +704,25 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     
 
 
+    <!-- http://w3id.org/rdfbones/core#CombinationOfSkeletalSegments -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#CombinationOfSkeletalSegments">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#AnatomicalRegionOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">Temporomandibular joint.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest covering, at least in part, several skeletal elements. It is defined as the combination of sevral previously defined segments of skeletal elements.</obo:IAO_0000115>
+	<obo:IAO_0000116 xml:lang="en">In order to define a region of interest of this type, first define the segments of skeletal elelements (rdfbones:SegmentOfSkeletalElement) that are to constitute this region. Then define them as regional parts of the combination of skeletal segments.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Combination of skeletal Segments</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>	
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#Completeness2StateLabel -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#Completeness2StateLabel">
