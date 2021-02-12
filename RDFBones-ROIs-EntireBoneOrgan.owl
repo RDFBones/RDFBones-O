@@ -2300,7 +2300,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/rdfbones/core#bonePortion"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A region of interest (rdfbones:AnatomicalRegionOfInterest) describing a bone organ (fma:fma5018) in its entirety.</obo:IAO_0000115>
