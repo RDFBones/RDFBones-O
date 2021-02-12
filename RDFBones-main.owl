@@ -345,7 +345,7 @@
     <!-- http://w3id.org/rdfbones/core#anatomicalCavityPortion -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#anatomicalCavityPortion">
-        <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#AnatomicalCavitySegment"/>
+        <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#SegmentOfAnatomicalCavity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <obo:IAO_0000115>Renders the portion (0 &lt; skeletal cavity portion &lt;= 1) of an anatomical cavity in a skeleton that a certain entity occupies.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">anatomical cavity portion</rdfs:label>
@@ -655,9 +655,9 @@
     
 
 
-    <!-- http://w3id.org/rdfbones/core#AnatomicalCavitySegment -->
+    <!-- http://w3id.org/rdfbones/core#SegmentOfAnatomicalCavity -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#AnatomicalCavitySegment">
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfAnatomicalCavity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
