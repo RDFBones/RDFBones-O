@@ -380,7 +380,7 @@
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#toothPortion">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/rdfbones/core#skeletalElementPortion"/>
-        <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#ToothSegment"/>
+        <rdfs:domain rdf:resource="http://w3id.org/rdfbones/core#SegmentOfTooth"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <obo:IAO_0000112 xml:lang="en">The portion of a tooth segment called 'Entire crown of left lower second premolar tooth' that is preserved in a skeleton recovered during an archaeological excavation..</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Renders the portion (0 &lt; tooth portion &lt;= 1) that a certain entity occupies in a tooth.</obo:IAO_0000115>
@@ -952,9 +952,9 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
     
 
 
-    <!-- http://w3id.org/rdfbones/core#ToothSegment -->
+    <!-- http://w3id.org/rdfbones/core#SegmentOfTooth -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#ToothSegment">
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfTooth">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
