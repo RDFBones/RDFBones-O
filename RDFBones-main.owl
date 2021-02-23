@@ -913,6 +913,47 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core#InventoryOfIndividualBones -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#InventoryOfIndividualBones">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventory"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#InventoryOfSkeleton"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of animal bones from a pit feature at an Iron-age settlement site.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of bones that were collected as stray finds during the excavation of prehistoric cemetery.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of commingled human skeletal remains from a crypt.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dataset of type &apos;skeletal inventory&apos; containing data items describing representation and preservation of a series of bone organs.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inventory of individual bones</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#InventoryOfIndividualBones"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dataset of type &apos;skeletal inventory&apos; containing data items describing representation and preservation of a series of bone organs.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#InventoryOfSkeleton -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#InventoryOfSkeleton">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventory"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of a skeleton from a burial at a prehistoric site.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of bones forming a paleontological skeleton of a dinosaur.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of bones from an assemblage of commingled human remains resulting from a plane crash that are assumed to belong to the same skeleton.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dataset of type &apos;skeletal inventory&apos; containing data items describing representation and preservation of bone organs that are assumed to belong to the same skeleton.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inventory of a skeleton</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#InventoryOfSkeleton"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dataset of type &apos;skeletal inventory&apos; containing data items describing representation and preservation of bone organs that are assumed to belong to the same skeleton.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#IsolatedHumanBone -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#IsolatedHumanBone">
