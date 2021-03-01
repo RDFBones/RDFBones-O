@@ -7,6 +7,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sio="http://semanticscience.org/resource/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
@@ -40,6 +41,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -65,7 +84,9 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"> <!-- 'is about' -->
+      <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000563"/> <!-- 'desribes' -->
+    </owl:ObjectProperty>
     
 
 
@@ -96,6 +117,12 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001938 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001938"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001000 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001000"/>
     
 
 
@@ -304,6 +331,13 @@
     <!-- http://purl.org/ontology/bibo/transcriptOf -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/transcriptOf"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000557 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000557"/>
+  
     
 
 
@@ -573,6 +607,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000671 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000671"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000938 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000938"/>
@@ -597,6 +637,12 @@
     
 
 
+    <!-- http://purl.org/sig/ont/fma/fma23875 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma23875"/>
+    
+
+
     <!-- http://purl.org/sig/ont/fma/fma305751 -->
 
     <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma305751">
@@ -615,6 +661,12 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma5018 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma5018"/>
     
 
 
@@ -655,24 +707,6 @@
     
 
 
-    <!-- http://w3id.org/rdfbones/core#SegmentOfAnatomicalCavity -->
-
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfAnatomicalCavity">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma67552"/> <!-- ('Anatomical cavity') -->
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112 xml:lang="en">The distal part of a femur's bone marrow cavity.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">Section of an anatomical cavity, specifically defined for analytical purposes. Segments can be used to code the shape and other qualities of anaotomical cavities or whether they have been obliterated by ontogenetic or other remodelling processes.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Segment of anatomical cavity</rdfs:label>
-	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/rdfbones/core#AnatomicalRegionOfInterest -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#AnatomicalRegionOfInterest">
@@ -685,22 +719,37 @@
     
 
 
-    <!-- http://w3id.org/rdfbones/core#SegmentOfBoneOrgan -->
+    <!-- http://w3id.org/rdfbones/core#CommingledHumanSkeletalRemains -->
 
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfBoneOrgan">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#CommingledHumanSkeletalRemains">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SampleFromHumanSkeletalRemains"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma5018"/> <!-- ('Bone organ') -->
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma5018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000112 xml:lang="en">The central portion of the diaphysis of the left femur.
-The frontal part of the right parietal bone.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">Section of a bone organ, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of bones in varying degees of detail or to code the location of skeletal traits or traces.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Segment of bone organ</rdfs:label>
-	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>	
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000557"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#HumanSkeletonSpecimen"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#IsolatedHumanBone"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commingled bones found in a mass grave dating to the Napoleonic Wars.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specimen deriving from elements of the skeletons of an unknown number of homo sapiens organisms.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The need for a class representing specimens deriving from commingled skeletal remains is stated by Buikstra and Ubelaker 1994, p.5.</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class is distinguished from its more generic superclass (rdfbones:SampleFromHumanSkeletalRemains) by the fact that the number of represented individuals is unknown or not entirely clear.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commingled human skeletal remains</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#CommingledHumanSkeletalRemains"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specimen deriving from elements of the skeletons of an unknown number of homo sapiens organisms.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -826,6 +875,180 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A measurement datum, specifying the degree to which a skeletal feature is removed or superimposed by ontogenetic processes or bone remodelling.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Categorical obliteration datum</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#HumanSkeletonSpecimen -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#HumanSkeletonSpecimen">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SampleFromHumanSkeletalRemains"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000557"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/sig/ont/fma/fma23875"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#IsolatedHumanBone"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bones recovered from a historic single grave.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specimen deriving from elements of a single skeleton of a homo sapiens organism.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The need for a class representing specimens deriving from relatively complete skeletons is stated by Buikstra and Ubelaker 1994, p.5.</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The term &apos;relatively complete&apos; skeleton implies that the specimen is defined under the assumption that all skeletal elements constituting the specimen derive from the same skeleton. It does not, however, restrict the degree of the skeletons completeness.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human skeleton specimen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#HumanSkeletonSpecimen"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specimen deriving from elements of a single skeleton of a homo sapiens organism.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#InventoryOfIndividualBones -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#InventoryOfIndividualBones">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventory"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#InventoryOfSkeleton"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of animal bones from a pit feature at an Iron-age settlement site.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of bones that were collected as stray finds during the excavation of prehistoric cemetery.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of commingled human skeletal remains from a crypt.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dataset of type &apos;skeletal inventory&apos; containing data items describing representation and preservation of a series of bone organs.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inventory of individual bones</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#InventoryOfIndividualBones"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dataset of type &apos;skeletal inventory&apos; containing data items describing representation and preservation of a series of bone organs.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#InventoryOfSkeleton -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#InventoryOfSkeleton">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventory"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of a skeleton from a burial at a prehistoric site.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of bones forming a paleontological skeleton of a dinosaur.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of bones from an assemblage of commingled human remains resulting from a plane crash that are assumed to belong to the same skeleton.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dataset of type &apos;skeletal inventory&apos; containing data items describing representation and preservation of bone organs that are assumed to belong to the same skeleton.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inventory of a skeleton</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#InventoryOfSkeleton"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dataset of type &apos;skeletal inventory&apos; containing data items describing representation and preservation of bone organs that are assumed to belong to the same skeleton.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#IsolatedHumanBone -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#IsolatedHumanBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SampleFromHumanSkeletalRemains"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000557"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/sig/ont/fma/fma5018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A femur bone entering a comparative study on bone density variation.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specimen deriving from a single bone organ of a homo sapiens organism.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As an isolated bone necessarily derives from a single skeleton, specimens represented by this class would also satisfy the definition of a specimen representing a relatively complete human skeleton (rdfbones:HumanSkeletonSpecimen). Instances of this class are distinguished from human skeleton specimens by the fact that they are derived from a single bone and that the main objective of collecting the specimen was not to define skeletons.</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The need for a class representing specimens deriving from isolated bones is stated by Buikstra and Ubelaker 1994, p.5.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolated human bone</rdfs:label>
+    </owl:Class>
+
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#SampleFromHumanRemains -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SampleFromHumanRemains">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000671"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specimen deriving from material anatomical entites of one or several homo sapiens organisms.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample from human remains</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#SampleFromHumanRemains"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specimen deriving from material anatomical entites of one or several homo sapiens organisms.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engle</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#SampleFromHumanSkeletalRemains -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SampleFromHumanSkeletalRemains">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SampleFromHumanRemains"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specimen deriving from elements of the skeletons of one or several homo sapiens organisms.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample from human skeletal remains</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#SampleFromHumanSkeletalRemains"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specimen deriving from elements of the skeletons of one or several homo sapiens organisms.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#SegmentOfAnatomicalCavity -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfAnatomicalCavity">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma67552"/> <!-- ('Anatomical cavity') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The distal part of a femur's bone marrow cavity.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Section of an anatomical cavity, specifically defined for analytical purposes. Segments can be used to code the shape and other qualities of anaotomical cavities or whether they have been obliterated by ontogenetic or other remodelling processes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Segment of anatomical cavity</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#SegmentOfBoneOrgan -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfBoneOrgan">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma5018"/> <!-- ('Bone organ') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The central portion of the diaphysis of the left femur.
+The frontal part of the right parietal bone.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Section of a bone organ, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of bones in varying degees of detail or to code the location of skeletal traits or traces.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Segment of bone organ</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>	
     </owl:Class>
     
 
