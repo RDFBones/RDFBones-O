@@ -1221,17 +1221,23 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#SkeletalInventory -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#SkeletalInventory">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/> <!-- 'data set' -->
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CategoricalRepresentationDatum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CategoricalPreservationDatum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventorySection"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">A list of bones recovered from a medieval burial, detailing which previously defined bone segments are present and giving coded information on surface preservation of these segments.</obo:IAO_0000112>
@@ -1239,6 +1245,51 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         <rdfs:label xml:lang="en">Skeletal inventory</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#SkeletalInventorySection -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SkeletalInventorySection">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/> <!-- 'data set' -->
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CategoricalRepresentationDatum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CategoricalPreservationDatum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventorySection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- 'is about' -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CombinationOfSkeletalSegments"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">Skeletal inventory sections can be used to break up large skeletal inventories into better manageable subsets. If the same value is to be assigned to all measurment data in the section, value assignment can be automated.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Skeletal inventory sections can be about some anatomical region of interest that is defined as a combination of skeletal segments (class rdfbones:CombinationOfSkeletalSegments).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Skeletal inventory sections can comprise other skeletal inventory sections to create nested datasets.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Skeletal inventory section</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
+	<obo:IAO_0000112 xml:lang="en">A skeletal inventory section assessing representation and preservation of a cranium.</obo:IAO_0000112>
+	<obo:IAO_0000112 xml:lang="en">A skeletal inventory section assessing representation and preservation of all long bones in a skeleton.</obo:IAO_0000112>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventorySection"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dataset defining a part of a skeletal inventory. It comprises measurement data about anatomical regions of interest that form a meaningful subset that might be convenient to assess batch-wise.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
