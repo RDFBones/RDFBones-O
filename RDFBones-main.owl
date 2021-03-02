@@ -707,6 +707,14 @@
     
 
 
+    <!-- http://purl.org/sig/ont/fma/fma5898 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma5898"> <!-- 'Anatomical junction' -->
+      <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000477"/> <!-- 'Anatomical cluster' -->
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#AnatomicalRegionOfInterest -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#AnatomicalRegionOfInterest">
@@ -716,6 +724,114 @@
 	<obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
 	<obo:IAO_0000116 xml:lang="en">See more specific subclasses for examples of usage.</obo:IAO_0000116>
     </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#ArticularSurfaceOfTemporomandibularJoint -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#ArticularSurfaceOfTemporomandibularJoint">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfBoneOrgan"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on a bone organ that is  part of a temporomandibular joint.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On fresh bone, the surfaces on the temporal bones and the mandibula that are part of the temporomandibular joint are the articular cartilages. If the articular cartilages are not preserved, the bone surfaces bounding the articular cartilages are referred to as the articular surfaces. </obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Articular surface of a temporomandibular joint</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#ArticularSurfaceOfTemporomandibularJoint"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on a bone organ that is  part of a temporomandibular joint.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#ArticularSurfacesOfLeftTemporomandibularJoint -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#ArticularSurfacesOfLeftTemporomandibularJoint">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ArticularSurfacesOfTemporomandibularJoint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#LeftTemporomandibularArticularSurfaceOfMandible"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfLeftTemporalBone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing the surfaces on skeletal material that are part of a left temporomandibular joint.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On fresh bone, the surfaces on the temporal bones and the mandibula that are part of the temporomandibular joint are the articular cartilages. If the articular cartilages are not preserved, the bone surfaces bounding the articular cartilages are referred to as the articular surfaces. </obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Articular surfaces of the left temporomandibular joint</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#ArticularSurfacesOfTemporomandibularJoint"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing the surfaces on skeletal material that are part of a left temporomandibular joint.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#ArticularSurfacesOfRightTemporomandibularJoint -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#ArticularSurfacesOfRightTemporomandibularJoint">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ArticularSurfacesOfTemporomandibularJoint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#RightTemporomandibularArticularSurfaceOfMandible"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfRightTemporalBone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing the surfaces on skeletal material that are part of a right temporomandibular joint.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On fresh bone, the surfaces on the temporal bones and the mandibula that are part of the temporomandibular joint are the articular cartilages. If the articular cartilages are not preserved, the bone surfaces bounding the articular cartilages are referred to as the articular surfaces. </obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Articular surfaces of the right temporomandibular joint</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#ArticularSurfacesOfTemporomandibularJoint"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing the surfaces on skeletal material that are part of a right temporomandibular joint.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#ArticularSurfacesOfTemporomandibularJoint -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#ArticularSurfacesOfTemporomandibularJoint">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#CombinationOfSkeletalSegments"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfMandible"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfTemporalBone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing the surfaces on skeletal material that are part of a temporomandibular joint.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On fresh bone, the surfaces on the temporal bones and the mandibula that are part of the temporomandibular joint are the articular cartilages. If the articular cartilages are not preserved, the bone surfaces bounding the articular cartilages are referred to as the articular surfaces. </obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Articular surfaces of the temporomandibular joint</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#ArticularSurfacesOfTemporomandibularJoint"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing the surfaces on skeletal material that are part of the temporomandibular joint.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -978,6 +1094,44 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolated human bone</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#LeftTemporomandibularArticularSurfaceOfMandible -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LeftTemporomandibularArticularSurfaceOfMandible">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfMandible"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on a mandibula that is part of a left temporomandibular joint.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On fresh bone, the surfaces on the mandibula that are part of the temporomandibular joint are the articular cartilages. If the articular cartilages are not preserved, the bone surfaces bounding the articular cartilages are referred to as the articular surfaces. </obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Left temporomandibular articular surface of a mandible</rdfs:label>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#RightTemporomandibularArticularSurfaceOfMandible"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#LeftTemporomandibularArticularSurfaceOfMandible"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on a mandibula that is part of a left temporomandibular joint.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#RightTemporomandibularArticularSurfaceOfMandible -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#RightTemporomandibularArticularSurfaceOfMandible">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfMandible"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on a mandibula that is part of a right temporomandibular joint.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On fresh bone, the surfaces on the mandibula that are part of the temporomandibular joint are the articular cartilages. If the articular cartilages are not preserved, the bone surfaces bounding the articular cartilages are referred to as the articular surfaces. </obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Right temporomandibular articular surface of a mandible</rdfs:label>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#LeftTemporomandibularArticularSurfaceOfMandible"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#RightTemporomandibularArticularSurfaceOfMandible"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on the mandibula that is part of a right temporomandibular joint.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
 
     
 
@@ -1188,6 +1342,82 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <rdfs:label xml:lang="en">Segment of tooth</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfMandible -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfMandible">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ArticularSurfaceOfTemporomandibularJoint"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on a mandible that is part of a temporomandibular joint.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On fresh bone, the surfaces on the mandible that are part of the temporomandibular joint are the articular cartilages. If the articular cartilages are not preserved, the bone surfaces bounding the articular cartilages are referred to as the articular surfaces. </obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temporomandibular articular surface of a mandible</rdfs:label>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfTemporalBone"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#TemporomandibularSurfaceOfMandible"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on a mandibula that is part of a temporomandibular joint.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfLeftTemporalBone -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfLeftTemporalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfTemporalBone"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on a left temporal bone that is part of a temporomandibular joint.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On fresh bone, the surfaces on the temporal bones that are part of the temporomandibular joints are the articular cartilages. If the articular cartilages are not preserved, the bone surfaces bounding the articular cartilages are referred to as the articular surfaces. </obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temporomandibular articular surface of a left temporal bone</rdfs:label>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfRightTemporalBone"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#ArticularSurfacesOfTemporomandibularJoint"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on a left temporal bone that is part of a temporomandibular joint.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfRightTemporalBone -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfRightTemporalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfTemporalBone"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on a right temporal bone that is part of a temporomandibular joint.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On fresh bone, the surfaces on the temporal bones that are part of the temporomandibular joints are the articular cartilages. If the articular cartilages are not preserved, the bone surfaces bounding the articular cartilages are referred to as the articular surfaces. </obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temporomandibular articular surface of a right temporal bone</rdfs:label>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfLeftTemporalBone"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#ArticularSurfacesOfTemporomandibularJoint"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on a right temporal bone that is part of a temporomandibular joint.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfTemporalBone -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfTemporalBone">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#ArticularSurfaceOfTemporomandibularJoint"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on a temporal bone that is part of a temporomandibular joint.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On fresh bone, the surfaces on the temporal bones that are part of the temporomandibular joints are the articular cartilages. If the articular cartilages are not preserved, the bone surfaces bounding the articular cartilages are referred to as the articular surfaces. </obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temporomandibular articular surface of a temporal bone</rdfs:label>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#TemporomandibularArticularSurfaceOfMandible"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#ArticularSurfacesOfTemporomandibularJoint"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on a temporal bone that is part of a temporomandibular joint.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
