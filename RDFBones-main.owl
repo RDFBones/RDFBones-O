@@ -1132,6 +1132,48 @@
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a surface on the mandibula that is part of a right temporomandibular joint.</owl:annotatedTarget>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
     </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#Sacrum -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#Sacrum">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#CombinationOfSkeletalSegments"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part"/>
+	      <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBoneOrgan_fma13077"/> <!-- 'Entire first sacral vertebra -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part"/>
+	      <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBoneOrgan_fma13078"/> <!-- 'Entire second sacral vertebra -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part"/>
+	      <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBoneOrgan_fma13079"/> <!-- 'Entire third sacral vertebra -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part"/>
+	      <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBoneOrgan_fma13080"/> <!-- 'Entire fourth sacral vertebra -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part"/>
+	      <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireBoneOrgan_fma13081"/> <!-- 'Entire fifth sacral vertebra -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical region of interest describing a sacrum, i.e. the fused sacral vertebrae of a skeleton.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This anatomical region describes the same subdivision of the vertebral column as the FMA class &apos;Sacrum&apos; (fma:16202).</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sacrum</rdfs:label>
+    </owl:Class>
 
     
 
