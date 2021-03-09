@@ -14,13 +14,6 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obi.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/obi/2020-04-23/obi.owl"/>
-        <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
-        <obo:IAO_0000589 xml:lang="en">Ontology for Biomedical Investigations</obo:IAO_0000589>
-        <dc:format xml:lang="en">OWL-DL</dc:format>
-        <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <terms:title>Ontology for Biomedical Investigations</terms:title>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Please cite the OBI consortium http://purl.obolibrary.org/obo/obi where traditional citation is called for. However it is adequate that individual terms be attributed simply by use of the identifying PURL for the term, in projects that refer to them.</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-04-23</owl:versionInfo>
     </owl:Ontology>
     
 
