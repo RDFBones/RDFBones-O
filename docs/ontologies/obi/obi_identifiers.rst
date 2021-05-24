@@ -1,3 +1,5 @@
+.. toctree::
+
 OBI Modelling of Unique Identifiers
 ====================================
 

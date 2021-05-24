@@ -1,3 +1,5 @@
+.. toctree::
+
 About OBI
 ==========
 
@@ -15,7 +17,7 @@ The subset implemented in RDFBones represents a slimmed version of the OBI, reta
    :alt: Central classes of the OBI subset and general outline of semantic logics.
    :width: 100.0%
 
-The logical backbone of the OBI is provided by the BFO. All concepts are subclasses of class ‘entitiy’. A general distinction is made between ‘continuants’, entities that are relatively permanent, and ‘occurrents’ with a limited duration. The occurrents relevant for RDFBones are all ‘processes’ and most of them are ‘planned processes’, meaning their execution is previously devised. The central subclass of class ‘planned process’ in the OBI is, of course, the class ‘investigation’.
+The logical backbone of the OBI is provided by the BFO. All concepts are subclasses of class ‘entity’. A general distinction is made between ‘continuants’, entities that are relatively permanent, and ‘occurrents’ with a limited duration. The occurrents relevant for RDFBones are all ‘processes’ and most of them are ‘planned processes’, meaning their execution is previously devised. The central subclass of class ‘planned process’ in the OBI is, of course, the class ‘investigation’.
 
 Continuants, according to OBO, are either dependent or independent. ‘Independent continuants’ are natural entities existing out of themselves. They can be material or immaterial. Subclasses of ‘material entity’ that are relevant to RDFBones include ‘object’, ‘organism’, ‘material anatomical entity’ and ‘organization’. A subclass of ‘organism’ is ‘homo sapiens’ representing all human bodies and beings. The OBI does not make a distinction between ‘homo sapiens’ and the concept of a person. Therefore, individuals of the class ‘homo sapiens’ occur both as specimen and as executing researchers, principal investigators, etc. There are several subclasses of class ‘homo sapiens’ describing various groups of agents in scientific investigations.
 

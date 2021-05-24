@@ -1,3 +1,5 @@
+.. toctree::
+
 CIDOC CRM
 ==========
 
@@ -5,6 +7,18 @@ CIDOC CRM stands for the Comité International pour la Documentation Conceptual 
 
 CIDOC CRM lends itself well for scientific investigation in archaeological sciences. Typically, archaeology has suffered from fragmented datasets and terminology systems. Effective cross-searching is often limited or impossible due to differing semantics between datasets, assuming they are made available at all [Binding2010]_. Some ontological instruments have been employed over time, such as the Dublin Core Metadata Elements and the Simple Knowledge Organization System (SKOS). However, often times two closely related items may not find correlation via their metadata, even when adhering to Dublin Core standards. Doerr notes that metadata generally contains information pertaining to the object itself, and not to events or broader contexts to which the item may relate; two items closely tied to the same event may thus not be recognised as being related to each other, such as a copy of the Yalta Agreement and a photo taken of the allied leaders during the Yalta meeting [Doerr2003]_. In his seminal work on CIDOC CRM, Doerr goes into great detail over the problems CIDOC CRM is intended to alleviate. Cherny advocates the use of CIDOC CRM over other tools like Dublin Core and SKOS, as these alternatives are not intended to represent the full richness of cultural heritage data [Cherny2015]_. CIDOC CRM supports additional semantic meaning beyond what was already recorded with the original data, the lack of which would result in the previously described problem of limited relatability of items. As Cherny also mentions, CIDOC CRM has already found widespread global appeal, meaning that data integration is easier for anyone that also uses this standard. An extended example of this is noted by Dijkshoorn in the form of the Europeana Data Model, which is used to deliver cultural heritage data to the data aggregator Europeana, to which CIDOC CRM (among other alternatives) can be mapped [Dijkshoorn2018]_. The Europeana Data Model is nowadays used by other aggregators,as well as institutions publishing their own data.
 
+:doc:`CIDOC CRM in RDFBones </ontologies/cidoc/cidoc_rdfbones>`
+=================================================================
+
+:doc:`This section </ontologies/cidoc/cidoc_rdfbones>` explains how CIDOC CRM is used within RDFBones.
+
+:doc:`CIDOC CRM Extensions </ontologies/cidoc/cidoc_extensions>`
+==================================================================
+
+:doc:`Extensions have been proposed </ontologies/cidoc/cidoc_extensions>` for CIDOC CRM, which have found use in RDFBones.
+
+Citations
+==========
 
 .. [1] http://cidoc.mini.icom.museum/organisation/who-we-are/; last accessed 5 May 2021
 

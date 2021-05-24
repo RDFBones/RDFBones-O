@@ -1,3 +1,5 @@
+.. toctree::
+
 Submodules of RDFBones
 =============================
 Below you will find subsections elaborating on the different submodules of RDFBones.

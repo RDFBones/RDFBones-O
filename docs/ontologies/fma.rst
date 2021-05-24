@@ -1,3 +1,5 @@
+.. toctree::
+
 The Foundational Model of Anatomy
 ==================================
 
@@ -22,6 +24,9 @@ The rule of 'Containment/Part Distinction' likewise delimits 'contains' and 'con
 Further important attributes for partonomy are the attributes 'constitutional part' and 'regional part'. 'Constitutional part' pertains to what is best described as larger, yet simpler-than-the-whole structural compounds of an organ/anatomical structure. Partitions are based on composition, not spatial factors. 'Regional part' pertains to spatial subdivisions. These subdivisions partition constitutional parts which are in shared locations into sets. Subdivision of the body into functional systems is a common method in anatomy and clinical medicine. However, the FMA defines the class 'Organ system' in a structural context and constrains the parts of such a system to organs and their primary regional parts. 'Systemic part' relations are used as a secondary partition which can be displayed transitively in a partonomy hierarchy, as can constitutional and regional parts.
 
 RDFBones uses classes from the FMA to represent skeletal elements featured in osteological investigations. Studies involving osteological research data can make recourse to the rich semantic information of the FMA in order to analyse skeletal elements within their anatomical context.
+
+Citations
+=========
 
 .. [MejinoJr2003] Mejino Jr, José LV, Agoncillo, Augusto V, Rickard, Kurt L, and Rosse, Cornelius, "Representing complexity in part-whole relationships within the foundational model of anatomy", in AMIA Annual Symposium Proceedings vol. 2003, (2003), pp. 450.
 
