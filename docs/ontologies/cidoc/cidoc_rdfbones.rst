@@ -100,4 +100,4 @@ The above figure shows how the classes of the RDFBones subset of the CIDOC CRM a
 
 .. [1] https://www.researchspace.org/; last accessed on 25 August 2020.
 
-.. [2] [https://kleiolab.wordpress.com/geovistory/]; last accessed on 25 August 2020.
+.. [2] https://kleiolab.wordpress.com/geovistory/; last accessed on 25 August 2020.

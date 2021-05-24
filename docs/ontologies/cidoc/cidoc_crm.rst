@@ -22,9 +22,9 @@ Citations
 
 .. [1] http://cidoc.mini.icom.museum/organisation/who-we-are/; last accessed 5 May 2021
 
-.. [2] https://icom.museum/en/about-us/missions-and-objectives/]; last accessed on 5 May 2021.
+.. [2] https://icom.museum/en/about-us/missions-and-objectives/; last accessed on 5 May 2021.
 
-.. [3] http://cidoc.mini.icom.museum/working-groups/crm-special-interest-group/]; last accessed on 5 May 2021
+.. [3] http://cidoc.mini.icom.museum/working-groups/crm-special-interest-group/; last accessed on 5 May 2021
 
 .. [Binding2010] Binding, Ceri, "Implementing Archaeological Time Periods Using CIDOC CRM and SKOS", in Lecture Notes in Computer Science (Springer Berlin Heidelberg, 2010), pp. 273--287.
 

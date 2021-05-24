@@ -17,6 +17,8 @@ Documentation of RDFBones and AnthroGraph
    :caption: Sections
    :numbered:
 
+   manual/manual_mainpage
+   ontologies/ontologies
 
 
 :doc:`RDFBones User's Manual </manual/manual_mainpage>`
