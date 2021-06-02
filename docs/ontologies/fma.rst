@@ -1,5 +1,3 @@
-.. toctree::
-
 The Foundational Model of Anatomy
 ==================================
 
@@ -26,7 +24,7 @@ Further important attributes for partonomy are the attributes 'constitutional pa
 RDFBones uses classes from the FMA to represent skeletal elements featured in osteological investigations. Studies involving osteological research data can make recourse to the rich semantic information of the FMA in order to analyse skeletal elements within their anatomical context.
 
 Citations
-=========
+----------
 
 .. [MejinoJr2003] Mejino Jr, José LV, Agoncillo, Augusto V, Rickard, Kurt L, and Rosse, Cornelius, "Representing complexity in part-whole relationships within the foundational model of anatomy", in AMIA Annual Symposium Proceedings vol. 2003, (2003), pp. 450.
 

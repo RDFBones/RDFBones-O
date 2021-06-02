@@ -1,5 +1,3 @@
-.. toctree::
-
 Anatomical Regions of Interest
 ================================
 

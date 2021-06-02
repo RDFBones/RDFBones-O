@@ -1,5 +1,3 @@
-.. toctree::
-
 The Collection Management Model
 ================================
 
