@@ -707,6 +707,14 @@
     
 
 
+    <!-- http://purl.org/sig/ont/fma/fma5898 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma5898"> <!-- 'Anatomical junction' -->
+      <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000477"/> <!-- 'Anatomical cluster' -->
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#AnatomicalRegionOfInterest -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#AnatomicalRegionOfInterest">
@@ -763,6 +771,8 @@
                 <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfOrgans"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
         <obo:IAO_0000112 xml:lang="en">Temporomandibular joint.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An anatomical region of interest covering, at least in part, several skeletal elements. It is defined as the combination of sevral previously defined segments of skeletal elements.</obo:IAO_0000115>
 	<obo:IAO_0000116 xml:lang="en">In order to define a region of interest of this type, first define the segments of skeletal elelements (rdfbones:SegmentOfSkeletalElement) that are to constitute this region. Then define them as regional parts of the combination of skeletal segments.</obo:IAO_0000116>
@@ -875,6 +885,241 @@
         <obo:IAO_0000115 xml:lang="en">A measurement datum, specifying the degree to which a skeletal feature is removed or superimposed by ontogenetic processes or bone remodelling.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Categorical obliteration datum</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireOsseousSkeleton -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireOsseousSkeleton">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBoneOrgans"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma23875"/> <!-- 'Osseous skeleton -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfAllRibs"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfSacralVertebrae"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfFoot"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfHand"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBonesOfSkull"/>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing the entire set of all bones in a skeleton.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Entire osseous skeleton</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSetOfAllRibs -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSetOfAllRibs">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBoneOrgans"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma265719"/> <!-- 'Set of all ribs -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfSacralVertebrae"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfFoot"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfHand"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBonesOfSkull"/>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing the entire set of all ribs in a skeleton.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Entire set of all ribs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSetOfBoneOrgans -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSetOfBoneOrgans">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfOrgans"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma71324"/> <!-- 'Set of bone organs -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing a defined set of bone organs.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Entire set of bone organs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSetOfBonesOfSkull -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSetOfBonesOfSkull">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBoneOrgans"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma272821"/> <!-- 'Set of bones of skull' -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing the entire set of bones in one skull.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Entire set of bones of skull</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSetOfOrgans -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSetOfOrgans">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#AnatomicalRegionOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma70779"/> <!-- 'Set of organs' -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#CombinationOfSkeletalSegments"/>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing a defined set of bone organs.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Entire set of organs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSetOfSacralVertebrae -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSetOfSacralVertebrae">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBoneOrgans"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma264908"/> <!-- 'Set of sacral vertebrae' -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfFoot"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfHand"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBonesOfSkull"/>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing the entire set of all sacral vertebrae in a sacrum.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Entire set of sacral vertebrae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSkeletonOfFoot -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSkeletonOfFoot">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBoneOrgans"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma24222"/> <!-- 'Skeleton of foot' -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfHand"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBonesOfSkull"/>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing the entire set of all bones in a foot.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Entire skeleton of foot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSkeletonOfHand -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSkeletonOfHand">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBoneOrgans"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma24159"/> <!-- 'Skeleton of hand' -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBonesOfSkull"/>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing the entire set of all bones in a hand.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Entire skeleton of hand</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSkeletonOfLeftFoot -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSkeletonOfLeftFoot">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfFoot"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma24225"/> <!-- 'Skeleton of left foot -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfRightFoot"/>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing the entire set of all bones in a left foot.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Entire skeleton of left foot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSkeletonOfLeftHand -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSkeletonOfLeftHand">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfHand"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma24168"/> <!-- 'Skeleton of left hand -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfRightHand"/>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing the entire set of all bones in a left hand.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Entire skeleton of left hand</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSkeletonOfRightFoot -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSkeletonOfRightFoot">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfFoot"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma24224"/> <!-- 'Skeleton of right foot' -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing the entire set of all bones in a right foot.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Entire skeleton of right foot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSkeletonOfRightHand -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSkeletonOfRightHand">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfHand"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma24167"/> <!-- 'Skeleton of right hand' -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing the entire set of all bones in a right hand.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Entire skeleton of right hand</rdfs:label>
     </owl:Class>
     
 
@@ -1057,6 +1302,8 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#AnatomicalRegionOfInterest"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#CombinationOfSkeletalSegments"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfOrgans"/>
         <obo:IAO_0000115 xml:lang="en">Section of a skeletal element, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of skeletal material in varying detail or to code the location of skeletal traits or traces.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Segment of skeletal element</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
@@ -1067,17 +1314,23 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     <!-- http://w3id.org/rdfbones/core#SkeletalInventory -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#SkeletalInventory">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/> <!-- 'data set' -->
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CategoricalRepresentationDatum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
                 <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CategoricalPreservationDatum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventorySection"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">A list of bones recovered from a medieval burial, detailing which previously defined bone segments are present and giving coded information on surface preservation of these segments.</obo:IAO_0000112>
@@ -1085,6 +1338,51 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         <rdfs:label xml:lang="en">Skeletal inventory</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#SkeletalInventorySection -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SkeletalInventorySection">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/> <!-- 'data set' -->
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CategoricalRepresentationDatum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CategoricalPreservationDatum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventorySection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/> <!-- 'is about' -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#CombinationOfSkeletalSegments"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">Skeletal inventory sections can be used to break up large skeletal inventories into better manageable subsets. If the same value is to be assigned to all measurment data in the section, value assignment can be automated.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Skeletal inventory sections can be about some anatomical region of interest that is defined as a combination of skeletal segments (class rdfbones:CombinationOfSkeletalSegments).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Skeletal inventory sections can comprise other skeletal inventory sections to create nested datasets.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Skeletal inventory section</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
+	<obo:IAO_0000112 xml:lang="en">A skeletal inventory section assessing representation and preservation of a cranium.</obo:IAO_0000112>
+	<obo:IAO_0000112 xml:lang="en">A skeletal inventory section assessing representation and preservation of all long bones in a skeleton.</obo:IAO_0000112>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventorySection"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dataset defining a part of a skeletal inventory. It comprises measurement data about anatomical regions of interest that form a meaningful subset that might be convenient to assess batch-wise.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
