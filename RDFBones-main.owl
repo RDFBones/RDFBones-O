@@ -712,6 +712,14 @@
     <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma5898"> <!-- 'Anatomical junction' -->
       <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000477"/> <!-- 'Anatomical cluster' -->
     </owl:Class>
+
+
+    
+    <!-- http://vivoweb.org/ontology/core#Relationship -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship">
+      <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    </owl:Class>
     
 
 
