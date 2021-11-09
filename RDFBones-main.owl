@@ -501,6 +501,14 @@
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E87_Curation_Activity">
       <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002036"> <!-- 'self' -->
+      <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+    </owl:Class>
     
 
 
