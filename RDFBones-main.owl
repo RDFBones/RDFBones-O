@@ -1507,12 +1507,6 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
     
 
 
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E78_Collection -->
-
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E78_Collection"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
