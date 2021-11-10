@@ -9,6 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:sio="http://semanticscience.org/resource/"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
      xmlns:vivo="http://vivoweb.org/ontology/core#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
@@ -1564,5 +1565,7 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <rdfs:label xml:lang="en">partly present</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:NamedIndividual>
+
+    
 </rdf:RDF>
 
