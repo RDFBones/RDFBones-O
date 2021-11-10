@@ -36,17 +36,6 @@
     
 
 
-    <!-- http://www.w3.org/2006/vcard/ns#email -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#email">
-        <owl:equivalentProperty rdf:resource="http://www.w3.org/2006/vcard/ns#hasEmail"/>
-        <rdfs:comment xml:lang="en">This object property has been mapped</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
-        <rdfs:label xml:lang="en">email</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.w3.org/2006/vcard/ns#hasAddress -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasAddress">
