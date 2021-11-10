@@ -14,7 +14,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
     <owl:Ontology rdf:about="http://w3id.org/rdfbones/core">
-        <rdfs:label xml:lang="en-us">RDFBones</rdfs:label>
+        <rdfs:label>RDFBones</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2</owl:versionInfo>
     </owl:Ontology>
     
