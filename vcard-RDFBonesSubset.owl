@@ -233,6 +233,17 @@
     
 
 
+    <!-- http://www.w3.org/2006/vcard/ns#sort-string -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#sort-string">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">To specify the string to be used for national-language-specific sorting. Used as a property parameter only.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">sort as</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.w3.org/2006/vcard/ns#street-address -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#street-address">
