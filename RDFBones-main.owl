@@ -1241,6 +1241,18 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolated human bone</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#LabelSortingSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#LabelSortingSpecification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SortingSpecification"/>
+        <obo:IAO_0000112 xml:lang="en">A specification of a category label's position in an ordinary scale of possible labels defined by a categorical value specification.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A sorting specification defining a position in a sequence of catgegory labels.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Label sorting specification</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
+    </owl:Class>
 
     
 
@@ -1502,6 +1514,19 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <obo:IAO_0000112 xml:lang="en">Buccal side of the crown of a tooth.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Section of a tooth, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of skeletal material in varying degees of detail or to code the location of skeletal traits or traces.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Segment of tooth</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#SortingSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SortingSpecification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/> <!-- ('directive information entitity') -->
+        <obo:IAO_0000112 xml:lang="en">A specification of thge position of a category label in an ordinal scale.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">A specification of the position of a data item in the sequence of items in a dataset.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A directive information item specifying a position in a sequence of elements in a certain context.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Sorting specification</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
 
