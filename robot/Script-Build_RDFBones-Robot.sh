@@ -33,7 +33,7 @@ robot annotate --input results/rdfbones.owl \
       --ontology-iri "http://w3id.org/rdfbones/ontology_resources/core/latetst/rdfbones.owl" \
       --version-iri "http://w3id.org/rdfbones/ontology_resources/core/v0-2/rdfbones.owl" \
       --annotation owl:versionInfo "0.2" \
-      --language-annotation rdfs:label "RDFBones" en \
+      --language-annotation rdfs:label "RDFBones core ontology" en \
       --language-annotation rdfs:comment "This is the RDFBones core ontology. For full functionality, inclusion of specific ontology extentions is required." en \
       --annotation dc:creator "Felix Engel" \
       --annotation dc:creator "Stefan Schlager" \
