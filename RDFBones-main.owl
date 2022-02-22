@@ -1519,6 +1519,19 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
     
 
 
+    <!-- http://w3id.org/rdfbones/core#SemanticSoftwareImplementation -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SemanticSoftwareImplementation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/> <!-- ('Software') -->
+        <obo:IAO_0000112 xml:lang="en">An AnthroGraph app implementing an RDFBones ontology extension.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A piece of software that implements an ontology.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is a subclass of 'software' (obo:IAO_0000010) and not of 'software application' (obo:IAO_0000594) because it subsumes pieces of software that can be directly executed and such pieces that are to be interpreted by some other application. AnthroGraph apps (i.e. metaphactory apps), for example, are not software applications in the sense of the OBI as they cannot be directly executed.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Semantic software implementation</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#SortingSpecification -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#SortingSpecification">
