@@ -745,6 +745,25 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core#CategoricalPreservationDatum -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#CategoricalPreservationDatum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfBoneOrgan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">A categorical measurement datum, classifying the surface of a bone segment as &apos;intact&apos;, &apos;partly damaged&apos; or &apos;damaged&apos;.
+A scalar measurement datum, giving the portion of the surface of a bone on which observation of traces is possible.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum about taphonomic traces on skeletal material. It codes the presence or absence of a specific damage and its severity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Categorical preservation datum</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#CommingledHumanSkeletalRemains -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#CommingledHumanSkeletalRemains">
@@ -1341,6 +1360,37 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     
 
 
+    <!-- http://w3id.org/rdfbones/core#SegmentOfTooth -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfTooth">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma12516"/> <!-- ('Tooth') -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">Buccal side of the crown of a tooth.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Section of a tooth, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of skeletal material in varying degees of detail or to code the location of skeletal traits or traces.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Segment of tooth</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#SemanticSoftwareImplementation -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SemanticSoftwareImplementation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/> <!-- ('Software') -->
+        <obo:IAO_0000112 xml:lang="en">An AnthroGraph app implementing an RDFBones ontology extension.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A piece of software that implements an ontology.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is a subclass of 'software' (obo:IAO_0000010) and not of 'software application' (obo:IAO_0000594) because it subsumes pieces of software that can be directly executed and such pieces that are to be interpreted by some other application. AnthroGraph apps (i.e. metaphactory apps), for example, are not software applications in the sense of the OBI as they cannot be directly executed.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">Semantic software implementation</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#SkeletalInventory -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#SkeletalInventory">
@@ -1477,56 +1527,6 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A plan specification that defines what skeletal material is used in a specific investigation.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A skeletal material specification is typically part of a plan that accommodates an investigation type and its study design to a specific investigation. It refers both to a number of skeletal inventories and to a specific type of specimen collection process. The specimen collection process matches the skeletal material specification with the corresponding skeletal material requirement specification to identify skeletal elements that are suited for a certain type of assay.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">Skeletal material specification</rdfs:label>
-	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/rdfbones/core#CategoricalPreservationDatum -->
-
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#CategoricalPreservationDatum">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SegmentOfBoneOrgan"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112 xml:lang="en">A categorical measurement datum, classifying the surface of a bone segment as &apos;intact&apos;, &apos;partly damaged&apos; or &apos;damaged&apos;.
-A scalar measurement datum, giving the portion of the surface of a bone on which observation of traces is possible.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A measurement datum about taphonomic traces on skeletal material. It codes the presence or absence of a specific damage and its severity.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Categorical preservation datum</rdfs:label>
-	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/rdfbones/core#SegmentOfTooth -->
-
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SegmentOfTooth">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SegmentOfSkeletalElement"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma12516"/> <!-- ('Tooth') -->
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112 xml:lang="en">Buccal side of the crown of a tooth.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">Section of a tooth, specifically defined for analytical purposes. Segments can be used to code the completeness or preservation of skeletal material in varying degees of detail or to code the location of skeletal traits or traces.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Segment of tooth</rdfs:label>
-	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/rdfbones/core#SemanticSoftwareImplementation -->
-
-    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SemanticSoftwareImplementation">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/> <!-- ('Software') -->
-        <obo:IAO_0000112 xml:lang="en">An AnthroGraph app implementing an RDFBones ontology extension.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A piece of software that implements an ontology.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class is a subclass of 'software' (obo:IAO_0000010) and not of 'software application' (obo:IAO_0000594) because it subsumes pieces of software that can be directly executed and such pieces that are to be interpreted by some other application. AnthroGraph apps (i.e. metaphactory apps), for example, are not software applications in the sense of the OBI as they cannot be directly executed.</obo:IAO_0000116>
-        <rdfs:label xml:lang="en">Semantic software implementation</rdfs:label>
 	<obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
     </owl:Class>
     
