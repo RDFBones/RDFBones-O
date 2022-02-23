@@ -444,7 +444,7 @@
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#startPage">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <obo:IAO_0000112 xml:lang="en">The first data entry page that is displayed if the &apos;Bone Addition&apos; module of the AnthroGraph PBP App is initiated.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The URI denoting the first data entry page that is displayed if the &apos;Paleopathology&apos; module of the AnthroGraph PBP App is initiated.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">The uniform resource identifier of a page within a piece of software that needs to be called in order to start a specific work routine.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">start page</rdfs:label>
     </owl:DatatypeProperty>
@@ -1517,7 +1517,7 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
                 <owl:onDataRange rdf:resource="xsd:anyURI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000112 xml:lang="en">The &apos;Bone Addition&apos; module of the AnthroGraph PBP App.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The &apos;Paleopathology&apos; module of the AnthroGraph PBP App.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A functionality of a semantic software implementation that supports a specific work routine.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
         <rdfs:label xml:lang="en">Semantic software routine</rdfs:label>
