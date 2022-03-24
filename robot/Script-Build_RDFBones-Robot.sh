@@ -41,6 +41,12 @@ robot annotate --input results/rdfbones.owl \
       --language-annotation dc:description "RDFBones is an RDF ontology for describing osteological data emerging from investigations in biological anthropology. It is based on the Ontology for Biomedical Investigations (OBI) and includes elements from the Foundational Model of Anatomy (FMA), the CIDOC Conceptional Reference Model (CIDOC-CRM) and other ontologies." en \
       --language-annotation dc:title "RDFBones core ontology" en \
       --output results/rdfbones.owl
+
+## Quality check of output
+
+robot reason --reasoner ELK \
+      --input results/rdfbones.owl \
+      -D results/debug.owl
 	    
 	    
 	    
