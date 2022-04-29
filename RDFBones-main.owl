@@ -1555,6 +1555,24 @@ The frontal part of the right parietal bone.</obo:IAO_0000112>
     
 
 
+    <!-- http://w3id.org/rdfbones/core#SkeletalInventoryProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#SkeletalInventoryProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/> <!-- 'Planned process' -->
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/> <!-- 'has specified output' -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A planned process with the objective to produce a skeletal inventory.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">'Skeletal inventory' can describe both the process of scoring presence and preservation of skeletal material and the resulting dataset. Here, the label 'Skeletal inventory process' is chosen to make clear that the class refers to the process.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Felix Engel</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">Skeletal inventory process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#SkeletalInventorySection -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#SkeletalInventorySection">
