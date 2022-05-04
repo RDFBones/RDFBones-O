@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
+
+<!-- NOTE: Prefixes for RDFBones extensions need to refer to a version URI. This is to control for incompatibilities in case that elements are changed in the source extensions. -->
+
 <rdf:RDF xmlns="http://w3id.org/rdfbones/core/rdfbones.owl#"
      xml:base="http://w3id.org/rdfbones/core/rdfbones.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:phaleron-patho="http://w3id.org/rdfbones/ext/phaleron-patho/"
+     xmlns:phaleron-patho="http://w3id.org/rdfbones/ext/phaleron-patho/v0-1/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
