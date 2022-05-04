@@ -3,6 +3,7 @@
 ## Merge OWL files
 
 robot merge --input ../RDFBones-main.owl \
+      --input ../RDFBonesExtensions-Subset.owl \
       --input ../RDFBones-ROIs-EntireBoneOrgan.owl \
       --input ../CIDOC-CRM-RDFBonesSubset.owl \
       --input  ../ERO-RDFBonesSubset.owl \
@@ -15,6 +16,7 @@ robot merge --input ../RDFBones-main.owl \
       --prefix "fma: http://purl.org/sig/ont/fma/" \
       --prefix "obo: http://purl.obolibrary.org/obo/" \
       --prefix "owl: http://www.w3.org/2002/07/owl#" \
+      --prefix "phaleron-patho: http://w3id.org/rdfbones/ext/standards-patho/" \
       --prefix "rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" \
       --prefix "rdfbones: http://w3id.org/rdfbones/core#" \
       --prefix "rdfs: http://www.w3.org/2000/01/rdf-schema#" \
