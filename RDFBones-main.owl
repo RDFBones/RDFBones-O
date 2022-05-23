@@ -1272,6 +1272,20 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
     
 
 
+    <!-- http://w3id.org/rdfbones/core#InventoryOfDentition -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#InventoryOfDentition">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#SkeletalInventory"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of the dentition of a skeleton from a burial at a prehistoric site.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory of teeth found at a crime scene.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dataset of type &apos;skeletal inventory&apos; containing data items describing representation and preservation of alveolar bone and teeth that are assumed to belong to the same dentition.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inventory of a dentition</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#InventoryOfIndividualBones -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#InventoryOfIndividualBones">
