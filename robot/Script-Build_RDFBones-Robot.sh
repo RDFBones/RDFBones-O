@@ -4,6 +4,7 @@
 
 robot merge --input ../RDFBones-main.owl \
       --input ../RDFBonesExtensions-Subset.owl \
+      --input ../RDFBones-ROIs-Dental.owl \
       --input ../RDFBones-ROIs-EntireBoneOrgan.owl \
       --input ../CIDOC-CRM-RDFBonesSubset.owl \
       --input  ../ERO-RDFBonesSubset.owl \
