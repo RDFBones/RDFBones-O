@@ -708,6 +708,138 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma321612 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma321612">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma55638"/> # 'Entire molar tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma321612"/> # 'Third molar tooth'
+        <rdfs:label xml:lang="en">Entire third molar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma321613 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma321613">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma55638"/> # 'Entire molar tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma321613"/> # 'Second molar tooth'
+        <rdfs:label xml:lang="en">Entire second molar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma321614 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma321614">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma55638"/> # 'Entire molar tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma321614"/> # 'First molar tooth'
+        <rdfs:label xml:lang="en">Entire first molar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma321646 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma321646">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma12516"/> # 'Entire tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma321646"/> # 'Maxillary tooth'
+        <rdfs:label xml:lang="en">Entire maxillary tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma321647 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma321647">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma12516"/> # 'Entire tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma321647"/> # 'Mandibular tooth'
+        <rdfs:label xml:lang="en">Entire mandibular tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma321753 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma321753">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma12823"/> # 'Entire incisor tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma321753"/> # 'Mandibular incisor tooth'
+        <rdfs:label xml:lang="en">Entire mandibular incisor tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma321754 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma321754">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma12823"/> # 'Entire incisor tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma321754"/> # 'Maxillary incisor tooth'
+        <rdfs:label xml:lang="en">Entire maxillary incisor tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma327095 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma327095">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma84206"/> # 'Entire primary molar tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma0327095"/> # 'Primary second molar tooth'
+        <rdfs:label xml:lang="en">Entire primary second molar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma327096 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma327096">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma84206"/> # 'Entire primary molar tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma0327096"/> # 'Primary first molar tooth'
+        <rdfs:label xml:lang="en">Entire primary first molar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma328096 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma328096">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma55637"/> # 'Entire premolar tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma0328096"/> # 'First premolar tooth'
+        <rdfs:label xml:lang="en">Entire first premolar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma328097 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma328097">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma55637"/> # 'Entire premolar tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma0328097"/> # 'Second premolar tooth'
+        <rdfs:label xml:lang="en">Entire second premolar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#EntireTooth_fma55636 -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma55636">
@@ -1072,6 +1204,30 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma55712 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma55712">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma84201"/> # 'Entire secondary incisor tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma55712"/> # 'Secondary upper incisor tooth'
+        <rdfs:label xml:lang="en">Entire Entire secondary upper incisor tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma55713 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma55713">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma84201"/> # 'Entire secondary incisor tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma55713"/> # 'Secondary lower incisor tooth'
+        <rdfs:label xml:lang="en">Entire Entire secondary lower incisor tooth</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#EntireTooth_fma55714 -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma55714">
@@ -1119,6 +1275,30 @@
         <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
         <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma55717"/>
         <rdfs:label xml:lang="en">Entire mandibular premolar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma55720 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma55720">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma84207"/> # 'Entire secondary molar tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma55720"/> # 'Maxillary secondary molar tooth'
+        <rdfs:label xml:lang="en">Entire maxillary secondary molar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma55721 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma55721">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma84207"/> # 'Entire secondary molar tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma55721"/> # 'Mandibular secondary molar tooth'
+        <rdfs:label xml:lang="en">Entire mandibular secondary molar tooth</rdfs:label>
     </owl:Class>
     
 
@@ -1376,6 +1556,90 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma84200 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma84200">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma12823"/> # 'Entire incisor tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma84200"/> # 'Primary incisor tooth'
+        <rdfs:label xml:lang="en">Entire primary incisor tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma84201 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma84201">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma12823"/> # 'Entire incisor tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma84201"/> # 'Secondary incisor tooth'
+        <rdfs:label xml:lang="en">Entire Entire secondary incisor tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma84202 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma84202">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma55636"/> # 'Entire canine tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma84202"/>
+        <rdfs:label xml:lang="en">Entire primary canine tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma84203 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma84203">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma55636"/> # 'Entire canine tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma84203"/>
+        <rdfs:label xml:lang="en">Entire secondary canine tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma84206 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma84206">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma55638"/> # 'Entire molar tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma84206"/> # 'Primary molar tooth'
+        <rdfs:label xml:lang="en">Entire primary molar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma84207 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma84207">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma55638"/> # 'Entire molar tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma84207"/> # 'Secondary molar tooth'
+        <rdfs:label xml:lang="en">Entire secondary molar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma84210 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma84210">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma84206"/> # 'Entire primary molar tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma84210"/> # 'Primary maxillary molar tooth'
+        <rdfs:label xml:lang="en">Entire primary maxillary molar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#EntireTooth_fma84211 -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma84211">
@@ -1396,6 +1660,42 @@
         <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
         <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma84212"/>
         <rdfs:label xml:lang="en">Entire primary first mandibular molar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma84213 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma84213">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma84206"/> # 'Entire primary molar tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma84213"/> # 'Primary mandibular molar tooth'
+        <rdfs:label xml:lang="en">Entire primary mandibular molar tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma84214 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma84214">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma84200"/> # 'Entire primary incisor tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma84214"/> # 'Primary upper incisor tooth'
+        <rdfs:label xml:lang="en">Entire primary upper incisor tooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireTooth_fma84215 -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireTooth_fma84215">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireTooth_fma84200"/> # 'Entire primary incisor tooth'
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <fma:regional_part_of rdf:resource="http://purl.org/sig/ont/fma/fma84215"/> # 'Primary lower incisor tooth'
+        <rdfs:label xml:lang="en">Entire primary lower incisor tooth</rdfs:label>
     </owl:Class>
     
 
