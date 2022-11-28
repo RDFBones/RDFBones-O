@@ -359,6 +359,28 @@
         <obo:IAO_0000117>Felix Engel</obo:IAO_0000117>
       <rdfs:label xml:lang="en">has default value</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core/hasMissingMaterialValue -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rdfbones/core/hasMissingMaterialValue">
+      <rdfs:subPropertyOf rdf:resource="http://w3id.org/rdfbones/core/hasDefaultValue"/>
+      <obo:IAO_0000115 xml:lang="en">An object property that assigns a default value for a specific measurement value to take on in case that the measurement cannot be carried out due to the fact that the material to be measured is not present or incomplete.</obo:IAO_0000115>
+        <obo:IAO_0000117>Felix Engel</obo:IAO_0000117>
+      <rdfs:label xml:lang="en">has missing material value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core/hasNotAvailableValue -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rdfbones/core/hasNotAvailableValue">
+      <rdfs:subPropertyOf rdf:resource="http://w3id.org/rdfbones/core/hasDefaultValue"/>
+      <obo:IAO_0000115 xml:lang="en">An object property that assigns a default value for a specific measurement value to take on in case that the measurement cannot be carried out.</obo:IAO_0000115>
+        <obo:IAO_0000117>Felix Engel</obo:IAO_0000117>
+      <rdfs:label xml:lang="en">has not available value</rdfs:label>
+    </owl:ObjectProperty>
 
 
     
