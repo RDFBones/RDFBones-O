@@ -346,9 +346,49 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core/hasDefaultValue -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rdfbones/core/hasDefaultValue">
+      <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/> <!-- 'measurement datum' -->
+      <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/> <!-- 'information content entity -->
+      <obo:IAO_0000115 xml:lang="en">An object property that assigns a default value to a measurement datum. Default values can be used to automatically assign a value in case that no data is provided or inthat a certain scenario is given.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This object property can be used in class restrictions to define default values for a certain measurement datum class.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">The use case for which the object property was introduced is to define a categorical label that is to be attached to a categorical measurement datum in a specific situation (e.g. if a measurement is impossible due to absence of requiered material). Domain and range definitions are broader in order to cover other use cases that might arise in the future.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Besides its informative value, class restrictions using this object property can be evaluated by software applications to automatically assign values to multiple measurement data if a user defines a certain scenario (e.g. 'no assessment conducted' or 'no material present').</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Subclasses of this object property can be defined for specific scenarios (e.g. 'no evidence' or 'not assessed')</obo:IAO_0000116>
+        <obo:IAO_0000117>Felix Engel</obo:IAO_0000117>
+      <rdfs:label xml:lang="en">has default value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core/hasMissingMaterialValue -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rdfbones/core/hasMissingMaterialValue">
+      <rdfs:subPropertyOf rdf:resource="http://w3id.org/rdfbones/core/hasDefaultValue"/>
+      <obo:IAO_0000115 xml:lang="en">An object property that assigns a default value for a specific measurement value to take on in case that the measurement cannot be carried out due to the fact that the material to be measured is not present or incomplete.</obo:IAO_0000115>
+        <obo:IAO_0000117>Felix Engel</obo:IAO_0000117>
+      <rdfs:label xml:lang="en">has missing material value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core/hasNotAvailableValue -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rdfbones/core/hasNotAvailableValue">
+      <rdfs:subPropertyOf rdf:resource="http://w3id.org/rdfbones/core/hasDefaultValue"/>
+      <obo:IAO_0000115 xml:lang="en">An object property that assigns a default value for a specific measurement value to take on in case that the measurement cannot be carried out.</obo:IAO_0000115>
+        <obo:IAO_0000117>Felix Engel</obo:IAO_0000117>
+      <rdfs:label xml:lang="en">has not available value</rdfs:label>
+    </owl:ObjectProperty>
+
+
+    
     <!-- http://semanticscience.org/resource/SIO_000563 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000563"/>
+
+    
     
 
 
