@@ -3,10 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-The RDFBones Core Ontology
-==========================
+Documentation of RDFBones and AnthroGraph
+==========================================
 
-`RDFBones`_ [Engel2019]_ is an ontology for representing osteological research and resulting data in biological anthropology. It consists of a **core ontology** providing general concepts related to research in general and osteological research in particular. The core ontology is meant to be extended by additional ontologies that concretise its concepts. Researchers can write such **ontology extensions** to implement the specific methods and workflows required for their scientific work. This is the documentation of the core ontology.
+`RDFBones`_ is the core ontology of AnthroGraph, a software application supporting osteological research in biological anthropology [Engel2019]_. It is designed to deal with the high diversity of contents and methods in this field and to pool information from disparate existing databases.
+
+**Click on a headline below or a section title in the navigation sidebar to find the respective information.**
 
 .. _RDFBones: https://github.com/RDFBones/RDFBones-O
 
