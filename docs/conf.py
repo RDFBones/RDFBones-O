@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'RDFBones'
-copyright = '2021, Stefan Schlager, Felix Engel'
-author = 'Stefan Schlager, Felix Engel'
+copyright = '2023, Stefan Schlager, Felix Engel'
+author = 'Stefan Schlager, Felix Engel, Lukas Bender'
 
 # The short X.Y version
 version = ''
