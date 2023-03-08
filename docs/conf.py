@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'RDFBones-O'
+project = 'RDFBones'
 copyright = '2021, Stefan Schlager, Felix Engel'
 author = 'Stefan Schlager, Felix Engel'
 
