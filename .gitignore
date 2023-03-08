@@ -3,5 +3,5 @@
 catalog-*.xml
 
 # Elements created through scripts on the 'robot' branch
-
-robot/results/*
+robot/*
+results/*
