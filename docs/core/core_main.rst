@@ -1,5 +1,4 @@
 .. toctree::
-   :hidden:
    :numbered: 3
    :maxdepth: 1
    :caption: The Core Ontology
