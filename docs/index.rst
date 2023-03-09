@@ -4,15 +4,9 @@
    contain the root `toctree` directive.
 
 .. toctree::
-   :hidden:
-   :numbered: 3
-   :maxdepth: 3
-   :caption: RDFBones Documentation
 
    userguide/userguide_main
-
    core/core_main
-
    bestpractice/bestpractice_main
    
 RDFBones

@@ -1,11 +1,7 @@
 .. toctree::
-   :hidden:
-   :numbered: 3
-   :maxdepth: 1
-   :caption: RDFBones Submodels
 
-   core/submodels/collection_management
-   core/submodels/anatomy
+   collection_management
+   anatomy
 
 Submodels of RDFBones
 =====================

@@ -1,12 +1,8 @@
 .. toctree::
-   :hidden:
-   :numbered: 3
-   :maxdepth: 1
-   :caption: RDFBones Documentation
 
-   core/ontologies/obi
-   core/ontologies/cidoc-crm
-   core/ontologies/fma
+   obi
+   cidoc-crm
+   fma
 
 Source Ontologies
 =================
