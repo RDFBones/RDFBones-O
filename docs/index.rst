@@ -3,26 +3,38 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. toctree::
+   :numbered: 2
+   :maxdepth: 2
+   :caption: User Guide
+
+   userguide/userguide_mainpage
+
+.. toctree::
+   :numbered: 
+   :maxdepth: 2
+   :caption: The Core Ontology
+
+   core/core_mainpage
+
+.. toctree::
+   :numbered: 
+   :maxdepth: 2
+   :caption: Best Practice
+
+   bestpractice/bestpractice_mainpage
 
 .. only:: html
+
+   ========
+   RDFBones
+   ========
 
    `RDFBones`_ is an ontology for representing osteological research and resulting data in biological anthropology. It consists of a **core ontology** providing general concepts related to research in general and osteological research in particular. The core ontology is meant to be extended by additional ontologies that concretise its concepts. Researchers can write such **ontology extensions** to implement the specific methods and workflows required for their scientific work.
 
    RDFBones is based on the Resource Description Framework (RDF)
 
 .. _RDFBones: https://github.com/RDFBones/RDFBones-O
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   userguide/userguide_mainpage
-
-   core/core_mainpage
-
-   bestpractice/bestpractice_mainpage
-
-.. only:: html
 
    :doc:`How to Use RDFBones </userguide/userguide_mainpage>`
 
