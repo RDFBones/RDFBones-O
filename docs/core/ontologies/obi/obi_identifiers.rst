@@ -1,9 +1,5 @@
 **OBI Modelling of Unique Identifiers**
 
-.. figure:: ../gfx/OBI-CRIDs.svg
-   :alt: Unique identifiers as modelled by the OBI.
-   :width: 100.0%
-
 Another concept that RDFBones adopts from the OBI is the modelling of series of unique identifiers. In osteological research, these appear in various contexts, e. g. denoting individual skeletons, stratigraphical units from excavations, shelfmarks in museums and archives or sample identifiers.
 
 The central concept in relation to unique identifiers is the class ‘centrally registered identifier’, abbreviated as CRID. CRIDs are composed of at least two parts, a ‘centrally registered identifier symbol’, i. e. the sequence of letters and numbers written on labels or boxes, and an additional piece of information that relates the CRID to a series of identifiers, a ‘centrally registered identifier registry’ in OBI terms. How this construct is to be implemented is exemplified in the definition of class ‘centrally registered identifier symbol’:

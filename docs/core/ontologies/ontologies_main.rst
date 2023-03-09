@@ -1,8 +1,8 @@
 .. toctree::
 
-   obi
-   cidoc-crm
-   fma
+   obi/obi_main
+   cidoc-crm/cidoc-crm_main
+   fma/fma_main
 
 Source Ontologies
 =================

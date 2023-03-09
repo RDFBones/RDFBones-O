@@ -1,7 +1,7 @@
 .. toctree::
 
-   collection_management
-   anatomy
+   collection_management/collection_management_main
+   anatomy/anatomy_main
 
 Submodels of RDFBones
 =====================

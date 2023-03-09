@@ -1,13 +1,9 @@
 .. toctree::
-   :hidden:
-   :numbered: 3
-   :maxdepth: 1
-   :caption: Anatomy Submodel
 
-   core/submodels/regions_of_interest
+   regions_of_interest
 
 The Anatomical Model
-~~~~~~~~~~~~~~~~~~~
+====================
 
 All human anatomy is modelled by :doc:`the FMA </ontologies/fma>`. RDFBones adds some elements to make anatomical elements accessible for osteological methods used in biological anthropology.
 

@@ -1,11 +1,7 @@
 .. toctree::
-   :hidden:
-   :numbered: 3
-   :maxdepth: 1
-   :caption: RDFBones Documentation
 
-   core/ontologies/obi_investigations
-   core/ontologies/obi_identifiers
+   obi_investigations
+   obi_identifiers
 
 The Ontology for Biomedical Investigations
 ==========================================
@@ -18,27 +14,13 @@ The OBO Foundry , of which OBI is a member since 2013, is a diverse and multinat
 
 The OBO Foundry requires all member-ontologies to define a term only once among them, a practice called orthogonality, though this ideal has proven difficult to implement across all OBO Foundry ontologies [Ghazvinian2011]_. As a member of the OBO Foundry, OBI also uses a common set of relations from the Relations Ontology, and uses the Basic Formal Ontology as its upper-level framework. This aids interoperability with other ontologies and supports automated reasoning.
 
-The subset implemented in RDFBones represents a slimmed version of the OBI, retaining the general outline of the OBO framework and central OBI elements. Though there is a focus on genetics and other molecular methods in the OBI, the general sequence of operations in investigations provides a suitable framework for osteological work. This provides the backbone onto which all other classes and properties in RDFBones are modeled.
-
-.. figure:: ../gfx/RDFBones-OBI_Subset-CentralClasses.svg
-   :alt: Central classes of the OBI subset and general outline of semantic logics.
-   :width: 100.0%
+The subset implemented in RDFBones represents a slimmed version of the OBI, retaining the general outline of the OBO framework and central OBI elements. Though there is a focus on genetics and other molecular methods in the OBI, the general sequence of operations in investigations provides a suitable framework for osteological work. This provides the backbone onto which all other classes and properties in RDFBones are modeled
 
 The logical backbone of the OBI is provided by the BFO. All concepts are subclasses of class ‘entity’. A general distinction is made between ‘continuants’, entities that are relatively permanent, and ‘occurrents’ with a limited duration. The occurrents relevant for RDFBones are all ‘processes’ and most of them are ‘planned processes’, meaning their execution is previously devised. The central subclass of class ‘planned process’ in the OBI is, of course, the class ‘investigation’.
 
 Continuants, according to OBO, are either dependent or independent. ‘Independent continuants’ are natural entities existing out of themselves. They can be material or immaterial. Subclasses of ‘material entity’ that are relevant to RDFBones include ‘object’, ‘organism’, ‘material anatomical entity’ and ‘organization’. A subclass of ‘organism’ is ‘homo sapiens’ representing all human bodies and beings. The OBI does not make a distinction between ‘homo sapiens’ and the concept of a person. Therefore, individuals of the class ‘homo sapiens’ occur both as specimen and as executing researchers, principal investigators, etc. There are several subclasses of class ‘homo sapiens’ describing various groups of agents in scientific investigations.
 
 Dependent continuants are further classified into two groups, depending whether they depend on a specific entity or not. ‘Specifically dependent continuants’ can be ‘qualities’ of certain objects like material, colour etc. Another type of ‘specifically dependent continuants’ is ‘realizable entities’. These can describe 'functions' of objects, e. g. if a ruler is used as a measuring device or as a straight guide, or 'roles' that individuals and objects can fulfill in the course of an investigation, e. g. as experimental subject or as analyst. 'Generically dependent objects' are mostly individuals of the subclasses of class 'information content entity'. This comprises all kinds of information about other entities. Especially relevant for RDFBones are the classes 'data item' and 'data set', the latter being a collection of instances of the former. Also, the concept of 'centrally registered identifiers' is used in various contexts, e. g. to describe individual skeletons in a series, pseudonyms in a blinded study or archaeological features from which skeletal material derives.
-
-
-:doc:`OBI modelling of Investigations </core/ontologies/obi_investigations>`
-
-:doc:`This subpage </core/ontologies/obi_investigations>` explains the concept of study design documentation in the OBI.
-
-
-:doc:`OBI Modelling of Unique Identifiers </core/ontologies/obi_identifiers>`
-
-:doc:`This subpage </core/ontolgoies/obi_identifiers>` explains how the OBI handles unique identifiers.
 
 Citations
 
