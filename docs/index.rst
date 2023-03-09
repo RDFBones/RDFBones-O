@@ -23,8 +23,6 @@ RDFBones is based on the Resource Description Framework (RDF)
    userguide/userguide_mainpage
 
    core/core_mainpage
-   core/ontologies/ontologies_mainpage
-   core/submodules/submodules_mainpage
 
    bestpractice/bestpractice_mainpage
 
