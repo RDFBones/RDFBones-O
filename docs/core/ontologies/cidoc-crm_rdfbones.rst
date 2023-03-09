@@ -1,5 +1,4 @@
-CIDOC CRM in RDFBones
-======================
+**CIDOC CRM in RDFBones**
 
 Inclusion of the CIDOC CRM into RDFBones was motivated by the fact that the ontology emerges from long-standing active development and is implemented in several software projects, including the Museum of London's ResearchSpace[1]_ and Geovistory[2]_. RDFBones' elements leaned from the CIDOC CRM provide a basis for establishing compatibility with such systems.
 

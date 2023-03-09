@@ -3,6 +3,23 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. toctree::
+   :hidden:
+   :numbered: 3
+   :maxdepth: 1
+   :caption: RDFBones Documentation
+
+   userguide/userguide_main
+
+   core/core_main
+   core/submodels/submodels_main
+   core/submodels/collection_management
+   core/submodels/anatomy
+
+   bestpractice/bestpractice_main
+   
+.. .. only:: html
+
    ========
    RDFBones
    ========
@@ -10,16 +27,8 @@
    `RDFBones`_ is an ontology for representing osteological research and resulting data in biological anthropology. It consists of a **core ontology** providing general concepts related to research in general and osteological research in particular. The core ontology is meant to be extended by additional ontologies that concretise its concepts. Researchers can write such **ontology extensions** to implement the specific methods and workflows required for their scientific work.
 
    RDFBones is based on the Resource Description Framework (RDF)
-   
-.. .. only:: latex
-..
-..    .. toctree::
-..       :hidden:
-..       :caption: RDFBones Documentation
-..
-..       
 
-.. _RDFBones: https://github.com/RDFBones/RDFBones-O
+   .. _RDFBones: https://github.com/RDFBones/RDFBones-O
 
    :doc:`How to Use RDFBones </userguide/userguide_mainpage>`
 
@@ -51,32 +60,3 @@
    If you use RDFBones for your research, please cite the resource as follows in resulting publications.
    
    .. [Engel2019] Engel, Felix and Schlager, Stefan, "RDFBones -- making research explicit: an extensible digital standard for research data", Anthropologischer Anzeiger 76, 3 (2019), pp. 245--257.
-
-.. toctree::
-   :hidden:
-   :numbered: 2
-   :maxdepth: 2
-   :caption: User Guide
-
-   userguide/introduction
-
-.. toctree::
-   :hidden:
-   :numbered: 
-   :maxdepth: 2
-   :caption: The Core Ontology
-
-   core/introduction
-   core/submodules/introduction
-   core/submodules/collection
-   core/submodules/anatomical_model
-
-.. toctree::
-   :hidden:
-   :numbered: 
-   :maxdepth: 2
-   :caption: Best Practice
-
-   bestpractice/introduction
-
-.. only:: html

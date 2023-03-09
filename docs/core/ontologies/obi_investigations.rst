@@ -1,5 +1,4 @@
-OBI modelling of Investigations
-================================
+**OBI modelling of Investigations**
 
 .. figure:: ../gfx/OBI-Investigations.svg
    :alt: Scientific investigations as modelled by the OBI. Simplified version of a diagram provided by the OBI workgroup.

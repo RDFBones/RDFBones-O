@@ -1,5 +1,4 @@
-OBI Modelling of Unique Identifiers
-====================================
+**OBI Modelling of Unique Identifiers**
 
 .. figure:: ../gfx/OBI-CRIDs.svg
    :alt: Unique identifiers as modelled by the OBI.

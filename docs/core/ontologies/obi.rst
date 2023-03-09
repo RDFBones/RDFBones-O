@@ -1,5 +1,5 @@
-About OBI
-==========
+The Ontology for Biomedical Investigations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The intention of the OBI is to standardise features that the various scientific communities active in the area of biomedicine have in common, since these communities tend to develop idiosyncratic standards when operating individually. These individual standards are then not compatible, despite similarities in methodology that would otherwise have allowed for a straightforward cross-disciplinary analysis. To ensure interoperability between different database systems, the methodology must be described in unambiguous terms across all participating disciplines [Bandrowski2016]_.
 
@@ -22,19 +22,16 @@ Continuants, according to OBO, are either dependent or independent. ‘Independe
 Dependent continuants are further classified into two groups, depending whether they depend on a specific entity or not. ‘Specifically dependent continuants’ can be ‘qualities’ of certain objects like material, colour etc. Another type of ‘specifically dependent continuants’ is ‘realizable entities’. These can describe 'functions' of objects, e. g. if a ruler is used as a measuring device or as a straight guide, or 'roles' that individuals and objects can fulfill in the course of an investigation, e. g. as experimental subject or as analyst. 'Generically dependent objects' are mostly individuals of the subclasses of class 'information content entity'. This comprises all kinds of information about other entities. Especially relevant for RDFBones are the classes 'data item' and 'data set', the latter being a collection of instances of the former. Also, the concept of 'centrally registered identifiers' is used in various contexts, e. g. to describe individual skeletons in a series, pseudonyms in a blinded study or archaeological features from which skeletal material derives.
 
 
-:doc:`OBI modelling of Investigations </ontologies/obi/obi_investigations>`
------------------------------------------------------------------------------
+:doc:`OBI modelling of Investigations </core/ontologies/obi_investigations>`
 
-:doc:`This subpage </ontologies/obi/obi_investigations>` explains the concept of study design documentation in the OBI.
+:doc:`This subpage </core/ontologies/obi_investigations>` explains the concept of study design documentation in the OBI.
 
 
-:doc:`OBI Modelling of Unique Identifiers </ontologies/obi/obi_identifiers>`
-------------------------------------------------------------------------------
+:doc:`OBI Modelling of Unique Identifiers </core/ontologies/obi_identifiers>`
 
-:doc:`This subpage </ontologies/obi/obi_identifiers>` explains how the OBI handles unique identifiers.
+:doc:`This subpage </core/ontolgoies/obi_identifiers>` explains how the OBI handles unique identifiers.
 
 Citations
-----------
 
 .. _the current group: http://obi-ontology.org/
 

@@ -1,4 +1,4 @@
 Semantic Research Data Modelling: Best Practice
 ===============================================
 
-Placeholder page for the main page of the best practice section.
+This is the section about best practice.

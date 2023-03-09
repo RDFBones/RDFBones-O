@@ -1,5 +1,5 @@
 The Foundational Model of Anatomy
-==================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 RDFBones uses the Foundational Model of Anatomy (FMA) to model skeletal anatomy and to provide options for analysis in wider anatomical contexts. The FMA is a purpose-built ontology for use in other ontologies that require a well-structured model of anatomical concepts. Though vast and in-depth simultaneously, it is also intended to be generalisable and able to be filtered to suit a specific need [Rosse2003]_, as was done for AnthroGraph.
 
@@ -24,7 +24,6 @@ Further important attributes for partonomy are the attributes 'constitutional pa
 RDFBones uses classes from the FMA to represent skeletal elements featured in osteological investigations. Studies involving osteological research data can make recourse to the rich semantic information of the FMA in order to analyse skeletal elements within their anatomical context.
 
 Citations
-----------
 
 .. [MejinoJr2003] Mejino Jr, José LV, Agoncillo, Augusto V, Rickard, Kurt L, and Rosse, Cornelius, "Representing complexity in part-whole relationships within the foundational model of anatomy", in AMIA Annual Symposium Proceedings vol. 2003, (2003), pp. 450.
 

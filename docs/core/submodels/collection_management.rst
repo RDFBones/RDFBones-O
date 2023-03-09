@@ -7,7 +7,6 @@ The management of collections of human remains affects anthropological research.
 
 
 Structure of the Collection Management Model
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 RDFBones uses the :doc:`CIDOC CRM </ontologies/cidoc/cidoc_crm>` to model mechanisms of collection management.
 
@@ -24,7 +23,6 @@ The latter two are subclasses of 'object' (bfo:0000030).
 Class ‘collection’ (cidoc:E78) is a subclass of class ‘physical thing’ (cidoc:E18) in the CIDOC CRM while :doc:`the OBI </ontologies/obi/obi_general>` provides the example of class 'collection of specimens’ (obi:0002076) which is a subclass of class 'material entity' (bfo:0000040). So both the CIDOC CRM and the OBI interpret collections of physical entities as physical entities themselves which are composed of the objects they contain and not as immaterial entities denoting a series of physical entities. This understanding is also adopted by RDFBones.
 
 Registering Skeletal Material For a Collection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../gfx/RDFBones-MaterialRegistration.svg
    :alt: Basic integration of human remains into the collection.
