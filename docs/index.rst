@@ -17,7 +17,7 @@ RDFBones is based on the Resource Description Framework (RDF)
 .. _RDFBones: https://github.com/RDFBones/RDFBones-O
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :hidden:
 
    userguide/userguide_mainpage
@@ -49,8 +49,8 @@ The core ontology is built on top of various well-established high-level ontolog
 * What basic mechanisms does the core ontology provide that can be used to describe research in ontology extensions?
 
 
-:doc:`Research Modelling with RDFBones: Best Practice </bestpractice/bestpractice_mainpage>`
-============================================================================================
+:doc:`Semantic Research Data Modelling with RDFBones: Best Practice </bestpractice/bestpractice_mainpage>`
+==========================================================================================================
 
 RDF allows to describe data models in a very flexible way. As a consequence, RDFBones ontology extensions can find most diverse solutions for describing osteological research methods. While this can be counted among the strong points of this approach, it might also result in unnecessary complexity, e.g. when ontology extensions are used as data models for scientific software.
 
