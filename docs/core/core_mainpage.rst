@@ -1,1 +1,1 @@
-Placeholder page for the instruction manual
+Placeholder page for the main page of the core ontology section.
