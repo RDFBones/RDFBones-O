@@ -1,3 +1,11 @@
+.. toctree::
+   :hidden:
+   :numbered: 3
+   :maxdepth: 1
+   :caption: Anatomy Submodel
+
+   core/submodels/regions_of_interest
+
 The Anatomical Model
 ~~~~~~~~~~~~~~~~~~~
 

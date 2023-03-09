@@ -1,5 +1,14 @@
+.. toctree::
+   :hidden:
+   :numbered: 3
+   :maxdepth: 1
+   :caption: RDFBones Documentation
+
+   core/ontologies/obi_investigations
+   core/ontologies/obi_identifiers
+
 The Ontology for Biomedical Investigations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================================
 
 The intention of the OBI is to standardise features that the various scientific communities active in the area of biomedicine have in common, since these communities tend to develop idiosyncratic standards when operating individually. These individual standards are then not compatible, despite similarities in methodology that would otherwise have allowed for a straightforward cross-disciplinary analysis. To ensure interoperability between different database systems, the methodology must be described in unambiguous terms across all participating disciplines [Bandrowski2016]_.
 
