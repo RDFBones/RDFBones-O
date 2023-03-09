@@ -1,0 +1,1 @@
+Placeholder page for the main page of the best practice section.
