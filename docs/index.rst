@@ -6,7 +6,7 @@
 .. toctree::
    :hidden:
    :numbered: 3
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: RDFBones Documentation
 
    userguide/userguide_main
