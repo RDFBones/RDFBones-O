@@ -4,6 +4,7 @@
    contain the root `toctree` directive.
 
 .. toctree::
+   :maxdepth: 1
 
    userguide/userguide_main
    core/core_main
