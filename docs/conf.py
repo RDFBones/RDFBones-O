@@ -129,7 +129,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'RDFBones.tex', 'RDFBones Documentation',
-     'Stefan Schlager, Felix Engel', 'manual'),
+     'Stefan Schlager, Felix Engel, Lukas Bender', 'manual'),
 ]
 
 
