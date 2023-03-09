@@ -1,8 +1,7 @@
 .. toctree::
-
-   submodels/submodels_main
-   ontologies/ontologies_main
    
+   ontologies/ontologies_main
+
 The RDFBones Core Ontology
 ==========================
 
