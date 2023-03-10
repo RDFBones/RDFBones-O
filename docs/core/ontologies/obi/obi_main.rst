@@ -22,8 +22,6 @@ Continuants, according to OBO, are either dependent or independent. ‘Independe
 
 Dependent continuants are further classified into two groups, depending whether they depend on a specific entity or not. ‘Specifically dependent continuants’ can be ‘qualities’ of certain objects like material, colour etc. Another type of ‘specifically dependent continuants’ is ‘realizable entities’. These can describe 'functions' of objects, e. g. if a ruler is used as a measuring device or as a straight guide, or 'roles' that individuals and objects can fulfill in the course of an investigation, e. g. as experimental subject or as analyst. 'Generically dependent objects' are mostly individuals of the subclasses of class 'information content entity'. This comprises all kinds of information about other entities. Especially relevant for RDFBones are the classes 'data item' and 'data set', the latter being a collection of instances of the former. Also, the concept of 'centrally registered identifiers' is used in various contexts, e. g. to describe individual skeletons in a series, pseudonyms in a blinded study or archaeological features from which skeletal material derives.
 
-**References**
-
 .. [Bandrowski2016] Bandrowski, Anita, Brinkman, Ryan, Brochhausen, Mathias, Brush, Matthew H, Bug, Bill, Chibucos, Marcus C, Clancy, Kevin, Courto…, "The Ontology for Biomedical Investigations", PLoS ONE 11, 4 (2016), pp. e0154556.
 
 .. [Brinkman2010] Brinkman, Ryan R, Courtot, Mélanie, Derom, Dirk, Fostel, Jennifer M, He, Yongqun, Lord, Phillip, Malone, James, Parkinson, H…, "Modeling biomedical experimental processes with OBI", Journal of Biomedical Semantics 1, Suppl 1 (2010), pp. S7--S7.
