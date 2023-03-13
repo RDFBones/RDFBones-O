@@ -14,3 +14,7 @@ RDFBones
    userguide/userguide_main
    core/core_main
    bestpractice/bestpractice_main
+   
+   legend
+   
+All network graphics in this documentation have the same :ref:`legend`.

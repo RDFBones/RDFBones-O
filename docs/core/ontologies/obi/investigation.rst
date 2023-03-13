@@ -3,7 +3,12 @@
 Investigations
 ==============
 
-RDFBones models scientific investigations according to the :ref:`obi`. There are three major phases: 'planning', 'study design execution' and 'drawing a conclusion based on data'. An output of the planning stage is a 'study design' which then is executed in the second stage where data are produced which are interpreted in the third.
+A core topic of the :ref:`obi` is scientific investigations. There are three major phases: 'planning', 'study design execution' and 'drawing a conclusion based on data'. An output of the planning stage is a 'study design' which then is executed in the second stage where data are produced which are interpreted in the third.
+
+.. figure:: gfx/OBI-Investigations-Investigation.png
+   :alt: network graphic of an investigation according to the OBI
+   
+Investigation modelled according to the :ref:`obi`. Solid arrows represent relations prescribed by class restrictions within the OBI. Dashed lines add further relations for better understanding, following the `OBI documentation <http://obi-ontology.org/docs/core-classes/>`_. See :ref:`legend` for an explanation of notation.
 
 Restrictions for OBI classes occasionally require instances for which there is no clear definition what class they belong to. First, a more specific subclass of planning needs to be defined, describing the process that leads to the establishment of a study design. Also, the study design execution does not realise the study design directly but some direction concretising the study design in respect of the investigation to be carried out. This mechanism allows study designs to be defined on a general level for use in several investigations. Each investigation interprets the study design in terms of its specific context, e. g. the material to be used or the facilities at disposition. Several classes are related to class ‘study design’ through the ‘has part’ property, providing specifications for many of the processes and input/output elements subsumed under ‘study design execution’.
 
