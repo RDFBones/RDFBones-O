@@ -992,24 +992,26 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/rdfbones/core#lowerBound"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+		<owl:onDataRange rdf:resource="xsd:decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/rdfbones/core#upperBound"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+		<owl:onDataRange rdf:resource="xsd:decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/rdfbones/core#pointEstimate"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>		
+		<owl:onDataRange rdf:resource="xsd:decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">Age range value specification</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Age ranges associated to morphological stages of pubic symphysis degradation by the Suchey-Brooks method.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A value specification that specifies an age range consisting of some lower and some upper bound as well as some point estimate that can be used to approximate the age range in data analysis.
-</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A value specification that specifies an age range consisting of some lower and some upper bound as well as some point estimate that can be used to approximate the age range in data analysis.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">It is possible to define open intervals by just specifying an upper or lower bound. Also, specification of a point interval is optional while specifications can consist of nothing but a point estimate.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">What the point estimate signifies exaclty needs to be defined with a more specific value specification or with the data item referencing the age range value specification.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">https://orcid.org/0009-0008-3871-9762 "Felix Engel"
