@@ -507,6 +507,37 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/core#lowerBound -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#lowerBound">
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <obo:IAO_0000111>lower bound</obo:IAO_0000111>
+      <obo:IAO_0000115 xml:lang="en">A data property that assigns a numeric value to a data item that signifies the lower bound of some interval.</obo:IAO_0000115>
+      <obo:IAO_0000117>https://orcid.org/0009-0008-3871-9762 "Felix Engel"</obo:IAO_0000117>
+      <obo:IAO_0000118>lower margin</obo:IAO_0000118>
+      <obo:IAO_0000119>Felix Engel</obo:IAO_0000119>
+      <obo:IAO_0000233>https://github.com/RDFBones/RDFBones-O/issues/182</obo:IAO_0000233>
+      <obo:IAO_0000234>https://orcid.org/0009-0008-3871-9762 "Felix Engel"</obo:IAO_0000234>
+      <rdfs:label xml:lang="en">lower bound</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#pointEstimate -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#pointEstimate">
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <obo:IAO_0000111>point estimate</obo:IAO_0000111>
+      <obo:IAO_0000115 xml:lang="en">A data property that assigns a numeric value to a data item that represents a range of values.</obo:IAO_0000115>
+      <obo:IAO_0000117>https://orcid.org/0009-0008-3871-9762 "Felix Engel"</obo:IAO_0000117>
+      <obo:IAO_0000119>Felix Engel</obo:IAO_0000119>
+      <obo:IAO_0000233>https://github.com/RDFBones/RDFBones-O/issues/182</obo:IAO_0000233>
+      <obo:IAO_0000234>https://orcid.org/0009-0008-3871-9762 "Felix Engel"</obo:IAO_0000234>
+      <rdfs:label xml:lang="en">point estimate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#skeletalElementPortion -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#skeletalElementPortion">
@@ -537,6 +568,22 @@
         <obo:IAO_0000112 xml:lang="en">The portion of a tooth segment called &apos;Entire crown of left lower second premolar tooth&apos; that is preserved in a skeleton recovered during an archaeological excavation..</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Renders the portion (0 &lt; tooth portion &lt;= 1) that a certain entity occupies in a tooth.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">tooth portion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#upperBound -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/rdfbones/core#upperBound">
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <obo:IAO_0000111>upper bound</obo:IAO_0000111>
+      <obo:IAO_0000115 xml:lang="en">A data property that assigns a numeric value to a data item that signifies the upper bound of some interval.</obo:IAO_0000115>
+      <obo:IAO_0000117>https://orcid.org/0009-0008-3871-9762 "Felix Engel"</obo:IAO_0000117>
+      <obo:IAO_0000118>upper margin</obo:IAO_0000118>
+      <obo:IAO_0000119>Felix Engel</obo:IAO_0000119>
+      <obo:IAO_0000233>https://github.com/RDFBones/RDFBones-O/issues/182</obo:IAO_0000233>
+      <obo:IAO_0000234>https://orcid.org/0009-0008-3871-9762 "Felix Engel"</obo:IAO_0000234>
+      <rdfs:label xml:lang="en">upper bound</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -933,6 +980,63 @@
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#AgeRangeValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#AgeRangeValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#AgeValueSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/rdfbones/core#lowerBound"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/rdfbones/core#upperBound"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/rdfbones/core#pointEstimate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">Age range value specification</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Age ranges associated to morphological stages of pubic symphysis degradation by the Suchey-Brooks method.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A value specification that specifies an age range consisting of some lower and some upper bound as well as some point estimate that can be used to approximate the age range in data analysis.
+</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">It is possible to define open intervals by just specifying an upper or lower bound. Also, specification of a point interval is optional while specifications can consist of nothing but a point estimate.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">What the point estimate signifies exaclty needs to be defined with a more specific value specification or with the data item referencing the age range value specification.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">https://orcid.org/0009-0008-3871-9762 "Felix Engel"
+</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Age interval value specification</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/RDFBones/RDFBones-O/issues/182</obo:IAO_0000233>
+        <obo:IAO_0000234 xml:lang="en">https://orcid.org/0009-0008-3871-9762 "Felix Engel"</obo:IAO_0000234>
+        <rdfs:label xml:lang="en">Age range value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#AgeValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#AgeValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/> <!-- 'Value specification' -->
+        <obo:IAO_0000111 xml:lang="en">Age value specification</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The age at death of a human being.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The age of wine in a bottle.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A value specification that specifies the age of an entity.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">https://orcid.org/0009-0008-3871-9762 "Felix Engel"
+</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/RDFBones/RDFBones-O/issues/182</obo:IAO_0000233>
+        <obo:IAO_0000234 xml:lang="en">https://orcid.org/0009-0008-3871-9762 "Felix Engel"</obo:IAO_0000234>
+        <rdfs:label xml:lang="en">Age value specification</rdfs:label>
     </owl:Class>
     
 
