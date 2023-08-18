@@ -101,7 +101,7 @@ Understanding the legend
 
 First, let us look at the full legend for RDFBones network graphs:
 
-.. image:: RDFBones-O/docs/gfx/NetworkGraphLegend-Legend.png
+.. image:: gfx/NetworkGraphLegend-Legend.png
 
 In many cases, only a small part of this legend will be relevant for a SPARQL query. Let us focus on those elements:
 
@@ -140,12 +140,12 @@ The above figure shows a simplified version of the Phaleron dental inventory net
 In this example, we want to find a specific measurement datum, namely the presence of the right third upper molar tooth socket. We know that this would be in the permanent maxilla, so if we were looking at the full network graph, we would now switch to that tab.
 
 .. image:: gfx/dentalinv_perm_max.png
-   :scale: 50 %
+   :scale: 25 %
 
 This is a simplified version of the permanent maxilla tab. Even still, it appears complex. However, we only need to focus on the section that concerns the alveolar bone, where we will find our socket measurement datum:
 
 .. image:: gfx/dentalinv_alveolar.png
-   :scale: 50 %
+   :scale: 30 %
    
 The blue box around the value specification tells us that we need to switch tabs again to get details on the value specification. This is the method by which network graphs are navigated: we start with the first tab, where we find the dataset instance, and follow the data model towards the data item we want. The next section gives assistance on how to make sense of what you find in the actual dataset, and how this translates to the more abstract "theoretical" data model provided in the network graphs.
 
@@ -162,7 +162,7 @@ Strictly speaking, the network graphs show you exactly what the actual datasets 
 In the above image, we again have an abbreviated version of the network graph of the dental inventory, this time showing the permanent maxilla section with the 'has part' relation from the 'Inventory' tab added in as well. What is important to remember here is that this is the **uninstantiated** version of the data model. The actual dataset produced in AnthroGraph is the **instantiated** version. So now, let us look at how the instantiated version looks like if we translate it to the way we visualise the uninstantiated data model:
 
 .. image:: gfx/meas_datum_full.png
-   :scale: 50 %
+   :scale: 35 %
 
 Instantiated means exactly that: all the abstract classes have been replaced by instances. Instances generally do not have labels, and they have a very long IRI. IRI of instances in RDFBones are generally concatenations of  randomly generated numbers and strings that in some way relate to the measurement datum, such as its region of interest; the IRIs are long and random in order to ensure that even if e.g. you have a database with 1,000,000 femurs, each femur instance will still have its own distinct identifier.
 
@@ -178,7 +178,7 @@ Ontodia is a visualiser for semantic data built into AnthroGraph. Though awkward
 Let us re-build the example dataset we made in the previous section using Intodia. Ontodia can be opened by clicking on the "graph" icon in the top right of the screen when you have opened any kind if inventory. Note that Ontodia always looks for labels, and when a data item does not have a label, it will simply repurpose a truncated version of the IRI of that item as a label. This means that often the lists provided in Ontodia's search function appears to provide redundant or bogus items.
 
 .. image:: gfx/ontodia_search.png
-   :scale: 50 %
+   :scale: 100 %
 
 In the case above, we are attempting to open our measurement datum instance of the right third upper molar tooth socket. This socket has arbitrarily received the identification number *317364* in the **Foundational Model of Anatomy** ontology, and so this number has been built into the IRI generated for this instance. Though we lack a true label for our instance, we can use this identifier to nonetheless search for our socket's measurement datum.
 
@@ -187,7 +187,7 @@ In the case above, we are attempting to open our measurement datum instance of t
 We can follow the same path via Ontodia as we would in the network graph by simply clicking on the relevant predicates and selecting the corresponding object, keeping in mind that we are dealing with instances of classes, not the classes themselves.
 
 .. image:: gfx/ontodia_meas_full.png
-   :scale: 50 %
+   :scale: 100 %
 
 Using Ontodia, we can repoduce the graph seen in the previous section. Herein lies the utility of Ontodia: quickly browse datasets with an intuitive, visualised way. In addition, you can inspect any element by clicking on it, and even copy the full IRI. The extremely long IRIs of the instances you saw in the previous section's image were in fact extracted from Ontodia this way.
 
