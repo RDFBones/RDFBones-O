@@ -46,6 +46,7 @@ The RDFBones standard is defined through a collection of ontologies, wherein the
 Integral to understanding ontologies and ontology datasets, especially when attempting to navigate the datasets via SPARQL, are the network graphs produced by the authors of the extension.
 
 
+.. _my-reference-label:
 -------------------------
 RDFBones network graphs
 -------------------------
@@ -88,7 +89,7 @@ Some concepts encountered in the RDFBones standard are not very self-explanatory
 Ontology instances
 ~~~~~~~~~~~~~~~~~~~~
 
-Some network graphs refer to specific types of instances in the form of  semantic data are also referred to as 'named individuals', and not all named individuals need to be so concrete as material instances of specific bones. In the RDFBones standard, certain qualities or attributes may be "of the type" of certain classes. For example, 'Male' can be "of the type" 'human sex category', where 'human sex category' is a class, and 'Male' is an instance. However, the attribute of 'Male' can be "re-used" and assigned to any number of instances of e.g. human skeletons that have been sexed, despite being an instance itself. These ontology-defined instances are referred to as __ontology instances__.
+Some network graphs refer to specific types of instances in the form of  semantic data are also referred to as 'named individuals', and not all named individuals need to be so concrete as material instances of specific bones. In the RDFBones standard, certain qualities or attributes may be "of the type" of certain classes. For example, 'Male' can be "of the type" 'human sex category', where 'human sex category' is a class, and 'Male' is an instance. However, the attribute of 'Male' can be "re-used" and assigned to any number of instances of e.g. human skeletons that have been sexed, despite being an instance itself. These ontology-defined instances are referred to as **ontology instances**.
 
 
 ~~~~~~~~~~~~~~~~~
@@ -112,17 +113,18 @@ Phaleron Dental Inventory
 ---------------------------
 
 `See full network graph <https://github.com/RDFBones/RDFBonesGraphics/tree/main/NetworkGraphics/OntologyExtensions/phaleron-di/>`_ 
+
 IRI: http://w3id.org/rdfbones/ext/phaleron-di/
 
 .. image:: gfx/Dental_Inventory/dentalinv_inventory.png
-   :scale: 100 %
+   :scale: 50 %
    
    
 
 The above figure shows what can be considered the starting point of the graph, namely the dental inventory dataset instance. Attached to the dataset instance are the 5 different sections of the dental inventory. The predicate used is 'has part' (IRI: http://purl.obolibrary.org/obo/BFO_0000051).
 
 .. image:: gfx/Dental_Inventory/dentalinv_dentition.png
-   :scale: 100 %
+   :scale: 50 %
 
 The dentition section has two measurement data, 'Number of supernumerary teeth' and 'Number of unidentified tooth fragments'. 
 
