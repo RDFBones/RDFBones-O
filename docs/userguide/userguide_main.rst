@@ -101,7 +101,7 @@ Understanding the legend
 
 First, let us look at the full legend for RDFBones network graphs:
 
-.. image:: NetworkGraphLegend-Legend.png
+.. image:: RDFBones-O/docs/gfx/NetworkGraphLegend-Legend.png
 
 In many cases, only a small part of this legend will be relevant for a SPARQL query. Let us focus on those elements:
 
