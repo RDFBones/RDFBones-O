@@ -45,8 +45,7 @@ RDFBones core ontology and extension ontologies
 The RDFBones standard is defined through a collection of ontologies, wherein the **RDFBones core ontology** forms the basis of the standard. The core ontology contains primarily those concepts which are likely to be used in many, if not all, RDFBones extension ontologies. Extension ontologies describe more specific osteological investigations and their output data, e.g. a specific method for estimating the age of an individual. The information found in this document offers further guidelines on how concepts defined in the ontology came to be and how they are intended to be used.
 Integral to understanding ontologies and ontology datasets, especially when attempting to navigate the datasets via SPARQL, are the network graphs produced by the authors of the extension.
 
-
-.. _my-reference-label:
+.. _RDFBonesNetworkGraphsSection:
 -------------------------
 RDFBones network graphs
 -------------------------
@@ -105,7 +104,7 @@ By combining the type of the measurement datum - denoted via the predicate of 'r
 Simplified network graphs
 ..........................
 
-This section gives a to-the-point explanation on how to get from the top dataset instance to a given measurement datum in each RDFBones ontology. The network graphs in this section only contain a fraction of the full information found in the RDFBones standard. For the full information, see the link provided in each subsection or the above section on :ref:`RDFBones network graphs`.
+This section gives a to-the-point explanation on how to get from the top dataset instance to a given measurement datum in each RDFBones ontology. The network graphs in this section only contain a fraction of the full information found in the RDFBones standard. For the full information, see the link provided in each subsection or see :ref:`RDFBonesNetworkGraphsSection`.
 
 
 ---------------------------
