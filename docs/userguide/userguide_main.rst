@@ -17,13 +17,14 @@ Triples
 RDF data consists of triples. A triple consists of 3 elements which are read in a set direction and offer some kind of meaning. Such data is referred to as semantic data. The 3 elements of an RDF triple are commonly referred to as **subject**, **predicate**, and **object**. Typically, any subject can also be an object and vice-versa. Whether a data item becomes a subject or object is dependent upon what information is being conveyed by the triple it is part of. In contrast, predicates used in RDFBones generally do not appear as subjects or objects. Subjects, predicates, and objects all have identifiers. These are called IRIs, and they are what is used in a triple to specify what data items are being used in a triple. IRIs can be looked up in the ontology in which they are defined.
 
 
+.. _IRISection:
 ++++++
 IRIs
 ++++++
 
 An IRI is ultimately just a string of text. They typically look similar to URLs, and they are in fact closely related in concept. Each IRI belongs to a unique concept, such as a class describing e.g. a human femur, while another IRI may refer to an instance of a human femur, such as one found in an excavated burial.
 
-
+.. _ClassesInstancesSection:
 ++++++++++++++++++++++
 Classes and instances
 ++++++++++++++++++++++
@@ -69,6 +70,8 @@ Explantory network graphs can be found in the repository mentioned above for the
 * phaleron-dpatho: dental pathologies according to specifications of the Phaleron Bioarchaeological Project
 * phaleron-sexest: sex estimation according to specifications of the Phaleron Bioarchaeological Project
 
+See also the sections :ref:`IRISection` and :ref:`PrefixesSection` on how to read and adress the IRIs shown in the network graphs.
+
 
 ++++++++++++++++++++++++++++++++++++++++++++
 Understanding and navigating network graphs
@@ -78,68 +81,131 @@ The graphics describing the RDFBones standard's data model can seem overwhelming
 
 
 .............................................................
-Important concepts for understanding RDFBones network graphs
-.............................................................
-
-Some concepts encountered in the RDFBones standard are not very self-explanatory, such as measurement data and the difference between a class instance and an ontology instance
-
-
-~~~~~~~~~~~~~~~~~~~~
-Ontology instances
-~~~~~~~~~~~~~~~~~~~~
-
-Some network graphs refer to specific types of instances in the form of  semantic data are also referred to as 'named individuals', and not all named individuals need to be so concrete as material instances of specific bones. In the RDFBones standard, certain qualities or attributes may be "of the type" of certain classes. For example, 'Male' can be "of the type" 'human sex category', where 'human sex category' is a class, and 'Male' is an instance. However, the attribute of 'Male' can be "re-used" and assigned to any number of instances of e.g. human skeletons that have been sexed, despite being an instance itself. These ontology-defined instances are referred to as **ontology instances**.
-
-
-~~~~~~~~~~~~~~~~~
 Measurement data
-~~~~~~~~~~~~~~~~~
+.............................................................
 
 Measurement data are classes used when recording data on osteological observations in RDFBones, such as the presence of a region of interest or the status of a pathology. They are thus a highly central element in most RDFBones datasets and their according network graphs. Measurement data are conspicuous in that they repeat the same structure even every extension and implementation they are used: each instance of a measurement datum is connected to a value specification instance. Each of these value specification instances then is connected to an element which provides the information on the observation, such as a category label or a numeric value. Often the measurement datum also is about a certain region of interest, though some measurement datum types only have a single instance in a dataset, in which case they do not require a region of interest to be specified within the dataset itself.
 
 By combining the type of the measurement datum - denoted via the predicate of 'rdf:type' - and its region of interest - denoted via the predicate of 'is about' (IRI: http://purl.obolibrary.org/obo/IAO_0000136) - each measurement datum can be identified in a dataset. Once this concept is understood, the apparent complexity of most network graphs is reduced considerably.
 
 
-..........................
-Simplified network graphs
-..........................
+.........................................................
+Translating network graphs into datasets and vice-versa
+.........................................................
 
-This section gives a to-the-point explanation on how to get from the top dataset instance to a given measurement datum in each RDFBones ontology. The network graphs in this section only contain a fraction of the full information found in the RDFBones standard. For the full information, see the link provided in each subsection or see :ref:`RDFBonesNetworkGraphsSection`.
+This section gives a to-the-point explanation on how to get from the top dataset instance to a given measurement datum in an RDFBones ontology, which is a common requirement for SPARQL queries extracting data for research purposes. The network graphs in this section only contain a fraction of the full information found in the RDFBones standard. For the full graphs, see the above section :ref:`RDFBonesNetworkGraphsSection`.
 
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Understanding the legend
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
----------------------------
-Phaleron Dental Inventory
----------------------------
+First, let us look at the full legend for RDFBones network graphs:
 
-`See full network graph <https://github.com/RDFBones/RDFBonesGraphics/tree/main/NetworkGraphics/OntologyExtensions/phaleron-di/>`_ 
+.. image:: NetworkGraphLegend-Legend.png
 
-IRI: http://w3id.org/rdfbones/ext/phaleron-di/
+In many cases, only a small part of this legend will be relevant for a SPARQL query. Let us focus on those elements:
 
-.. image:: gfx/Dental_Inventory/dentalinv_inventory.png
+.. image:: gfx/legend_short.png
    :scale: 50 %
    
-   
+The legend tells us the following:
 
-The above figure shows what can be considered the starting point of the graph, namely the dental inventory dataset instance. Attached to the dataset instance are the 5 different sections of the dental inventory. The predicate used is 'has part' (IRI: http://purl.obolibrary.org/obo/BFO_0000051).
+* The 'is a' relation is equivalent to the predicate 'rdfs:subClassOf', i.e. it tells us that the class the arrow points from is a child class of the class the arrow points towards. The label 'is a' is not to be confused with the label 'a'. The predicate of 'is a' is thus **not** equivalent to the predicate 'rdf:type'. The 'rdfs:subClassOf' relation can be very useful when you are not looking for a specific result of an observation or measurement, but wish to know what all the possible results are. However, compared to the 'rdf:type' relation, it is used far less frequently.
+* 'instance of class' **is equivalent to** the predicate 'rdf:type'. It means the class at the base of the arrow is an instance of the class the arrow is pointing towards. It is thus **not** equivalent to the predicate 'rdfs:subClassOf'. The 'rdf:type' relation is highly useful for telling SPARQL what you are looking for and is thus very frequently used in most queries.
+* 'other relation' means the label written on the arrow tells us what the predicate is the arrow is representing. Remember: The IRI shown assumes a prefix has been defined in the SPARQL query, see :ref:`IRISection` and :ref:`PrefixesSection`
 
-.. image:: gfx/Dental_Inventory/dentalinv_dentition.png
+Always pay close attention to the direction the arrow of a predicate is pointing in network graphs, as reversing the triple's reading direction is an easy way to accidentally make a SPARQL query give incorrect outputs.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ontology instances and data instances
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Finally, notice that some of the boxes in the full legend and the network graphs have different shapes and colours. These also contain specific meaning. In the abbreviated legend, we again have the 3 columns:
+
+* **Class** (or type) elements are parallelograms. They are what we commonly refer to simply as "classes". Both data instances and ontology instances have 'rdf:type' relations to a **class**
+* **Data instances** are instances of a class in a dataset, i.e. they are the reification of the concept of the class, see the section :ref:`ClassesInstancesSection`. You can also imagine them as "dataset instances", as opposed to the "ontology instances"
+* **Ontology instances** are instances that are not defined by the context of the dataset in which they were generated, but are instead "pre-generated instances" defined within an ontology file
+
+The difference between ontology and data instances is subtle, but it is relevant for writing queries. Not all instances in RDFBones are e.g. material instances of specific bones in an inventory. In the RDFBones standard, certain qualities or attributes may be "of the type" of certain classes; in the sense that they have the predicate 'rdf:type', but also in the sense that they are of a certain type of attribute. For example, 'Male' can be "of the type" 'human sex category', where 'human sex category' is a class, and 'Male' is an instance of that class. 'Female' and 'Intersex' may be further instances of 'human sex category'. However, the attribute of 'Male', 'Female', and 'Intersex' can all be "re-used" and assigned to any number of instances of e.g. human skeletons that have been sexed, despite being an instance themselves. These ontology-defined instances will always have the same IRIs each time they appear; data instances in turn will have a different IRI for each unique dataset.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finding a datum in an example network graph
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: gfx/dentalinv_inventory.png
    :scale: 50 %
 
-The dentition section has two measurement data, 'Number of supernumerary teeth' and 'Number of unidentified tooth fragments'. 
+The above figure shows a simplified version of the Phaleron dental inventory network graph. It shows what can be considered the starting point of the graph, namely the dental inventory dataset instance, which has been produced by an inventorying process that used a human skeleton as an input. Attached to the dataset instance are the 5 different sections of the dental inventory. The predicate used is 'has part' (IRI: http://purl.obolibrary.org/obo/BFO_0000051).
 
+In this example, we want to find a specific measurement datum, namely the presence of the right third upper molar tooth socket. We know that this would be in the permanent maxilla, so if we were looking at the full network graph, we would now switch to that tab.
+
+.. image:: gfx/dentalinv_perm_max.png
+   :scale: 50 %
+
+This is a simplified version of the permanent maxilla tab. Even still, it appears complex. However, we only need to focus on the section that concerns the alveolar bone, where we will find our socket measurement datum:
+
+.. image:: gfx/dentalinv_alveolar.png
+   :scale: 50 %
+   
+The blue box around the value specification tells us that we need to switch tabs again to get details on the value specification. This is the method by which network graphs are navigated: we start with the first tab, where we find the dataset instance, and follow the data model towards the data item we want. The next section gives assistance on how to make sense of what you find in the actual dataset, and how this translates to the more abstract "theoretical" data model provided in the network graphs.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Translating from dataset to network graph
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Strictly speaking, the network graphs show you exactly what the actual datasets in AnthroGraph contain. However, mentally translating the abstract class concept of the network graph into the instantiated version of a dataset can still be difficult when you feel unfamiliar with the data model or semantic data in general. This section is intended to act as a guide for this mental translation process.
+
+.. image:: gfx/dentalinv_alv_short.png
+   :scale: 50 %
+
+In the above image, we again have an abbreviated version of the network graph of the dental inventory, this time showing the permanent maxilla section with the 'has part' relation from the 'Inventory' tab added in as well. What is important to remember here is that this is the **uninstantiated** version of the data model. The actual dataset produced in AnthroGraph is the **instantiated** version. So now, let us look at how the instantiated version looks like if we translate it to the way we visualise the uninstantiated data model:
+
+.. image:: gfx/meas_datum_full.png
+   :scale: 50 %
+
+Instantiated means exactly that: all the abstract classes have been replaced by instances. Instances generally do not have labels, and they have a very long IRI. IRI of instances in RDFBones are generally concatenations of  randomly generated numbers and strings that in some way relate to the measurement datum, such as its region of interest; the IRIs are long and random in order to ensure that even if e.g. you have a database with 1,000,000 femurs, each femur instance will still have its own distinct identifier.
+
+Note that each instance has a 'rdf:type' relation to the class it is instantiating. This is what translates the model of the network graph to the model of the dataset, this is what the process of instantiating entails. Accordingly, the 'rdf:type' relation is vital when mentally translating the network graph into a SPARQL query.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Using Ontodia to navigate datasets
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ontodia is a visualiser for semantic data built into AnthroGraph. Though awkward to become acquainted with, Ontodia is ultimately a very useful tool for getting to know datasets and for bugfixing when writing SPARQL queries.
+
+Let us re-build the example dataset we made in the previous section using Intodia. Ontodia can be opened by clicking on the "graph" icon in the top right of the screen when you have opened any kind if inventory. Note that Ontodia always looks for labels, and when a data item does not have a label, it will simply repurpose a truncated version of the IRI of that item as a label. This means that often the lists provided in Ontodia's search function appears to provide redundant or bogus items.
+
+.. image:: gfx/ontodia_search.png
+   :scale: 50 %
+
+In the case above, we are attempting to open our measurement datum instance of the right third upper molar tooth socket. This socket has arbitrarily received the identification number *317364* in the **Foundational Model of Anatomy** ontology, and so this number has been built into the IRI generated for this instance. Though we lack a true label for our instance, we can use this identifier to nonetheless search for our socket's measurement datum.
+
+*(Note: our documentation currently has a major blind spot here: a select number of regions of interest are borderline unidentifiable for anyone unfamiliar with the ontology files. This is a work in progress. For the moment, please contact us if you bcome stuck on such "hidden" regions of interest)*
+
+We can follow the same path via Ontodia as we would in the network graph by simply clicking on the relevant predicates and selecting the corresponding object, keeping in mind that we are dealing with instances of classes, not the classes themselves.
+
+.. image:: gfx/ontodia_meas_full.png
+   :scale: 50 %
+
+Using Ontodia, we can repoduce the graph seen in the previous section. Herein lies the utility of Ontodia: quickly browse datasets with an intuitive, visualised way. In addition, you can inspect any element by clicking on it, and even copy the full IRI. The extremely long IRIs of the instances you saw in the previous section's image were in fact extracted from Ontodia this way.
 
 ---------------------------------------
 Introduction to writing SPARQL queries
 ---------------------------------------
 
-SPARQL queries are written by referencing the data model as it is found in the dataset. In order to know what the data model looks like, it is necessary to either browser the dataset with SPARQL directly, or to look at the corresponding network graph describing the data model. Every RDFBones extension ontology has its own network graph describing the data model of the data produced by extension in question.
+SPARQL queries are written by referencing the data model as it is found in the dataset. In order to know what the data model looks like, it is necessary to either browse the dataset with SPARQL directly, or to look at the corresponding network graph describing the data model. Every RDFBones extension ontology has its own network graph describing the data model of the data produced by extension in question.
 
 
+.. _PrefixesSection:
 ++++++++++
 Prefixes
 ++++++++++
 
 Prefixes are defined at the top of a SPARQL query and allow for the use of abbreviations in the query. SPARQL queries do not require prefixes to function, but they are generally recommended, as they greatly reduce visual clutter and simplify the act of writing a query. The abbreviations used in a prefix are arbitrary and are only valid for the query in which they are written, though it is recommended to keep consistency where possible to avoid unnecessary confusion.
+
+Prefixes work in the following way: In a SPARQL query, an IRI must be adressed by being surrounded by the less-than and greater-than sign tags, e.g. 'has part' is employed by writing **<http://purl.obolibrary.org/obo/BFO_0000051>**. By using the prefix **PREFIX obo: <http://purl.obolibrary.org/obo/>**, 'has part' can be written as **obo:BFO_0000051**. Note that some IRIs end with a hash symbol (#) instead of the more typical forward slash.
 
 The following list is non-exhaustive but does contain those prefixes most commonly used in RDFBones-related queries:
 
