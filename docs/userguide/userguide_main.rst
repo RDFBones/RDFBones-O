@@ -2,7 +2,7 @@
 RDFBones User Guide
 ====================
 
-The RDFBones standard consists of a hierarchy of ontologies which describe specific processes employed in osteology and their output datasets. Datasets produced with RDFBones ontologies can be queried with the query language _SPARQL_. Queries are the main method by which data is produced in the RDFBones software implementation __AnthroGraph__ and they are also the main method for extracting data, be it only select elements of a dataset or the entire dataset itself, from AnthroGraph's database. In order to write SPARQL queries for these datasets, it is necessary to understand how the datasets work. This guide provides a basic introduction to pivotal concepts of _RDF_, the data model on which the RDFBones standard is based, and of which SPARQL is the recommended query language. This guide further provides directions on how the RDFBones documentation can be used to assist in writing a SPARQL query for a given RDFBones dataset.
+The RDFBones standard consists of a hierarchy of ontologies which describe specific processes employed in osteology and their output datasets. Datasets produced with RDFBones ontologies can be queried with the query language *SPARQL*. Queries are the main method by which data is produced in the RDFBones software implementation **AnthroGraph** and they are also the main method for extracting data, be it only select elements of a dataset or the entire dataset itself, from AnthroGraph's database. In order to write SPARQL queries for these datasets, it is necessary to understand how the datasets work. This guide provides a basic introduction to pivotal concepts of **RDF**, the data model on which the RDFBones standard is based, and of which SPARQL is the recommended query language. This guide further provides directions on how the RDFBones documentation can be used to assist in writing a SPARQL query for a given RDFBones dataset.
 
 
 -----------------------------------
@@ -14,7 +14,7 @@ Basic concepts of RDF and RDFBones
 Triples
 ++++++++
 
-RDF data consists of triples. A triple consists of 3 elements which are read in a set direction and offer some kind of meaning. Such data is referred to as semantic data. The 3 elements of an RDF triple are commonly referred to as _subject_, _predicate_, and _object_. Typically, any subject can also be an object and vice-versa. Whether a data item becomes a subject or object is dependent upon what information is being conveyed by the triple it is part of. In contrast, predicates used in RDFBones generally do not appear as subjects or objects. Subjects, predicates, and objects all have identifiers. These are called IRIs, and they are what is used in a triple to specify what data items are being used in a triple. IRIs can be looked up in the ontology in which they are defined.
+RDF data consists of triples. A triple consists of 3 elements which are read in a set direction and offer some kind of meaning. Such data is referred to as semantic data. The 3 elements of an RDF triple are commonly referred to as **subject**, **predicate**, and **object**. Typically, any subject can also be an object and vice-versa. Whether a data item becomes a subject or object is dependent upon what information is being conveyed by the triple it is part of. In contrast, predicates used in RDFBones generally do not appear as subjects or objects. Subjects, predicates, and objects all have identifiers. These are called IRIs, and they are what is used in a triple to specify what data items are being used in a triple. IRIs can be looked up in the ontology in which they are defined.
 
 
 ++++++
@@ -35,14 +35,14 @@ Classes generally describe concepts in the abstract, that is, they do not descri
 Ontologies
 +++++++++++
 
-Ontologies contain information on classes and other concepts relevant for describing data, such as instances of classes and logical axioms. The ontologies come in the form of text files with a specific type of formatting which makes them machine-readable. Every class in an ontology _must_ have an IRI, and a class will usually have further information such as a definition and instructions on how it is to be used in datasets.
+Ontologies contain information on classes and other concepts relevant for describing data, such as instances of classes and logical axioms. The ontologies come in the form of text files with a specific type of formatting which makes them machine-readable. Every class in an ontology *must* have an IRI, and a class will usually have further information such as a definition and instructions on how it is to be used in datasets.
 
 
 ................................................
 RDFBones core ontology and extension ontologies
 ................................................
 
-The RDFBones standard is defined through a collection of ontologies, wherein the _RDFBones core ontology_ forms the basis of the standard. The core ontology contains primarily those concepts which are likely to be used in many, if not all, RDFBones extension ontologies. Extension ontologies describe more specific osteological investigations and their output data, e.g. a specific method for estimating the age of an individual. The information found in this document offers further guidelines on how concepts defined in the ontology came to be and how they are intended to be used.
+The RDFBones standard is defined through a collection of ontologies, wherein the **RDFBones core ontology** forms the basis of the standard. The core ontology contains primarily those concepts which are likely to be used in many, if not all, RDFBones extension ontologies. Extension ontologies describe more specific osteological investigations and their output data, e.g. a specific method for estimating the age of an individual. The information found in this document offers further guidelines on how concepts defined in the ontology came to be and how they are intended to be used.
 Integral to understanding ontologies and ontology datasets, especially when attempting to navigate the datasets via SPARQL, are the network graphs produced by the authors of the extension.
 
 
@@ -50,7 +50,7 @@ Integral to understanding ontologies and ontology datasets, especially when atte
 RDFBones network graphs
 -------------------------
 
-Network graphs describe the information of a semantic data in a visual form, rather than the text-based form RDF data usually employs. RDFBones network graphs are saved in a specific file format, namely _Scalable Vector Graphics_ (SVG). RDFBones' svg files should only be opened with programs that allow for the use of tabs in svg files. This is currently _not_ the case with most web browsers and many pre-installed iamge viewing applications. We recommend using the free, open source browser application [diagrams.net](https://app.diagrams.net/), also known as draw.io, and which can also be [installed locally as an app](https://www.drawio.com/).
+Network graphs describe the information of a semantic data in a visual form, rather than the text-based form RDF data usually employs. RDFBones network graphs are saved in a specific file format, namely *Scalable Vector Graphics* (SVG). RDFBones' svg files should only be opened with programs that allow for the use of tabs in svg files. This is currently *not* the case with most web browsers and many pre-installed iamge viewing applications. We recommend using the free, open source browser application `app.diagrams.net <https://app.diagrams.net/>`_, also known as draw.io, and which can also be `installed locally as an app <https://www.drawio.com/>`_.
 
 
 +++++++++++++++++++++++++++++++++++++++
@@ -74,10 +74,14 @@ Explantory network graphs can be found in the repository mentioned above for the
 Understanding and navigating network graphs
 ++++++++++++++++++++++++++++++++++++++++++++
 
+The graphics describing the RDFBones standard's data model can seem overwhelming at first glance. This section introduces you to the elements that are most important when viewing these network graphs.
+
 
 .............................................................
 Important concepts for understanding RDFBones network graphs
 .............................................................
+
+Some concepts encountered in the RDFBones standard are not very self-explanatory, such as measurement data and the difference between a class instance and an ontology instance
 
 
 ~~~~~~~~~~~~~~~~~~~~
@@ -110,12 +114,15 @@ Phaleron Dental Inventory
 `See full network graph <https://github.com/RDFBones/RDFBonesGraphics/tree/main/NetworkGraphics/OntologyExtensions/phaleron-di/>`_ 
 IRI: http://w3id.org/rdfbones/ext/phaleron-di/
 
-.. figure:: /docs/gfx/RDFBones_Guide/Dental_Inventory/dentalinv_inventory.jpg
+.. image:: gfx/Dental_Inventory/dentalinv_inventory.png
    :scale: 100 %
+   
+   
 
 The above figure shows what can be considered the starting point of the graph, namely the dental inventory dataset instance. Attached to the dataset instance are the 5 different sections of the dental inventory. The predicate used is 'has part' (IRI: http://purl.obolibrary.org/obo/BFO_0000051).
 
-![Dental Inventory Start](/docs/gfx/RDFBones_Guide/Dental_Inventory/dentalinv_dentition.jpg "testing")
+.. image:: gfx/Dental_Inventory/dentalinv_dentition.png
+   :scale: 100 %
 
 The dentition section has two measurement data, 'Number of supernumerary teeth' and 'Number of unidentified tooth fragments'. 
 
@@ -132,3 +139,29 @@ Prefixes
 ++++++++++
 
 Prefixes are defined at the top of a SPARQL query and allow for the use of abbreviations in the query. SPARQL queries do not require prefixes to function, but they are generally recommended, as they greatly reduce visual clutter and simplify the act of writing a query. The abbreviations used in a prefix are arbitrary and are only valid for the query in which they are written, though it is recommended to keep consistency where possible to avoid unnecessary confusion.
+
+The following list is non-exhaustive but does contain those prefixes most commonly used in RDFBones-related queries:
+
+* Basic RDF prefixes:
+
+	* PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+	* PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+	* PREFIX owl: <http://www.w3.org/2002/07/owl#>
+	
+* Basic RDFBones prefixes:
+
+	* PREFIX core: <http://w3id.org/rdfbones/core#>
+	* PREFIX obo: <http://purl.obolibrary.org/obo/>
+	* PREFIX vivo: <http://vivoweb.org/ontology/core#>
+	* PREFIX cidoc:<http://www.cidoc-crm.org/cidoc-crm/>
+
+* RDFBones extension ontology prefixes:
+
+	* PREFIX standards-si: <http://w3id.org/rdfbones/ext/standards-si/>
+	* PREFIX phaleron-si: <http://w3id.org/rdfbones/ext/phaleron-si/>
+	* PREFIX phaleron-di: <http://w3id.org/rdfbones/ext/phaleron-di/>
+	* PREFIX phaleron-dpatho: <http://w3id.org/rdfbones/ext/phaleron-dpatho/>
+	* PREFIX standards-patho: <http://w3id.org/rdfbones/ext/standards-patho/>
+	* PREFIX phaleron-patho: <http://w3id.org/rdfbones/ext/phaleron-patho/>
+	* PREFIX phaleron-se: <http://w3id.org/rdfbones/ext/phaleron-se/>
+	* PREFIX phaleron-ae: <http://w3id.org/rdfbones/ext/phaleron-ae/>
