@@ -10,11 +10,39 @@ Basic concepts of RDF and RDFBones
 -----------------------------------
 
 
-++++++++
-Triples
-++++++++
+++++++++++++++++++++
+Triples and classes
+++++++++++++++++++++
 
-RDF data consists of triples. A triple consists of 3 elements which are read in a set direction and offer some kind of meaning. Such data is referred to as semantic data. The 3 elements of an RDF triple are commonly referred to as **subject**, **predicate**, and **object**. Typically, any subject can also be an object and vice-versa. Whether a data item becomes a subject or object is dependent upon what information is being conveyed by the triple it is part of. In contrast, predicates used in RDFBones generally do not appear as subjects or objects. Subjects, predicates, and objects all have identifiers. These are called IRIs, and they are what is used in a triple to specify what data items are being used in a triple. IRIs can be looked up in the ontology in which they are defined.
+RDF data consists of triples. A triple consists of 3 elements which are read in a set direction and offer some kind of meaning. Such data is referred to as semantic data. The 3 elements of an RDF triple are commonly referred to as **subject**, **predicate**, and **object**. Typically, any subject can also be an object and vice-versa. Whether a data item becomes a subject or object is dependent upon what information is being conveyed by the triple it is part of.
+
+.. image:: gfx/triples_basic.png
+   :scale: 50 %
+
+In the above image, a given inventory has a part that is a section. The opposite is not true; an inventory cannot be part of its own sections. However, an inventory section can have a predicate which signifies that it is a part of something (the inverse of the 'has part' preicate), or that it is a subclass of another class:
+
+.. image:: gfx/triples_reverse.png
+   :scale: 50 %
+
+Note that the inventory section is now the subject in these two examples, not the object.
+
+..................................
+Predicates as specialized classes
+..................................
+
+As a side note, it can be helpful to appreciate classes that are used as predicates as distinct in function from the classes that are encountered as subjects and objects. You can imagine subjects and objects as "things that are" in a dataset and predicates as linking elements that describe the relations between these "things that are". Case in point, predicates used in RDFBones generally do not appear as subjects or objects in triples.
+
+.. image:: gfx/nonsense_triple.png
+   :scale: 50 %
+
+The above triple states: the class 'has part' has the class 'Inventory for adult skeletons' as the class 'Section of a Phaleron skeletal inventory'. It is theoretically possible to create this specific triple and save it in an RDF dataset, but naturally, this triple does not make any kind of sense, and there is no RDFBones implementation that produces it or could make use of it.
+
+.. image:: gfx/predicate_triple.png
+   :scale: 50 %
+
+In contrast, the above triple does exist, despite the class 'has part', which is typically used only as a predicate in RDFBones datasets, being placed as the subject. This is because this triple provides information on the class 'has part' itself, namely what the label of the class is (namely "has part"). However, this information is restricted to the definition of the 'has part' class in the ontology; when looking at triples that were produced when an RDFBones-related dataset is created, you are unlikely to ever find a class that is used as predicate throughout the dataset as the subject or object of any of the triples in the dataset. Unlike subject/object classes, predicate classes are also never instantiated in RDFBones datasets.
+
+Reflecting this distinction between subject/object and predicate, predicate classes are frequently referred to as "annotation properties", "object properties", and "data properties", depending on what kind of relation between a subject and an object the predicate describes. This is mainly a cosmetic distinction made to recognize the way these classes are used; predicates can still be used as subjects and objects when necessary, they still have an IRI, and they can be queried same as any other class.
 
 
 .. _IRISection:
@@ -22,14 +50,23 @@ RDF data consists of triples. A triple consists of 3 elements which are read in 
 IRIs
 ++++++
 
-An IRI is ultimately just a string of text. They typically look similar to URLs, and they are in fact closely related in concept. Each IRI belongs to a unique concept, such as a class describing e.g. a human femur, while another IRI may refer to an instance of a human femur, such as one found in an excavated burial.
+Subjects, predicates, and objects all have identifiers. These identifiers are called IRIs, and they are what is used in a triple to specify what data items are being used in a triple. IRIs can be looked up in the ontology in which they are defined. An IRI is ultimately just a string of text. They typically look similar to URLs, and they are in fact closely related in concept. Each IRI belongs to a unique concept, such as a class describing e.g. a human femur, while another IRI may refer to an instance of a human femur, such as one found in an excavated burial.
 
 .. _ClassesInstancesSection:
-++++++++++++++++++++++
-Classes and instances
-++++++++++++++++++++++
++++++++++++++++++++++++++++++++++
+Classes and instances of classes
++++++++++++++++++++++++++++++++++
 
-Classes generally describe concepts in the abstract, that is, they do not describe a "real-world" instance of something, such as the femur of a specific human skeleton, but instead describe only the concept of a human femur in general. Classes can be instantiated, which means the abstract concept is applied to a concrete occurence. This can be the case of a human femur being found in a burial excavation and then being described as an instance of such in a skeletal inventory, or it can be the process of a skeletal inventory being performed. If we assume we have an ontology that has classes for both the femur and the inventorying process, the excavated femur would be an instance "of the type" 'human femur', and the inventory process would be "of the type" 'skeletal inventory process'. The recorded femur of the skeleton will have a unqiue IRI distinct from the IRI of the class which describes femurs as a concept.
+Classes generally describe concepts in the abstract, that is, they do not describe a "real-world" instance of something, such as a specific skeletal inventory saved in a database, but instead describe only what any potential skeletal inventory of that type would be like.
+
+.. image:: gfx/skel_inv_protege.png
+   :scale: 50 %
+
+In the image above, the 'Phaleron skeletal inventory' extension ontology has been opened in the ontology editing software 'Protégé'. In this screenshot, Protégé can be divided into 3 sections: the class hierarchy section, which lists all classes in the ontology and shows the parent-class/subclass/sibling-class relations of these classes. The class 'Inventory for adult skeletons' has been selected and is highlighted blue. In the top-right, the annotations of the selected class are shown. Annotations give information on a class, which usually entails aspects such as a label, the name of the author of the class, and a definition on what the class represents. In the bottom-right, under the head "Descriptions", axioms and restrictions of the class are shown. These elements give information on how to use the class in a dataset; where the annotations give information in text form that must generally be interpreted by humans, the axioms and restrictions can be interpreted as logical operations by machines as well.
+
+Classes can be instantiated, which means the abstract concept is applied to a concrete occurence. This can be the case of a human femur being found in a burial excavation and then being described as an instance of such in a skeletal inventory, or it can be the process of a skeletal inventory being performed. If we assume we have an ontology that has classes for both the femur and the inventorying process, the excavated femur would be an instance "of the type" 'human femur', and the inventory process would be "of the type" 'skeletal inventory process'. The recorded femur of the skeleton will have a unqiue IRI distinct from the IRI of the class which describes femurs as a concept.
+
+Note that instead of "instance", you may also see an instance of classes be referred to as an "individual" or a "named individual". For our purposes, these 3 terms can be considered synonyms.
 
 
 +++++++++++
@@ -45,6 +82,7 @@ RDFBones core ontology and extension ontologies
 
 The RDFBones standard is defined through a collection of ontologies, wherein the **RDFBones core ontology** forms the basis of the standard. The core ontology contains primarily those concepts which are likely to be used in many, if not all, RDFBones extension ontologies. Extension ontologies describe more specific osteological investigations and their output data, e.g. a specific method for estimating the age of an individual. The information found in this document offers further guidelines on how concepts defined in the ontology came to be and how they are intended to be used.
 Integral to understanding ontologies and ontology datasets, especially when attempting to navigate the datasets via SPARQL, are the network graphs produced by the authors of the extension.
+
 
 .. _RDFBonesNetworkGraphsSection:
 -------------------------
@@ -128,6 +166,8 @@ Finally, notice that some of the boxes in the full legend and the network graphs
 
 The difference between ontology and data instances is subtle, but it is relevant for writing queries. Not all instances in RDFBones are e.g. material instances of specific bones in an inventory. In the RDFBones standard, certain qualities or attributes may be "of the type" of certain classes; in the sense that they have the predicate 'rdf:type', but also in the sense that they are of a certain type of attribute. For example, 'Male' can be "of the type" 'human sex category', where 'human sex category' is a class, and 'Male' is an instance of that class. 'Female' and 'Intersex' may be further instances of 'human sex category'. However, the attribute of 'Male', 'Female', and 'Intersex' can all be "re-used" and assigned to any number of instances of e.g. human skeletons that have been sexed, despite being an instance themselves. These ontology-defined instances will always have the same IRIs each time they appear; data instances in turn will have a different IRI for each unique dataset.
 
+Information content entities are exactly what the name implies: items that represent data. This class purposefully encapsulates a very broad range of data. In contrast, literal values refers only to strings of text like comments or a numeric value for the number of unidentified fragments of a bone, etc.
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finding a datum in an example network graph
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -175,7 +215,7 @@ Using Ontodia to navigate datasets
 
 Ontodia is a visualiser for semantic data built into AnthroGraph. Though awkward to become acquainted with, Ontodia is ultimately a very useful tool for getting to know datasets and for bugfixing when writing SPARQL queries.
 
-Let us re-build the example dataset we made in the previous section using Intodia. Ontodia can be opened by clicking on the "graph" icon in the top right of the screen when you have opened any kind if inventory. Note that Ontodia always looks for labels, and when a data item does not have a label, it will simply repurpose a truncated version of the IRI of that item as a label. This means that often the lists provided in Ontodia's search function appears to provide redundant or bogus items.
+Let us re-build the example dataset we made in the previous section using Ontodia. Ontodia can be opened by clicking on the "graph" icon in the top right of the screen when you have opened any kind if inventory. Note that Ontodia always looks for labels, and when a data item does not have a label, it will simply repurpose a truncated version of the IRI of that item as a label. This means that often the lists provided in Ontodia's search function appears to provide redundant or bogus items.
 
 .. image:: gfx/ontodia_search.png
    :scale: 100 %
