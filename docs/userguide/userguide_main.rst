@@ -50,23 +50,62 @@ Reflecting this distinction between subject/object and predicate, predicate clas
 IRIs
 ++++++
 
-Subjects, predicates, and objects all have identifiers. These identifiers are called IRIs, and they are what is used in a triple to specify what data items are being used in a triple. IRIs can be looked up in the ontology in which they are defined. An IRI is ultimately just a string of text. They typically look similar to URLs, and they are in fact closely related in concept. Each IRI belongs to a unique concept, such as a class describing e.g. a human femur, while another IRI may refer to an instance of a human femur, such as one found in an excavated burial.
+Subjects, predicates, and objects all have identifiers. Such an identifier is called an Internationalized Resource Identifier (IRI). IRIs are essentially just a unique string of text, and they look similar to (and in some ways function like) the URLs we know from browsing the web. The IRI of a class can be looked up in the ontology in which the class is defined. The following image shows the 'Inventory for adult skeletons' class being inspected in the ontology editing software Protégé:
+
+.. image:: gfx/IRI_protege.png
+   :scale: 50 %
+
+Protégé displays a lot of information; for the moment, let us focus only on the fact that the class 'Inventory for adult skeletons' has been selected and look to the top right of the interface. Highlighted in magenta is the label of the class, which Protégé, like many other applications that work with semantic data, automatically pulls from the 'rdfs:label' triple of the class currently being inspected. The actual IRI is highlighted in cyan.
+
+Within a single ontology, each IRI must be unqiue; the label however does not need to be unique. This is an imprtant distinction: imagine an ontology defining both gender and biological sex - you may want both gender and sex to have the label "male", but you will also want the two distinct concepts to be represented by two distinct classes, where each has a specific definition. Instances of classes may also cause confusion when it comes to IRIs, see :ref:`_ClassesInstancesSection` for more details on instances and their IRIs.
+
+In effect, ontologies are where the exact string of the IRIs of classes are "decided on". The string can be more or less made up arbitrarily by the auther of the class, though generally the prefix of the IRI will be the same within an ontology. For example, in the Phaleron skeletal inventory extension ontology, we find the classes:
+
+http://w3id.org/rdfbones/ext/phaleron-si/InventoryForAdultSkeletons
+http://w3id.org/rdfbones/ext/phaleron-si/PhaleronSkeletalInventorySection
+
+These share the prefix "http://w3id.org/rdfbones/ext/phaleron-si/". In the Walker's sex estimation ontology, we find the classes have a different prefix:
+
+http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphology
+http://w3id.org/rdfbones/ext/walker-se/MentumMorphology
+
+This first part of the IRI is what is adressed by the "PREFIX" element found in SPARQL queries, see :ref:`_PrefixesSection` for details.
+
 
 .. _ClassesInstancesSection:
 +++++++++++++++++++++++++++++++++
 Classes and instances of classes
 +++++++++++++++++++++++++++++++++
 
-Classes generally describe concepts in the abstract, that is, they do not describe a "real-world" instance of something, such as a specific skeletal inventory saved in a database, but instead describe only what any potential skeletal inventory of that type would be like.
+Classes generally describe concepts in the abstract, that is, they do not describe a "real-world" instance of something. For example, there may be a specific skeletal inventory saved in a database somewhere. A class on skeletal inventories would describe only what any potential skeletal inventory of that type would be like, which would include this specific instance of skeletal inventory saved on the database. The class describes the idea, and instances of a class are examples of this idea "made real".
 
 .. image:: gfx/skel_inv_protege.png
    :scale: 50 %
 
-In the image above, the 'Phaleron skeletal inventory' extension ontology has been opened in the ontology editing software 'Protégé'. In this screenshot, Protégé can be divided into 3 sections: the class hierarchy section, which lists all classes in the ontology and shows the parent-class/subclass/sibling-class relations of these classes. The class 'Inventory for adult skeletons' has been selected and is highlighted blue. In the top-right, the annotations of the selected class are shown. Annotations give information on a class, which usually entails aspects such as a label, the name of the author of the class, and a definition on what the class represents. In the bottom-right, under the head "Descriptions", axioms and restrictions of the class are shown. These elements give information on how to use the class in a dataset; where the annotations give information in text form that must generally be interpreted by humans, the axioms and restrictions can be interpreted as logical operations by machines as well.
+In the image above, an RDFBones ontology file has been opened in the ontology editing software 'Protégé'. In this screenshot, Protégé can be divided into 3 sections: the class hierarchy section, which lists all classes in the ontology and shows the parent-class/subclass/sibling-class relations of these classes. The class 'Inventory for adult skeletons' has been selected and is highlighted blue. In the top-right, the annotations of the selected class are shown. Annotations give information on a class, which usually entails aspects such as a label, the name of the author of the class, and a definition on what the class represents. In the bottom-right, under the head "Descriptions", axioms and restrictions of the class are shown. These elements give information on how to use the class in a dataset; where the annotations give information in text form that must generally be interpreted by humans, the axioms and restrictions can be interpreted as logical operations by machines as well.
 
-Classes can be instantiated, which means the abstract concept is applied to a concrete occurence. This can be the case of a human femur being found in a burial excavation and then being described as an instance of such in a skeletal inventory, or it can be the process of a skeletal inventory being performed. If we assume we have an ontology that has classes for both the femur and the inventorying process, the excavated femur would be an instance "of the type" 'human femur', and the inventory process would be "of the type" 'skeletal inventory process'. The recorded femur of the skeleton will have a unqiue IRI distinct from the IRI of the class which describes femurs as a concept.
+Classes can be instantiated, which means the abstract concept is applied to a concrete occurence. This can apply to entities such as human skeleton that was excavated, a measurement made on a bone of that skeleton, or a dataset in which the measurement is saved. Instances can also include processes, such as the porcess of a measurement being performed or a skeletal inventory being inventoried.
 
-Note that instead of "instance", you may also see an instance of classes be referred to as an "individual" or a "named individual". For our purposes, these 3 terms can be considered synonyms.
+As a simple example, let us take an instance of the class 'Inventory for adult skeletons':
+
+.. image:: gfx/instance_example.png
+   :scale: 50 %
+
+In this imaginary example, the instance of the class has an IRI that is distinct from the class it instantiates. This is a must: an instance may not have the same IRI as a class, as this would mean instance and concept are the same. This example instance has further received a label in order to make it more easily identifiable. Labels, unlike IRIs, are optional for an instance (the same applies to classes), and if an instance does not have a label, applications may try to "improvise" one by looking at the IRI or the class it is instantiating. Some applications, such as AnthroGraph's skeletal inventory, will hence force the user to supply a label for important instances in order to prevent such confusion.
+
+In a more complex illustration of instantiation, consider the network graph describing how observer and data editor roles are recorded in Phaleron inventories in RDFBones. First, the uninstantiated graph:
+
+.. image:: gfx/process_classes.png
+   :scale: 50 %
+   
+Red coloured classes refer to the scientific role a researcher or data editor has assumed, while blue classes refer to (scientific) processes, i.e. the skeletal inventory dataset is the product of the inventorying process (See :ref:`LegendExplain` for further details on how to read RDFBones network graphs). Now, we produce an example dataset according to the uninstantiated blueprint provided by the above graph:
+
+.. image:: gfx/process_instances.png
+   :scale: 50 %
+
+This graph appears more complex since it has an additional element over the uninstantiated graph: every class (solid-outlined parallelogram) has been replaced by an instance (dotted-outlined rectangles), and each instance has an 'rdf:type' triple specifying what the instance is. Furthermore, the IRI of the class is replaced by the IRI of the instance; some instances have received labels (e.g. the inventory), while others have not (e.g. the research contribution processes). Whether or not an instance has a label has no relevance on the validity of the instance; the label is only for easier differentiation and is added when deemed necessary, such as when naming a skeletal inventory. The IRI of every instance is unique and suffices to differentiate instances of the same class, though it is generally more difficult for human eyes than having unique labels.
+
+Note that instead of the term "instance", you may also encounter the terms "individual" or "named individual". For our purposes, these 3 terms can be considered synonymous.
 
 
 +++++++++++
@@ -133,6 +172,7 @@ Translating network graphs into datasets and vice-versa
 
 This section gives a to-the-point explanation on how to get from the top dataset instance to a given measurement datum in an RDFBones ontology, which is a common requirement for SPARQL queries extracting data for research purposes. The network graphs in this section only contain a fraction of the full information found in the RDFBones standard. For the full graphs, see the above section :ref:`RDFBonesNetworkGraphsSection`.
 
+.._LegendExplain:
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Understanding the legend
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -148,11 +188,19 @@ In many cases, only a small part of this legend will be relevant for a SPARQL qu
    
 The legend tells us the following:
 
-* The 'is a' relation is equivalent to the predicate 'rdfs:subClassOf', i.e. it tells us that the class the arrow points from is a child class of the class the arrow points towards. The label 'is a' is not to be confused with the label 'a'. The predicate of 'is a' is thus **not** equivalent to the predicate 'rdf:type'. The 'rdfs:subClassOf' relation can be very useful when you are not looking for a specific result of an observation or measurement, but wish to know what all the possible results are. However, compared to the 'rdf:type' relation, it is used far less frequently.
-* 'instance of class' **is equivalent to** the predicate 'rdf:type'. It means the class at the base of the arrow is an instance of the class the arrow is pointing towards. It is thus **not** equivalent to the predicate 'rdfs:subClassOf'. The 'rdf:type' relation is highly useful for telling SPARQL what you are looking for and is thus very frequently used in most queries.
-* 'other relation' means the label written on the arrow tells us what the predicate is the arrow is representing. Remember: The IRI shown assumes a prefix has been defined in the SPARQL query, see :ref:`IRISection` and :ref:`PrefixesSection`
+* The 'is-a' relation is equivalent to the predicate 'rdfs:subClassOf', i.e. it tells us that the class the arrow points from is a child class of the class the arrow points towards. The 'is-a'-arrow is slightly thicker than the other arrows.
+* The 'instance of class' relation is equivalent to the predicate 'rdf:type'. It means the class at the base of the arrow is an instance of the class the arrow is pointing towards. The arrow can be identified by its dotted line. The 'rdf:type' predicate is frequently represented by the label 'a' in documentation, queries, and some network graphs. In fact, when writing a query in most SPARQL processing software it is possible to replace 'rdf:type' with 'a'. The 'rdf:type' relation is highly useful for telling SPARQL what you are looking for and is thus very frequently used in most queries. Be sure not to confuse the predicate 'a' with the 'is-a' predicate mentioned above.
+* 'other relation' means the label written on the arrow tells us what the predicate is. The arrow accordingly represents that predicate.
 
-Always pay close attention to the direction the arrow of a predicate is pointing in network graphs, as reversing the triple's reading direction is an easy way to accidentally make a SPARQL query give incorrect outputs.
+The 'label' in the legend for the 'other relation' arrow is a placeholder for the actual predicate's  label. If the actual predicate is in fact 'rdfs:label', then the arrow will still show 'label' with 'prefix:URI' being turned into 'rdfs:label', since 'label' is the label of the class 'label, with its IRI being <http://www.w3.org/2000/01/rdf-schema#label>. The IRI shown in RDFBones network graphs assumes a prefix has been defined in the SPARQL query, see :ref:`IRISection` and :ref:`PrefixesSection` for details.
+
+Always pay close attention to the direction the arrow of a predicate is pointing in network graphs, as reversing the triple's reading direction is an easy way to accidentally make a SPARQL query give incorrect outputs. In the following example:
+
+.. image:: gfx/triples_basic.png
+   :scale: 50 %
+   
+The triple is written 'phaleron-si:InventoryForAdultSkeletons' 'obo:BFO_0000051' 'phaleron-si:PhaleronSkeletalInventorySection'. The arrow always points from subject to object.
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Ontology instances and data instances
@@ -164,9 +212,24 @@ Finally, notice that some of the boxes in the full legend and the network graphs
 * **Data instances** are instances of a class in a dataset, i.e. they are the reification of the concept of the class, see the section :ref:`ClassesInstancesSection`. You can also imagine them as "dataset instances", as opposed to the "ontology instances"
 * **Ontology instances** are instances that are not defined by the context of the dataset in which they were generated, but are instead "pre-generated instances" defined within an ontology file
 
-The difference between ontology and data instances is subtle, but it is relevant for writing queries. Not all instances in RDFBones are e.g. material instances of specific bones in an inventory. In the RDFBones standard, certain qualities or attributes may be "of the type" of certain classes; in the sense that they have the predicate 'rdf:type', but also in the sense that they are of a certain type of attribute. For example, 'Male' can be "of the type" 'human sex category', where 'human sex category' is a class, and 'Male' is an instance of that class. 'Female' and 'Intersex' may be further instances of 'human sex category'. However, the attribute of 'Male', 'Female', and 'Intersex' can all be "re-used" and assigned to any number of instances of e.g. human skeletons that have been sexed, despite being an instance themselves. These ontology-defined instances will always have the same IRIs each time they appear; data instances in turn will have a different IRI for each unique dataset.
+.. image:: gfx/class_protege.png
+   :scale: 50 %
+   
+Classes are defined in ontologies, such as the RDFBones ontology above that has been openend in the ontology editiong software 'Protégé'.
 
-Information content entities are exactly what the name implies: items that represent data. This class purposefully encapsulates a very broad range of data. In contrast, literal values refers only to strings of text like comments or a numeric value for the number of unidentified fragments of a bone, etc.
+.. image:: gfx/ontology_instance_protege.png
+   :scale: 50 %
+
+Ontology instances are also defined in an ontology. Like instances in datasets, they relate to a class via the predicate 'rdf:type'. In the above image, the ontology instance 'Excavation damage' has been highlighted. It is an instance of the class 'Taphonomic trace label'.
+
+.. image:: gfx/data_instance_protege.png
+   :scale: 50 %
+
+The above image shows an RDFBones dataset that has been opened in Protégé. RDF and RDFBones datasets are not ontologies, but they can function like one in many ways. In this case, a skeletal inventory dataset has been opened, and the instance of the 'Inventory for adult skeletons' class has been highlighted. Since this is a skeletal inventory dataset, there is only a single such instance, and it has the name of the inventory - "VERSION_METRICS_STANDARD" - as its label. In fact, this is where the label of an inventory is saved and where AnthroGraph looks when it wants to show the inventory's name in the user interface.
+
+Like the ontology instance, this data instance has an rdf:type relation. The difference between an ontology instance and a data instances is subtle, but it is relevant for writing queries. In the RDFBones standard, certain qualities or attributes may be "of the type" of certain classes; in the sense that they have the predicate 'rdf:type', but also in the sense that they are of a certain type of attribute. For example, 'Male' can be "of the type" 'human sex category', where 'human sex category' is a class, and 'Male' is an instance of that class. 'Female' and 'Intersex' may be further instances of 'human sex category'. However, the attribute of 'Male', 'Female', and 'Intersex' can all be "re-used" and assigned to any number of instances of e.g. human skeletons that have been sexed, despite being an instance themselves. These ontology-defined instances will always have the same IRIs each time they appear; data instances in turn will have a different IRI for each unique dataset. 'Excavation damage' is one such example: any number of measurement data that observe the taphonomy of a bone may be "of the type" 'Excavation damage', where they all refer to the same type of taphonomic change (i.e. excavation damages). The data instance of our skeletal inventory on the other hand does not get re-used in such a way. There is only one such inventory, and its IRI is different from all other adult skeleton inventories.
+
+Finally, 'Information content entities' (ICE) are exactly what the name implies: items that represent data. This class purposefully encapsulates a very broad range of data. In contrast, literal values refers only to strings of text like comments or a numeric value for the number of unidentified fragments of a bone, etc. ICEs stand in contrast to processes, where some action is performed over a certain amount of time such as a measurement being taken or a conclusion being drawn, and material entities, where a physical object such as a bone or a human being is being represented by a data point.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finding a datum in an example network graph
@@ -206,7 +269,7 @@ In the above image, we again have an abbreviated version of the network graph of
 
 Instantiated means exactly that: all the abstract classes have been replaced by instances. Instances generally do not have labels, and they have a very long IRI. IRI of instances in RDFBones are generally concatenations of  randomly generated numbers and strings that in some way relate to the measurement datum, such as its region of interest; the IRIs are long and random in order to ensure that even if e.g. you have a database with 1,000,000 femurs, each femur instance will still have its own distinct identifier.
 
-Note that each instance has a 'rdf:type' relation to the class it is instantiating. This is what translates the model of the network graph to the model of the dataset, this is what the process of instantiating entails. Accordingly, the 'rdf:type' relation is vital when mentally translating the network graph into a SPARQL query.
+Note that each instance has a 'rdf:type' relation to the class it is instantiating (the arrows with dotted lines). This is what translates the model of the network graph to the model of the dataset, this is what the process of instantiating entails. Accordingly, the 'rdf:type' relation is vital when mentally translating the network graph into a SPARQL query.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
