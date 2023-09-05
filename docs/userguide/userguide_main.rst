@@ -33,7 +33,7 @@ Predicates as specialized classes
 As a side note, it can be helpful to appreciate classes that are used as predicates as distinct in function from the classes that are encountered as subjects and objects. You can imagine subjects and objects as "things that are" in a dataset and predicates as linking elements that describe the relations between these "things that are". Case in point, predicates used in RDFBones generally do not appear as subjects or objects in triples.
 
 .. image:: gfx/nonsense_triple.png
-   :scale: 50 %
+   :scale: 40 %
 
 The above triple states: the class 'has part' has the class 'Inventory for adult skeletons' as the class 'Section of a Phaleron skeletal inventory'. It is theoretically possible to create this specific triple and save it in an RDF dataset, but naturally, this triple does not make any kind of sense, and there is no RDFBones implementation that produces it or could make use of it.
 
@@ -69,7 +69,7 @@ These share the prefix "http://w3id.org/rdfbones/ext/phaleron-si/". In the Walke
 http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphology
 http://w3id.org/rdfbones/ext/walker-se/MentumMorphology
 
-This first part of the IRI is what is adressed by the "PREFIX" element found in SPARQL queries, see :ref:`_PrefixesSection` for details.
+This first part of the IRI is what is adressed by the "PREFIX" element found in SPARQL queries, see :ref:`PrefixesSection` for details.
 
 
 .. _ClassesInstancesSection:
@@ -98,10 +98,10 @@ In a more complex illustration of instantiation, consider the network graph desc
 .. image:: gfx/process_classes.png
    :scale: 50 %
    
-Red coloured classes refer to the scientific role a researcher or data editor has assumed, while blue classes refer to (scientific) processes, i.e. the skeletal inventory dataset is the product of the inventorying process (See :ref:`LegendExplain` for further details on how to read RDFBones network graphs). Now, we produce an example dataset according to the uninstantiated blueprint provided by the above graph:
+Red coloured classes refer to the scientific role a researcher or data editor has assumed, while blue classes refer to (scientific) processes, i.e. the skeletal inventory dataset is the product of the inventorying process (See :ref:`LegendExplainSection` for further details on how to read RDFBones network graphs). Now, we produce an example dataset according to the uninstantiated blueprint provided by the above graph:
 
 .. image:: gfx/process_instances.png
-   :scale: 50 %
+   :scale: 40 %
 
 This graph appears more complex since it has an additional element over the uninstantiated graph: every class (solid-outlined parallelogram) has been replaced by an instance (dotted-outlined rectangles), and each instance has an 'rdf:type' triple specifying what the instance is. Furthermore, the IRI of the class is replaced by the IRI of the instance; some instances have received labels (e.g. the inventory), while others have not (e.g. the research contribution processes). Whether or not an instance has a label has no relevance on the validity of the instance; the label is only for easier differentiation and is added when deemed necessary, such as when naming a skeletal inventory. The IRI of every instance is unique and suffices to differentiate instances of the same class, though it is generally more difficult for human eyes than having unique labels.
 
@@ -172,7 +172,7 @@ Translating network graphs into datasets and vice-versa
 
 This section gives a to-the-point explanation on how to get from the top dataset instance to a given measurement datum in an RDFBones ontology, which is a common requirement for SPARQL queries extracting data for research purposes. The network graphs in this section only contain a fraction of the full information found in the RDFBones standard. For the full graphs, see the above section :ref:`RDFBonesNetworkGraphsSection`.
 
-.._LegendExplain:
+.. _LegendExplainSection:
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Understanding the legend
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -243,12 +243,12 @@ The above figure shows a simplified version of the Phaleron dental inventory net
 In this example, we want to find a specific measurement datum, namely the presence of the right third upper molar tooth socket. We know that this would be in the permanent maxilla, so if we were looking at the full network graph, we would now switch to that tab.
 
 .. image:: gfx/dentalinv_perm_max.png
-   :scale: 25 %
+   :scale: 20 %
 
 This is a simplified version of the permanent maxilla tab. Even still, it appears complex. However, we only need to focus on the section that concerns the alveolar bone, where we will find our socket measurement datum:
 
 .. image:: gfx/dentalinv_alveolar.png
-   :scale: 30 %
+   :scale: 25 %
    
 The blue box around the value specification tells us that we need to switch tabs again to get details on the value specification. This is the method by which network graphs are navigated: we start with the first tab, where we find the dataset instance, and follow the data model towards the data item we want. The next section gives assistance on how to make sense of what you find in the actual dataset, and how this translates to the more abstract "theoretical" data model provided in the network graphs.
 
@@ -260,12 +260,12 @@ Translating from dataset to network graph
 Strictly speaking, the network graphs show you exactly what the actual datasets in AnthroGraph contain. However, mentally translating the abstract class concept of the network graph into the instantiated version of a dataset can still be difficult when you feel unfamiliar with the data model or semantic data in general. This section is intended to act as a guide for this mental translation process.
 
 .. image:: gfx/dentalinv_alv_short.png
-   :scale: 50 %
+   :scale: 40 %
 
 In the above image, we again have an abbreviated version of the network graph of the dental inventory, this time showing the permanent maxilla section with the 'has part' relation from the 'Inventory' tab added in as well. What is important to remember here is that this is the **uninstantiated** version of the data model. The actual dataset produced in AnthroGraph is the **instantiated** version. So now, let us look at how the instantiated version looks like if we translate it to the way we visualise the uninstantiated data model:
 
 .. image:: gfx/meas_datum_full.png
-   :scale: 35 %
+   :scale: 25 %
 
 Instantiated means exactly that: all the abstract classes have been replaced by instances. Instances generally do not have labels, and they have a very long IRI. IRI of instances in RDFBones are generally concatenations of  randomly generated numbers and strings that in some way relate to the measurement datum, such as its region of interest; the IRIs are long and random in order to ensure that even if e.g. you have a database with 1,000,000 femurs, each femur instance will still have its own distinct identifier.
 
@@ -290,7 +290,7 @@ In the case above, we are attempting to open our measurement datum instance of t
 We can follow the same path via Ontodia as we would in the network graph by simply clicking on the relevant predicates and selecting the corresponding object, keeping in mind that we are dealing with instances of classes, not the classes themselves.
 
 .. image:: gfx/ontodia_meas_full.png
-   :scale: 100 %
+   :scale: 70 %
 
 Using Ontodia, we can repoduce the graph seen in the previous section. Herein lies the utility of Ontodia: quickly browse datasets with an intuitive, visualised way. In addition, you can inspect any element by clicking on it, and even copy the full IRI. The extremely long IRIs of the instances you saw in the previous section's image were in fact extracted from Ontodia this way.
 
