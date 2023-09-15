@@ -12,6 +12,7 @@ RDFBones
    :maxdepth: 2
 
    userguide/userguide_main
+   userguide/anthrograph_guide
    core/core_main
    bestpractice/bestpractice_main
    
