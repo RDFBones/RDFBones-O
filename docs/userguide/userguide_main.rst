@@ -108,6 +108,61 @@ This graph appears more complex since it has an additional element over the unin
 Note that instead of the term "instance", you may also encounter the terms "individual" or "named individual". For our purposes, these 3 terms can be considered synonymous.
 
 
+.....................
+SPARQL query example
+.....................
+
+Let's say we want to know which skeleton was the first one that was observed. We know that every observer of a skeleton is saved in our database, along with the date at which the skeleton was observed. The following query finds the date of all observer events of adult skeletal inventories in our database, orders them from oldest to most recent, then limits the number of shown results to one so that only the oldest result remains: ::
+
+	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+	PREFIX obo: <http://purl.obolibrary.org/obo/>
+	PREFIX dc: <http://purl.org/dc/terms/>
+	PREFIX phaleron-si: <http://w3id.org/rdfbones/ext/phaleron-si/>
+	PREFIX phaleron-patho: <http://w3id.org/rdfbones/ext/phaleron-patho/>
+
+	SELECT ?Inventory ?Date ?Person
+	WHERE {
+	?Inventory a phaleron-si:InventoryForAdultSkeletons .
+	?InventoryProcess obo:OBI_0000299 ?Inventory ;
+    	obo:BFO_0000051 ?ResearchProcess .
+	?ResearchProcess a phaleron-patho:ResearchContributionProcess ;
+    	dc:date ?Date .
+	?Observer obo:BFO_0000054 ?ResearchProcess .
+	?Observer a phaleron-patho:ObserverRole ;
+            obo:RO_0000081 ?Person .
+	}
+		ORDER BY ASC(?Date)
+		LIMIT 1
+
+If you run this query, you will likely get results that appear to be mostly just random strings. This is because we are querying the IRIs of our inventory and observing person. In AnthroGraph, you can click on the "fetch labels" button to rectify this. Alternatively, we can just query the labels ourselves: ::
+
+	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+	PREFIX obo: <http://purl.obolibrary.org/obo/>
+	PREFIX dc: <http://purl.org/dc/terms/>
+	PREFIX phaleron-si: <http://w3id.org/rdfbones/ext/phaleron-si/>
+	PREFIX phaleron-patho: <http://w3id.org/rdfbones/ext/phaleron-patho/>
+
+	SELECT ?InventoryLabel ?Date ?PersonLabel
+	WHERE {
+	?Inventory a phaleron-si:InventoryForAdultSkeletons ;
+		rdfs:label ?InventoryLabel .
+	?InventoryProcess obo:OBI_0000299 ?Inventory ;
+    	obo:BFO_0000051 ?ResearchProcess .
+	?ResearchProcess a phaleron-patho:ResearchContributionProcess ;
+    	dc:date ?Date .
+	?Observer obo:BFO_0000054 ?ResearchProcess .
+	?Observer a phaleron-patho:ObserverRole ;
+            obo:RO_0000081 ?Person .
+    ?Person rdfs:label ?PersonLabel .
+	}
+		ORDER BY ASC(?Date)
+		LIMIT 1
+
+Note that we had to change the values in the SELECT part of the query to fit the values of the labels. You can search the most recent event by switch 'ORDER BY ASC' into 'ORDER BY DESC'. 
+
+
 +++++++++++
 Ontologies
 +++++++++++
@@ -335,3 +390,112 @@ The following list is non-exhaustive but does contain those prefixes most common
 	* PREFIX phaleron-patho: <http://w3id.org/rdfbones/ext/phaleron-patho/>
 	* PREFIX phaleron-se: <http://w3id.org/rdfbones/ext/phaleron-se/>
 	* PREFIX phaleron-ae: <http://w3id.org/rdfbones/ext/phaleron-ae/>
+
+	
+++++++++++++++++++++++++++
+Querying measurement data
+++++++++++++++++++++++++++
+
+Below is a more complex example query that looks for multiple measurement data across multiple inventories. It also uses the OPTIONAL operator. The query inside the OPTIONAL brackets will give a result if there is one, but if there are none, the SELECT values that are queried in the OPTIONAL part simply give a blank result; that is, assuming the rest of the query did find a result!
+
+This query contains comments. Comments are marked by the has (#) symbol, as is typical in many programming languages. You can copy-paste this query with comments included and SPARQL will simply ingore the comments. ::
+
+	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+	PREFIX obo: <http://purl.obolibrary.org/obo/>
+	PREFIX owl: <http://www.w3.org/2002/07/owl#>
+	PREFIX core: <http://w3id.org/rdfbones/core#>
+
+	SELECT ?SkeletalInventory ?PresenceM1S ?PresenceM2S ?PresenceM3S ?LeftTibiaCompleteness ?LeftTibiaAnatomicalAspect ?LeftTibiaExtentOfInvolvement ?LeftTibiaAnatomicalSite
+	WHERE {
+
+		#Find a dental inventory, identify the human specimen it's about
+    	?DentalInventory a <http://w3id.org/rdfbones/ext/phaleron-di/InventoryOfDentition> ;
+  			<http://semanticscience.org/resource/SIO_000563> ?HumanIndividualDentition ;
+     		obo:BFO_0000051 ?MaxillaryDentition .
+    	
+    	#Dental inventory has a maxillary dentition part onto which the measurement data are attached
+        ?MaxillaryDentition obo:BFO_0000051 ?M1SDatum ;
+      		obo:BFO_0000051 ?M2SDatum ;
+      		obo:BFO_0000051 ?M3SDatum .
+      	
+    	#Find the presence measurement datum of socket of upper left molar 1 and show me what its category label is
+  		#Since this query only has one M1, we get away without specifying which one it is in the variable.
+  		#For the full query, the variable e.g. ?M1SocketUpperLeft would be necessary
+    	?M1SDatum rdf:type <http://w3id.org/rdfbones/ext/phaleron-di/PresenceOfAlveolarBone> .
+		?M1SDatum obo:IAO_0000136 ?M1SInstance .
+		?M1SInstance rdf:type core:EntireToothSocket_fma317376 .
+		?M1SDatum obo:OBI_0001938 ?M1SValuespec .
+		?M1SValuespec obo:OBI_0000999 ?PresenceM1S .
+      
+    	#do the same for upper left molar 2
+        ?M2SDatum rdf:type <http://w3id.org/rdfbones/ext/phaleron-di/PresenceOfAlveolarBone> .
+		?M2SDatum obo:IAO_0000136 ?M2SInstance .
+		?M2SInstance rdf:type core:EntireToothSocket_fma317362 .
+		?M2SDatum obo:OBI_0001938 ?M2SValuespec .
+		?M2SValuespec obo:OBI_0000999 ?PresenceM2S .
+    
+    	#same for upper left molar 3
+        ?M3SDatum rdf:type <http://w3id.org/rdfbones/ext/phaleron-di/PresenceOfAlveolarBone> .
+		?M3SDatum obo:IAO_0000136 ?M3SInstance .
+		?M3SInstance rdf:type core:EntireToothSocket_fma317380 .
+		?M3SDatum obo:OBI_0001938 ?M3SValuespec .
+		?M3SValuespec obo:OBI_0000999 ?PresenceM3S .
+    	
+    	#find a skeletal inventory that is about the same human specimen as the dental inventory is about
+     	?SkeletalInventory rdf:type <http://w3id.org/rdfbones/ext/phaleron-si/InventoryForAdultSkeletons> ;
+                <http://semanticscience.org/resource/SIO_000563> ?HumanIndividualSkeleton ;
+    	 		obo:BFO_0000051 ?LegSection .
+    	#though they are about (presumably) the same individual, the dentition and skeletal inventory specimens have their own IRIs
+    	#the predicate owl:sameAs tells us that they are nonetheless the same human individual and allows us to query this aspect
+    	?HumanIndividualDentition owl:sameAs ?HumanIndividualSkeleton .
+    	
+    	#analogous to dental inventory, look at the leg section and find the attached measurement data we're looking for
+    	?LegSection rdf:type <http://w3id.org/rdfbones/ext/phaleron-si/AdultLeg> ;
+                obo:BFO_0000051 ?LeftTibiaCompletenessDatum .
+    	?LeftTibiaCompletenessDatum rdf:type <http://w3id.org/rdfbones/ext/standards-si/Representation4States> ;
+                obo:OBI_0001938 ?LeftTibiaCompletenessValueSpec ;
+                obo:IAO_0000136 ?LeftTibiaInstance .
+    	?LeftTibiaInstance rdf:type <http://w3id.org/rdfbones/ext/standards-si/MiddleThirdOfDiaphysisOfLeftTibia> .
+    	?LeftTibiaCompletenessValueSpec obo:OBI_0000999 ?LeftTibiaCompleteness .
+    
+ 	#since we also want to see inventories that have a tibia without pathologies, this part of the query needs to be optional
+ 	#optional sub-queries will simply give blank results if their pattern does not find anything in the database, rather than letting the entire query fail
+ 	OPTIONAL {
+        #find pathologies of tibia; start by moving from the human specimen to the patho-dataset
+    	#the specimen of the skeletal inventory is used as the input (obi:0000293) to produce the output (obi:0000299) patho dataset
+    	?PathologyInvestigation obo:OBI_0000293 ?HumanIndividualSkeleton ;
+                   obo:OBI_0000299 ?PathoDataset .
+    	?PathoDataset rdf:type <http://w3id.org/rdfbones/ext/phaleron-patho/PhaleronPaleopathologyDataset> ;
+                   obo:BFO_0000051 ?BoneAddition .
+    	?BoneAddition rdf:type <http://w3id.org/rdfbones/ext/phaleron-patho/BoneAdditionDatasetSection> ;
+                   obo:BFO_0000051 ?LeftTibiaROISpec .
+    	#The ROI-Specification instance is an anchor point for the data items of a patho-observation
+    	?LeftTibiaROISpec rdf:type <http://w3id.org/rdfbones/ext/phaleron-patho/PhaleronROISpecification> ;
+                    #Since this is the same tibia instance as the one in the query of the skeletal inventory, I can adress the same variable here
+        			obo:IAO_0000136 ?LeftTibiaInstance ;
+                    obo:BFO_0000051 ?LeftTibiaAspect ;
+        			obo:BFO_0000051 ?LeftTibiaExtent ;
+    				obo:BFO_0000051 ?LeftTibiaSite .
+        
+    	?LeftTibiaAspect obo:OBI_0001938 ?LeftTibiaAspectValueSpec .
+    	?LeftTibiaAspectValueSpec a <http://w3id.org/rdfbones/ext/phaleron-patho/AnatomicalAspectValueSpecification> ;
+        			obo:OBI_0000999 ?LeftTibiaAnatomicalAspect .
+    	?LeftTibiaExtent obo:OBI_0001938 ?LeftTibiaExtentValueSpec .
+    	?LeftTibiaExtentValueSpec a <http://w3id.org/rdfbones/ext/phaleron-patho/ExtentOfInvolvementValueSpecification> ;
+        			obo:OBI_0000999 ?LeftTibiaExtentOfInvolvement .
+    	?LeftTibiaSite obo:OBI_0001938 ?LeftTibiaSiteValueSpec .
+        ?LeftTibiaSiteValueSpec a <http://w3id.org/rdfbones/ext/phaleron-patho/AnatomicalSiteValueSpecification> ;
+        			obo:OBI_0000999 ?LeftTibiaAnatomicalSite .
+ 		}
+	}
+	
+Note that the results of this query are quite nonsensical. The point here is to show how we can query mutliple measurement data at once and how to connect a skeletal inventory dataset to a dental and/or pathological dataset.
+
++++++++++++++++++
+SPARQL resources
++++++++++++++++++
+
+The World Wide Web Consortium has an excellent to-the-point manual with examples for every aspect of SPARQL: https://www.w3.org/TR/sparql11-query/
+
+This manual is especially useful for learning how to correctly format expressions and operators like FILTER NOT EXISTS, VALUES, writing subqueries, etc.
