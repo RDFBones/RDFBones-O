@@ -1,8 +1,8 @@
-====================
-RDFBones User Guide
-====================
+=========================
+Introduction to RDFBones
+=========================
 
-The RDFBones standard consists of a hierarchy of ontologies which describe specific processes employed in osteology and their output datasets. Datasets produced with RDFBones ontologies can be queried with the query language *SPARQL*. Queries are the main method by which data is produced in the RDFBones software implementation **AnthroGraph** and they are also the main method for extracting data, be it only select elements of a dataset or the entire dataset itself, from AnthroGraph's database. In order to write SPARQL queries for these datasets, it is necessary to understand how the datasets work. This guide provides a basic introduction to pivotal concepts of **RDF**, the data model on which the RDFBones standard is based, and of which SPARQL is the recommended query language. This guide further provides directions on how the RDFBones documentation can be used to assist in writing a SPARQL query for a given RDFBones dataset.
+The RDFBones standard consists of a hierarchy of ontologies which describe specific processes employed in osteology and their output datasets. Datasets produced with RDFBones ontologies can be queried with the query language *SPARQL*. Queries are the main method by which data is produced in the RDFBones software implementation **AnthroGraph** and they are also the main method for extracting data, be it only select elements of a dataset or the entire dataset itself, from AnthroGraph's database. In order to write SPARQL queries for these datasets, it is necessary to understand how the datasets work. This guide provides a basic introduction to pivotal concepts of SPARQL and **RDF**, the data model on which the RDFBones standard is based, and of which SPARQL is the recommended query language. This guide further provides directions on how the RDFBones documentation can be used to assist in writing a SPARQL query for a given RDFBones dataset.
 
 
 -----------------------------------

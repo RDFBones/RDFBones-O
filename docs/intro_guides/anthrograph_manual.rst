@@ -1,7 +1,7 @@
-******************
-AnthroGraph Guide
-******************
-This guide provides information on the modules that the AnthroGraph system includes and gives basic information on how they work.
+***************************
+Guide to using AnthroGraph
+***************************
+This guide acts as a sort of user manual for the software application AnthroGraph. This guide provides information on the modules that are included in the AnthroGraph system and gives basic information on how they work.
 
 
 ===========================

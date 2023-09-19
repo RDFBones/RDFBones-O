@@ -18,8 +18,8 @@ Use the table of contents below or the links in the sidebar to jump to the respe
 .. toctree::
    :maxdepth: 2
 
-   userguide/userguide_main
-   userguide/anthrograph_guide
+   intro_guides/introduction_main
+   intro_guide/anthrograph_manual
    core/core_main
    
    legend
