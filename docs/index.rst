@@ -19,7 +19,7 @@ Use the table of contents below or the links in the sidebar to jump to the respe
    :maxdepth: 2
 
    intro_guides/introduction_main
-   intro_guide/anthrograph_manual
+   intro_guides/anthrograph_manual
    core/core_main
    
    legend
