@@ -135,7 +135,7 @@ Let's say we want to know which skeleton was the first one that was observed. We
 		ORDER BY ASC(?Date)
 		LIMIT 1
 
-If you run this query, you will likely get results that appear to be mostly just random strings. This is because we are querying the IRIs of our inventory and observing person. In AnthroGraph, you can click on the "fetch labels" button to rectify this. Alternatively, we can just query the labels ourselves: ::
+If you run this query, you will likely get results that appear to be mostly just random strings. This is because we are querying the IRIs of our inventory instance and our "observing person", which is also an instance. In AnthroGraph, you can click on the "fetch labels" button to rectify this. Alternatively, we can just query the labels ourselves: ::
 
 	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -160,7 +160,7 @@ If you run this query, you will likely get results that appear to be mostly just
 		ORDER BY ASC(?Date)
 		LIMIT 1
 
-Note that we had to change the values in the SELECT part of the query to fit the values of the labels. You can search the most recent event by switch 'ORDER BY ASC' into 'ORDER BY DESC'. 
+Note that we had to change the values in the SELECT part of the query to fit the values of the labels. You can search the most recent event by switching 'ORDER BY ASC' into 'ORDER BY DESC'. 
 
 
 +++++++++++
@@ -398,7 +398,7 @@ Querying measurement data
 
 Below is a more complex example query that looks for multiple measurement data across multiple inventories. It also uses the OPTIONAL operator. The query inside the OPTIONAL brackets will give a result if there is one, but if there are none, the SELECT values that are queried in the OPTIONAL part simply give a blank result; that is, assuming the rest of the query did find a result!
 
-This query contains comments. Comments are marked by the has (#) symbol, as is typical in many programming languages. You can copy-paste this query with comments included and SPARQL will simply ingore the comments. ::
+This query contains comments. Comments are marked by the hash (#) symbol, as is typical in many programming languages. You can copy-paste this query with comments included and SPARQL will simply ingore the comments. ::
 
 	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
