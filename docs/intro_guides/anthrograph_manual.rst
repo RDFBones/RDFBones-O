@@ -197,17 +197,17 @@ The SPARQL query used to export these datasets is designed to produce a tabular 
 * SectionName: The label given to the pathology dataset section. Pathology dataset sections effectively represent the individual pathology instances created in the investigation.
 
  .. image:: gfx/anthrograph/csv_section.png
- 	:scale: 100%
+ 	:scale: 75%
  	
-The above image shows a portion of a paleopathology dataset as viewed in the visualising software "Ontodia". The main pathology dataset instance (highlighted in blue) has as a part one or more the individual pathology dataset section instances (magenta). Onto these sections are attached - directly or indirectly via intermediary instances (orange), depending on the section type - the measurement data (green).
+The above image shows a portion of a paleopathology dataset as viewed in the visualising software "Ontodia". The main pathology dataset instance (highlighted in blue) has as a part one or more pathology dataset section instances (magenta). Onto these sections are attached - directly or indirectly via intermediary instances (orange), depending on the section type - the measurement data (green).
 
 * SectionType: What type of section the item from the "SectionName" column is, e.g. "Skeletal trauma dataset section", "Bone addition dataset section".
 * SectionROI: The region of interest (ROI) referenced by the section. For some types of pathologies, this will be the only ROI necessary to describe a pathology item in full. For others, the column "MeasurementDatumROI" may further pinpoint the pathology (see below).
 * MeasurementDatumType: The type of measurement datum being described, e.g. "Anatomical aspect" or "Timing of injury".
 * MeasurementDatumROI: The region of interest (ROI) a measurement datum is about. A single pathology dataset section will typically have multiple mesaurement data, and a single measurement datum may appear in multiple rows if it itself has multiple ROIs it affects; i.e. if it has multiple options for the MeasurementDatumROI column.
 
- .. image:: gfx/anthrograph/csv_MD_ROIS.png
- 	:scale: 100%
+ .. image:: gfx/anthrograph/csv_MD_ROIs.png
+ 	:scale: 75%
 
 The image above shows 3MDs of a single bone addition section which has a pathology that goes over 2 ROIs (measurement datum specific ROIS, to be exact, not the section specific ROI). Since the tabular output only has a single column for the ROI, the table must include multiple rows for the same MD, showing one of the ROIs involved each time; the section ROI accordingly is always the larger region the more specific measurement datum ROIs belong to, in this example the skull region. In contrast, some pathologies may have no measurement data at all, such as the "Bone fusion dataset section". In such cases, the section defines what the observation entails (e.g. "the following bones are fused"), and only the ROIs involved will be detailed in each row of the section with the MeasurementDatumType column being blank. These ROIs will be in the section specific ROI column, not the measurement datum specific ROI column, as there are no measurement data to which these ROIs could be attached in the dataset.
 
