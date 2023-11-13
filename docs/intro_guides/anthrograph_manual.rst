@@ -182,9 +182,9 @@ As seen in the image above, a drop-down menu opens in the fields for these detai
    :scale: 50 %
    
    
-***************************
++++++++++++++++++++++++++++
 Osteo Paleopath csv export
-***************************
++++++++++++++++++++++++++++
 
 As with all other modules, an export button exists near the top of the page to download a comma seperated value file for individual instances of osteo paleopath investigations. It is also possible to download all investigation instances by using the download button beneath the "Create New PBP-Paleopathology Instance" field.
 
