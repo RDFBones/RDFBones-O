@@ -27,7 +27,7 @@ Inventories for adult skeletons stand in contrast to inventories for juvenile sk
    
 The Skeletal Inventory ID, also known as the label of the inventory, can be changed by entering a new label in the field and clicking "Change Skeletal Inventory ID".
 The "DELETE Entire Skeletal Inventory" button will delete the inventory that is currently open.
-The "Download CSV Table" button will generate a CSV file containing all the data that has been entered in the inventory.
+The "Download CSV Table" button will generate a comma seperated value (CSV) file containing all the data that has been entered in the inventory.
 
 The general information tab allows the user to enter a comment on the inventory. Further down is the "Create New Observer/Editing Event" section.
 
@@ -180,3 +180,201 @@ As seen in the image above, a drop-down menu opens in the fields for these detai
 
  .. image:: gfx/anthrograph/PathoROIEntrySpecs.png
    :scale: 50 %
+   
+   
+***************************
+Osteo Paleopath csv export
+***************************
+
+As with all other modules, an export button exists near the top of the page to download a comma seperated value file for individual instances of osteo paleopath investigations. It is also possible to download all investigation instances by using the download button beneath the "Create New PBP-Paleopathology Instance" field.
+
+ .. image:: gfx/anthrograph/csv_export_button.png
+ 	:scale: 100%
+
+The SPARQL query used to export these datasets is designed to produce a tabular spreadsheet that is easy to read; however, due to the complexity of the osteo paleopath datasets, even this spreadsheet may not be entirely self-explanatory. This section explains the meaning of each column:
+
+* ID: The label given to the investigation. Since the pathology datasets have their labels automatically generated, the ID will always be the label of the skeletal inventory referenced by the investigation followed by the string "_PBP_Patho_Paleopath".
+* SectionName: The label given to the pathology dataset section. Pathology dataset sections effectively represent the individual pathology instances created in the investigation.
+
+ .. image:: gfx/anthrograph/csv_section.png
+ 	:scale: 100%
+ 	
+The above image shows a portion of a paleopathology dataset as viewed in the visualising software "Ontodia". The main pathology dataset instance (highlighted in blue) has as a part one or more the individual pathology dataset section instances (magenta). Onto these sections are attached - directly or indirectly via intermediary instances (orange), depending on the section type - the measurement data (green).
+
+* SectionType: What type of section the item from the "SectionName" column is, e.g. "Skeletal trauma dataset section", "Bone addition dataset section".
+* SectionROI: The region of interest (ROI) referenced by the section. For some types of pathologies, this will be the only ROI necessary to describe a pathology item in full. For others, the column "MeasurementDatumROI" may further pinpoint the pathology (see below).
+* MeasurementDatumType: The type of measurement datum being described, e.g. "Anatomical aspect" or "Timing of injury".
+* MeasurementDatumROI: The region of interest (ROI) a measurement datum is about. A single pathology dataset section will typically have multiple mesaurement data, and a single measurement datum may appear in multiple rows if it itself has multiple ROIs it affects; i.e. if it has multiple options for the MeasurementDatumROI column.
+
+ .. image:: gfx/anthrograph/csv_MD_ROIS.png
+ 	:scale: 100%
+
+The image above shows 3MDs of a single bone addition section which has a pathology that goes over 2 ROIs (measurement datum specific ROIS, to be exact, not the section specific ROI). Since the tabular output only has a single column for the ROI, the table must include multiple rows for the same MD, showing one of the ROIs involved each time; the section ROI accordingly is always the larger region the more specific measurement datum ROIs belong to, in this example the skull region. In contrast, some pathologies may have no measurement data at all, such as the "Bone fusion dataset section". In such cases, the section defines what the observation entails (e.g. "the following bones are fused"), and only the ROIs involved will be detailed in each row of the section with the MeasurementDatumType column being blank. These ROIs will be in the section specific ROI column, not the measurement datum specific ROI column, as there are no measurement data to which these ROIs could be attached in the dataset.
+
+* Value: What value the measurement datum has, e.g. "Diffuse" (Type of bony response), "1/3 - 2/3" (Extent of bone surface eburnation), etc.
+* ResearchRoleType: If there is a observer or data editing event saved, denotes whether the role is observer or data editor. If a pathology dataset section is noted in the same row, this event is found in that section. If there is none, then the event is about the investigation as a whole.
+* ResearchRoleContributor: Denotes the name of the person being referenced in the ResearchRoleType column.
+* ContributionDate: The date of the event referenced in the ResearchRoleType column.
+* InventoryComment: The comment found in the "General" tab of the according paleopath investigation.
+* GeneralAnatomicalRegionComment: The comment found under the "Comment on Pathologies" field in each tab, e.g. Skull, Thorax, etc.
+* SpecificPathologyComment: The comment found in a given pathology dataset section instance.
+* GeneralContributionComment: The comment found in connection to an event; this type of comment is only found in events concering the investigation as a whole (i.e. there is no item in the section column).
+* PathologyObservationContributionComment: The comment found in connection to an event found in a given pathology dataset section instance; analogous to the previous column, this item is only found when there is an item found in the section column specifying the section the event this comment is about is connected to.
+
+
+The output table is sorted via the following hierarchy of columns, each column being in descending alphabetical order: ID, SectionName, SectionType, and finally MeasurementDatumType
+
+For reference, find below the query used to output the csv table with all investigations. The query used to export a single investigation is the same except for the fact that it replaces the "?subject" variable with the investigation that is currently opened. ::
+
+	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+	PREFIX owl: <http://www.w3.org/2002/07/owl#>
+	PREFIX obo: <http://purl.obolibrary.org/obo/>
+	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+	PREFIX standards-si: <http://w3id.org/rdfbones/ext/standards-si/>
+	PREFIX dc: <http://purl.org/dc/terms/>
+
+	SELECT DISTINCT 
+
+	?ID
+	?SectionName
+	?SectionType
+	?SectionROI
+	?MeasurementDatumType
+	?MeasurementDatumROI
+	?Value
+
+	?ResearchRoleType
+	?ResearchRoleContributor
+	?ContributionDate
+	?InventoryComment
+	?GeneralAnatomicalRegionComment
+	?SpecificPathologyComment
+	?GeneralContributionComment
+	?PathologyObservationContributionComment
+
+	 WHERE {
+	  ?subject a <http://w3id.org/rdfbones/ext/phaleron-patho/PhaleronPaleopathologyDataset> .
+	  ?subject rdfs:label ?ID .
+	  {
+	    { ?subject rdfs:comment ?InventoryComment 
+	    }
+	    UNION { 
+	      ?subject obo:BFO_0000051 ?section .
+	      ?section a ?sectiontype .
+	      ?sectiontype rdfs:label ?SectionType .
+	      ?sectiontype rdfs:subClassOf <http://w3id.org/rdfbones/ext/phaleron-patho/PathologyComments> .
+	      ?section rdfs:comment ?GeneralAnatomicalRegionComment .
+	    }
+	    UNION {
+	    ?subject obo:BFO_0000051 ?section .
+	      OPTIONAL { ?section rdfs:label ?SectionName }
+	    ?section a ?sectiontype .
+	      OPTIONAL { ?section rdfs:comment ?SpecificPathologyComment }
+	    VALUES ?sectiontype { <http://w3id.org/rdfbones/ext/phaleron-patho/NonMetricTraitsAndAnomaliesDatasetSection> <http://w3id.org/rdfbones/ext/phaleron-patho/BoneFusionDatasetSection> }
+	    ?sectiontype rdfs:label ?SectionType .
+	    ?section obo:IAO_0000136 ?SectionROIInst . 
+	    ?SectionROIInst a ?SectionROIType .
+	    ?SectionROIType a owl:Class .
+	      OPTIONAL { ?SectionROIType rdfs:label ?SectionROI } #################################
+	  }
+	  UNION { 
+	    ?subject obo:BFO_0000051 ?section .
+	      OPTIONAL { ?section rdfs:comment ?SpecificPathologyComment }
+	      OPTIONAL { ?section rdfs:label ?SectionName }
+	    ?section a ?sectiontype .
+	    ?sectiontype rdfs:label ?SectionType .
+	    ?section obo:IAO_0000136 ?SectionROIInst . 
+	    ?SectionROIInst a ?SectionROIType .
+	    ?SectionROIType a owl:Class .
+	      { {?SectionROIInst <http://purl.org/sig/ont/fma/regional_part_of> ?region }
+	        UNION
+	        { ?SectionROIType rdfs:subClassOf <http://w3id.org/rdfbones/anthrograph/app/phaleron-app/AnatomicalROIGroup> }
+	      }
+	    ?SectionROIType rdfs:label ?SectionROI .
+	    ?section obo:BFO_0000051 ?Tier2MD .
+		?Tier2MD a ?Tier2MDType .
+	      OPTIONAL { ?Tier2MDType rdfs:label ?MeasurementDatumType }
+	      OPTIONAL { ?Tier2MD obo:IAO_0000136 ?Tier2MDROI .
+	        		?Tier2MDROI a ?Tier2MDROIType .
+	      			?Tier2MDROIType rdfs:label ?MeasurementDatumROI }
+	    ?Tier2MD obo:OBI_0001938 ?Tier2VS .
+	    ?Tier2VS obo:OBI_0000999 ?value .
+	      OPTIONAL { ?value rdfs:label ?Value }
+	    }
+	    UNION { 
+	      ?subject obo:BFO_0000051 ?SizeAndShapeDataset .
+	      OPTIONAL { ?SizeAndShapeDataset rdfs:comment ?SpecificPathologyComment }
+	      OPTIONAL { ?SizeAndShapeDataset rdfs:label ?SectionName }
+	      ?SizeAndShapeDataset obo:BFO_0000051 ?SizeAndShapeROI .
+	      ?SizeAndShapeDataset a ?sectiontype .
+	      ?sectiontype rdfs:label ?SectionType .
+	  	  ?SizeAndShapeROI a ?AnatomicalRegion .
+	      ?AnatomicalRegion rdfs:label ?MeasurementDatumROI.
+	      ?AnatomicalRegion rdfs:subClassOf ?ROISpecificationClass .
+	  	  ?ROISpecificationClass a owl:Class .
+	 	  ?ROISpecificationClass rdfs:subClassOf <http://w3id.org/rdfbones/ext/phaleron-patho/RegionalAROISpecification> .
+	      ?AnatomicalRegion rdfs:label ?SectionROI .
+	      ?SizeAndShapeDataset obo:BFO_0000051 ?Tier2MD .
+	      ?Tier2MD a ?Tier2MDType .
+		      OPTIONAL { ?Tier2MDType rdfs:label ?MeasurementDatumType }
+	      ?Tier2MD obo:OBI_0001938 ?Tier2VS .
+	      ?Tier2VS obo:OBI_0000999 ?value .
+		      OPTIONAL { ?value rdfs:label ?Value }
+	      }
+	    UNION {
+	    ?subject obo:BFO_0000051 ?section .
+	      OPTIONAL { ?section rdfs:comment ?SpecificPathologyComment }
+	      OPTIONAL { ?section rdfs:label ?SectionName }
+	    ?section a ?sectiontype .
+	    ?sectiontype rdfs:label ?SectionType .
+	    ?section obo:IAO_0000136 ?SectionROIInst .
+	      OPTIONAL { ?SectionROIInst rdfs:label ?SectionROI }
+	    ?section obo:BFO_0000051 ?Tier2MD .
+	  	?Tier2MD obo:IAO_0000136 ?Tier2MDROI .
+	    ?Tier2MDROI a ?Tier2MDROIType .
+	    ?Tier2MDROIType rdfs:label ?MeasurementDatumROI .
+	    ?Tier2MD obo:BFO_0000051 ?Tier3MD .
+	    ?Tier3MD a ?Tier3MDType .
+	      OPTIONAL { ?Tier3MDType rdfs:label ?MeasurementDatumType }
+	    ?Tier3MD obo:OBI_0001938 ?Tier3VS .
+	    ?Tier3VS obo:OBI_0000999 ?value .
+	      OPTIONAL { ?value rdfs:label ?Value }
+	    }
+	  UNION
+	  {
+	?investigation obo:OBI_0000299 ?subject .
+	?investigation obo:BFO_0000051 ?ContribProcess .
+	?ContribProcess a <http://w3id.org/rdfbones/ext/phaleron-patho/ResearchContributionProcess> .
+	?ContribProcess rdfs:label ?TypeOfContribution .
+	?ResearchRole obo:BFO_0000054 ?ContribProcess .
+	?ResearchRole a ?RoleType .
+	?RoleType rdfs:label ?ResearchRoleType .
+	?ContribProcess obo:RO_0000057 ?participant .
+	?participant rdfs:label ?ResearchRoleContributor .
+	?ContribProcess dc:date ?ContributionDate .
+		OPTIONAL {?ContribProcess rdfs:comment ?GeneralContributionComment } 
+	  }
+	  UNION
+	  {
+	?investigation obo:OBI_0000299 ?subject .
+	?subject obo:BFO_0000051 ?section.
+	?section rdfs:label ?SectionName .
+	?investigation obo:BFO_0000051 ?PathoObservation .
+	?PathoObservation a ?PathoObservationType .
+	?PathoObservationType rdfs:subClassOf <http://w3id.org/rdfbones/ext/phaleron-patho/PaleopathologicalObservation> .
+	?PathoObservation obo:OBI_0000299 ?section .
+	?PathoObservation obo:BFO_0000051 ?ContribProcess .
+	?ContribProcess a <http://w3id.org/rdfbones/ext/phaleron-patho/ResearchContributionProcess> .
+	?ContribProcess rdfs:label ?TypeOfContribution .
+	?ResearchRole obo:BFO_0000054 ?ContribProcess .
+	?ResearchRole a ?RoleType .
+	?RoleType rdfs:label ?ResearchRoleType .
+	?ContribProcess obo:RO_0000057 ?participant .
+	?participant rdfs:label ?ResearchRoleContributor .
+	?ContribProcess dc:date ?ContributionDate .
+		OPTIONAL { ?ContribProcess rdfs:comment ?PathologyObservationContributionComment }
+	  }
+
+	}
+	}
+	ORDER BY ?ID ?SectionName ?SectionType ?MeasurementDatumType

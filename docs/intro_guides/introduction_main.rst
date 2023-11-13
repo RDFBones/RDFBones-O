@@ -61,13 +61,13 @@ Within a single ontology, each IRI must be unqiue; the label however does not ne
 
 In effect, ontologies are where the exact string of the IRIs of classes are "decided on". The string can be more or less made up arbitrarily by the auther of the class, though generally the prefix of the IRI will be the same within an ontology. For example, in the Phaleron skeletal inventory extension ontology, we find the classes:
 
-http://w3id.org/rdfbones/ext/phaleron-si/InventoryForAdultSkeletons
-http://w3id.org/rdfbones/ext/phaleron-si/PhaleronSkeletalInventorySection
+*http://w3id.org/rdfbones/ext/phaleron-si/InventoryForAdultSkeletons
+*http://w3id.org/rdfbones/ext/phaleron-si/PhaleronSkeletalInventorySection
 
 These share the prefix "http://w3id.org/rdfbones/ext/phaleron-si/". In the Walker's sex estimation ontology, we find the classes have a different prefix:
 
-http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphology
-http://w3id.org/rdfbones/ext/walker-se/MentumMorphology
+*http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphology
+*http://w3id.org/rdfbones/ext/walker-se/MentumMorphology
 
 This first part of the IRI is what is adressed by the "PREFIX" element found in SPARQL queries, see :ref:`PrefixesSection` for details.
 
