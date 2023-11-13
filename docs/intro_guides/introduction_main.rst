@@ -59,15 +59,15 @@ Protégé displays a lot of information; for the moment, let us focus only on th
 
 Within a single ontology, each IRI must be unqiue; the label however does not need to be unique. This is an imprtant distinction: imagine an ontology defining both gender and biological sex - you may want both gender and sex to have the label "male", but you will also want the two distinct concepts to be represented by two distinct classes, where each has a specific definition. Instances of classes may also cause confusion when it comes to IRIs, see :ref:`ClassesInstancesSection` for more details on instances and their IRIs.
 
-In effect, ontologies are where the exact string of the IRIs of classes are "decided on". The string can be more or less made up arbitrarily by the auther of the class, though generally the prefix of the IRI will be the same within an ontology. For example, in the Phaleron skeletal inventory extension ontology, we find the classes:
+In effect, ontologies are where the exact string of the IRIs of classes are "decided on". The string can be more or less made up arbitrarily by the auther of the class, though generally the prefix of the IRI will be the same within an ontology. For example, in the Phaleron skeletal inventory extension ontology, we find the classes: ::
 
-*http://w3id.org/rdfbones/ext/phaleron-si/InventoryForAdultSkeletons
-*http://w3id.org/rdfbones/ext/phaleron-si/PhaleronSkeletalInventorySection
+	http://w3id.org/rdfbones/ext/phaleron-si/InventoryForAdultSkeletons
+	http://w3id.org/rdfbones/ext/phaleron-si/PhaleronSkeletalInventorySection
 
-These share the prefix "http://w3id.org/rdfbones/ext/phaleron-si/". In the Walker's sex estimation ontology, we find the classes have a different prefix:
+These share the prefix "http://w3id.org/rdfbones/ext/phaleron-si/". In the Walker's sex estimation ontology, we find the classes have a different prefix: ::
 
-*http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphology
-*http://w3id.org/rdfbones/ext/walker-se/MentumMorphology
+	http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphology
+	http://w3id.org/rdfbones/ext/walker-se/MentumMorphology
 
 This first part of the IRI is what is adressed by the "PREFIX" element found in SPARQL queries, see :ref:`PrefixesSection` for details.
 
