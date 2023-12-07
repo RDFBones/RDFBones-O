@@ -1210,6 +1210,30 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
     
 
 
+    <!-- http://w3id.org/rdfbones/core#EntireSetOfAllNeuralArches -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSetOfAllNeuralArches">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBoneOrgans"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma276660"/> <!-- 'Set of all vertebrae' -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBonesOfSkull"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfSacralVertebrae"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfFoot"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfHand"/>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing the entire set of the neural arches of all vertebrae in a skeleton.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0009-0008-3871-9762 ""Felix Engel""
+</obo:IAO_0000117>
+<obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+<obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/RDFBones/RDFBones-O/issues/194</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">Entire set of all neural arches</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/core#EntireSetOfAllRibs -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSetOfAllRibs">
@@ -1228,6 +1252,66 @@ A scalar measurement datum, giving the portion of the surface of a bone on which
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felix Engel</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Entire set of all ribs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSetOfAllVertebrae -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSetOfAllVertebrae">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBoneOrgans"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma276660"/> <!-- 'Set of all vertebrae' -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfAllNeuralArches"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/> <!-- 'has part' -->
+                <owl:someValuesFrom rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfAllVertebralBodies"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBonesOfSkull"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfSacralVertebrae"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfFoot"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfHand"/>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing the entire set of all vertebrae in a skeleton.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0009-0008-3871-9762 ""Felix Engel""
+</obo:IAO_0000117>
+<obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+<obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/RDFBones/RDFBones-O/issues/194</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">Entire set of all vertebrae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/core#EntireSetOfAllVertebralBodies -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/core#EntireSetOfAllVertebralBodies">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBoneOrgans"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/regional_part_of"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma276660"/> <!-- 'Set of all vertebrae' -->
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfBonesOfSkull"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSetOfSacralVertebrae"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfFoot"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/rdfbones/core#EntireSkeletonOfHand"/>
+        <obo:IAO_0000115 xml:lang="en">An anatomical region of interest describing the entire set of the bodies of all vertebrae in a skeleton.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0009-0008-3871-9762 ""Felix Engel""
+</obo:IAO_0000117>
+<obo:IAO_0000119 xml:lang="en">Felix Engel</obo:IAO_0000119>
+<obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/RDFBones/RDFBones-O/issues/194</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">Entire set of all vertebral bodies</rdfs:label>
     </owl:Class>
     
 
